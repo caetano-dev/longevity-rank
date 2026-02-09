@@ -11,7 +11,8 @@ var (
 	// Regex patterns compiled once for performance
 	reMg    = regexp.MustCompile(`(?i)(\d+)\s*mg`)
 	reCount = regexp.MustCompile(`(?i)(\d+)\s*(?:capsules|caps|servings|tabs|tablets|ct)`)
-	reGrams = regexp.MustCompile(`(?i)(\d+)\s*grams?`)
+	reGrams = regexp.MustCompile(`(?i)(\d+)\s*(?:grams?|g)\b`) // \b ensures we don't match 'mg' as 'g'
+	reKg    = regexp.MustCompile(`(?i)(\d+(?:\.\d+)?)\s*kg\b`)
 	rePack  = regexp.MustCompile(`(?i)(\d+)\s*Pack`)
 )
 
@@ -20,49 +21,65 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 		return nil
 	}
 
+	// --- 1. THE GATEKEEPER ---
+	// We combine Title + Handle (URL) to check if this is actually an NMN product.
+	// We convert to lowercase to make it case-insensitive.
+	identityString := strings.ToLower(p.Title + " " + p.Handle)
+
+	// If it doesn't mention "nmn", SKIP IT.
+	// This filters out "Vitamin D3", "Resveratrol", "Vitality Booster", etc.
+	if !strings.Contains(identityString, "nmn") {
+		return nil 
+	}
+	// -------------------------
+
 	price, _ := strconv.ParseFloat(p.Variants[0].Price, 64)
 	
-	// SEARCH STRATEGY:
-	// We combine Title + Handle (URL) to increase chances of finding data.
-	// Renue often puts "100-grams" in the URL but not the title.
-	searchString := p.Title + " " + strings.ReplaceAll(p.Handle, "-", " ")
+	// Prepare the search string for Math Extraction
+	// We include the Variant Title because Jinfiniti puts "30g" there.
+	searchString := p.Title + " " + p.Variants[0].Title + " " + strings.ReplaceAll(p.Handle, "-", " ")
 
 	capsuleMass := 0.0
 	powderMass := 0.0
 	packMultiplier := 1.0
 
-	// 1. Detect Pills/Capsules
+	// A. Detect Pills (mg * count)
 	mgMatch := reMg.FindStringSubmatch(searchString)
 	countMatch := reCount.FindStringSubmatch(searchString)
 
 	if len(mgMatch) > 1 && len(countMatch) > 1 {
 		mg, _ := strconv.ParseFloat(mgMatch[1], 64)
 		count, _ := strconv.ParseFloat(countMatch[1], 64)
-		capsuleMass = (mg * count) / 1000.0
+		capsuleMass = (mg * count) / 1000.0 // Convert to grams
 	}
 
-	// 2. Detect Powder (Grams)
+	// B. Detect Powder (Grams or KG)
 	gramMatch := reGrams.FindStringSubmatch(searchString)
+	kgMatch := reKg.FindStringSubmatch(searchString)
+
 	if len(gramMatch) > 1 {
 		grams, _ := strconv.ParseFloat(gramMatch[1], 64)
 		powderMass = grams
+	} else if len(kgMatch) > 1 {
+		kg, _ := strconv.ParseFloat(kgMatch[1], 64)
+		powderMass = kg * 1000.0 // Convert kg to grams
 	}
 
-	// 3. Detect Packs
+	// C. Detect "Packs" (Multipliers)
 	packMatch := rePack.FindStringSubmatch(searchString)
 	if len(packMatch) > 1 {
 		mult, _ := strconv.ParseFloat(packMatch[1], 64)
 		packMultiplier = mult
 	}
 
-	// 4. Calculate Total Active Mass
-	// Note: We use additive logic so bundles (Pills + Powder) work correctly
+	// D. Calculate Total Active NMN
 	totalGrams := (capsuleMass + powderMass) * packMultiplier
 
 	if totalGrams <= 0 {
-		return nil // Could not calculate, skip this product
+		return nil // Could not calculate mass
 	}
 
+	// E. Determine Type for the Report
 	productType := "Single"
 	if packMultiplier > 1 {
 		productType = "Multi-Pack"
@@ -70,6 +87,8 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 		productType = "Hybrid Bundle"
 	} else if powderMass > 0 {
 		productType = "Powder"
+	} else {
+		productType = "Capsules"
 	}
 
 	return &models.Analysis{

@@ -18,7 +18,7 @@ func main() {
 
 	// 1. Scrape all vendors concurrently (sequential for now for simplicity)
 	for _, v := range vendors {
-		products, err := scraper.FetchAllProducts(v)
+		products, err := scraper.FetchProducts(v)
 		if err != nil {
 			fmt.Printf("Error scraping %s: %v\n", v.Name, err)
 			continue

@@ -6,22 +6,21 @@ import (
 	"io"
 	"net/http"
 	"longevity-ranker/internal/models"
+	"strconv"
 	"time"
 )
 
-func FetchAllProducts(vendor models.Vendor) ([]models.Product, error) {
+func FetchShopifyProducts(vendor models.Vendor) ([]models.Product, error) {
 	client := &http.Client{Timeout: 15 * time.Second}
-	var allProducts []models.Product
+	var finalProducts []models.Product
 	page := 1
 
 	fmt.Printf("🔌 Connecting to %s...\n", vendor.Name)
 
 	for {
-		// Construct paginated URL
 		url := fmt.Sprintf("%s?page=%d", vendor.URL, page)
 		
 		req, _ := http.NewRequest("GET", url, nil)
-		// User-Agent is crucial to avoid being blocked
 		req.Header.Set("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko)")
 
 		resp, err := client.Do(req)
@@ -32,20 +31,51 @@ func FetchAllProducts(vendor models.Vendor) ([]models.Product, error) {
 
 		body, _ := io.ReadAll(resp.Body)
 
-		var result models.ShopifyResponse
-		if err := json.Unmarshal(body, &result); err != nil {
-			// Some sites return HTML errors instead of JSON when done
+		var rawData struct {
+			Products []struct {
+				ID       int64  `json:"id"`
+				Title    string `json:"title"`
+				Handle   string `json:"handle"`
+				Variants []struct {
+					Price string `json:"price"`
+					Title string `json:"title"`
+				} `json:"variants"`
+			} `json:"products"`
+		}
+
+		if err := json.Unmarshal(body, &rawData); err != nil {
 			break 
 		}
 
-		if len(result.Products) == 0 {
+		if len(rawData.Products) == 0 {
 			break // End of pagination
 		}
 
-		allProducts = append(allProducts, result.Products...)
-		fmt.Printf("   -> Page %d: %d items\n", page, len(result.Products))
+		// --- MAPPING LOOP ---
+		// Convert Raw Data (Int64 ID) -> Generic Model (String ID)
+		for _, p := range rawData.Products {
+			
+			// Create the generic product
+			newProd := models.Product{
+				ID:     strconv.FormatInt(p.ID, 10), // Convert ID number to string
+				Title:  p.Title,
+				Handle: p.Handle,
+			}
+
+			// Map variants
+			for _, v := range p.Variants {
+				newProd.Variants = append(newProd.Variants, models.Variant{
+					Price: v.Price,
+					Title: v.Title, 
+				})
+			}
+
+			finalProducts = append(finalProducts, newProd)
+		}
+
+		fmt.Printf("   -> Page %d: %d items\n", page, len(rawData.Products))
 		page++
 	}
 
-	return allProducts, nil
+	return finalProducts, nil
 }
