@@ -5,10 +5,12 @@ import (
 	"fmt"
 	"io"
 	"net/http"
-	"longevity-ranker/internal/models"
+	"net/url" // Added for dynamic URL parsing
 	"regexp"
 	"strings"
 	"time"
+
+	"longevity-ranker/internal/models"
 )
 
 // Generic LD+JSON structures
@@ -17,7 +19,7 @@ type LdJsonGraph struct {
 }
 
 type LdNode struct {
-	Type       interface{} `json:"@type"` 
+	Type       interface{} `json:"@type"`
 	Name       string      `json:"name"`
 	HasVariant []LdVariant `json:"hasVariant"`
 	Offers     *LdOffer    `json:"offers,omitempty"`
@@ -29,7 +31,7 @@ type LdVariant struct {
 }
 
 type LdOffer struct {
-	Price         interface{} `json:"price"` 
+	Price         interface{} `json:"price"`
 	PriceCurrency string      `json:"priceCurrency"`
 }
 
@@ -37,43 +39,52 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 	client := &http.Client{Timeout: 30 * time.Second}
 	fmt.Printf("🔍 Crawling %s (%s)...\n", vendor.Name, vendor.Type)
 
+	// 1. Parse the Vendor Base URL (e.g. https://www.jinfiniti.com/shop/)
+	baseURL, err := url.Parse(vendor.URL)
+	if err != nil {
+		return nil, fmt.Errorf("invalid vendor URL: %v", err)
+	}
+
 	shopBody, err := fetchBody(client, vendor.URL)
 	if err != nil {
 		return nil, err
 	}
 
-	// 1. Regex to find ALL product links (WooCommerce standard is /product/...)
-	reProductLink := regexp.MustCompile(`href="([^"]*?/product/[^"]+)"`)
+	// 2. Regex to find ALL product links
+	// WooCommerce standard is often /product/..., but we capture the href content broadly
+	// We look for anything that contains "/product/" in the path to filter out blog posts/pages
+	reProductLink := regexp.MustCompile(`href="([^"]*?)"`)
 	matches := reProductLink.FindAllStringSubmatch(string(shopBody), -1)
 
 	uniqueLinks := make(map[string]bool)
 	for _, m := range matches {
-		link := m[1]
-		
-		// --- THE FIX ---
-		// Don't check against vendor.URL (which contains /shop/).
-		// Instead, check if it's relative or part of the same domain.
-		if strings.HasPrefix(link, "/") {
-			// Convert relative link to absolute
-			// Assumption: vendor.URL is like https://domain.com/shop/
-			// We need the base domain. 
-			// For simplicity in this scraper, we assume absolute links usually, 
-			// or we just prepend the domain manually if we know it.
-			// But Jinfiniti uses absolute links, so we focus on that.
-			uniqueLinks["https://www.jinfiniti.com"+link] = true // Hardcoded for safety in this specific case, or parse URL properly
-		} else if strings.Contains(link, "jinfiniti.com/product/") {
-			uniqueLinks[link] = true
+		rawLink := m[1]
+
+		// Parse the found link relative to the base URL
+		relURL, err := url.Parse(rawLink)
+		if err != nil {
+			continue // Skip invalid links
+		}
+
+		// Dynamically resolve it (handles "/product/x", "./x", and full "https://..." links)
+		absURL := baseURL.ResolveReference(relURL)
+
+		// Filter Logic:
+		// 1. Must be on the same host (don't crawl external ads)
+		// 2. Must contain "/product/" (specific to WooCommerce structure)
+		if absURL.Host == baseURL.Host && strings.Contains(absURL.Path, "/product/") {
+			uniqueLinks[absURL.String()] = true
 		}
 	}
 
 	fmt.Printf("   -> Found %d unique product pages.\n", len(uniqueLinks))
-	
+
 	var products []models.Product
 
-	// 2. Visit each page
+	// 3. Visit each product page
 	for link := range uniqueLinks {
 		// Polite rate limiting
-		time.Sleep(300 * time.Millisecond) 
+		time.Sleep(300 * time.Millisecond)
 
 		pageBody, err := fetchBody(client, link)
 		if err != nil {
@@ -81,30 +92,29 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 			continue
 		}
 
-		// 3. Extract the LD+JSON block
+		// 4. Extract the LD+JSON block
+		// We look for any script with type="application/ld+json"
 		reSchema := regexp.MustCompile(`(?s)<script type="application/ld\+json"[^>]*>(.*?)</script>`)
 		schemaMatches := reSchema.FindAllStringSubmatch(string(pageBody), -1)
 
-		foundJson := false
 		for _, match := range schemaMatches {
 			var graph LdJsonGraph
 			if err := json.Unmarshal([]byte(match[1]), &graph); err != nil {
 				continue
 			}
 
-			// 4. Parse the Graph
+			// 5. Parse the Graph
 			for _, node := range graph.Graph {
 				if !isProductType(node.Type) {
 					continue
 				}
-				foundJson = true
 
 				// CASE A: Product Group (Variants like 30g, 100g)
 				if len(node.HasVariant) > 0 {
 					for _, v := range node.HasVariant {
 						products = append(products, models.Product{
-							ID:     v.Name, // Use Name as ID
-							Title:  v.Name, // e.g. "Pure NMN Powder - 120g"
+							ID:     v.Name,
+							Title:  v.Name, // Using Variant Name as Title
 							Handle: link,
 							Variants: []models.Variant{
 								{
@@ -129,11 +139,6 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 					})
 				}
 			}
-		}
-		
-		if !foundJson {
-			// Debug line to see if we missed the JSON on a valid page
-			// fmt.Printf("No valid Product JSON found on %s\n", link)
 		}
 	}
 

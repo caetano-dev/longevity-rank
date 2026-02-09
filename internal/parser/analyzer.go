@@ -21,22 +21,14 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 		return nil
 	}
 
-	// --- 1. THE GATEKEEPER ---
-	// We combine Title + Handle (URL) to check if this is actually an NMN product.
-	// We convert to lowercase to make it case-insensitive.
 	identityString := strings.ToLower(p.Title + " " + p.Handle)
 
-	// If it doesn't mention "nmn", SKIP IT.
-	// This filters out "Vitamin D3", "Resveratrol", "Vitality Booster", etc.
-	if !strings.Contains(identityString, "nmn") {
+	if !strings.Contains(identityString, "nmn") { // TODO: Will need refactoring. We are going to add other products.
 		return nil 
 	}
-	// -------------------------
 
 	price, _ := strconv.ParseFloat(p.Variants[0].Price, 64)
 	
-	// Prepare the search string for Math Extraction
-	// We include the Variant Title because Jinfiniti puts "30g" there.
 	searchString := p.Title + " " + p.Variants[0].Title + " " + strings.ReplaceAll(p.Handle, "-", " ")
 
 	capsuleMass := 0.0
