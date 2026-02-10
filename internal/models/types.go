@@ -9,6 +9,7 @@ type Vendor struct {
 type Product struct {
 	ID       string    `json:"id"`
 	Title    string    `json:"title"`
+	Context  string    `json:"context"`
 	Handle   string    `json:"handle"` 
 	BodyHTML string    `json:"body_html"`
 	Variants []Variant `json:"variants"`
