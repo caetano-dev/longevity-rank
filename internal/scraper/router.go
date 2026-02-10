@@ -11,6 +11,8 @@ func FetchProducts(vendor models.Vendor) ([]models.Product, error) {
 		return FetchShopifyProducts(vendor)
 	case "html-ldjson":
 		return FetchLdJsonProducts(vendor)
+	case "magento":
+		return FetchMagentoProducts(vendor)
 	default:
 		return nil, fmt.Errorf("unknown vendor scraper type: %s", vendor.Type)
 	}

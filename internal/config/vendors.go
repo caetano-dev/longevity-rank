@@ -5,7 +5,6 @@ import "longevity-ranker/internal/models"
 func GetVendors() []models.Vendor {
 	return []models.Vendor{
 		// to add: wonderfeel (cloudflare)
-		//         do not age
 		{
 			Name: "ProHealth",
 			URL:  "https://www.prohealth.com/collections/nmn-capsules/products.json",
@@ -31,6 +30,11 @@ func GetVendors() []models.Vendor {
 			Name: "Jinfiniti",
 			URL:  "https://www.jinfiniti.com/shop/",
 			Type: "html-ldjson",
+		},
+		{
+			Name: "Do Not Age",
+			URL:  "https://donotage.org/products/",
+			Type: "magento",
 		},
 	}
 }
