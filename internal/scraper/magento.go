@@ -77,7 +77,6 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 		return nil, err
 	}
 
-	// 1. Link Finder
 	reLinks := regexp.MustCompile(`class="(?:.*?(?:product-item-link|product-name|product-title).*?)"\s+href="([^"]+)"`)
 	matches := reLinks.FindAllStringSubmatch(string(shopBody), -1)
 
@@ -95,7 +94,6 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 
 	var products []models.Product
 
-	// 2. Visit Products
 	for link := range uniqueLinks {
 		time.Sleep(300 * time.Millisecond)
 
@@ -104,11 +102,11 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 			continue
 		}
 
-		// 3. Extract Data
-		cleanTitle := getCleanTitle(string(pageBody)) // "Pure NMN"
-		seoContext := getSeoContext(string(pageBody)) // "Buy NMN 500mg..."
+		cleanTitle := getCleanTitle(string(pageBody))
+		seoContext := getSeoContext(string(pageBody))
+		// NEW: Extract description
+		description := getDescriptionFromHTML(string(pageBody))
 
-		// 4. Find Script Tags
 		reScript := regexp.MustCompile(`(?s)<script type="text/x-magento-init">(.+?)</script>`)
 		scripts := reScript.FindAllStringSubmatch(string(pageBody), -1)
 
@@ -117,11 +115,9 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 		hasStdConfig := false
 		hasBulkConfig := false
 
-		// Parse Scripts
 		for _, s := range scripts {
 			content := s[1]
 			
-			// Standard Config (Base Prices)
 			if strings.Contains(content, "jsonConfig") {
 				var wrapper MagentoInit
 				if err := json.Unmarshal([]byte(content), &wrapper); err == nil {
@@ -132,11 +128,9 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 				}
 			}
 
-			// Bulk Config (DoNotAge Bundles)
 			if strings.Contains(content, "DoNotAge_BulkBuy") {
 				var rawMap map[string]interface{}
 				if err := json.Unmarshal([]byte(content), &rawMap); err == nil {
-					// Handle the "*" selector in Magento init
 					if inner, ok := rawMap["*"]; ok {
 						innerBytes, _ := json.Marshal(inner)
 						json.Unmarshal(innerBytes, &bulkConfig)
@@ -152,7 +146,7 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 			continue
 		}
 
-		// 5. Filter for "One Time Purchase"
+		// Filter for "One Time Purchase"
 		var oneTimeIDs = make(map[string]bool)
 		for _, attr := range stdConfig.Attributes {
 			if strings.Contains(strings.ToLower(attr.Label), "purchase") {
@@ -168,10 +162,8 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 		}
 		checkPurchaseOption := len(oneTimeIDs) > 0
 
-		// 6. Generate Products
 		for _, attr := range stdConfig.Attributes {
 			label := strings.ToLower(attr.Label)
-			// Look for Size/Volume attributes
 			if strings.Contains(label, "size") || strings.Contains(label, "volume") {
 				
 				for _, opt := range attr.Options {
@@ -186,22 +178,21 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 							continue
 						}
 
-						// --- A. Base Product (1 Unit) ---
 						basePrice := priceInfo.FinalPrice.Amount
 						products = append(products, models.Product{
-							ID:      pid,
-							Title:   cleanTitle,
-							Context: seoContext,
-							Handle:  link,
+							ID:       pid,
+							Title:    cleanTitle,
+							Context:  seoContext,
+							BodyHTML: description, // NEW: Store description here
+							Handle:   link,
 							Variants: []models.Variant{
 								{
 									Price: fmt.Sprintf("%.2f", basePrice),
-									Title: opt.Label, // e.g. "60 Capsules"
+									Title: opt.Label,
 								},
 							},
 						})
 
-						// --- B. Bulk Products (3 Pack, 6 Pack) ---
 						if hasBulkConfig {
 							sku, skuFound := bulkConfig.BulkOptions.BulkConfig.DnaIdToSku[pid]
 							if skuFound {
@@ -211,18 +202,17 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 									for qtyStr, unitPrice := range tierInfo.TierPrices {
 										qty, _ := strconv.Atoi(qtyStr)
 										if qty > 1 {
-											// DoNotAge sends UNIT PRICE ($72). We need TOTAL PRICE ($216).
 											totalPrice := unitPrice * float64(qty)
 											
 											products = append(products, models.Product{
-												ID:      fmt.Sprintf("%s-%s", pid, qtyStr),
-												Title:   cleanTitle,
-												Context: seoContext,
-												Handle:  link,
+												ID:       fmt.Sprintf("%s-%s", pid, qtyStr),
+												Title:    cleanTitle,
+												Context:  seoContext,
+												BodyHTML: description, // NEW
+												Handle:   link,
 												Variants: []models.Variant{
 													{
 														Price: fmt.Sprintf("%.2f", totalPrice),
-														// Append "Pack" so Analyzer multiplies the mass
 														Title: fmt.Sprintf("%s - %d Pack", opt.Label, qty), 
 													},
 												},
@@ -243,12 +233,10 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 }
 
 func getCleanTitle(html string) string {
-	// 1. Schema.org (Best for clean display name)
 	reSchema := regexp.MustCompile(`<h1[^>]*itemprop="name"[^>]*>\s*(.*?)\s*</h1>`)
 	if m := reSchema.FindStringSubmatch(html); len(m) > 1 {
 		return strings.TrimSpace(m[1])
 	}
-	// 2. Generic H1
 	reH1 := regexp.MustCompile(`<h1[^>]*>\s*(.*?)\s*</h1>`)
 	if m := reH1.FindStringSubmatch(html); len(m) > 1 {
 		clean := regexp.MustCompile(`<[^>]*>`).ReplaceAllString(m[1], "")
@@ -258,10 +246,27 @@ func getCleanTitle(html string) string {
 }
 
 func getSeoContext(html string) string {
-	// <title> tag contains the hidden dosage info "500mg"
 	reTitle := regexp.MustCompile(`<title>(.*?)</title>`)
 	if m := reTitle.FindStringSubmatch(html); len(m) > 1 {
 		return strings.TrimSpace(m[1])
 	}
+	return ""
+}
+
+func getDescriptionFromHTML(html string) string {
+	// Try Meta Description first (Cleaner, usually contains "60 capsules, 500mg")
+	reMeta := regexp.MustCompile(`<meta name="description" content="([^"]*?)"`)
+	if m := reMeta.FindStringSubmatch(html); len(m) > 1 {
+		return m[1]
+	}
+
+	// Try Standard Magento Description Block
+	reDesc := regexp.MustCompile(`class="product attribute description"[^>]*>.*?<div class="value"[^>]*>(.*?)</div>`)
+	if m := reDesc.FindStringSubmatch(html); len(m) > 1 {
+		// Clean HTML tags
+		clean := regexp.MustCompile(`<[^>]*>`).ReplaceAllString(m[1], " ")
+		return strings.TrimSpace(clean)
+	}
+
 	return ""
 }

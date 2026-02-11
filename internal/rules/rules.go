@@ -1,77 +1,59 @@
 package rules
 
 import (
+	"encoding/json"
 	"fmt"
+	"io"
+	"os"
 	"strings"
+
 	"longevity-ranker/internal/models"
 )
 
 // ProductSpec defines the "Physics" of a product that the scraper might miss
 type ProductSpec struct {
-	ForceType  string  // "Powder" or "Capsules"
-	ForceMg    float64 // Dosage per serving/capsule
-	ForceCount float64 // Total capsules or grams in the container
+	ForceType  string  `json:"forceType"`
+	ForceMg    float64 `json:"forceMg"`
+	ForceCount float64 `json:"forceCount"`
 }
 
 type VendorConfig struct {
-	Blocklist []string
-	Overrides map[string]ProductSpec
+	Blocklist []string               `json:"blocklist"`
+	Overrides map[string]ProductSpec `json:"overrides"`
 }
 
-var Registry = map[string]VendorConfig{
-	"Nutricost": {
-		Blocklist: []string{"5-HTP", "Carnitine", "Caffeine", "Creatine", "Pre-Workout", "Gummies"},
-	},
-	"NMN Bio": {
-		Blocklist: []string{"Bundle", "Endurance", "Book"},
-		Overrides: map[string]ProductSpec{
-			"nmn-supplement-500mg-capsules-30-caps": {
-				ForceType:  "Capsules",
-				ForceMg:    500,
-				ForceCount: 30,
-			},
-		},
-	},
-	"Do Not Age": {
-		Blocklist: []string{"Test", "Kit", "Consultation", "Subscription"},
-	},
-	"Renue By Science": {
-		// Removed "Gel" and "NAD" from blocklist so we can track them
-		Blocklist: []string{"Test", "Cream", "Serum", "Pet", "Cleanser", "Lotion"},
-		Overrides: map[string]ProductSpec{
-			// NMN Liposomal Gel: Website says "240mg" but misses "75 servings" (150ml bottle / 2ml serving)
-			"nmn-lipo-gel-sublingual": {
-				ForceType:  "Capsules", // Math-wise, a "Pump" behaves like a "Capsule" (Unit * Dosage)
-				ForceMg:    240,        // 240mg per serving
-				ForceCount: 75,         // 75 servings (150ml bottle)
-			},
-			// NAD+ Complete: Often misses count in title
-			"lipo-nad-complete-powdered-liposomal": {
-				ForceType:  "Capsules",
-				ForceMg:    250, // Combined NAD+ precursors
-				ForceCount: 90,
-			},
-			// Lipo NMN: Often misses count in title
-			"lipo-nmn-powdered-liposomal-nmn2": {
-				ForceType:  "Capsules",
-				ForceMg:    250,
-				ForceCount: 90,
-			},
-			// Fast Dissolve Tabs
-			"nmns-240-ct-sublingual-tablets-2": {
-				ForceType:  "Capsules",
-				ForceMg:    125,
-				ForceCount: 240,
-			},
-		},
-	},
+// Registry holds the loaded rules
+var Registry map[string]VendorConfig
+
+// LoadRules reads the JSON configuration from disk
+func LoadRules(path string) error {
+	file, err := os.Open(path)
+	if err != nil {
+		return fmt.Errorf("could not open rules file: %v", err)
+	}
+	defer file.Close()
+
+	bytes, err := io.ReadAll(file)
+	if err != nil {
+		return fmt.Errorf("could not read rules file: %v", err)
+	}
+
+	if err := json.Unmarshal(bytes, &Registry); err != nil {
+		return fmt.Errorf("could not parse rules file: %v", err)
+	}
+
+	return nil
 }
 
 // ApplyRules enriches the product data with known facts from our database
 func ApplyRules(vendorName string, p *models.Product) bool {
+	if Registry == nil {
+		return true // No rules loaded, safe default
+	}
+
 	config, exists := Registry[vendorName]
 	if !exists {
-		return true 
+		return true
 	}
 
 	// 1. Check Blocklist
@@ -81,7 +63,7 @@ func ApplyRules(vendorName string, p *models.Product) bool {
 			return false // Reject product
 		}
 	}
-	
+
 	// 2. Apply Overrides (The "Manual OCR")
 	if spec, ok := config.Overrides[p.Handle]; ok {
 		// We append the hardcoded math data to the Context string.

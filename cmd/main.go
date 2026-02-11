@@ -6,6 +6,7 @@ import (
 	"os"
 	"sort"
 	"text/tabwriter"
+	"path/filepath"
 
 	"longevity-ranker/internal/config"
 	"longevity-ranker/internal/models"
@@ -24,6 +25,11 @@ func main() {
 	if err := storage.EnsureDataDir(); err != nil {
 		panic(err)
 	}
+	
+	rulesPath := filepath.Join("data", "vendor_rules.json")
+		if err := rules.LoadRules(rulesPath); err != nil {
+			fmt.Printf("⚠️ Warning: Could not load rules (%v). Running without filters.\n", err)
+		} 
 
 	vendors := config.GetVendors()
 	var allProducts []struct {

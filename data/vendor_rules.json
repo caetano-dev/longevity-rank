@@ -1,0 +1,39 @@
+{
+  "Nutricost": {
+    "blocklist": ["5-HTP", "Carnitine", "Caffeine", "Pre-Workout", "Gummies", "Vanadium"],
+    "overrides": {}
+  },
+  "NMN Bio": {
+    "blocklist": ["Bundle", "Endurance", "Book"],
+    "overrides": {}
+  },
+  "Do Not Age": {
+    "blocklist": ["Test", "Kit", "Consultation", "Subscription", "Apigenin", "Pure NR"],
+    "overrides": {}
+  },
+  "Renue By Science": {
+    "blocklist": ["Test", "Cream", "Serum", "Pet", "Cleanser", "Lotion"],
+    "overrides": {
+      "lipo-nad-complete-powdered-liposomal": {
+        "forceType": "Capsules",
+        "forceMg": 250,
+        "forceCount": 90
+      },
+      "lipo-nmn-powdered-liposomal-nmn2": {
+        "forceType": "Capsules",
+        "forceMg": 250,
+        "forceCount": 90
+      },
+      "nmns-240-ct-sublingual-tablets-2": {
+        "forceType": "Capsules",
+        "forceMg": 125,
+        "forceCount": 240
+      },
+      "nmn-lipo-gel-sublingual": {
+        "forceType": "Capsules",
+        "forceMg": 240,
+        "forceCount": 75
+      }
+    }
+  }
+}
