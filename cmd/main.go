@@ -10,6 +10,7 @@ import (
 	"longevity-ranker/internal/config"
 	"longevity-ranker/internal/models"
 	"longevity-ranker/internal/parser"
+	"longevity-ranker/internal/rules"
 	"longevity-ranker/internal/scraper"
 	"longevity-ranker/internal/storage"
 )
@@ -68,6 +69,14 @@ func main() {
 
 		// Collect for analysis
 		for _, p := range products {
+			// --- NEW: NORMALIZATION LAYER ---
+			// Apply vendor-specific rules to filter bad products or fix missing data.
+			// We pass a pointer (&p) so the rule can modify the product (Enrichment).
+			keep := rules.ApplyRules(v.Name, &p)
+			if !keep {
+				continue // Skip non-NMN products or blacklisted items
+			}
+
 			allProducts = append(allProducts, struct {
 				VendorName string
 				Product    models.Product
@@ -100,6 +109,7 @@ func printTable(data []models.Analysis) {
 	fmt.Fprintln(w, "----\t------\t-------------------\t-----\t-----\t-----\t------")
 
 	for i, row := range data {
+		// Truncate long titles
 		shortName := row.Name
 		if len(shortName) > 35 {
 			shortName = shortName[:32] + "..."

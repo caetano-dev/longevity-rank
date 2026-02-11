@@ -14,6 +14,12 @@ go mod tidy
 
 ## Usage
 
+Scrape data and rank products
+```go
+go run cmd/main.go -refresh
+```
+
+Rank products with local data
 ```go
 go run cmd/main.go
 ```
