@@ -1,44 +1,96 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"os"
 	"sort"
 	"text/tabwriter"
 
 	"longevity-ranker/internal/config"
+	"longevity-ranker/internal/models"
 	"longevity-ranker/internal/parser"
 	"longevity-ranker/internal/scraper"
-	"longevity-ranker/internal/models"
+	"longevity-ranker/internal/storage"
 )
 
 func main() {
-	vendors := config.GetVendors()
-	var report []models.Analysis
+	// Define command line flag
+	refresh := flag.Bool("refresh", false, "Scrape websites to update local data")
+	flag.Parse()
 
-	// 1. Scrape all vendors concurrently (sequential for now for simplicity)
+	// Initialize storage folder
+	if err := storage.EnsureDataDir(); err != nil {
+		panic(err)
+	}
+
+	vendors := config.GetVendors()
+	var allProducts []struct {
+		VendorName string
+		Product    models.Product
+	}
+
+	// --- PHASE 1: DATA GATHERING ---
 	for _, v := range vendors {
-		products, err := scraper.FetchProducts(v)
-		if err != nil {
-			fmt.Printf("Error scraping %s: %v\n", v.Name, err)
-			continue
+		var products []models.Product
+		var err error
+
+		// Logic: Scrape if -refresh flag is set, OR if local file is missing
+		shouldScrape := *refresh
+		if !shouldScrape {
+			_, err := os.Stat(storage.GetFilename(v.Name))
+			if os.IsNotExist(err) {
+				shouldScrape = true
+			}
 		}
 
-		// 2. Analyze products
-		for _, p := range products {
-			analysis := parser.AnalyzeProduct(v.Name, p)
-			if analysis != nil {
-				report = append(report, *analysis)
+		if shouldScrape {
+			// A. SCRAPE & SAVE
+			products, err = scraper.FetchProducts(v)
+			if err != nil {
+				fmt.Printf("❌ Error scraping %s: %v\n", v.Name, err)
+				continue
 			}
+			// Save to JSON for debugging/future runs
+			if err := storage.SaveProducts(v.Name, products); err != nil {
+				fmt.Printf("⚠️ Error saving data for %s: %v\n", v.Name, err)
+			}
+			fmt.Printf("✅ Saved %d products for %s\n", len(products), v.Name)
+		} else {
+			// B. LOAD FROM LOCAL
+			products, err = storage.LoadProducts(v.Name)
+			if err != nil {
+				fmt.Printf("❌ Error loading %s: %v\n", v.Name, err)
+				continue
+			}
+			// fmt.Printf("📂 Loaded %d products for %s from cache\n", len(products), v.Name)
+		}
+
+		// Collect for analysis
+		for _, p := range products {
+			allProducts = append(allProducts, struct {
+				VendorName string
+				Product    models.Product
+			}{v.Name, p})
 		}
 	}
 
-	// 3. Sort by ROI (Cost Per Gram - Cheapest first)
+	// --- PHASE 2: ANALYSIS ---
+	var report []models.Analysis
+
+	for _, item := range allProducts {
+		analysis := parser.AnalyzeProduct(item.VendorName, item.Product)
+		if analysis != nil {
+			report = append(report, *analysis)
+		}
+	}
+
+	// --- PHASE 3: REPORTING ---
+	// Sort by ROI (Cheapest first)
 	sort.Slice(report, func(i, j int) bool {
 		return report[i].CostPerGram < report[j].CostPerGram
 	})
 
-	// 4. Print Table
 	printTable(report)
 }
 
@@ -48,18 +100,16 @@ func printTable(data []models.Analysis) {
 	fmt.Fprintln(w, "----\t------\t-------------------\t-----\t-----\t-----\t------")
 
 	for i, row := range data {
-		// Truncate long titles
 		shortName := row.Name
-		if len(shortName) > 30 {
-			shortName = shortName[:27] + "..."
+		if len(shortName) > 35 {
+			shortName = shortName[:32] + "..."
 		}
 
-		// Colorize output (Green for cheap, Red for expensive)
 		reset := "\033[0m"
 		color := reset
-		if row.CostPerGram < 1.0 {
-			color = "\033[31m" // Red (Suspiciously cheap)
-		} else if row.CostPerGram < 2.5 {
+		if row.CostPerGram < 0.6 {
+			color = "\033[31m" // Red (Too cheap/Suspicious)
+		} else if row.CostPerGram < 1.5 {
 			color = "\033[32m" // Green (Great Deal)
 		}
 

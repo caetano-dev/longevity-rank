@@ -1,0 +1,366 @@
+[
+  {
+    "id": "15332474323327",
+    "title": "Oh!Mg | Relax Dream Repair | Evening Magnesium",
+    "context": "",
+    "handle": "oh-mg-relax-dream-repair-evening-magnesium",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "45.00",
+        "title": "1 Bottle"
+      },
+      {
+        "price": "135.00",
+        "title": "3 Bottles"
+      },
+      {
+        "price": "270.00",
+        "title": "6 Bottles"
+      },
+      {
+        "price": "540.00",
+        "title": "12 Bottles"
+      }
+    ]
+  },
+  {
+    "id": "15391060033919",
+    "title": "Day \u0026 Night Bundle",
+    "context": "",
+    "handle": "day-night-bundle-nmn-500mg-nad-brain-oh-mg-magnesium",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "167.00",
+        "title": "1 Bundle"
+      },
+      {
+        "price": "501.00",
+        "title": "3 Bundles"
+      },
+      {
+        "price": "1002.00",
+        "title": "6 Bundles"
+      },
+      {
+        "price": "2004.00",
+        "title": "12 Bundles"
+      }
+    ]
+  },
+  {
+    "id": "7469102760180",
+    "title": "NMN supplement capsules 500mg",
+    "context": "",
+    "handle": "nmn-supplement-500mg-capsules-30-caps",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "60.00",
+        "title": "1 Bottle"
+      },
+      {
+        "price": "180.00",
+        "title": "3 Bottles"
+      },
+      {
+        "price": "360.00",
+        "title": "6 Bottles"
+      },
+      {
+        "price": "720.00",
+        "title": "12 Bottles"
+      }
+    ]
+  },
+  {
+    "id": "8194593226996",
+    "title": "NAD+ Brain | Healthy Brain Aging | Nootropic",
+    "context": "",
+    "handle": "nad-brain-proprietary-nootropic-healthy-brain-aging",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "62.00",
+        "title": "1 Bottle"
+      },
+      {
+        "price": "186.00",
+        "title": "3 Bottles"
+      },
+      {
+        "price": "372.00",
+        "title": "6 Bottles"
+      },
+      {
+        "price": "744.00",
+        "title": "12 Bottles"
+      }
+    ]
+  },
+  {
+    "id": "14841784238463",
+    "title": "Ultimate Biohacker Bundle",
+    "context": "",
+    "handle": "ultimate-biohacker-bundle",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "154.50",
+        "title": "1 Bundle"
+      },
+      {
+        "price": "432.60",
+        "title": "3 Bundles"
+      },
+      {
+        "price": "803.40",
+        "title": "6 Bundles"
+      },
+      {
+        "price": "1483.20",
+        "title": "12 Bundles"
+      }
+    ]
+  },
+  {
+    "id": "6923370397861",
+    "title": "TMG (Trimethylglycine) | 500 mg | 90 Capsules",
+    "context": "",
+    "handle": "tmg-trimethylglycine-500-mg-90-capsules",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "29.00",
+        "title": "1 Bottle"
+      },
+      {
+        "price": "87.00",
+        "title": "3 Bottles"
+      },
+      {
+        "price": "174.00",
+        "title": "6 Bottles"
+      },
+      {
+        "price": "348.00",
+        "title": "12 Bottles"
+      }
+    ]
+  },
+  {
+    "id": "8194593554676",
+    "title": "Morning Bundle | NAD+ Brain | NMN | TMG",
+    "context": "",
+    "handle": "morning-bundle-nad-brain-nmn-tmg",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "143.50",
+        "title": "1 Bottle Each"
+      },
+      {
+        "price": "430.50",
+        "title": "3 Bottles Each"
+      },
+      {
+        "price": "861.00",
+        "title": "6 Bottles Each"
+      },
+      {
+        "price": "1722.00",
+        "title": "12 Bottles Each"
+      }
+    ]
+  },
+  {
+    "id": "7620106813684",
+    "title": "Quercetin 250mg with Vitamin C",
+    "context": "",
+    "handle": "quercetin-capsules-250mg",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "25.00",
+        "title": "1 Bottle"
+      },
+      {
+        "price": "75.00",
+        "title": "3 Bottles"
+      },
+      {
+        "price": "150.00",
+        "title": "6 Bottles"
+      },
+      {
+        "price": "300.00",
+        "title": "12 Bottles"
+      }
+    ]
+  },
+  {
+    "id": "7695475933428",
+    "title": "Berberine 400mg with Milk Thistle",
+    "context": "",
+    "handle": "berberine-400mg-60-capsules-with-milk-thistle",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "30.00",
+        "title": "1 Bottle"
+      },
+      {
+        "price": "90.00",
+        "title": "3 Bottles"
+      },
+      {
+        "price": "180.00",
+        "title": "6 Bottles"
+      },
+      {
+        "price": "360.00",
+        "title": "12 Bottles"
+      }
+    ]
+  },
+  {
+    "id": "7469098500340",
+    "title": "NMN supplement 250mg capsules",
+    "context": "",
+    "handle": "nmn-supplement-250mg-capsules-uk",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "34.00",
+        "title": "1 Bottle"
+      },
+      {
+        "price": "102.00",
+        "title": "3 Bottles"
+      },
+      {
+        "price": "204.00",
+        "title": "6 Bottles"
+      },
+      {
+        "price": "408.00",
+        "title": "12 Bottles"
+      }
+    ]
+  },
+  {
+    "id": "7631928885492",
+    "title": "Longevity Starter Pack | NMN | TMG | Quercetin",
+    "context": "",
+    "handle": "longevity-starter-pack",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "115.00",
+        "title": "Starter"
+      },
+      {
+        "price": "231.00",
+        "title": "Midi"
+      },
+      {
+        "price": "347.00",
+        "title": "Maxi"
+      }
+    ]
+  },
+  {
+    "id": "7908850958580",
+    "title": "Rejuvenation Bundle",
+    "context": "",
+    "handle": "rejuvenation-bundle-nmn-tmg-quercetin-berberine",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "249.00",
+        "title": "1 Bundle"
+      },
+      {
+        "price": "529.00",
+        "title": "2 Bundles"
+      }
+    ]
+  },
+  {
+    "id": "7908854268148",
+    "title": "Metabolic Health Bundle",
+    "context": "",
+    "handle": "metabolic-health-bundle",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "109.00",
+        "title": "1 Bundle"
+      },
+      {
+        "price": "210.00",
+        "title": "3 Bundles"
+      },
+      {
+        "price": "528.00",
+        "title": "6 Bundles"
+      }
+    ]
+  },
+  {
+    "id": "8149067727092",
+    "title": "Longevity Essentials Bundle",
+    "context": "",
+    "handle": "longevity-essentials-bundle",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "84.50",
+        "title": "1 Bundle"
+      },
+      {
+        "price": "253.00",
+        "title": "3 Bundles"
+      },
+      {
+        "price": "506.00",
+        "title": "6 Bundles"
+      },
+      {
+        "price": "1012.00",
+        "title": "12 Bundles"
+      }
+    ]
+  },
+  {
+    "id": "8109028835572",
+    "title": "Endurance Bundle: NMN + Quercetin and Vitamin C",
+    "context": "",
+    "handle": "endurance-bundle-nmn-quercetin-vitamin-c",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "242.00",
+        "title": "1 Bundle"
+      },
+      {
+        "price": "484.00",
+        "title": "3 Bundles"
+      }
+    ]
+  },
+  {
+    "id": "7449843532020",
+    "title": "7 Longevity Tips to Slow Down Your Aging",
+    "context": "",
+    "handle": "7-longevity-tips-to-slow-down-your-aging",
+    "body_html": "",
+    "variants": [
+      {
+        "price": "0.00",
+        "title": "Default Title"
+      }
+    ]
+  }
+]
