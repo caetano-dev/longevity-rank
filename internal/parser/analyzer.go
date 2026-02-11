@@ -81,10 +81,13 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 
 	// 7. DETERMINE TYPE
 	productType := "Single"
+	lowerSearch := strings.ToLower(searchString)
 	if packMultiplier > 1 {
 		productType = "Multi-Pack"
 	} else if powderMass > 0 {
 		productType = "Powder"
+	} else if strings.Contains(lowerSearch, "gel") && !strings.Contains(lowerSearch, "softgel") {
+		productType = "Gel"
 	} else {
 		productType = "Capsules"
 	}

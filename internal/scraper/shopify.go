@@ -36,6 +36,7 @@ func FetchShopifyProducts(vendor models.Vendor) ([]models.Product, error) {
 				ID       int64  `json:"id"`
 				Title    string `json:"title"`
 				Handle   string `json:"handle"`
+				BodyHTML string `json:"body_html"`
 				Variants []struct {
 					Price string `json:"price"`
 					Title string `json:"title"`
@@ -51,18 +52,14 @@ func FetchShopifyProducts(vendor models.Vendor) ([]models.Product, error) {
 			break // End of pagination
 		}
 
-		// --- MAPPING LOOP ---
-		// Convert Raw Data (Int64 ID) -> Generic Model (String ID)
 		for _, p := range rawData.Products {
-			
-			// Create the generic product
 			newProd := models.Product{
-				ID:     strconv.FormatInt(p.ID, 10), // Convert ID number to string
-				Title:  p.Title,
-				Handle: p.Handle,
+				ID:       strconv.FormatInt(p.ID, 10),
+				Title:    p.Title,
+				Handle:   p.Handle,
+				BodyHTML: p.BodyHTML, // Map the HTML
 			}
 
-			// Map variants
 			for _, v := range p.Variants {
 				newProd.Variants = append(newProd.Variants, models.Variant{
 					Price: v.Price,

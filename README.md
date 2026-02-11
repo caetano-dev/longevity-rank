@@ -1,8 +1,9 @@
 # Longevity Ranker
 
 ## TODO:
-- Solve inconsistencies in the data (e.g. Do Not Age / Pure NMN (366 Capsules)/ Capsules / $440.00 / 183.0g / $2.40) - The calculated gram is wrong. It is calculating for 30 capsules only.
 - Add more vendors
+- Extract the hardcoded list from rules.go to a better format.
+- Solve inconsistencies in the data (e.g. Do Not Age / Pure NMN (366 Capsules)/ Capsules / $440.00 / 183.0g / $2.40) - The calculated gram is wrong. It is calculating for 30 capsules only.
 - Add more products (creatine, TMG, etc.)
 
 
