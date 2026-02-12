@@ -11,7 +11,7 @@ func GetVendors() []models.Vendor {
 			Type: "shopify",
 		},
 		{
-			Name: "Renue By Science", // double check. I think there is an item missing.
+			Name: "Renue By Science",
 			URL:  "https://renuebyscience.com/collections/nmn/products.json",
 			Type: "shopify",
 		},
@@ -36,7 +36,7 @@ func GetVendors() []models.Vendor {
 			Type: "magento",
 		},
 		{
-			Name: "Nutricost", // TODO: implements this one (nmn not being detected)
+			Name: "Nutricost",
 			URL:  "https://nutricost.com/collections/all-items/products.json",
 			Type: "shopify",
 		},

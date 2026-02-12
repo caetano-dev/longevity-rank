@@ -1,6 +1,7 @@
 package parser
 
 import (
+	"fmt" // Used for debug logs
 	"math"
 	"regexp"
 	"strconv"
@@ -11,7 +12,6 @@ import (
 
 var (
 	reMg      = regexp.MustCompile(`(?i)(\d+)\s*mg`)
-	// Updated reCount to ensure we catch tabs/tablets explicitly
 	reCount   = regexp.MustCompile(`(?i)(\d+)\s*(?:capsules|caps|servings|tabs|tablets|ct)`)
 	reGrams   = regexp.MustCompile(`(?i)(\d+)\s*(?:grams?|g)\b`)
 	reKg      = regexp.MustCompile(`(?i)(\d+(?:\.\d+)?)\s*kg\b`)
@@ -34,12 +34,21 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 	minCostPerGram := math.MaxFloat64
 
 	for _, v := range p.Variants {
+		// --- FIX: CHECK AVAILABILITY ---
+		// If the product is out of stock, we skip it immediately.
+		if !v.Available {
+			// Optional: Comment this out later to reduce noise
+			fmt.Printf("[SKIP] %s - %s (Out of Stock)\n", p.Title, v.Title)
+			continue
+		}
+		// -------------------------------
+
 		price, _ := strconv.ParseFloat(v.Price, 64)
 		if price <= 0 {
 			continue
 		}
 
-		// 2. SEARCH STRING
+		// 2. BUILD SEARCH STRING
 		searchString := p.Title + " " + p.Context + " " + v.Title + " " + strings.ReplaceAll(p.Handle, "-", " ") + " " + p.BodyHTML
 
 		capsuleMass := 0.0
@@ -58,7 +67,7 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 			kg, _ := strconv.ParseFloat(kgMatch[1], 64)
 			powderMass = kg * 1000.0
 		} else {
-			// 4. FALLBACK: CAPSULES/TABLETS
+			// 4. FALLBACK: CAPSULES
 			mgMatch := reMg.FindStringSubmatch(searchString)
 			countMatch := reCount.FindStringSubmatch(searchString)
 
@@ -103,7 +112,7 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 		costPerGram := price / totalGrams
 		
 		// 8. DETERMINE TYPE
-		// We use a restricted search string for Type to avoid pollution from the BodyHTML
+		// Use restricted string for Type to avoid pollution from BodyHTML
 		typeSearch := strings.ToLower(p.Title + " " + v.Title + " " + p.Handle + " " + p.Context)
 		productType := "Single"
 
@@ -115,7 +124,7 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 			productType = "Powder"
 		} else if strings.Contains(typeSearch, "gel") && !strings.Contains(typeSearch, "softgel") {
 			productType = "Gel"
-		} else if strings.Contains(typeSearch, "tab") { // Catches "Tablets" or "Tabs"
+		} else if strings.Contains(typeSearch, "tab") { 
 			productType = "Tablets"
 		} else {
 			productType = "Capsules"
@@ -124,11 +133,9 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 		// 9. BIOAVAILABILITY
 		multiplier := 1.0
 		
-		// Liposomal gets highest bonus
 		if strings.Contains(typeSearch, "liposomal") || strings.Contains(typeSearch, "lipo") {
 			multiplier = 1.5 
 		} else if strings.Contains(typeSearch, "sublingual") || productType == "Gel" || productType == "Tablets" {
-			// Gels and Fast Dissolve Tablets are inherently sublingual
 			multiplier = 1.1 
 		}
 		

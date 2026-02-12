@@ -1,3 +1,7 @@
 # Ignore everything in the data directory except for vendor_rules.json
-data/*.json
-!data/vendor_rules.json
+data/do_not_age.json
+data/jinfiniti.json
+data/nmn_bio.json
+data/nutricost.json
+data/prohealth.json
+data/renue_by_science.json

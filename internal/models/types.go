@@ -18,6 +18,7 @@ type Product struct {
 type Variant struct {
 	Price string `json:"price"`
 	Title string `json:"title"`
+	Available bool `json:"available"`
 }
 
 type Analysis struct {

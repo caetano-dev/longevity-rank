@@ -5,26 +5,10 @@
 - Solve inconsistencies in the data (e.g. Do Not Age / Pure NMN (366 Capsules)/ Capsules / $440.00 / 183.0g / $2.40) - The calculated gram is wrong. It is calculating for 30 capsules only.
 - Add more products (creatine, TMG, etc.)
 
-You have enough data to implement the core unique value proposition (The **"Effective Cost" Algorithm**), but the logic is missing from your code.
-
-* **Feature: The "True Cost" (Bioavailability) Algorithm**
-* **Requirement:** "Base Price Per Gram ÷ Bioavailability Multiplier = Effective Cost"
-* **Current Status:** Your `analyzer.go` calculates the raw `CostPerGram`. It also successfully identifies the `Type` (Powder, Capsules, Gel).
-* **Implementation:** You can add the multipliers (Powder = 1.0, Gel/Liposomal = 1.5, etc.) directly into `analyzer.go` or `main.go`.
-* **Why:** This allows you to rank "expensive" Liposomal Gels fairly against cheap Powders, stopping the Gels from looking like a bad deal.
-
-
 * **Feature: Affiliate Link Generation**
 * **Requirement:** "GeniusLink or simple JS redirection logic."
 * **Current Status:** You have the product `Handle` (URL slug) and the vendor's base URL.
 * **Implementation:** You can add an `AffiliateID` field to your `VendorConfig` in `rules.go`. In `main.go`, you can concatenate `Vendor URL` + `Handle` + `?ref=AffiliateID` to generate the final "Buy Now" link for the frontend.
-
-
-* **Feature: "Smart" Filtering**
-* **Requirement:** "Filter out non-NMN products."
-* **Current Status:** Your `rules.go` Blocklist is doing this well. You can refine this further by ensuring "Pre-Orders" or "Out of Stock" items are flagged if that data is available (Shopify usually provides `available: true/false` in the raw JSON, though your current `models.Product` struct doesn't capture it).
-
-
 
 #### 2. Critical Missing Data (Must Get Before Launch)
 

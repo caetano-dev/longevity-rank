@@ -24,11 +24,14 @@ type MagentoInit struct {
 }
 
 type MagentoJsonConfig struct {
-	Attributes   map[string]MagentoAttribute   `json:"attributes"`
-	OptionPrices map[string]MagentoOptionPrice `json:"optionPrices"`
+	Attributes   map[string]MagentoAttribute      `json:"attributes"`
+	OptionPrices map[string]MagentoOptionPrice    `json:"optionPrices"`
+	// NEW: Map of AttributeID -> OptionID -> List of Salable VariantIDs
+	Salable      map[string]map[string][]string   `json:"salable"`
 }
 
 type MagentoAttribute struct {
+	ID      string          `json:"id"` // We need ID to lookup in Salable map
 	Code    string          `json:"code"`
 	Label   string          `json:"label"`
 	Options []MagentoOption `json:"options"`
@@ -104,7 +107,6 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 
 		cleanTitle := getCleanTitle(string(pageBody))
 		seoContext := getSeoContext(string(pageBody))
-		// NEW: Extract description
 		description := getDescriptionFromHTML(string(pageBody))
 
 		reScript := regexp.MustCompile(`(?s)<script type="text/x-magento-init">(.+?)</script>`)
@@ -117,7 +119,6 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 
 		for _, s := range scripts {
 			content := s[1]
-			
 			if strings.Contains(content, "jsonConfig") {
 				var wrapper MagentoInit
 				if err := json.Unmarshal([]byte(content), &wrapper); err == nil {
@@ -127,7 +128,6 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 					}
 				}
 			}
-
 			if strings.Contains(content, "DoNotAge_BulkBuy") {
 				var rawMap map[string]interface{}
 				if err := json.Unmarshal([]byte(content), &rawMap); err == nil {
@@ -146,7 +146,6 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 			continue
 		}
 
-		// Filter for "One Time Purchase"
 		var oneTimeIDs = make(map[string]bool)
 		for _, attr := range stdConfig.Attributes {
 			if strings.Contains(strings.ToLower(attr.Label), "purchase") {
@@ -178,17 +177,40 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 							continue
 						}
 
+						// NEW: Check Availability using Salable map
+						// We check if the current variant ID exists in the Salable list for this Option
+						isAvailable := true // Default to true
+						if len(stdConfig.Salable) > 0 {
+							if optionsMap, ok := stdConfig.Salable[attr.ID]; ok {
+								if validIDs, ok := optionsMap[opt.ID]; ok {
+									// Check if pid is in validIDs
+									found := false
+									for _, validID := range validIDs {
+										if validID == pid {
+											found = true
+											break
+										}
+									}
+									isAvailable = found
+								} else {
+									// Option not found in salable map? assume unavailable
+									isAvailable = false
+								}
+							}
+						}
+
 						basePrice := priceInfo.FinalPrice.Amount
 						products = append(products, models.Product{
 							ID:       pid,
 							Title:    cleanTitle,
 							Context:  seoContext,
-							BodyHTML: description, // NEW: Store description here
+							BodyHTML: description,
 							Handle:   link,
 							Variants: []models.Variant{
 								{
-									Price: fmt.Sprintf("%.2f", basePrice),
-									Title: opt.Label,
+									Price:     fmt.Sprintf("%.2f", basePrice),
+									Title:     opt.Label,
+									Available: isAvailable, // MAP
 								},
 							},
 						})
@@ -198,22 +220,21 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 							if skuFound {
 								tierInfo, tierFound := bulkConfig.BulkOptions.BulkConfig.BulkBuyConfig[sku]
 								if tierFound && tierInfo.Eligible {
-									
 									for qtyStr, unitPrice := range tierInfo.TierPrices {
 										qty, _ := strconv.Atoi(qtyStr)
 										if qty > 1 {
 											totalPrice := unitPrice * float64(qty)
-											
 											products = append(products, models.Product{
 												ID:       fmt.Sprintf("%s-%s", pid, qtyStr),
 												Title:    cleanTitle,
 												Context:  seoContext,
-												BodyHTML: description, // NEW
+												BodyHTML: description,
 												Handle:   link,
 												Variants: []models.Variant{
 													{
-														Price: fmt.Sprintf("%.2f", totalPrice),
-														Title: fmt.Sprintf("%s - %d Pack", opt.Label, qty), 
+														Price:     fmt.Sprintf("%.2f", totalPrice),
+														Title:     fmt.Sprintf("%s - %d Pack", opt.Label, qty),
+														Available: isAvailable, // Inherit availability from base item
 													},
 												},
 											})
@@ -254,19 +275,14 @@ func getSeoContext(html string) string {
 }
 
 func getDescriptionFromHTML(html string) string {
-	// Try Meta Description first (Cleaner, usually contains "60 capsules, 500mg")
 	reMeta := regexp.MustCompile(`<meta name="description" content="([^"]*?)"`)
 	if m := reMeta.FindStringSubmatch(html); len(m) > 1 {
 		return m[1]
 	}
-
-	// Try Standard Magento Description Block
 	reDesc := regexp.MustCompile(`class="product attribute description"[^>]*>.*?<div class="value"[^>]*>(.*?)</div>`)
 	if m := reDesc.FindStringSubmatch(html); len(m) > 1 {
-		// Clean HTML tags
 		clean := regexp.MustCompile(`<[^>]*>`).ReplaceAllString(m[1], " ")
 		return strings.TrimSpace(clean)
 	}
-
 	return ""
 }
