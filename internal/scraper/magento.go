@@ -26,12 +26,17 @@ type MagentoInit struct {
 type MagentoJsonConfig struct {
 	Attributes   map[string]MagentoAttribute      `json:"attributes"`
 	OptionPrices map[string]MagentoOptionPrice    `json:"optionPrices"`
-	// NEW: Map of AttributeID -> OptionID -> List of Salable VariantIDs
 	Salable      map[string]map[string][]string   `json:"salable"`
+	Images       map[string][]MagentoImage        `json:"images"` // NEW: Capture variant images
+}
+
+type MagentoImage struct {
+	Img  string `json:"img"`
+	Full string `json:"full"`
 }
 
 type MagentoAttribute struct {
-	ID      string          `json:"id"` // We need ID to lookup in Salable map
+	ID      string          `json:"id"`
 	Code    string          `json:"code"`
 	Label   string          `json:"label"`
 	Options []MagentoOption `json:"options"`
@@ -108,6 +113,7 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 		cleanTitle := getCleanTitle(string(pageBody))
 		seoContext := getSeoContext(string(pageBody))
 		description := getDescriptionFromHTML(string(pageBody))
+		fallbackImage := getImageFromHTML(string(pageBody)) // Page-level fallback
 
 		reScript := regexp.MustCompile(`(?s)<script type="text/x-magento-init">(.+?)</script>`)
 		scripts := reScript.FindAllStringSubmatch(string(pageBody), -1)
@@ -164,10 +170,8 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 		for _, attr := range stdConfig.Attributes {
 			label := strings.ToLower(attr.Label)
 			if strings.Contains(label, "size") || strings.Contains(label, "volume") {
-				
 				for _, opt := range attr.Options {
 					for _, pid := range opt.Products {
-						
 						if checkPurchaseOption && !oneTimeIDs[pid] {
 							continue
 						}
@@ -177,13 +181,11 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 							continue
 						}
 
-						// NEW: Check Availability using Salable map
-						// We check if the current variant ID exists in the Salable list for this Option
-						isAvailable := true // Default to true
+						// 1. Availability Check
+						isAvailable := true 
 						if len(stdConfig.Salable) > 0 {
 							if optionsMap, ok := stdConfig.Salable[attr.ID]; ok {
 								if validIDs, ok := optionsMap[opt.ID]; ok {
-									// Check if pid is in validIDs
 									found := false
 									for _, validID := range validIDs {
 										if validID == pid {
@@ -193,9 +195,19 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 									}
 									isAvailable = found
 								} else {
-									// Option not found in salable map? assume unavailable
 									isAvailable = false
 								}
+							}
+						}
+
+						// 2. Image Selection
+						// Try to find the specific variant image (e.g. Powder bag vs Capsule bottle)
+						variantImage := fallbackImage
+						if imgs, ok := stdConfig.Images[pid]; ok && len(imgs) > 0 {
+							if imgs[0].Full != "" {
+								variantImage = imgs[0].Full
+							} else if imgs[0].Img != "" {
+								variantImage = imgs[0].Img
 							}
 						}
 
@@ -205,12 +217,13 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 							Title:    cleanTitle,
 							Context:  seoContext,
 							BodyHTML: description,
+							ImageURL: variantImage, // MAP
 							Handle:   link,
 							Variants: []models.Variant{
 								{
 									Price:     fmt.Sprintf("%.2f", basePrice),
 									Title:     opt.Label,
-									Available: isAvailable, // MAP
+									Available: isAvailable,
 								},
 							},
 						})
@@ -229,12 +242,13 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 												Title:    cleanTitle,
 												Context:  seoContext,
 												BodyHTML: description,
+												ImageURL: variantImage, // Use same image as base variant
 												Handle:   link,
 												Variants: []models.Variant{
 													{
 														Price:     fmt.Sprintf("%.2f", totalPrice),
 														Title:     fmt.Sprintf("%s - %d Pack", opt.Label, qty),
-														Available: isAvailable, // Inherit availability from base item
+														Available: isAvailable,
 													},
 												},
 											})
@@ -243,7 +257,6 @@ func FetchMagentoProducts(vendor models.Vendor) ([]models.Product, error) {
 								}
 							}
 						}
-
 					}
 				}
 			}
@@ -283,6 +296,20 @@ func getDescriptionFromHTML(html string) string {
 	if m := reDesc.FindStringSubmatch(html); len(m) > 1 {
 		clean := regexp.MustCompile(`<[^>]*>`).ReplaceAllString(m[1], " ")
 		return strings.TrimSpace(clean)
+	}
+	return ""
+}
+
+func getImageFromHTML(html string) string {
+	// Priority 1: Schema.org Image (Usually high res)
+	reSchema := regexp.MustCompile(`<meta itemprop="image" content="([^"]*?)"`)
+	if m := reSchema.FindStringSubmatch(html); len(m) > 1 {
+		return m[1]
+	}
+	// Priority 2: OpenGraph Image
+	reOg := regexp.MustCompile(`<meta property="og:image" content="([^"]*?)"`)
+	if m := reOg.FindStringSubmatch(html); len(m) > 1 {
+		return m[1]
 	}
 	return ""
 }

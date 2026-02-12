@@ -1,7 +1,6 @@
 package parser
 
 import (
-	"fmt" // Used for debug logs
 	"math"
 	"regexp"
 	"strconv"
@@ -24,7 +23,6 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 		return nil
 	}
 
-	// 1. GATEKEEPER
 	identityString := strings.ToLower(p.Title + " " + p.Context + " " + p.Handle)
 	if !strings.Contains(identityString, "nmn") && !strings.Contains(identityString, "nad") {
 		return nil
@@ -34,28 +32,21 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 	minCostPerGram := math.MaxFloat64
 
 	for _, v := range p.Variants {
-		// --- FIX: CHECK AVAILABILITY ---
-		// If the product is out of stock, we skip it immediately.
 		if !v.Available {
-			// Optional: Comment this out later to reduce noise
-			fmt.Printf("[SKIP] %s - %s (Out of Stock)\n", p.Title, v.Title)
 			continue
 		}
-		// -------------------------------
 
 		price, _ := strconv.ParseFloat(v.Price, 64)
 		if price <= 0 {
 			continue
 		}
 
-		// 2. BUILD SEARCH STRING
 		searchString := p.Title + " " + p.Context + " " + v.Title + " " + strings.ReplaceAll(p.Handle, "-", " ") + " " + p.BodyHTML
 
 		capsuleMass := 0.0
 		powderMass := 0.0
 		packMultiplier := 1.0
 
-		// 3. PRIORITY: POWDER
 		cleanSearch := p.Title + " " + v.Title
 		gramMatch := reGrams.FindStringSubmatch(cleanSearch)
 		kgMatch := reKg.FindStringSubmatch(cleanSearch)
@@ -67,7 +58,6 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 			kg, _ := strconv.ParseFloat(kgMatch[1], 64)
 			powderMass = kg * 1000.0
 		} else {
-			// 4. FALLBACK: CAPSULES
 			mgMatch := reMg.FindStringSubmatch(searchString)
 			countMatch := reCount.FindStringSubmatch(searchString)
 
@@ -95,24 +85,19 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 			}
 		}
 
-		// 5. PACKS
 		packMatch := rePack.FindStringSubmatch(searchString)
 		if len(packMatch) > 1 {
 			mult, _ := strconv.ParseFloat(packMatch[1], 64)
 			packMultiplier = mult
 		}
 
-		// 6. CALCULATE MASS
 		totalGrams := (capsuleMass + powderMass) * packMultiplier
 		if totalGrams <= 0 {
 			continue
 		}
 
-		// 7. CALCULATE COSTS
 		costPerGram := price / totalGrams
 		
-		// 8. DETERMINE TYPE
-		// Use restricted string for Type to avoid pollution from BodyHTML
 		typeSearch := strings.ToLower(p.Title + " " + v.Title + " " + p.Handle + " " + p.Context)
 		productType := "Single"
 
@@ -130,7 +115,6 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 			productType = "Capsules"
 		}
 
-		// 9. BIOAVAILABILITY
 		multiplier := 1.0
 		
 		if strings.Contains(typeSearch, "liposomal") || strings.Contains(typeSearch, "lipo") {
@@ -141,7 +125,6 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 		
 		effectiveCost := costPerGram / multiplier
 
-		// 10. COMPARE
 		if costPerGram < minCostPerGram {
 			minCostPerGram = costPerGram
 
@@ -158,6 +141,7 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 				CostPerGram:   costPerGram,
 				EffectiveCost: effectiveCost,
 				Type:          productType,
+				ImageURL:      p.ImageURL, // PASSTHROUGH
 			}
 		}
 	}

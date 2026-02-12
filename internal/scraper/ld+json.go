@@ -21,6 +21,7 @@ type LdNode struct {
 	Type        interface{} `json:"@type"`
 	Name        string      `json:"name"`
 	Description string      `json:"description"`
+	Image       interface{} `json:"image"` // NEW: Can be string or []string
 	HasVariant  []LdVariant `json:"hasVariant"`
 	Offers      *LdOffer    `json:"offers,omitempty"`
 }
@@ -34,7 +35,7 @@ type LdVariant struct {
 type LdOffer struct {
 	Price         interface{} `json:"price"`
 	PriceCurrency string      `json:"priceCurrency"`
-	Availability  string      `json:"availability"` // NEW: Schema.org Availability
+	Availability  string      `json:"availability"`
 }
 
 func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
@@ -93,12 +94,19 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 					continue
 				}
 
+				imgURL := ""
+				if str, ok := node.Image.(string); ok {
+					imgURL = str
+				} else if arr, ok := node.Image.([]interface{}); ok && len(arr) > 0 {
+					if str, ok := arr[0].(string); ok {
+						imgURL = str
+					}
+				}
+
 				if len(node.HasVariant) > 0 {
 					for _, v := range node.HasVariant {
 						desc := v.Description
 						if desc == "" { desc = node.Description }
-
-						// Determine Availability
 						isAvailable := strings.Contains(v.Offers.Availability, "InStock")
 
 						products = append(products, models.Product{
@@ -106,11 +114,12 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 							Title:    v.Name,
 							Handle:   link,
 							BodyHTML: desc,
+							ImageURL: imgURL, // MAP
 							Variants: []models.Variant{
 								{
 									Price:     fmt.Sprintf("%v", v.Offers.Price),
 									Title:     v.Name,
-									Available: isAvailable, // MAP
+									Available: isAvailable,
 								},
 							},
 						})
@@ -123,11 +132,12 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 						Title:    node.Name,
 						Handle:   link,
 						BodyHTML: node.Description,
+						ImageURL: imgURL, // MAP
 						Variants: []models.Variant{
 							{
 								Price:     fmt.Sprintf("%v", node.Offers.Price),
 								Title:     node.Name,
-								Available: isAvailable, // MAP
+								Available: isAvailable,
 							},
 						},
 					})

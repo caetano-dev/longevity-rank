@@ -12,6 +12,7 @@ type Product struct {
 	Context  string    `json:"context"`
 	Handle   string    `json:"handle"` 
 	BodyHTML string    `json:"body_html"`
+	ImageURL string    `json:"image_url"`
 	Variants []Variant `json:"variants"`
 }
 
@@ -29,4 +30,5 @@ type Analysis struct {
 	CostPerGram float64
 	EffectiveCost float64
 	Type        string 
+	ImageURL    string
 }

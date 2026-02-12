@@ -4,47 +4,13 @@
 - Add more vendors
 - Solve inconsistencies in the data (e.g. Do Not Age / Pure NMN (366 Capsules)/ Capsules / $440.00 / 183.0g / $2.40) - The calculated gram is wrong. It is calculating for 30 capsules only.
 - Add more products (creatine, TMG, etc.)
+- Fix NMN bio currency. Adding ?currency=USD at the end make the code fetch a bunch of pages non-stop.
+- Fix cloudflare websites
 
 * **Feature: Affiliate Link Generation**
 * **Requirement:** "GeniusLink or simple JS redirection logic."
 * **Current Status:** You have the product `Handle` (URL slug) and the vendor's base URL.
 * **Implementation:** You can add an `AffiliateID` field to your `VendorConfig` in `rules.go`. In `main.go`, you can concatenate `Vendor URL` + `Handle` + `?ref=AffiliateID` to generate the final "Buy Now" link for the frontend.
-
-#### 2. Critical Missing Data (Must Get Before Launch)
-
-To meet the "MVP Strategy" defined in `requirements.md`, you are missing three critical pieces of data.
-
-##### A. Product Images (Visual Trust)
-
-* **Requirement:** The table must look professional. A text-only spreadsheet looks suspicious to casual users.
-* **Missing:** Your `models.Product` struct in `types.go` does **not** have an `ImageURL` field, and your scrapers are ignoring images.
-* **Fix:**
-* Update `types.go`: Add `ImageURL string` to the `Product` struct.
-* Update `shopify.go`: Extract `images[0].src` from the JSON.
-* Update `magento.go`: Regex extract the `<meta property="og:image">` tag.
-
-##### B. Currency Normalization (The "NMN Bio" Problem)
-
-* **Requirement:** "Automatically convert all prices to a single display currency (USD)."
-* **Missing:** NMN Bio is a UK company (£ GBP). Do Not Age is US/UK (often USD, but can vary). Your current code treats `45.00` as just a number.
-* If NMN Bio sells for **£40**, your ranker sees **$40**.
-* In reality, £40 is **~$50 USD**. This gives NMN Bio an unfair advantage in the ranking.
-
-
-* **Fix:**
-* Add a `Currency` field to the `Vendor` struct in `vendors.go` (e.g., "USD", "GBP").
-* Change the URL according to the currency (e.g., `https://www.nmn.bio/collections/nmn/products/nmn-300mg-60-capsules?currency=GBP`).
-
-
-#### Summary Roadmap
-
-| Feature | Can Build Now? | Action Required |
-| --- | --- | --- |
-| **ROI Calculator** | ✅ Yes | Update `analyzer.go` to use `Type` for Bioavailability math. |
-| **Affiliate Links** | ✅ Yes | Add IDs to `rules.go` and generate links in `main.go`. |
-| **Product Images** | ❌ No | Update `types.go` and all scrapers to fetch `ImageURL`. |
-| **Currency Fix** | ❌ No | Update `vendors.go` with currency codes; add conversion math. |
-| **Stock Status** | ❌ No | Update `shopify.go` to capture `available` field. |
 
 ## Setup
 
