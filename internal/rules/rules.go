@@ -66,8 +66,6 @@ func ApplyRules(vendorName string, p *models.Product) bool {
 
 	// 2. Apply Overrides (The "Manual OCR")
 	if spec, ok := config.Overrides[p.Handle]; ok {
-		// We append the hardcoded math data to the Context string.
-		// The Analyzer will read this string and find the numbers it needs.
 		extraContext := ""
 		if spec.ForceMg > 0 {
 			extraContext += fmt.Sprintf(" %0.fmg", spec.ForceMg)
@@ -75,9 +73,10 @@ func ApplyRules(vendorName string, p *models.Product) bool {
 		if spec.ForceCount > 0 {
 			if spec.ForceType == "Powder" {
 				extraContext += fmt.Sprintf(" %0.fg", spec.ForceCount)
+			} else if spec.ForceType == "Tablets" {
+				// NEW: Support for Tablets
+				extraContext += fmt.Sprintf(" %0.f tablets", spec.ForceCount)
 			} else {
-				// We use the word "capsules" because the regex looks for it.
-				// This works even for Pumps/Gels.
 				extraContext += fmt.Sprintf(" %0.f capsules", spec.ForceCount)
 			}
 		}

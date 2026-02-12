@@ -25,12 +25,12 @@
         "forceCount": 90
       },
       "nmns-240-ct-sublingual-tablets-2": {
-        "forceType": "Capsules",
+        "forceType": "Tablets",
         "forceMg": 125,
         "forceCount": 240
       },
       "nmn-lipo-gel-sublingual": {
-        "forceType": "Capsules",
+        "forceType": "Gel",
         "forceMg": 240,
         "forceCount": 75
       }

@@ -26,5 +26,6 @@ type Analysis struct {
 	Price       float64
 	TotalGrams  float64
 	CostPerGram float64
+	EffectiveCost float64
 	Type        string 
 }
