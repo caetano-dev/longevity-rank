@@ -23,8 +23,6 @@ To meet the "MVP Strategy" defined in `requirements.md`, you are missing three c
 * Update `shopify.go`: Extract `images[0].src` from the JSON.
 * Update `magento.go`: Regex extract the `<meta property="og:image">` tag.
 
-
-
 ##### B. Currency Normalization (The "NMN Bio" Problem)
 
 * **Requirement:** "Automatically convert all prices to a single display currency (USD)."
@@ -35,15 +33,8 @@ To meet the "MVP Strategy" defined in `requirements.md`, you are missing three c
 
 * **Fix:**
 * Add a `Currency` field to the `Vendor` struct in `vendors.go` (e.g., "USD", "GBP").
-* In `analyzer.go` or `main.go`, multiply non-USD prices by a static exchange rate (sufficient for MVP) before ranking.
+* Change the URL according to the currency (e.g., `https://www.nmn.bio/collections/nmn/products/nmn-300mg-60-capsules?currency=GBP`).
 
-
-
-##### C. Availability / Stock Status
-
-* **Requirement:** Don't send traffic to out-of-stock products (bad user experience).
-* **Missing:** The Shopify scraper sees `available: true` in the raw JSON but discards it.
-* **Fix:** Add `IsAvailable bool` to your `models.Product` and filter out `false` items in the `main.go` loop.
 
 #### Summary Roadmap
 
