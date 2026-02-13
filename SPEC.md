@@ -62,19 +62,27 @@ type Variant struct {
 }
 
 type Analysis struct {
-	Vendor        string  `json:"vendor"`
-	Name          string  `json:"name"`
-	Handle        string  `json:"handle"`
-	Price         float64 `json:"price"`
-	TotalGrams    float64 `json:"total_grams"`
-	CostPerGram   float64 `json:"cost_per_gram"`
-	EffectiveCost float64 `json:"effective_cost"`
-	Type          string  `json:"type"`
-	ImageURL      string  `json:"image_url"`
+	Vendor          string  `json:"vendor"`
+	Name            string  `json:"name"`
+	Handle          string  `json:"handle"`
+	Price           float64 `json:"price"`
+	TotalGrams      float64 `json:"total_grams"`
+	CostPerGram     float64 `json:"cost_per_gram"`
+	EffectiveCost   float64 `json:"effective_cost"`
+	Multiplier      float64 `json:"multiplier"`
+	MultiplierLabel string  `json:"multiplier_label"`
+	Type            string  `json:"type"`
+	ImageURL        string  `json:"image_url"`
 }
 ```
 
 The `Analysis` struct is the schema for `data/analysis_report.json`. JSON field names use snake_case. The frontend maps these to camelCase at the data-loading boundary (`web/lib/data.ts`).
+
+#### Field Notes
+
+* **`Name`**: The analyzer strips the vendor name prefix from the product title before assigning it. Stripping is case-insensitive. Example: vendor `"Nutricost"`, title `"Nutricost Creatine Monohydrate"` → `Name` becomes `"Creatine Monohydrate"`. If stripping would produce an empty string, the original title is kept.
+* **`Multiplier`**: The bioavailability multiplier applied to `CostPerGram` to produce `EffectiveCost` (i.e., `EffectiveCost = CostPerGram / Multiplier`). Defaults to `1.0` for standard formulations. Values: `1.5` for liposomal, `1.1` for sublingual/gel/tablet.
+* **`MultiplierLabel`**: Human-readable label for the multiplier reason. Empty string when `Multiplier` is `1.0`. Possible values: `"Lipo Bonus"`, `"Sublingual"`, `"Gel Bonus"`, `"Tablet Bonus"`.
 
 ---
 
@@ -90,13 +98,14 @@ The `Analysis` struct is the schema for `data/analysis_report.json`. JSON field 
 ### 4.2. Data Fetching (SSG)
 
 * `web/lib/data.ts` reads `data/analysis_report.json` from the filesystem at build time using `fs.readFileSync`. The data directory is resolved relative to the `web/` working directory (`path.resolve(process.cwd(), '..', 'data')`).
-* `data.ts` maps the snake_case JSON fields (`total_grams`, `cost_per_gram`, `effective_cost`, `image_url`) to camelCase (`totalGrams`, `costPerGram`, `effectiveCost`, `imageURL`) via a private `RawReportEntry` interface and a `mapEntry()` function. All downstream code uses the camelCase `Analysis` type.
+* `data.ts` maps the snake_case JSON fields (`total_grams`, `cost_per_gram`, `effective_cost`, `multiplier`, `multiplier_label`, `image_url`) to camelCase (`totalGrams`, `costPerGram`, `effectiveCost`, `multiplier`, `multiplierLabel`, `imageURL`) via a private `RawReportEntry` interface and a `mapEntry()` function. All downstream code uses the camelCase `Analysis` type.
 * `web/app/page.tsx` calls `loadReport()` in a Server Component, enriches each entry with `VendorInfo` from `web/lib/vendors.ts` (for affiliate link construction), and passes the result to `ProductTable`.
 * **The frontend contains zero parsing logic.** No regexes, no mg/count extraction, no bioavailability multipliers, no type classification. All of that lives exclusively in the Go backend's `analyzer.go`. The frontend is a dumb renderer of pre-computed data.
 
 ### 4.3. UI/UX Requirements
 
 * **The Table:** The core UI is a data table sorted by `effectiveCost` (Lowest to Highest). Columns: Rank (gold/silver/bronze badges for top 3), Image, Vendor, Product Name, Type (colored pill badge), Base Price, Total Grams, $/Gram, True Cost, Buy link.
+* **True Cost Transparency:** The True Cost column header includes a hover tooltip `(i)` explaining: "Base Price ÷ Bioavailability Multiplier". When a product has a `multiplier > 1`, a muted subtext is rendered below the True Cost value showing the multiplier and its label (e.g., `(1.5x Lipo Bonus)`, `(1.1x Sublingual)`). This subtext appears in both the desktop table rows and the mobile card layout. Products with a `1.0` multiplier show no subtext.
 * **Supplement Filter:** Pill-style tabs at the top filter by supplement type: All, NMN, NAD+, TMG, Resveratrol, Creatine. Implemented as a client component (`SupplementFilter.tsx`) with `useState`. Filtering is keyword-based on the product name/handle/vendor string — no re-analysis.
 * **Column Sorting:** Clicking Price, $/Gram, or True Cost column headers toggles ascending/descending sort. Active sort column shows a directional arrow indicator.
 * **Mobile Layout:** Below `md` breakpoint (768px), the table is hidden and replaced by a card layout. Each card shows rank badge, product image, vendor name, type badge, product name, a 2×2 stats grid (Price, Total, $/Gram, True Cost), and a full-width "View Deal" button.
@@ -111,7 +120,7 @@ The `Analysis` struct is the schema for `data/analysis_report.json`. JSON field 
   * *EU Notice:* "NMN is classified as a Novel Food in the European Union. Listings are provided for research and personal import purposes only."
   * *Affiliate Disclosure:* "This site may earn a commission from qualifying purchases..."
 * **Vendor Registry:** `web/lib/vendors.ts` maps each vendor name to its base URL and whether the handle is a full URL or a slug. This is used solely for constructing affiliate links. It does not reference any raw data files.
-* **Allowed Frontend Math:** The only calculations permitted on the frontend are user-driven state computations (e.g., a future "Monthly Cost" column based on user dosage input). All product-level math ($/gram, effective cost, type classification) is computed by the Go backend and consumed as-is.
+* **Allowed Frontend Math:** The only calculations permitted on the frontend are user-driven state computations (e.g., a future "Monthly Cost" column based on user dosage input). All product-level math ($/gram, effective cost, multiplier, type classification) is computed by the Go backend and consumed as-is.
 
 ---
 

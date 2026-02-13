@@ -16,6 +16,8 @@ export interface Analysis {
   totalGrams: number;
   costPerGram: number;
   effectiveCost: number;
+  multiplier: number;
+  multiplierLabel: string;
   type: string;
   imageURL: string;
 }

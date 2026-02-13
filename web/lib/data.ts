@@ -24,6 +24,8 @@ interface RawReportEntry {
   total_grams: number;
   cost_per_gram: number;
   effective_cost: number;
+  multiplier: number;
+  multiplier_label: string;
   type: string;
   image_url: string;
 }
@@ -44,6 +46,8 @@ function mapEntry(raw: RawReportEntry): Analysis {
     totalGrams: raw.total_grams,
     costPerGram: raw.cost_per_gram,
     effectiveCost: raw.effective_cost,
+    multiplier: raw.multiplier,
+    multiplierLabel: raw.multiplier_label,
     type: raw.type,
     imageURL: raw.image_url,
   };

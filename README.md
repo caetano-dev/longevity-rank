@@ -7,7 +7,8 @@ Architecture: **Git-Scraper**. Go scrapes vendor sites, runs the math engine, an
 ## Features
 
 - **Multi-vendor price comparison** across Shopify, Magento, and LD+JSON storefronts.
-- **Bioavailability-adjusted pricing** (True Cost) — liposomal, sublingual, and gel formulations receive a multiplier that lowers their effective $/gram.
+- **Bioavailability-adjusted pricing** (True Cost) — liposomal, sublingual, and gel formulations receive a multiplier that lowers their effective $/gram. The multiplier value and label are exported in the JSON and displayed in the frontend's True Cost column as muted subtext (e.g., `1.5x Lipo Bonus`).
+- **Clean product names** — the analyzer strips redundant vendor name prefixes from product titles (case-insensitive). E.g., vendor `"Nutricost"` + title `"Nutricost Creatine Monohydrate"` → `"Creatine Monohydrate"`.
 - **Multi-supplement tracking** — NMN, NAD+, TMG, Resveratrol, and Creatine out of the box. Configurable via `--supplements` flag.
 - **Cloudflare-safe** — vendors behind Cloudflare (Jinfiniti, Wonderfeel) are flagged with `Cloudflare: true` in the vendor config. The scraper skips them on `--refresh` and uses manually-maintained JSON instead.
 - **Override system** — missing dosage data (capsule count, mg per cap) is fixed via hardcoded rules in `data/vendor_rules.json`. No OCR. No image parsing.
@@ -88,8 +89,8 @@ Opens at `http://localhost:3000`. Reads `data/analysis_report.json` from the rep
 cmd/main.go                  CLI entry point. Flags: --refresh, --supplements.
 internal/
   config/vendors.go          Vendor registry (name, URL, scraper type, cloudflare flag).
-  models/types.go            Core structs: Vendor, Product, Variant, Analysis (with JSON tags).
-  parser/analyzer.go         Math engine. Extracts mg, count, grams from text. Calculates $/gram and True Cost.
+  models/types.go            Core structs: Vendor, Product, Variant, Analysis (with JSON tags, including Multiplier and MultiplierLabel).
+  parser/analyzer.go         Math engine. Extracts mg, count, grams from text. Calculates $/gram and True Cost. Strips vendor name from product title. Populates multiplier and multiplier label.
   parser/audit.go            Gap detector. Finds products that pass filters but lack data for analysis. Prints override suggestions.
   rules/rules.go             Loads vendor_rules.json. Applies blocklists and manual overrides.
   scraper/router.go          Routes vendors to the correct scraper engine.
@@ -179,7 +180,7 @@ Product `Handle` (URL slug or full URL) and the vendor's base URL are available 
 Go Scraper → data/*.json (raw) → analyzer.go → data/analysis_report.json → Next.js (dumb renderer)
 ```
 
-The Go backend is the single source of truth for all parsing, regex extraction, bioavailability math, and type classification. The frontend contains zero duplicated logic. It reads `data/analysis_report.json` and renders it.
+The Go backend is the single source of truth for all parsing, regex extraction, bioavailability math, multiplier assignment, vendor-name stripping, and type classification. The frontend contains zero duplicated logic. It reads `data/analysis_report.json` and renders it.
 
 ## Frontend
 
@@ -189,7 +190,7 @@ The Go backend is the single source of truth for all parsing, regex extraction, 
 
 1. `lib/data.ts` reads `data/analysis_report.json` using `fs.readFileSync` during the build step. It maps the Go backend's snake_case JSON fields to camelCase TypeScript via a `mapEntry()` function.
 2. `app/page.tsx` calls `loadReport()`, attaches `VendorInfo` metadata (for affiliate links), and passes the result to `ProductTable`. No parsing. No math.
-3. `ProductTable` is a client component that provides supplement filtering (pill tabs) and column sorting. Desktop shows a data table; mobile (<768px) shows a card layout.
+3. `ProductTable` is a client component that provides supplement filtering (pill tabs) and column sorting. Desktop shows a data table; mobile (<768px) shows a card layout. The True Cost column header has a hover tooltip `(i)` explaining: "Base Price ÷ Bioavailability Multiplier". When a product's `multiplier > 1`, a muted subtext below the True Cost value shows the multiplier and its label (e.g., `(1.5x Lipo Bonus)`).
 4. The build produces a fully static `out/` directory. No server, no client-side API calls.
 
 **Allowed frontend math:** Only user-driven state calculations (e.g., a future "Monthly Cost" column based on dosage input). All product-level computation is pre-computed by Go.

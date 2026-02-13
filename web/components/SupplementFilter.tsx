@@ -1,7 +1,6 @@
 "use client";
 
 const SUPPLEMENT_OPTIONS = [
-  { label: "All", value: "all" },
   { label: "NMN", value: "nmn" },
   { label: "NAD+", value: "nad" },
   { label: "TMG", value: "tmg" },

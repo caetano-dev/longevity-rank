@@ -147,13 +147,22 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 
 		// --- Bioavailability multiplier ---
 		multiplier := 1.0
-		
+		multiplierLabel := ""
+
 		if strings.Contains(typeSearch, "liposomal") || strings.Contains(typeSearch, "lipo") {
-			multiplier = 1.5 
-		} else if strings.Contains(typeSearch, "sublingual") || productType == "Gel" || productType == "Tablets" {
-			multiplier = 1.1 
+			multiplier = 1.5
+			multiplierLabel = "Lipo Bonus"
+		} else if strings.Contains(typeSearch, "sublingual") {
+			multiplier = 1.1
+			multiplierLabel = "Sublingual"
+		} else if productType == "Gel" {
+			multiplier = 1.1
+			multiplierLabel = "Gel Bonus"
+		} else if productType == "Tablets" {
+			multiplier = 1.1
+			multiplierLabel = "Tablet Bonus"
 		}
-		
+
 		effectiveCost := costPerGram / multiplier
 
 		if costPerGram < minCostPerGram {
@@ -164,16 +173,28 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 				displayName = displayName + " (" + v.Title + ")"
 			}
 
+			// Strip redundant vendor name prefix from display name (case-insensitive)
+			trimmed := displayName
+			if len(vendorName) > 0 && len(trimmed) >= len(vendorName) &&
+				strings.EqualFold(trimmed[:len(vendorName)], vendorName) {
+				trimmed = strings.TrimSpace(trimmed[len(vendorName):])
+			}
+			if len(trimmed) > 0 {
+				displayName = trimmed
+			}
+
 			bestAnalysis = &models.Analysis{
-				Vendor:        vendorName,
-				Name:          displayName,
-				Handle:        p.Handle,
-				Price:         price,
-				TotalGrams:    totalGrams,
-				CostPerGram:   costPerGram,
-				EffectiveCost: effectiveCost,
-				Type:          productType,
-				ImageURL:      p.ImageURL,
+				Vendor:          vendorName,
+				Name:            displayName,
+				Handle:          p.Handle,
+				Price:           price,
+				TotalGrams:      totalGrams,
+				CostPerGram:     costPerGram,
+				EffectiveCost:   effectiveCost,
+				Multiplier:      multiplier,
+				MultiplierLabel: multiplierLabel,
+				Type:            productType,
+				ImageURL:        p.ImageURL,
 			}
 		}
 	}

@@ -24,13 +24,15 @@ type Variant struct {
 }
 
 type Analysis struct {
-	Vendor        string  `json:"vendor"`
-	Name          string  `json:"name"`
-	Handle        string  `json:"handle"`
-	Price         float64 `json:"price"`
-	TotalGrams    float64 `json:"total_grams"`
-	CostPerGram   float64 `json:"cost_per_gram"`
-	EffectiveCost float64 `json:"effective_cost"`
-	Type          string  `json:"type"`
-	ImageURL      string  `json:"image_url"`
+	Vendor          string  `json:"vendor"`
+	Name            string  `json:"name"`
+	Handle          string  `json:"handle"`
+	Price           float64 `json:"price"`
+	TotalGrams      float64 `json:"total_grams"`
+	CostPerGram     float64 `json:"cost_per_gram"`
+	EffectiveCost   float64 `json:"effective_cost"`
+	Multiplier      float64 `json:"multiplier"`
+	MultiplierLabel string  `json:"multiplier_label"`
+	Type            string  `json:"type"`
+	ImageURL        string  `json:"image_url"`
 }

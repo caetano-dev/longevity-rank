@@ -22,7 +22,6 @@ interface ProductTableProps {
 
 /** Maps supplement filter values to keyword strings for client-side filtering */
 const FILTER_KEYWORDS: Record<string, string[]> = {
-  all: [],
   nmn: ["nmn"],
   nad: ["nad"],
   tmg: ["tmg", "trimethylglycine"],
@@ -66,14 +65,13 @@ function ProductImage({ src, alt }: { src: string; alt: string }) {
 }
 
 function matchesFilter(analysis: AnalysisWithVendorInfo, filter: FilterValue): boolean {
-  if (filter === "all") return true;
   const keywords = FILTER_KEYWORDS[filter] ?? [];
   const searchStr = (analysis.name + " " + analysis.handle + " " + analysis.vendor).toLowerCase();
   return keywords.some((kw) => searchStr.includes(kw));
 }
 
 export default function ProductTable({ analyses, affiliateId }: ProductTableProps) {
-  const [filter, setFilter] = useState<FilterValue>("all");
+  const [filter, setFilter] = useState<FilterValue>("nmn");
   const [sortBy, setSortBy] = useState<"effectiveCost" | "costPerGram" | "price">("effectiveCost");
   const [sortAsc, setSortAsc] = useState(true);
 
@@ -152,7 +150,20 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
                   className="px-4 py-3 w-28 cursor-pointer select-none hover:text-zinc-300 text-right"
                   onClick={() => handleSort("effectiveCost")}
                 >
-                  True Cost
+                  <span className="inline-flex items-center gap-1">
+                    True Cost
+                    <span
+                      className="relative group cursor-help"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <span className="inline-flex h-4 w-4 items-center justify-center rounded-full border border-zinc-600 text-[10px] font-normal text-zinc-500 leading-none">
+                        i
+                      </span>
+                      <span className="pointer-events-none absolute bottom-full right-0 mb-2 w-48 rounded-lg bg-zinc-800 px-3 py-2 text-xs font-normal normal-case tracking-normal text-zinc-300 opacity-0 shadow-lg transition-opacity group-hover:opacity-100 z-50">
+                        Base&nbsp;Price&nbsp;÷&nbsp;Bioavailability Multiplier
+                      </span>
+                    </span>
+                  </span>
                   <SortIndicator column="effectiveCost" />
                 </th>
                 <th className="px-4 py-3 w-20"></th>
@@ -207,6 +218,11 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
                       >
                         {formatCostPerGram(item.effectiveCost)}
                       </span>
+                      {item.multiplier > 1 && item.multiplierLabel && (
+                        <span className="block text-[10px] text-zinc-500 mt-0.5">
+                          ({item.multiplier}x {item.multiplierLabel})
+                        </span>
+                      )}
                     </td>
                     <td className="px-4 py-3 text-right">
                       <a
@@ -289,6 +305,11 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
                         >
                           {formatCostPerGram(item.effectiveCost)}
                         </p>
+                        {item.multiplier > 1 && item.multiplierLabel && (
+                          <span className="text-[10px] text-zinc-500">
+                            ({item.multiplier}x {item.multiplierLabel})
+                          </span>
+                        )}
                       </div>
                     </div>
                   </div>

@@ -43,7 +43,7 @@ export default function Home() {
             <p className="mx-auto mt-4 max-w-2xl text-lg text-zinc-400 sm:text-xl">
               Who has the cheapest authentic NMN &amp; longevity supplements today?
               <br className="hidden sm:block" />
-              Prices scraped daily. Ranked by{" "}
+              Prices updated daily. Ranked by{" "}
               <span className="font-semibold text-emerald-400">True Cost</span>{" "}
               (bioavailability-adjusted $/gram).
             </p>
