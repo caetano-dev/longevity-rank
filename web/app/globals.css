@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-900: #0a0f1a;
+  --color-brand-800: #111827;
+  --color-brand-700: #1e293b;
+  --color-brand-600: #334155;
+  --color-brand-500: #475569;
+  --color-brand-400: #94a3b8;
+  --color-brand-300: #cbd5e1;
+  --color-brand-200: #e2e8f0;
+  --color-brand-100: #f1f5f9;
+  --color-brand-50: #f8fafc;
+  --color-accent-green: #22c55e;
+  --color-accent-emerald: #10b981;
+  --color-accent-teal: #14b8a6;
+  --color-accent-lime: #84cc16;
+  --color-gold: #f59e0b;
+  --color-silver: #9ca3af;
+  --color-bronze: #d97706;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-brand-900);
+  color: var(--color-brand-100);
+  font-family: var(--font-sans);
+}
+
+/* Rank badge styles */
+.rank-1 {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #000;
+  font-weight: 700;
+}
+
+.rank-2 {
+  background: linear-gradient(135deg, #d1d5db, #9ca3af);
+  color: #000;
+  font-weight: 700;
+}
+
+.rank-3 {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #000;
+  font-weight: 700;
+}
+
+/* Type badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.badge-capsules {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.badge-powder {
+  background-color: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.badge-tablets {
+  background-color: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.badge-gel {
+  background-color: rgba(244, 114, 182, 0.15);
+  color: #f472b6;
+  border: 1px solid rgba(244, 114, 182, 0.3);
+}
+
+.badge-multipack {
+  background-color: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.badge-hybrid {
+  background-color: rgba(45, 212, 191, 0.15);
+  color: #2dd4bf;
+  border: 1px solid rgba(45, 212, 191, 0.3);
+}
+
+.badge-single {
+  background-color: rgba(148, 163, 184, 0.15);
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+/* Table row hover */
+.table-row-hover {
+  transition: background-color 150ms ease;
+}
+.table-row-hover:hover {
+  background-color: rgba(30, 41, 59, 0.6);
+}
+
+/* Scrollbar styling for the table container */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--color-brand-800);
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--color-brand-600);
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-500);
+}
+
+/* Filter pill active state glow */
+.filter-active {
+  box-shadow: 0 0 12px rgba(34, 197, 94, 0.25);
+}
+
+/* Effective cost highlight for the #1 product */
+.best-price {
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(16, 185, 129, 0.1));
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  border-radius: 0.375rem;
+  padding: 0.125rem 0.375rem;
+}
+
+/* Card shimmer for mobile view */
+.card-shine {
+  position: relative;
+  overflow: hidden;
+}
+.card-shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.03),
+    transparent
+  );
+  pointer-events: none;
+}
+
+/* Sticky header for the table */
+.sticky-header th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--color-brand-800);
+}
