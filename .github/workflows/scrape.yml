@@ -1,0 +1,51 @@
+name: Daily Scrape
+
+on:
+  #schedule:
+  #  - cron: '0 8 * * *'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Install dependencies
+        run: go mod tidy
+
+      - name: Run scraper
+        run: go run cmd/main.go -refresh
+
+      - name: Check for data changes
+        id: diff
+        run: |
+          git diff --quiet data/*.json && echo "changed=false" >> "$GITHUB_OUTPUT" || echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push updated data
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          git commit -m "Auto-update product data [skip ci]"
+          git push
+
+      - name: Trigger Vercel build
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$VERCEL_DEPLOY_HOOK" ]; then
+            curl -s -X POST "$VERCEL_DEPLOY_HOOK"
+            echo "✅ Vercel build triggered."
+          else
+            echo "⚠️ VERCEL_DEPLOY_HOOK secret not set. Skipping deploy trigger."
+          fi

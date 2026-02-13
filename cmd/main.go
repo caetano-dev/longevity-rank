@@ -4,9 +4,10 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"sort"
-	"text/tabwriter"
 	"path/filepath"
+	"sort"
+	"strings"
+	"text/tabwriter"
 
 	"longevity-ranker/internal/config"
 	"longevity-ranker/internal/models"
@@ -18,7 +19,23 @@ import (
 
 func main() {
 	refresh := flag.Bool("refresh", false, "Scrape websites to update local data")
+	supplements := flag.String("supplements", "nmn,nad,tmg,trimethylglycine,resveratrol,creatine", "Comma-separated list of supplement keywords to track")
 	flag.Parse()
+
+	// Apply supplement filter to the analyzer's gatekeeper
+	if *supplements != "" {
+		parts := strings.Split(*supplements, ",")
+		var cleaned []string
+		for _, s := range parts {
+			s = strings.TrimSpace(strings.ToLower(s))
+			if s != "" {
+				cleaned = append(cleaned, s)
+			}
+		}
+		if len(cleaned) > 0 {
+			parser.AllowedSupplements = cleaned
+		}
+	}
 
 	if err := storage.EnsureDataDir(); err != nil {
 		panic(err)
@@ -34,6 +51,7 @@ func main() {
 	vendors := config.GetVendors()
 	var allProducts []struct {
 		VendorName string
+		Currency   string
 		Product    models.Product
 	}
 
@@ -47,6 +65,13 @@ func main() {
 			if os.IsNotExist(err) {
 				shouldScrape = true
 			}
+		}
+
+		// Cloudflare-blocked vendors cannot be scraped automatically.
+		// They rely on manually-maintained JSON in the data/ directory.
+		if shouldScrape && v.Cloudflare {
+			fmt.Printf("🛡️  Skipping %s (Cloudflare-protected). Using local JSON if available.\n", v.Name)
+			shouldScrape = false
 		}
 
 		if shouldScrape {
@@ -70,13 +95,20 @@ func main() {
 		for _, p := range products {
 			keep := rules.ApplyRules(v.Name, &p)
 			if !keep {
-				continue 
+				continue
+			}
+
+			// Resolve currency: vendor-level field, default to USD
+			currency := v.Currency
+			if currency == "" {
+				currency = "USD"
 			}
 
 			allProducts = append(allProducts, struct {
 				VendorName string
+				Currency   string
 				Product    models.Product
-			}{v.Name, p})
+			}{v.Name, currency, p})
 		}
 	}
 
@@ -85,6 +117,25 @@ func main() {
 	for _, item := range allProducts {
 		analysis := parser.AnalyzeProduct(item.VendorName, item.Product)
 		if analysis != nil {
+			// Convert price from source currency to USD
+			if item.Currency != "" && item.Currency != "USD" {
+				converted, err := parser.ConvertToUSD(analysis.Price, item.Currency)
+				if err != nil {
+					fmt.Printf("⚠️ Currency conversion failed for %s (%s): %v\n", analysis.Name, item.Currency, err)
+				} else {
+					// Compute the bioavailability multiplier from the OLD values
+					// before overwriting. effectiveCost = costPerGram / bioMultiplier,
+					// so bioMultiplier = costPerGram / effectiveCost.
+					bioMultiplier := 1.0
+					if analysis.EffectiveCost > 0 {
+						bioMultiplier = analysis.CostPerGram / analysis.EffectiveCost
+					}
+
+					analysis.Price = converted
+					analysis.CostPerGram = analysis.Price / analysis.TotalGrams
+					analysis.EffectiveCost = analysis.CostPerGram / bioMultiplier
+				}
+			}
 			report = append(report, *analysis)
 		}
 	}
@@ -99,7 +150,6 @@ func main() {
 
 func printTable(data []models.Analysis) {
 	w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-	// Added "TRUE COST" column
 	fmt.Fprintln(w, "\nRANK\tVENDOR\tPRODUCT (Truncated)\tTYPE\tPRICE\tGRAMS\t$/GRAM\tTRUE COST (Eff.)")
 	fmt.Fprintln(w, "----\t------\t-------------------\t-----\t-----\t-----\t------\t----------------")
 

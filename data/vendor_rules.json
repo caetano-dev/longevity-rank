@@ -5,7 +5,13 @@
   },
   "NMN Bio": {
     "blocklist": ["Bundle", "Endurance", "Book"],
-    "overrides": {}
+    "overrides": {
+      "nmn-supplement-500mg-capsules-30-caps": {
+        "forceType": "Capsules",
+        "forceMg": 500,
+        "forceCount": 30
+      }
+    }
   },
   "Do Not Age": {
     "blocklist": ["Test", "Kit", "Consultation", "Subscription", "Apigenin", "Pure NR"],
@@ -35,5 +41,9 @@
         "forceCount": 75
       }
     }
+  },
+  "Wonderfeel": {
+    "blocklist": [],
+    "overrides": {}
   }
 }

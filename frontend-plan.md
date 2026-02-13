@@ -25,14 +25,13 @@ You will create a `.github/workflows/scrape.yml` file. This is a free server tha
 5. **Trigger Deploy:** This push automatically tells Vercel to rebuild your website with the new data.
 
 
-
 ### Phase 3: The Frontend (Static Site Generator)
 
 Since SEO is a priority, you cannot use a Single Page App (like plain React). You must use a **Static Site Generator (SSG)**.
 
-* **Technology:** I recommend **Astro** (fastest, best for content) or **Next.js** (easiest if you know React).
+* **Technology:** **Next.js**
 * **Build Process:**
-1. When the site builds, it imports your `data/renue.json`, `data/donotage.json`, etc.
+1. When the site builds, it imports your `data/renue_by_science.json`, `data/do_not_age.json`, etc.
 2. It merges them into one big list.
 3. It runs the "Effective Cost" math.
 4. It generates **static HTML** for the table.
