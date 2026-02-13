@@ -1,92 +1,72 @@
 /**
- * Data loader — reads all vendor JSON files and vendor_rules.json from the
- * filesystem at build time. This module is only used in Server Components
- * and during SSG (Static Site Generation).
+ * Data loader — reads the pre-computed analysis report from the Go backend.
  *
- * It reads from the repo-root /data directory (one level above /web).
+ * The ONLY file this module touches is data/analysis_report.json, which is
+ * the sole integration point between the Go scraper and the Next.js frontend.
+ *
+ * Snake_case JSON fields from the Go output are mapped to camelCase here.
+ * Everything downstream of this module uses clean camelCase Analysis objects.
+ *
+ * This module is only used in Server Components / SSG (Static Site Generation).
  */
 
 import fs from "fs";
 import path from "path";
 
-import type { Product, VendorRules } from "./types";
-import vendors, { type VendorInfo } from "./vendors";
+import type { Analysis } from "./types";
+
+/** Raw shape of each entry in analysis_report.json (Go JSON tags are snake_case). */
+interface RawReportEntry {
+  vendor: string;
+  name: string;
+  handle: string;
+  price: number;
+  total_grams: number;
+  cost_per_gram: number;
+  effective_cost: number;
+  type: string;
+  image_url: string;
+}
 
 /** Absolute path to the /data directory at the repo root. */
 const DATA_DIR = path.resolve(process.cwd(), "..", "data");
 
 /**
- * Load and parse a JSON file from the /data directory.
- * Returns null if the file doesn't exist or contains invalid JSON.
+ * Map a single raw JSON entry (snake_case) to the camelCase Analysis type
+ * used by all frontend components.
  */
-function loadJsonFile<T>(filename: string): T | null {
-  const filePath = path.join(DATA_DIR, filename);
+function mapEntry(raw: RawReportEntry): Analysis {
+  return {
+    vendor: raw.vendor,
+    name: raw.name,
+    handle: raw.handle,
+    price: raw.price,
+    totalGrams: raw.total_grams,
+    costPerGram: raw.cost_per_gram,
+    effectiveCost: raw.effective_cost,
+    type: raw.type,
+    imageURL: raw.image_url,
+  };
+}
+
+/**
+ * Load the pre-computed analysis report produced by the Go backend.
+ * Returns an array of Analysis entries sorted by effectiveCost ascending
+ * (the Go backend already sorts, but order is preserved).
+ *
+ * Returns an empty array if the file is missing or malformed.
+ */
+export function loadReport(): Analysis[] {
+  const filePath = path.join(DATA_DIR, "analysis_report.json");
   try {
     const raw = fs.readFileSync(filePath, "utf-8");
-    const parsed = JSON.parse(raw);
-    // Some vendor files may contain `null` (e.g. jinfiniti.json when Cloudflare blocks scraping)
-    if (parsed === null || parsed === undefined) {
-      return null;
+    const parsed: unknown = JSON.parse(raw);
+    if (!Array.isArray(parsed)) {
+      return [];
     }
-    return parsed as T;
+    return (parsed as RawReportEntry[]).map(mapEntry);
   } catch {
-    // File missing or malformed — silently skip
-    return null;
+    // File missing or malformed — return empty so the build doesn't crash
+    return [];
   }
-}
-
-/**
- * Load vendor_rules.json from /data.
- * Returns an empty object if the file is missing.
- */
-export function loadVendorRules(): VendorRules {
-  const rules = loadJsonFile<VendorRules>("vendor_rules.json");
-  return rules ?? {};
-}
-
-/**
- * Load all product data for every vendor in the registry.
- * Returns an array of { vendorName, vendorInfo, products } tuples.
- * Vendors whose data file is missing or null are omitted.
- */
-export function loadAllVendorProducts(): {
-  vendorName: string;
-  vendorInfo: VendorInfo;
-  products: Product[];
-}[] {
-  const results: {
-    vendorName: string;
-    vendorInfo: VendorInfo;
-    products: Product[];
-  }[] = [];
-
-  for (const vendor of vendors) {
-    const products = loadJsonFile<Product[]>(vendor.dataFile);
-    if (products && Array.isArray(products) && products.length > 0) {
-      results.push({
-        vendorName: vendor.name,
-        vendorInfo: vendor,
-        products,
-      });
-    }
-  }
-
-  return results;
-}
-
-/**
- * Convenience: load everything in one call — rules + all vendor products.
- */
-export function loadAll(): {
-  rules: VendorRules;
-  vendorProducts: {
-    vendorName: string;
-    vendorInfo: VendorInfo;
-    products: Product[];
-  }[];
-} {
-  return {
-    rules: loadVendorRules(),
-    vendorProducts: loadAllVendorProducts(),
-  };
 }

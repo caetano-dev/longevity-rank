@@ -20,7 +20,7 @@ interface ProductTableProps {
   affiliateId?: string;
 }
 
-/** Maps supplement filter values to the keywords the analyzer uses */
+/** Maps supplement filter values to keyword strings for client-side filtering */
 const FILTER_KEYWORDS: Record<string, string[]> = {
   all: [],
   nmn: ["nmn"],

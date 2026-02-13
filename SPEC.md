@@ -8,11 +8,19 @@
 
 ## 2. System Architecture
 
-The system is decoupled into two primary components communicating via static JSON files committed to the repository.
+The system is decoupled into two primary components communicating via a single static JSON file committed to the repository.
 
-1. **Backend (Go):** Scrapes vendor sites, standardizes data, applies hardcoded business rules/overrides, calculates ROI, and outputs JSON.
+1. **Backend (Go):** Scrapes vendor sites, standardizes data, applies hardcoded business rules/overrides, calculates ROI, and outputs `data/analysis_report.json`.
 2. **CI/CD (GitHub Actions):** Runs the Go script daily. If data changes, it commits the changes and triggers a frontend build.
-3. **Frontend (Next.js):** Reads the JSON at build time (SSG), rendering a static, ultra-fast HTML page hosted on Vercel/Cloudflare Pages.
+3. **Frontend (Next.js):** Reads `data/analysis_report.json` at build time (SSG), rendering a static, ultra-fast HTML page hosted on Vercel/Cloudflare Pages.
+
+### 2.1. Integration Point
+
+**`data/analysis_report.json`** is the sole contract between the Go backend and the Next.js frontend. The Go backend writes it. The frontend reads it. No other data files cross the boundary.
+
+* The Go backend scrapes raw product data into `data/*.json` (one file per vendor) for its own internal use. These raw files are **not** consumed by the frontend.
+* The backend applies vendor rules, runs the math engine, and serializes the final `[]models.Analysis` array to `data/analysis_report.json` via `storage.SaveReport()`.
+* The frontend reads only `data/analysis_report.json` via `lib/data.ts`. It performs zero parsing, zero regex extraction, zero bioavailability math. It is a dumb renderer.
 
 ---
 
@@ -20,15 +28,15 @@ The system is decoupled into two primary components communicating via static JSO
 
 ### 3.1. Current State & Workflow
 
-* **Command:** `go run cmd/main.go -refresh` (Scrapes web -> saves to `data/*.json` -> Analyzes -> Outputs table).
-* **Command:** `go run cmd/main.go` (Reads local `data/*.json` -> Analyzes -> Outputs table). Instant execution for logic debugging.
-* **Scraper Engines (`internal/scraper/`):** * `shopify.go`: Parses `products.json` endpoints.
-* `magento.go`: Parses embedded `Magento_Swatches/js/swatch-renderer` JSON configs and extracts HTML metadata.
-* `ldjson.go`: Parses Schema.org `@graph` LD+JSON objects.
-
-
+* **Command:** `go run cmd/main.go -refresh` (Scrapes web → saves raw products to `data/*.json` → Analyzes → Saves report to `data/analysis_report.json` → Prints table to stdout).
+* **Command:** `go run cmd/main.go` (Reads local `data/*.json` → Analyzes → Saves report → Prints table). Instant execution for logic debugging.
+* **Scraper Engines (`internal/scraper/`):**
+  * `shopify.go`: Parses `products.json` endpoints.
+  * `magento.go`: Parses embedded `Magento_Swatches/js/swatch-renderer` JSON configs and extracts HTML metadata.
+  * `ldjson.go`: Parses Schema.org `@graph` LD+JSON objects.
 * **Normalization Layer (`internal/rules/`):** Reads `data/vendor_rules.json`. Applies blocklists (e.g., ignoring "5-HTP") and manual overrides (e.g., forcing capsule counts when missing from HTML).
 * **Math Engine (`internal/parser/analyzer.go`):** Calculates `CostPerGram` and applies the Bioavailability Multiplier to calculate `EffectiveCost`.
+* **Report Output (`internal/storage/json_store.go`):** `SaveReport()` serializes the sorted `[]models.Analysis` to `data/analysis_report.json`. Called by `cmd/main.go` after sorting, immediately before printing to stdout.
 
 ### 3.2. Data Models (`internal/models/types.go`)
 
@@ -39,7 +47,7 @@ type Product struct {
 	ID       string    `json:"id"`
 	Title    string    `json:"title"`
 	Context  string    `json:"context"`
-	Handle   string    `json:"handle"` 
+	Handle   string    `json:"handle"`
 	BodyHTML string    `json:"body_html"`
 	ImageURL string    `json:"image_url"`
 	Variants []Variant `json:"variants"`
@@ -52,17 +60,19 @@ type Variant struct {
 }
 
 type Analysis struct {
-	Vendor        string
-	Name          string
-	Price         float64
-	TotalGrams    float64
-	CostPerGram   float64
-	EffectiveCost float64
-	Type          string 
-	ImageURL      string
+	Vendor        string  `json:"vendor"`
+	Name          string  `json:"name"`
+	Handle        string  `json:"handle"`
+	Price         float64 `json:"price"`
+	TotalGrams    float64 `json:"total_grams"`
+	CostPerGram   float64 `json:"cost_per_gram"`
+	EffectiveCost float64 `json:"effective_cost"`
+	Type          string  `json:"type"`
+	ImageURL      string  `json:"image_url"`
 }
-
 ```
+
+The `Analysis` struct is the schema for `data/analysis_report.json`. JSON field names use snake_case. The frontend maps these to camelCase at the data-loading boundary (`web/lib/data.ts`).
 
 ---
 
@@ -70,46 +80,47 @@ type Analysis struct {
 
 ### 4.1. Tech Stack
 
-* **Framework:** Next.js (App Router).
-* **Styling:** Tailwind CSS.
-* **Deployment:** Vercel (or Cloudflare Pages).
-* **Rendering:** Strictly Static Site Generation (SSG). No client-side fetching to original APIs. No databases.
+* **Framework:** Next.js 15 (App Router), React 19.
+* **Styling:** Tailwind CSS v4 (PostCSS plugin `@tailwindcss/postcss`).
+* **Deployment:** Vercel (or Cloudflare Pages). Static export (`output: "export"` in `next.config.ts`).
+* **Rendering:** Strictly Static Site Generation (SSG). No client-side fetching to original APIs. No databases. Build produces `web/out/` — a flat directory of HTML/CSS/JS.
 
 ### 4.2. Data Fetching (SSG)
 
-* Next.js Server Components must read the localized `data/*.json` files directly from the filesystem during the build step using `fs.readFileSync`.
-* The build step must aggregate all vendor JSONs, run the parsing/filtering logic (replicating or consuming the Go output), and generate the static HTML.
+* `web/lib/data.ts` reads `data/analysis_report.json` from the filesystem at build time using `fs.readFileSync`. The data directory is resolved relative to the `web/` working directory (`path.resolve(process.cwd(), '..', 'data')`).
+* `data.ts` maps the snake_case JSON fields (`total_grams`, `cost_per_gram`, `effective_cost`, `image_url`) to camelCase (`totalGrams`, `costPerGram`, `effectiveCost`, `imageURL`) via a private `RawReportEntry` interface and a `mapEntry()` function. All downstream code uses the camelCase `Analysis` type.
+* `web/app/page.tsx` calls `loadReport()` in a Server Component, enriches each entry with `VendorInfo` from `web/lib/vendors.ts` (for affiliate link construction), and passes the result to `ProductTable`.
+* **The frontend contains zero parsing logic.** No regexes, no mg/count extraction, no bioavailability multipliers, no type classification. All of that lives exclusively in the Go backend's `analyzer.go`. The frontend is a dumb renderer of pre-computed data.
 
 ### 4.3. UI/UX Requirements
 
-* **The Table:** The core UI is a data table sorted by `EffectiveCost` (Lowest to Highest).
-* Columns: Rank, Image, Vendor, Product Name, Type (Powder/Capsule/Gel), Base Price, Total Grams, $/Gram, True Cost (Effective Cost).
-
-
-* **Mobile Optimization:** 60% of traffic is mobile. The table must be horizontally scrollable or pivot into a "Card" layout on `max-width: 768px`.
-* **Performance:** Lighthouse score must be >95. Time to Interactive (TTI) < 1.0s.
+* **The Table:** The core UI is a data table sorted by `effectiveCost` (Lowest to Highest). Columns: Rank (gold/silver/bronze badges for top 3), Image, Vendor, Product Name, Type (colored pill badge), Base Price, Total Grams, $/Gram, True Cost, Buy link.
+* **Supplement Filter:** Pill-style tabs at the top filter by supplement type: All, NMN, NAD+, TMG, Resveratrol, Creatine. Implemented as a client component (`SupplementFilter.tsx`) with `useState`. Filtering is keyword-based on the product name/handle/vendor string — no re-analysis.
+* **Column Sorting:** Clicking Price, $/Gram, or True Cost column headers toggles ascending/descending sort. Active sort column shows a directional arrow indicator.
+* **Mobile Layout:** Below `md` breakpoint (768px), the table is hidden and replaced by a card layout. Each card shows rank badge, product image, vendor name, type badge, product name, a 2×2 stats grid (Price, Total, $/Gram, True Cost), and a full-width "View Deal" button.
+* **Performance:** Static export. First Load JS is ~105 kB. No client-side API calls. All product data is baked into the HTML at build time.
 
 ### 4.4. Frontend Features & Logic
 
-* **Affiliate Routing:** Do not hardcode affiliate links in the JSON. Build a dynamic URL constructor on the frontend:
-`href={${vendor.URL}${product.Handle}?ref=${AFFILIATE_ID}}`. This allows mass-updating weekly expiring tokens via environment variables or a single config file.
-* **Image Optimization:** Vendor images must be passed through Next.js `<Image src={product.ImageURL} />`. This proxies the image through the Vercel CDN, protecting the site from vendor hotlinking bans and optimizing WebP formats. (Requires configuring `next.config.js` `remotePatterns`).
-* **Compliance Banners:** * *EU Warning:* If the user's IP/locale is EU, display: *"NMN is classified as a Novel Food in the EU. Listings are for research/personal import purposes only."* (Can use Vercel Edge Middleware for geo-detection).
-* *FDA Footer:* Standard disclaimer required on all pages: *"Not intended to diagnose, treat, cure..."*
-
-
-* **Trust Signals:** Visually indicate if a product has a verified Certificate of Analysis (CoA). (Boolean passed from backend).
+* **Affiliate Routing:** `web/lib/vendors.ts` exports `buildAffiliateUrl(vendor, handle, affiliateId)`. Shopify vendors construct `{baseUrl}/products/{handle}?ref={AFFILIATE_ID}`. Full-URL vendors (Do Not Age, Jinfiniti, Wonderfeel) use the handle as-is with `?ref=` appended. `AFFILIATE_ID` is read from `process.env.AFFILIATE_ID` at build time. When empty, links point to bare product URLs.
+* **Image Handling:** Product images use a standard `<img>` tag with `loading="lazy"`. `next.config.ts` defines `remotePatterns` for all vendor CDN hostnames (cdn.shopify.com, donotage.org, renuebyscience.com, etc.). Images are set to `unoptimized: true` for static export compatibility.
+* **Compliance Banners:** All rendered in the page footer (`web/app/page.tsx`):
+  * *FDA Disclaimer:* "These statements have not been evaluated by the Food and Drug Administration..."
+  * *EU Notice:* "NMN is classified as a Novel Food in the European Union. Listings are provided for research and personal import purposes only."
+  * *Affiliate Disclosure:* "This site may earn a commission from qualifying purchases..."
+* **Vendor Registry:** `web/lib/vendors.ts` maps each vendor name to its base URL and whether the handle is a full URL or a slug. This is used solely for constructing affiliate links. It does not reference any raw data files.
+* **Allowed Frontend Math:** The only calculations permitted on the frontend are user-driven state computations (e.g., a future "Monthly Cost" column based on user dosage input). All product-level math ($/gram, effective cost, type classification) is computed by the Go backend and consumed as-is.
 
 ---
 
 ## 5. CI/CD Pipeline (GitHub Actions)
 
-Create `.github/workflows/scrape.yml` with the following requirements:
+`.github/workflows/scrape.yml` requirements:
 
 1. **Schedule:** `cron: '0 8 * * *'` (Runs daily).
 2. **Environment:** Ubuntu latest, Go 1.21+.
 3. **Execution:** Run `go run cmd/main.go -refresh`.
-4. **Diff Check:** Check if `data/*.json` files have changed using `git diff`.
+4. **Diff Check:** Check if `data/*.json` files have changed using `git diff`. This includes both raw vendor files and `analysis_report.json`.
 5. **Commit & Push:** If changes exist, commit as "Auto-update product data [skip ci]".
 6. **Trigger Build:** Trigger the Next.js Vercel build webhook.
 
@@ -121,3 +132,5 @@ Create `.github/workflows/scrape.yml` with the following requirements:
 * **Rule 2: Don't Break the Analyzer.** When modifying `analyzer.go`, ensure strict isolation of string parsing. Do not allow HTML tags from `BodyHTML` to leak into `Type` classification.
 * **Rule 3: OCR is Banned.** Do not implement image-to-text processing for missing data. Rely entirely on `data/vendor_rules.json` overrides.
 * **Rule 4: Brutal Simplicity.** Avoid complex state management (Redux/Zustand) in Next.js. The app is a static table. Keep client-side JavaScript to an absolute minimum.
+* **Rule 5: No Duplicated Logic.** All parsing, regex extraction, bioavailability math, and type classification live exclusively in the Go backend (`analyzer.go`). The frontend reads `data/analysis_report.json` and renders it. Do not re-implement or duplicate the analyzer in TypeScript or any other language.
+* **Rule 6: Single Integration Point.** `data/analysis_report.json` is the sole contract between the backend and frontend. If the `Analysis` struct changes in Go, update the `RawReportEntry` interface in `web/lib/data.ts` and the `Analysis` interface in `web/lib/types.ts` to match. Keep `SPEC.md` in sync per `AGENTS_DOCS_PROTOCOL.md`.

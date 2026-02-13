@@ -38,6 +38,19 @@ func SaveProducts(vendorName string, products []models.Product) error {
 	return os.WriteFile(filename, file, 0644)
 }
 
+// SaveReport writes the final analysis report to data/analysis_report.json.
+// This is the sole integration point between the Go backend and the Next.js frontend.
+func SaveReport(report []models.Analysis) error {
+	filename := filepath.Join(DataDir, "analysis_report.json")
+
+	file, err := json.MarshalIndent(report, "", "  ")
+	if err != nil {
+		return err
+	}
+
+	return os.WriteFile(filename, file, 0644)
+}
+
 func LoadProducts(vendorName string) ([]models.Product, error) {
 	filename := GetFilename(vendorName)
 	

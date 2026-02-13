@@ -1,16 +1,16 @@
 /**
- * Vendor registry — maps vendor names to their base URLs and data file names.
- * This mirrors internal/config/vendors.go on the Go side.
+ * Vendor registry — maps vendor names to their base URLs for affiliate link construction.
  *
  * baseUrl is the storefront root (no trailing slash) used to construct affiliate links.
- * dataFile is the filename inside /data (without path prefix).
  * handleIsFullUrl: if true, product.handle is already a full URL (Magento / LD+JSON vendors).
+ *
+ * This module no longer references individual data files. The frontend reads
+ * exclusively from data/analysis_report.json via lib/data.ts.
  */
 
 export interface VendorInfo {
   name: string;
   baseUrl: string;
-  dataFile: string;
   handleIsFullUrl: boolean;
 }
 
@@ -18,43 +18,36 @@ const vendors: VendorInfo[] = [
   {
     name: "ProHealth",
     baseUrl: "https://www.prohealth.com",
-    dataFile: "prohealth.json",
     handleIsFullUrl: false,
   },
   {
     name: "Renue By Science",
     baseUrl: "https://renuebyscience.com",
-    dataFile: "renue_by_science.json",
     handleIsFullUrl: false,
   },
   {
     name: "NMN Bio",
     baseUrl: "https://nmnbio.co.uk",
-    dataFile: "nmn_bio.json",
     handleIsFullUrl: false,
   },
   {
     name: "Jinfiniti",
     baseUrl: "https://www.jinfiniti.com",
-    dataFile: "jinfiniti.json",
     handleIsFullUrl: true,
   },
   {
     name: "Do Not Age",
     baseUrl: "https://donotage.org",
-    dataFile: "do_not_age.json",
     handleIsFullUrl: true,
   },
   {
     name: "Nutricost",
     baseUrl: "https://nutricost.com",
-    dataFile: "nutricost.json",
     handleIsFullUrl: false,
   },
   {
     name: "Wonderfeel",
     baseUrl: "https://www.wonderfeel.com",
-    dataFile: "wonderfeel.json",
     handleIsFullUrl: true,
   },
 ];

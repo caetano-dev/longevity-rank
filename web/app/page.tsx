@@ -1,5 +1,4 @@
-import { loadAll } from "@/lib/data";
-import { analyzeAll } from "@/lib/analyzer";
+import { loadReport } from "@/lib/data";
 import type { AnalysisWithVendorInfo } from "@/components/ProductTable";
 import ProductTable from "@/components/ProductTable";
 import vendors from "@/lib/vendors";
@@ -9,21 +8,15 @@ export const dynamic = "force-static";
 const AFFILIATE_ID = process.env.AFFILIATE_ID ?? "";
 
 export default function Home() {
-  const { rules, vendorProducts } = loadAll();
+  // loadReport() reads data/analysis_report.json and maps snake_case → camelCase.
+  // No parsing, regex, or math — the Go backend did all of that.
+  const report = loadReport();
 
-  const analyses = analyzeAll(
-    vendorProducts.map((vp) => ({
-      vendorName: vp.vendorName,
-      products: vp.products,
-    })),
-    rules
-  );
-
-  // Build a lookup map from vendor name to VendorInfo
+  // Build a lookup map from vendor name to VendorInfo for affiliate links
   const vendorMap = new Map(vendors.map((v) => [v.name, v]));
 
   // Attach vendorInfo to each analysis for affiliate link construction
-  const enriched: AnalysisWithVendorInfo[] = analyses
+  const enriched: AnalysisWithVendorInfo[] = report
     .map((a) => {
       const vendorInfo = vendorMap.get(a.vendor);
       if (!vendorInfo) return null;
@@ -178,12 +171,6 @@ export default function Home() {
               <p className="text-zinc-700">
                 Longevity Ranker &middot; Data sourced from public vendor storefronts &middot;{" "}
                 Prices updated daily via automated scraping &middot;{" "}
-                <a
-                  href="https://github.com"
-                  className="text-zinc-500 hover:text-zinc-400 underline underline-offset-2"
-                >
-                  Open Source
-                </a>
               </p>
             </div>
           </div>

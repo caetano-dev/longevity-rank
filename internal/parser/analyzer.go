@@ -167,6 +167,7 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 			bestAnalysis = &models.Analysis{
 				Vendor:        vendorName,
 				Name:          displayName,
+				Handle:        p.Handle,
 				Price:         price,
 				TotalGrams:    totalGrams,
 				CostPerGram:   costPerGram,

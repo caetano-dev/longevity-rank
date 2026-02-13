@@ -118,6 +118,12 @@ func main() {
 		return report[i].EffectiveCost < report[j].EffectiveCost
 	})
 
+	if err := storage.SaveReport(report); err != nil {
+		fmt.Printf("⚠️ Error saving analysis report: %v\n", err)
+	} else {
+		fmt.Printf("✅ Saved analysis report (%d products) to data/analysis_report.json\n", len(report))
+	}
+
 	printTable(report)
 }
 
