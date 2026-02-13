@@ -4,7 +4,6 @@ type Vendor struct {
 	Name       string
 	URL        string
 	Type       string
-	Currency   string
 	Cloudflare bool
 }
 

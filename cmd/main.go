@@ -51,7 +51,6 @@ func main() {
 	vendors := config.GetVendors()
 	var allProducts []struct {
 		VendorName string
-		Currency   string
 		Product    models.Product
 	}
 
@@ -98,17 +97,10 @@ func main() {
 				continue
 			}
 
-			// Resolve currency: vendor-level field, default to USD
-			currency := v.Currency
-			if currency == "" {
-				currency = "USD"
-			}
-
 			allProducts = append(allProducts, struct {
 				VendorName string
-				Currency   string
 				Product    models.Product
-			}{v.Name, currency, p})
+			}{v.Name, p})
 		}
 	}
 
@@ -117,25 +109,6 @@ func main() {
 	for _, item := range allProducts {
 		analysis := parser.AnalyzeProduct(item.VendorName, item.Product)
 		if analysis != nil {
-			// Convert price from source currency to USD
-			if item.Currency != "" && item.Currency != "USD" {
-				converted, err := parser.ConvertToUSD(analysis.Price, item.Currency)
-				if err != nil {
-					fmt.Printf("⚠️ Currency conversion failed for %s (%s): %v\n", analysis.Name, item.Currency, err)
-				} else {
-					// Compute the bioavailability multiplier from the OLD values
-					// before overwriting. effectiveCost = costPerGram / bioMultiplier,
-					// so bioMultiplier = costPerGram / effectiveCost.
-					bioMultiplier := 1.0
-					if analysis.EffectiveCost > 0 {
-						bioMultiplier = analysis.CostPerGram / analysis.EffectiveCost
-					}
-
-					analysis.Price = converted
-					analysis.CostPerGram = analysis.Price / analysis.TotalGrams
-					analysis.EffectiveCost = analysis.CostPerGram / bioMultiplier
-				}
-			}
 			report = append(report, *analysis)
 		}
 	}
