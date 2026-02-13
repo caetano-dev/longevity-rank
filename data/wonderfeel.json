@@ -1,0 +1,42 @@
+[
+  {
+    "id": "wonderfeel-youngr-nmn",
+    "title": "Wonderfeel Youngr™ NMN",
+    "context": "900mg 60 capsules 2 capsules per serving",
+    "handle": "https://getwonderfeel.com/product/wonderfeel-youngr-nmn/",
+    "body_html": "",
+    "image_url": "",
+    "variants": [
+      {
+        "price": "88.00",
+        "title": "1 bottle",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "wonderfeel-nmn-capsuls",
+    "title": "Wonderfeel NMN Capsuls™ 1000 mg",
+    "context": "1000mg 60 capsules 2 capsules per serving",
+    "handle": "https://getwonderfeel.com/product/wonderfeel-nmn-capsuls/",
+    "body_html": "",
+    "image_url": "",
+    "variants": [
+      {
+        "price": "58.00",
+        "title": "1 bottle",
+        "available": true
+      },
+      {
+        "price": "150.00",
+        "title": "3 Pack",
+        "available": true
+      },
+      {
+        "price": "270.00",
+        "title": "6 Pack",
+        "available": true
+      }
+    ]
+  }
+]
