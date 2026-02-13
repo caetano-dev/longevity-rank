@@ -45,5 +45,14 @@
   "Wonderfeel": {
     "blocklist": [],
     "overrides": {}
+  },
+  "Blueprint": {
+    "blocklist": [],
+    "overrides": {
+      "creatine": {
+        "forceType": "Powder",
+        "forceCount": 500
+      }
+    }
   }
 }

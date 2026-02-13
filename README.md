@@ -43,6 +43,15 @@ go run cmd/main.go -refresh
 go run cmd/main.go
 ```
 
+### Audit products missing data (detect override gaps)
+
+```
+go run cmd/main.go -audit
+go run cmd/main.go -refresh -audit
+```
+
+Scans all products that pass the supplement keyword filter and vendor blocklist, then reports any that lack enough data (mg, count, grams) for the analyzer to compute `totalGrams`. For each gap, prints the product handle, what data was extracted, what is missing, and a suggested `vendor_rules.json` override snippet. Use this after scraping to discover new products that need manual overrides.
+
 ### Filter by supplement type
 
 ```
@@ -81,6 +90,7 @@ internal/
   config/vendors.go          Vendor registry (name, URL, scraper type, cloudflare flag).
   models/types.go            Core structs: Vendor, Product, Variant, Analysis (with JSON tags).
   parser/analyzer.go         Math engine. Extracts mg, count, grams from text. Calculates $/gram and True Cost.
+  parser/audit.go            Gap detector. Finds products that pass filters but lack data for analysis. Prints override suggestions.
   rules/rules.go             Loads vendor_rules.json. Applies blocklists and manual overrides.
   scraper/router.go          Routes vendors to the correct scraper engine.
   scraper/shopify.go         Shopify products.json scraper with pagination safety.

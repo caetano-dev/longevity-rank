@@ -19,6 +19,7 @@ import (
 
 func main() {
 	refresh := flag.Bool("refresh", false, "Scrape websites to update local data")
+	audit := flag.Bool("audit", false, "Detect products that need manual overrides in vendor_rules.json")
 	supplements := flag.String("supplements", "nmn,nad,tmg,trimethylglycine,resveratrol,creatine", "Comma-separated list of supplement keywords to track")
 	flag.Parse()
 
@@ -105,11 +106,19 @@ func main() {
 	}
 
 	var report []models.Analysis
+	var auditResults []parser.AuditResult
 
 	for _, item := range allProducts {
 		analysis := parser.AnalyzeProduct(item.VendorName, item.Product)
 		if analysis != nil {
 			report = append(report, *analysis)
+		}
+
+		if *audit {
+			gap := parser.AuditProduct(item.VendorName, item.Product)
+			if gap != nil {
+				auditResults = append(auditResults, *gap)
+			}
 		}
 	}
 
@@ -125,6 +134,10 @@ func main() {
 	}
 
 	printTable(report)
+
+	if *audit {
+		fmt.Print(parser.FormatAuditReport(auditResults))
+	}
 }
 
 func printTable(data []models.Analysis) {

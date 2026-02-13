@@ -41,5 +41,10 @@ func GetVendors() []models.Vendor {
 			Type:       "shopify",
 			Cloudflare: true,
 		},
+		{
+			Name:       "Blueprint",
+			URL:        "https://blueprint.bryanjohnson.com/collections/supplements/products.json",
+			Type:       "shopify",
+		},
 	}
 }

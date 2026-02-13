@@ -30,12 +30,14 @@ The system is decoupled into two primary components communicating via a single s
 
 * **Command:** `go run cmd/main.go -refresh` (Scrapes web → saves raw products to `data/*.json` → Analyzes → Saves report to `data/analysis_report.json` → Prints table to stdout).
 * **Command:** `go run cmd/main.go` (Reads local `data/*.json` → Analyzes → Saves report → Prints table). Instant execution for logic debugging.
+* **Command:** `go run cmd/main.go -audit` (Runs the normal pipeline, then scans all products that pass the supplement keyword filter and vendor blocklist. Products that lack enough data for the analyzer to compute `totalGrams` are printed with a gap report: what data was extracted, what is missing, and a suggested `vendor_rules.json` override snippet. Combinable with `-refresh`.)
 * **Scraper Engines (`internal/scraper/`):**
   * `shopify.go`: Parses `products.json` endpoints.
   * `magento.go`: Parses embedded `Magento_Swatches/js/swatch-renderer` JSON configs and extracts HTML metadata.
   * `ldjson.go`: Parses Schema.org `@graph` LD+JSON objects.
 * **Normalization Layer (`internal/rules/`):** Reads `data/vendor_rules.json`. Applies blocklists (e.g., ignoring "5-HTP") and manual overrides (e.g., forcing capsule counts when missing from HTML).
 * **Math Engine (`internal/parser/analyzer.go`):** Calculates `CostPerGram` and applies the Bioavailability Multiplier to calculate `EffectiveCost`.
+* **Audit Gap Detector (`internal/parser/audit.go`):** `AuditProduct()` runs the same extraction pipeline as `AnalyzeProduct()` but never silently discards products. For each product that passes the supplement keyword filter and vendor blocklist but yields `totalGrams == 0`, it returns an `AuditResult` struct listing the product handle, what data was extracted (mg, count, grams), what is missing, and a suggested `vendor_rules.json` override snippet. `FormatAuditReport()` groups results by vendor and renders them as a human-readable stdout report. Triggered by the `-audit` CLI flag.
 * **Report Output (`internal/storage/json_store.go`):** `SaveReport()` serializes the sorted `[]models.Analysis` to `data/analysis_report.json`. Called by `cmd/main.go` after sorting, immediately before printing to stdout.
 
 ### 3.2. Data Models (`internal/models/types.go`)
