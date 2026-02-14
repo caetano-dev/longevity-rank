@@ -3,3 +3,4 @@ data/*.json
 !data/vendor_rules.json
 # Cloudflare
 !data/wonderfeel.json
+!data/jinfiniti.json
