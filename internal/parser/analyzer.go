@@ -1,12 +1,12 @@
 package parser
 
 import (
-	"math"
 	"regexp"
 	"strconv"
 	"strings"
 
 	"longevity-ranker/internal/models"
+	"longevity-ranker/internal/rules"
 )
 
 var (
@@ -22,7 +22,12 @@ var (
 // Products must contain at least one of these in their identity string to be analyzed.
 var AllowedSupplements = []string{"nmn", "nad", "tmg", "trimethylglycine", "resveratrol", "creatine"}
 
-func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
+// AnalyzeProduct evaluates every available variant of a product and returns an
+// Analysis entry for each valid one. When the vendor has a GlobalSubscriptionDiscount
+// configured in vendor_rules.json, a synthetic "Subscribe & Save" entry is also
+// emitted for each variant. Returns nil when the product has no variants, does not
+// match any allowed supplement keyword, or yields no valid analyses.
+func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 	if len(p.Variants) == 0 {
 		return nil
 	}
@@ -39,8 +44,15 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 		return nil
 	}
 
-	var bestAnalysis *models.Analysis
-	minCostPerGram := math.MaxFloat64
+	// Look up vendor config for potential subscription discount
+	var subscriptionDiscount float64
+	if rules.Registry != nil {
+		if config, exists := rules.Registry[vendorName]; exists {
+			subscriptionDiscount = config.GlobalSubscriptionDiscount
+		}
+	}
+
+	var results []models.Analysis
 
 	for _, v := range p.Variants {
 		if !v.Available {
@@ -125,8 +137,6 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 			continue
 		}
 
-		costPerGram := price / totalGrams
-
 		// --- Type classification (never uses BodyHTML to avoid HTML tag leakage) ---
 		typeSearch := strings.ToLower(p.Title + " " + v.Title + " " + p.Handle + " " + p.Context)
 		productType := "Single"
@@ -163,43 +173,69 @@ func AnalyzeProduct(vendorName string, p models.Product) *models.Analysis {
 			multiplierLabel = "Tablet Bonus"
 		}
 
+		// --- Build display name ---
+		displayName := p.Title
+		if v.Title != "" && !strings.EqualFold(v.Title, "Default Title") {
+			displayName = displayName + " (" + v.Title + ")"
+		}
+
+		// Strip redundant vendor name prefix from display name (case-insensitive)
+		trimmed := displayName
+		if len(vendorName) > 0 && len(trimmed) >= len(vendorName) &&
+			strings.EqualFold(trimmed[:len(vendorName)], vendorName) {
+			trimmed = strings.TrimSpace(trimmed[len(vendorName):])
+		}
+		if len(trimmed) > 0 {
+			displayName = trimmed
+		}
+
+		// --- One-time purchase entry ---
+		costPerGram := price / totalGrams
 		effectiveCost := costPerGram / multiplier
 
-		if costPerGram < minCostPerGram {
-			minCostPerGram = costPerGram
+		results = append(results, models.Analysis{
+			Vendor:          vendorName,
+			Name:            displayName,
+			Handle:          p.Handle,
+			Price:           price,
+			TotalGrams:      totalGrams,
+			CostPerGram:     costPerGram,
+			EffectiveCost:   effectiveCost,
+			Multiplier:      multiplier,
+			MultiplierLabel: multiplierLabel,
+			Type:            productType,
+			ImageURL:        p.ImageURL,
+			IsSubscription:  false,
+		})
 
-			displayName := p.Title
-			if v.Title != "" && !strings.EqualFold(v.Title, "Default Title") {
-				displayName = displayName + " (" + v.Title + ")"
-			}
+		// --- Synthetic subscription entry ---
+		if subscriptionDiscount > 0 {
+			subPrice := price * (1 - subscriptionDiscount)
+			subCostPerGram := subPrice / totalGrams
+			subEffectiveCost := subCostPerGram / multiplier
 
-			// Strip redundant vendor name prefix from display name (case-insensitive)
-			trimmed := displayName
-			if len(vendorName) > 0 && len(trimmed) >= len(vendorName) &&
-				strings.EqualFold(trimmed[:len(vendorName)], vendorName) {
-				trimmed = strings.TrimSpace(trimmed[len(vendorName):])
-			}
-			if len(trimmed) > 0 {
-				displayName = trimmed
-			}
-
-			bestAnalysis = &models.Analysis{
+			results = append(results, models.Analysis{
 				Vendor:          vendorName,
-				Name:            displayName,
+				Name:            displayName + " (Subscribe & Save)",
 				Handle:          p.Handle,
-				Price:           price,
+				Price:           subPrice,
 				TotalGrams:      totalGrams,
-				CostPerGram:     costPerGram,
-				EffectiveCost:   effectiveCost,
+				CostPerGram:     subCostPerGram,
+				EffectiveCost:   subEffectiveCost,
 				Multiplier:      multiplier,
 				MultiplierLabel: multiplierLabel,
 				Type:            productType,
 				ImageURL:        p.ImageURL,
-			}
+				IsSubscription:  true,
+			})
 		}
 	}
 
-	return bestAnalysis
+	if len(results) == 0 {
+		return nil
+	}
+
+	return results
 }
 
 // extractCount tries to find the capsule/tablet count from progressively broader

@@ -20,4 +20,5 @@ export interface Analysis {
   multiplierLabel: string;
   type: string;
   imageURL: string;
+  isSubscription: boolean;
 }

@@ -35,4 +35,5 @@ type Analysis struct {
 	MultiplierLabel string  `json:"multiplier_label"`
 	Type            string  `json:"type"`
 	ImageURL        string  `json:"image_url"`
+	IsSubscription  bool    `json:"is_subscription"`
 }

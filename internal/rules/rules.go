@@ -18,8 +18,9 @@ type ProductSpec struct {
 }
 
 type VendorConfig struct {
-	Blocklist []string               `json:"blocklist"`
-	Overrides map[string]ProductSpec `json:"overrides"`
+	Blocklist                  []string               `json:"blocklist"`
+	Overrides                  map[string]ProductSpec `json:"overrides"`
+	GlobalSubscriptionDiscount float64                `json:"globalSubscriptionDiscount,omitempty"`
 }
 
 // Registry holds the loaded rules

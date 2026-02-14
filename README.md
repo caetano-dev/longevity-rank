@@ -8,10 +8,11 @@ Architecture: **Git-Scraper**. Go scrapes vendor sites, runs the math engine, an
 
 - **Multi-vendor price comparison** across Shopify, Magento, and LD+JSON storefronts.
 - **Bioavailability-adjusted pricing** (True Cost) — liposomal, sublingual, and gel formulations receive a multiplier that lowers their effective $/gram. The multiplier value and label are exported in the JSON and displayed in the frontend's True Cost column as muted subtext (e.g., `1.5x Lipo Bonus`).
+- **Synthetic Subscription Pricing** — vendors whose Shopify APIs hide subscription prices (e.g., Renue By Science) are handled via a `globalSubscriptionDiscount` field in `data/vendor_rules.json`. The analyzer emits BOTH a one-time purchase entry and a synthetic "Subscribe & Save" entry (with `is_subscription: true`) for every valid variant. The frontend receives both rows and can toggle between purchase types.
 - **Clean product names** — the analyzer strips redundant vendor name prefixes from product titles (case-insensitive). E.g., vendor `"Nutricost"` + title `"Nutricost Creatine Monohydrate"` → `"Creatine Monohydrate"`.
 - **Multi-supplement tracking** — NMN, NAD+, TMG, Resveratrol, and Creatine out of the box. Configurable via `--supplements` flag.
 - **Cloudflare-safe** — vendors behind Cloudflare (Jinfiniti, Wonderfeel) are flagged with `Cloudflare: true` in the vendor config. The scraper skips them on `--refresh` and uses manually-maintained JSON instead.
-- **Override system** — missing dosage data (capsule count, mg per cap) is fixed via hardcoded rules in `data/vendor_rules.json`. No OCR. No image parsing.
+- **Override system** — missing dosage data (capsule count, mg per cap) is fixed via hardcoded rules in `data/vendor_rules.json`. No OCR. No image parsing. The same file supports `globalSubscriptionDiscount` for synthetic subscription price generation.
 - **Pagination safety** — Shopify scraper uses proper URL construction, product deduplication, and a hard page limit (50) to prevent infinite loops.
 - **Daily CI/CD** — GitHub Actions workflow scrapes daily, commits changed JSON, and triggers a Vercel build.
 
@@ -89,8 +90,8 @@ Opens at `http://localhost:3000`. Reads `data/analysis_report.json` from the rep
 cmd/main.go                  CLI entry point. Flags: --refresh, --supplements.
 internal/
   config/vendors.go          Vendor registry (name, URL, scraper type, cloudflare flag).
-  models/types.go            Core structs: Vendor, Product, Variant, Analysis (with JSON tags, including Multiplier and MultiplierLabel).
-  parser/analyzer.go         Math engine. Extracts mg, count, grams from text. Calculates $/gram and True Cost. Strips vendor name from product title. Populates multiplier and multiplier label.
+  models/types.go            Core structs: Vendor, Product, Variant, Analysis (with JSON tags, including Multiplier, MultiplierLabel, and IsSubscription).
+  parser/analyzer.go         Math engine. Returns []models.Analysis (all valid variants, not just cheapest). Extracts mg, count, grams from text. Calculates $/gram and True Cost. Strips vendor name from product title. Populates multiplier and multiplier label. Emits synthetic "Subscribe & Save" entries when vendor has globalSubscriptionDiscount > 0.
   parser/audit.go            Gap detector. Finds products that pass filters but lack data for analysis. Prints override suggestions.
   rules/rules.go             Loads vendor_rules.json. Applies blocklists and manual overrides.
   scraper/router.go          Routes vendors to the correct scraper engine.
@@ -127,6 +128,7 @@ Each vendor can have:
 
 - **`blocklist`**: Product title substrings to reject (e.g. `"Bundle"`, `"Subscription"`).
 - **`overrides`**: Keyed by product handle. Forces `forceType`, `forceMg`, and `forceCount` when the scraper cannot extract dosage from HTML.
+- **`globalSubscriptionDiscount`**: A float between 0 and 1 representing the fractional discount for subscription purchases (e.g., `0.10` = 10% off). When set, the analyzer emits a second "Subscribe & Save" entry for every valid variant of that vendor's products, with `is_subscription: true` and the discounted price. Used for vendors whose Shopify APIs do not expose subscription pricing directly.
 
 Example:
 
@@ -134,6 +136,7 @@ Example:
 {
   "Renue By Science": {
     "blocklist": ["Cream", "Serum", "Pet"],
+    "globalSubscriptionDiscount": 0.10,
     "overrides": {
       "lipo-nmn-powdered-liposomal-nmn2": {
         "forceType": "Capsules",
@@ -180,7 +183,7 @@ Product `Handle` (URL slug or full URL) and the vendor's base URL are available 
 Go Scraper → data/*.json (raw) → analyzer.go → data/analysis_report.json → Next.js (dumb renderer)
 ```
 
-The Go backend is the single source of truth for all parsing, regex extraction, bioavailability math, multiplier assignment, vendor-name stripping, and type classification. The frontend contains zero duplicated logic. It reads `data/analysis_report.json` and renders it.
+The Go backend is the single source of truth for all parsing, regex extraction, bioavailability math, multiplier assignment, vendor-name stripping, type classification, and synthetic subscription generation. The frontend contains zero duplicated logic. It reads `data/analysis_report.json` and renders it. Each product may appear twice in the report — once as a one-time purchase (`is_subscription: false`) and once as a subscription (`is_subscription: true`) — enabling the frontend to toggle between purchase types.
 
 ## Frontend
 
@@ -188,7 +191,7 @@ The Go backend is the single source of truth for all parsing, regex extraction, 
 
 **How it works:**
 
-1. `lib/data.ts` reads `data/analysis_report.json` using `fs.readFileSync` during the build step. It maps the Go backend's snake_case JSON fields to camelCase TypeScript via a `mapEntry()` function.
+1. `lib/data.ts` reads `data/analysis_report.json` using `fs.readFileSync` during the build step. It maps the Go backend's snake_case JSON fields (including `is_subscription`) to camelCase TypeScript (including `isSubscription`) via a `mapEntry()` function.
 2. `app/page.tsx` calls `loadReport()`, attaches `VendorInfo` metadata (for affiliate links), and passes the result to `ProductTable`. No parsing. No math.
 3. `ProductTable` is a client component that provides supplement filtering (pill tabs) and column sorting. Desktop shows a data table; mobile (<768px) shows a card layout. The True Cost column header has a hover tooltip `(i)` explaining: "Base Price ÷ Bioavailability Multiplier". When a product's `multiplier > 1`, a muted subtext below the True Cost value shows the multiplier and its label (e.g., `(1.5x Lipo Bonus)`).
 4. The build produces a fully static `out/` directory. No server, no client-side API calls.

@@ -28,6 +28,7 @@ interface RawReportEntry {
   multiplier_label: string;
   type: string;
   image_url: string;
+  is_subscription: boolean;
 }
 
 /** Absolute path to the /data directory at the repo root. */
@@ -50,6 +51,7 @@ function mapEntry(raw: RawReportEntry): Analysis {
     multiplierLabel: raw.multiplier_label,
     type: raw.type,
     imageURL: raw.image_url,
+    isSubscription: raw.is_subscription,
   };
 }
 

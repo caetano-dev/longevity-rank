@@ -1,7 +1,8 @@
 {
   "Nutricost": {
     "blocklist": ["5-HTP", "Carnitine", "Caffeine", "Pre-Workout", "Gummies", "Vanadium"],
-    "overrides": {}
+    "overrides": {},
+    "globalSubscriptionDiscount": 0.20
   },
   "NMN Bio": {
     "blocklist": ["Bundle", "Endurance", "Book"],
@@ -19,6 +20,7 @@
   },
   "Renue By Science": {
     "blocklist": ["Test", "Cream", "Serum", "Pet", "Cleanser", "Lotion"],
+    "globalSubscriptionDiscount": 0.10,
     "overrides": {
       "lipo-nad-complete-powdered-liposomal": {
         "forceType": "Capsules",

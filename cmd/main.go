@@ -109,9 +109,9 @@ func main() {
 	var auditResults []parser.AuditResult
 
 	for _, item := range allProducts {
-		analysis := parser.AnalyzeProduct(item.VendorName, item.Product)
-		if analysis != nil {
-			report = append(report, *analysis)
+		analyses := parser.AnalyzeProduct(item.VendorName, item.Product)
+		if analyses != nil {
+			report = append(report, analyses...)
 		}
 
 		if *audit {
@@ -147,9 +147,11 @@ func printTable(data []models.Analysis) {
 
 	for i, row := range data {
 		shortName := row.Name
+		/*
 		if len(shortName) > 30 {
 			shortName = shortName[:27] + "..."
 		}
+		*/
 
 		reset := "\033[0m"
 		color := reset
