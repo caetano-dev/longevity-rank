@@ -11,6 +11,11 @@
         "price": "88.00",
         "title": "1 bottle",
         "available": true
+      },
+      {
+        "price": "73.00",
+        "title": "1 bottle (Subscribe & Save)",
+        "available": true
       }
     ]
   },
@@ -25,6 +30,11 @@
       {
         "price": "58.00",
         "title": "1 bottle",
+        "available": true
+      },
+      {
+        "price": "52.00",
+        "title": "1 bottle (Subscribe & Save)",
         "available": true
       },
       {

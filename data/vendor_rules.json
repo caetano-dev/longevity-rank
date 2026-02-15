@@ -50,6 +50,7 @@
   },
   "Blueprint": {
     "blocklist": [],
+    "globalSubscriptionDiscount": 0.20,
     "overrides": {
       "creatine": {
         "forceType": "Powder",
