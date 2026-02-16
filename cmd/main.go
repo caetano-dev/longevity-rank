@@ -1,6 +1,7 @@
 package main
 
 import (
+	"encoding/json"
 	"flag"
 	"fmt"
 	"os"
@@ -131,6 +132,26 @@ func main() {
 		fmt.Printf("⚠️ Error saving analysis report: %v\n", err)
 	} else {
 		fmt.Printf("✅ Saved analysis report (%d products) to data/analysis_report.json\n", len(report))
+	}
+
+	// --- Triage Engine: extract and persist review queue ---
+	var reviewQueue []models.Analysis
+	for _, item := range report {
+		if item.NeedsReview {
+			reviewQueue = append(reviewQueue, item)
+		}
+	}
+
+	reviewPath := filepath.Join("data", "needs_review.json")
+	reviewJSON, err := json.MarshalIndent(reviewQueue, "", "  ")
+	if err != nil {
+		fmt.Printf("⚠️ Error marshalling review queue: %v\n", err)
+	} else {
+		if err := os.WriteFile(reviewPath, reviewJSON, 0644); err != nil {
+			fmt.Printf("⚠️ Error saving review queue: %v\n", err)
+		} else {
+			fmt.Printf("🔍 Saved review queue (%d flagged) to data/needs_review.json\n", len(reviewQueue))
+		}
 	}
 
 	printTable(report)

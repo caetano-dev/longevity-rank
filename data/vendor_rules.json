@@ -1,16 +1,25 @@
 {
   "Nutricost": {
-    "blocklist": ["5-HTP", "Carnitine", "Caffeine", "Pre-Workout", "Gummies", "Vanadium"],
-    "overrides": {},
-    "globalSubscriptionDiscount": 0.20
-  },
+      "blocklist": ["5-HTP", "Carnitine", "Caffeine", "Pre-Workout", "Gummies", "Vanadium"],
+      "variantBlocklist": ["Unflavored / 30 SERV", "Blue Raspberry / 30 SERV", "Fruit Punch / 30 SERV", "Watermelon / 30 SERV", "Sour Watermelon / 30 SERV", "Pineapple Mango / 30 SERV", "Grape / 30 SERV"],
+      "overrides": {
+        "nutricost-creatine-monohydrate-powder-500-grams": {
+          "variantOverrides": {
+            "Coastal Explosion / 30 SERV": 150.0,
+            "Frozen Lemonade / 30 SERV": 150.0,
+            "Island Cooler / 30 SERV": 150.0
+          }
+        }
+      },
+      "globalSubscriptionDiscount": 0.20
+    },
   "NMN Bio": {
     "blocklist": ["Bundle", "Endurance", "Book"],
     "overrides": {
       "nmn-supplement-500mg-capsules-30-caps": {
         "forceType": "Capsules",
-        "forceMg": 500,
-        "forceCount": 30
+        "forceTotalGrams": 15,
+        "forceServingMg": 500
       }
     }
   },
@@ -24,29 +33,38 @@
     "overrides": {
       "lipo-nad-complete-powdered-liposomal": {
         "forceType": "Capsules",
-        "forceMg": 250,
-        "forceCount": 90
+        "forceTotalGrams": 22.5,
+        "forceServingMg": 250
       },
       "lipo-nmn-powdered-liposomal-nmn2": {
         "forceType": "Capsules",
-        "forceMg": 250,
-        "forceCount": 90
+        "forceTotalGrams": 22.5,
+        "forceServingMg": 250
       },
       "nmns-240-ct-sublingual-tablets-2": {
         "forceType": "Tablets",
-        "forceMg": 125,
-        "forceCount": 240
+        "forceTotalGrams": 30,
+        "forceServingMg": 125
       },
       "nmn-lipo-gel-sublingual": {
         "forceType": "Gel",
-        "forceMg": 240,
-        "forceCount": 75
+        "forceTotalGrams": 18,
+        "forceServingMg": 240
       }
     }
   },
   "Wonderfeel": {
     "blocklist": [],
-    "overrides": {}
+    "overrides": {
+      "https://getwonderfeel.com/product/wonderfeel-youngr-nmn/": {
+        "forceType": "Capsules",
+        "forceTotalGrams": 27.0
+      },
+      "https://getwonderfeel.com/product/wonderfeel-nmn-capsuls/": {
+        "forceType": "Capsules",
+        "forceTotalGrams": 30.0
+      }
+    }
   },
   "Blueprint": {
     "blocklist": [],
@@ -54,7 +72,7 @@
     "overrides": {
       "creatine": {
         "forceType": "Powder",
-        "forceCount": 500
+        "forceTotalGrams": 500
       }
     }
   }

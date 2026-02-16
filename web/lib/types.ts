@@ -21,4 +21,6 @@ export interface Analysis {
   type: string;
   imageURL: string;
   isSubscription: boolean;
+  needsReview: boolean;
+  reviewReason: string;
 }

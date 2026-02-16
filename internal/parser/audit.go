@@ -7,6 +7,7 @@ import (
 	"strings"
 
 	"longevity-ranker/internal/models"
+	"longevity-ranker/internal/rules"
 )
 
 // AuditResult describes a product that passes interest/blocklist filters but
@@ -35,6 +36,9 @@ type AuditResult struct {
 // gate but the analyzer would return nil (no computable totalGrams), this
 // function returns an *AuditResult describing the gap. If the product is
 // fully analyzable (AnalyzeProduct would succeed), it returns nil — no gap.
+//
+// This function assumes ApplyRules has already been called (blocklist filtering).
+// It does NOT re-check the blocklist — that is the caller's responsibility.
 func AuditProduct(vendorName string, p models.Product) *AuditResult {
 	if len(p.Variants) == 0 {
 		return &AuditResult{
@@ -58,7 +62,20 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 		return nil // Not a supplement we track — not a gap, just irrelevant
 	}
 
-	// --- Check if AnalyzeProduct already succeeds ---
+	// --- Check if a catalog override already provides total grams ---
+	if rules.Registry != nil {
+		if config, exists := rules.Registry[vendorName]; exists {
+			if spec, hasOverride := config.Overrides[p.Handle]; hasOverride && spec.ForceTotalGrams > 0 {
+				// The hybrid engine will handle this product via catalog path.
+				// Verify the analyzer actually succeeds with this override.
+				if AnalyzeProduct(vendorName, p) != nil {
+					return nil
+				}
+			}
+		}
+	}
+
+	// --- Check if AnalyzeProduct already succeeds via regex path ---
 	if AnalyzeProduct(vendorName, p) != nil {
 		return nil // Product is fully analyzable, no audit needed
 	}
@@ -164,13 +181,13 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 	if !hasPowderMass && !hasCapsuleMass {
 		// Neither path can compute totalGrams
 		if !result.MgFound {
-			result.Missing = append(result.Missing, "mg per serving (forceMg)")
+			result.Missing = append(result.Missing, "mg per serving (forceServingMg)")
 		}
 		if !result.CountFound {
-			result.Missing = append(result.Missing, "capsule/tablet count (forceCount)")
+			result.Missing = append(result.Missing, "capsule/tablet count")
 		}
 		if !result.GramsFound && !result.KgFound {
-			result.Missing = append(result.Missing, "total grams/kg (no powder weight found)")
+			result.Missing = append(result.Missing, "total grams (forceTotalGrams)")
 		}
 	} else {
 		// We found partial data but totalGrams still came out zero or analysis
@@ -238,19 +255,29 @@ func FormatAuditReport(results []AuditResult) string {
 			// Show what's MISSING
 			b.WriteString(fmt.Sprintf("  │  Missing: %s\n", strings.Join(r.Missing, "; ")))
 
-			// Suggest the override snippet
+			// Suggest the override snippet using the new math format
 			b.WriteString("  │  Suggested override:\n")
 			b.WriteString(fmt.Sprintf("  │    \"%s\": {\n", r.Handle))
 			b.WriteString("  │      \"forceType\": \"Capsules\",\n")
-			if !r.MgFound {
-				b.WriteString("  │      \"forceMg\": ???,\n")
+
+			// Calculate forceTotalGrams from extracted data if possible
+			if r.MgFound && r.CountFound {
+				totalGrams := r.MgValue * r.CountValue / 1000.0
+				b.WriteString(fmt.Sprintf("  │      \"forceTotalGrams\": %.1f,\n", totalGrams))
+				b.WriteString(fmt.Sprintf("  │      \"forceServingMg\": %.0f\n", r.MgValue))
+			} else if r.GramsFound {
+				b.WriteString(fmt.Sprintf("  │      \"forceTotalGrams\": %.1f,\n", r.GramsValue))
+				b.WriteString("  │      \"forceServingMg\": ???\n")
+			} else if r.KgFound {
+				b.WriteString(fmt.Sprintf("  │      \"forceTotalGrams\": %.1f,\n", r.KgValue*1000))
+				b.WriteString("  │      \"forceServingMg\": ???\n")
 			} else {
-				b.WriteString(fmt.Sprintf("  │      \"forceMg\": %.0f,\n", r.MgValue))
-			}
-			if !r.CountFound {
-				b.WriteString("  │      \"forceCount\": ???\n")
-			} else {
-				b.WriteString(fmt.Sprintf("  │      \"forceCount\": %.0f\n", r.CountValue))
+				b.WriteString("  │      \"forceTotalGrams\": ???,\n")
+				if r.MgFound {
+					b.WriteString(fmt.Sprintf("  │      \"forceServingMg\": %.0f\n", r.MgValue))
+				} else {
+					b.WriteString("  │      \"forceServingMg\": ???\n")
+				}
 			}
 			b.WriteString("  │    }\n")
 			b.WriteString("  │\n")

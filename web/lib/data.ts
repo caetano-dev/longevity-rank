@@ -29,6 +29,8 @@ interface RawReportEntry {
   type: string;
   image_url: string;
   is_subscription: boolean;
+  needs_review: boolean;
+  review_reason?: string;
 }
 
 /** Absolute path to the /data directory at the repo root. */
@@ -52,6 +54,8 @@ function mapEntry(raw: RawReportEntry): Analysis {
     type: raw.type,
     imageURL: raw.image_url,
     isSubscription: raw.is_subscription,
+    needsReview: raw.needs_review,
+    reviewReason: raw.review_reason ?? "",
   };
 }
 

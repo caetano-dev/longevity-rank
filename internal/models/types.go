@@ -36,4 +36,6 @@ type Analysis struct {
 	Type            string  `json:"type"`
 	ImageURL        string  `json:"image_url"`
 	IsSubscription  bool    `json:"is_subscription"`
+	NeedsReview     bool    `json:"needs_review"`
+	ReviewReason    string  `json:"review_reason,omitempty"`
 }

@@ -10,17 +10,21 @@ import (
 	"longevity-ranker/internal/models"
 )
 
-// ProductSpec defines the "Physics" of a product that the scraper might miss
+// ProductSpec defines immutable mathematical truths about a product that the
+// regex engine cannot reliably extract. When present, these values bypass
+// regex entirely — they are not hints, they are overrides.
 type ProductSpec struct {
-	ForceType  string  `json:"forceType"`
-	ForceMg    float64 `json:"forceMg"`
-	ForceCount float64 `json:"forceCount"`
+	ForceType        string             `json:"forceType,omitempty"`
+	ForceTotalGrams  float64            `json:"forceTotalGrams,omitempty"`
+	ForceServingMg   float64            `json:"forceServingMg,omitempty"`
+	VariantOverrides map[string]float64 `json:"variantOverrides,omitempty"`
 }
 
 type VendorConfig struct {
 	Blocklist                  []string               `json:"blocklist"`
-	Overrides                  map[string]ProductSpec `json:"overrides"`
-	GlobalSubscriptionDiscount float64                `json:"globalSubscriptionDiscount,omitempty"`
+	VariantBlocklist           []string               `json:"variantBlocklist,omitempty"`
+	Overrides                  map[string]ProductSpec  `json:"overrides"`
+	GlobalSubscriptionDiscount float64                 `json:"globalSubscriptionDiscount,omitempty"`
 }
 
 // Registry holds the loaded rules
@@ -46,7 +50,9 @@ func LoadRules(path string) error {
 	return nil
 }
 
-// ApplyRules enriches the product data with known facts from our database
+// ApplyRules evaluates the vendor blocklist against the product. Returns false
+// if the product is blocked, true if it is allowed. This function performs NO
+// data enrichment — overrides are consumed directly by the analyzer.
 func ApplyRules(vendorName string, p *models.Product) bool {
 	if Registry == nil {
 		return true // No rules loaded, safe default
@@ -57,31 +63,12 @@ func ApplyRules(vendorName string, p *models.Product) bool {
 		return true
 	}
 
-	// 1. Check Blocklist
+	// Check Blocklist
 	identity := strings.ToLower(p.Title + " " + p.Handle + " " + p.Context)
 	for _, blocked := range config.Blocklist {
 		if strings.Contains(identity, strings.ToLower(blocked)) {
 			return false // Reject product
 		}
-	}
-
-	// 2. Apply Overrides (The "Manual OCR")
-	if spec, ok := config.Overrides[p.Handle]; ok {
-		extraContext := ""
-		if spec.ForceMg > 0 {
-			extraContext += fmt.Sprintf(" %0.fmg", spec.ForceMg)
-		}
-		if spec.ForceCount > 0 {
-			if spec.ForceType == "Powder" {
-				extraContext += fmt.Sprintf(" %0.fg", spec.ForceCount)
-			} else if spec.ForceType == "Tablets" {
-				// NEW: Support for Tablets
-				extraContext += fmt.Sprintf(" %0.f tablets", spec.ForceCount)
-			} else {
-				extraContext += fmt.Sprintf(" %0.f capsules", spec.ForceCount)
-			}
-		}
-		p.Context += extraContext
 	}
 
 	return true

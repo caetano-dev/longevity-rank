@@ -12,7 +12,8 @@ Architecture: **Git-Scraper**. Go scrapes vendor sites, runs the math engine, an
 - **Clean product names** — the analyzer strips redundant vendor name prefixes from product titles (case-insensitive). E.g., vendor `"Nutricost"` + title `"Nutricost Creatine Monohydrate"` → `"Creatine Monohydrate"`.
 - **Multi-supplement tracking** — NMN, NAD+, TMG, Resveratrol, and Creatine out of the box. Configurable via `--supplements` flag.
 - **Cloudflare-safe** — vendors behind Cloudflare (Jinfiniti, Wonderfeel) are flagged with `Cloudflare: true` in the vendor config. The scraper skips them on `--refresh` and uses manually-maintained JSON instead.
-- **Override system** — missing dosage data (capsule count, mg per cap) is fixed via hardcoded rules in `data/vendor_rules.json`. No OCR. No image parsing. The same file supports `globalSubscriptionDiscount` for synthetic subscription price generation.
+- **Hybrid Catalog/Regex Engine** — the analyzer uses a two-path architecture. ~80% of standard products are handled automatically by the regex extraction pipeline. The remaining ~20% of complex products (multi-ingredient, non-standard weights) are handled by immutable overrides in `data/vendor_rules.json` that bypass regex entirely. Overrides specify `forceTotalGrams` (the pre-computed total active ingredient mass) and optionally `forceType` and `forceServingMg`. No OCR. No image parsing. The same file supports `globalSubscriptionDiscount` for synthetic subscription price generation.
+- **Triage Engine** — products whose mass was resolved by regex (no override) are scanned against a hardcoded `dirtyKeywords` list (flavors, blends, gummies, combos). Matches are flagged with `needs_review: true` and `review_reason` in the analysis output, and collected into `data/needs_review.json` for operator review. The triage is intentionally aggressive — it flags for human review, not rejection.
 - **Pagination safety** — Shopify scraper uses proper URL construction, product deduplication, and a hard page limit (50) to prevent infinite loops.
 - **Daily CI/CD** — GitHub Actions workflow scrapes daily, commits changed JSON, and triggers a Vercel build.
 
@@ -87,13 +88,13 @@ Opens at `http://localhost:3000`. Reads `data/analysis_report.json` from the rep
 ## Project Structure
 
 ```
-cmd/main.go                  CLI entry point. Flags: --refresh, --supplements.
+cmd/main.go                  CLI entry point. Flags: --refresh, --supplements, --audit. After saving analysis_report.json, extracts all NeedsReview entries into data/needs_review.json.
 internal/
   config/vendors.go          Vendor registry (name, URL, scraper type, cloudflare flag).
-  models/types.go            Core structs: Vendor, Product, Variant, Analysis (with JSON tags, including Multiplier, MultiplierLabel, and IsSubscription).
-  parser/analyzer.go         Math engine. Returns []models.Analysis (all valid variants, not just cheapest). Extracts mg, count, grams from text. Calculates $/gram and True Cost. Strips vendor name from product title. Populates multiplier and multiplier label. Emits synthetic "Subscribe & Save" entries when vendor has globalSubscriptionDiscount > 0.
-  parser/audit.go            Gap detector. Finds products that pass filters but lack data for analysis. Prints override suggestions.
-  rules/rules.go             Loads vendor_rules.json. Applies blocklists and manual overrides.
+  models/types.go            Core structs: Vendor, Product, Variant, Analysis (with JSON tags, including Multiplier, MultiplierLabel, IsSubscription, NeedsReview, and ReviewReason).
+  parser/analyzer.go         Hybrid Catalog/Regex Engine with three-tier mass resolution. Checks variantBlocklist to skip ghost variants. Priority: variantOverrides[v.Title] > forceTotalGrams > regex pipeline. Pack multiplier always runs. Triage Engine scans regex-resolved products against dirtyKeywords and sets NeedsReview/ReviewReason. Returns []models.Analysis (all valid variants). Strips vendor name from product title. Populates multiplier and multiplier label. Emits synthetic "Subscribe & Save" entries when vendor has globalSubscriptionDiscount > 0.
+  parser/audit.go            Gap detector. Finds products that pass filters but lack data for analysis. Prints override suggestions using forceTotalGrams/forceServingMg format.
+  rules/rules.go             Loads vendor_rules.json. ApplyRules() evaluates product-level blocklist only (returns true/false). No data enrichment — overrides and variantBlocklist are consumed directly by the analyzer.
   scraper/router.go          Routes vendors to the correct scraper engine.
   scraper/shopify.go         Shopify products.json scraper with pagination safety.
   scraper/magento.go         Magento swatch-renderer JSON + bulk pricing scraper.
@@ -101,6 +102,7 @@ internal/
   storage/json_store.go      Reads/writes data/*.json files. SaveReport() writes analysis_report.json.
 data/
   analysis_report.json       ★ THE INTEGRATION POINT. Pre-computed Analysis array. Frontend reads ONLY this.
+  needs_review.json          Triage Engine output. Subset of analysis_report.json entries where needs_review == true. Written by cmd/main.go after every run. Operator reviews this to decide which products need overrides in vendor_rules.json.
   vendor_rules.json          Blocklists and manual dosage overrides per vendor.
   *.json                     Scraped raw product data (one file per vendor). NOT read by the frontend.
 web/
@@ -126,8 +128,13 @@ web/
 
 Each vendor can have:
 
-- **`blocklist`**: Product title substrings to reject (e.g. `"Bundle"`, `"Subscription"`).
-- **`overrides`**: Keyed by product handle. Forces `forceType`, `forceMg`, and `forceCount` when the scraper cannot extract dosage from HTML.
+- **`blocklist`**: Product title substrings to reject at the product level (e.g. `"Bundle"`, `"Subscription"`). Evaluated by `ApplyRules()` before the product reaches the analyzer.
+- **`variantBlocklist`**: Variant title substrings to reject at the variant level (e.g. `"30 SERV"`, `"Sample"`). Evaluated inside the analyzer's variant loop — matched variants are skipped via `continue`. Use this to suppress ghost variants that share a product handle with valid variants.
+- **`overrides`**: Keyed by product handle. Each override is a `ProductSpec` with immutable math fields:
+  - `forceType` (string): Product type override (e.g. `"Capsules"`, `"Powder"`, `"Tablets"`, `"Gel"`). Bypasses string-matching type classification.
+  - `forceTotalGrams` (float): Pre-computed total active ingredient mass in grams. When > 0, the regex mass-extraction pipeline is bypassed entirely. Formula: `mg_per_serving × count / 1000`.
+  - `forceServingMg` (float): Per-serving mg. Informational/documentation field — not consumed by the analyzer, but aids operators in verifying the `forceTotalGrams` calculation.
+  - `variantOverrides` (map[string]float64): Per-variant total grams, keyed by exact variant title string. When a variant title matches a key and the value is > 0, it takes highest priority — bypassing both `forceTotalGrams` and the regex pipeline. Use this when a single product handle groups variants with drastically different weights (e.g. Nutricost "500 GMS" vs "30 SERV" under one handle).
 - **`globalSubscriptionDiscount`**: A float between 0 and 1 representing the fractional discount for subscription purchases (e.g., `0.10` = 10% off). When set, the analyzer emits a second "Subscribe & Save" entry for every valid variant of that vendor's products, with `is_subscription: true` and the discounted price. Used for vendors whose Shopify APIs do not expose subscription pricing directly.
 
 Example:
@@ -137,11 +144,16 @@ Example:
   "Renue By Science": {
     "blocklist": ["Cream", "Serum", "Pet"],
     "globalSubscriptionDiscount": 0.10,
+    "variantBlocklist": ["Sample"],
     "overrides": {
       "lipo-nmn-powdered-liposomal-nmn2": {
         "forceType": "Capsules",
-        "forceMg": 250,
-        "forceCount": 90
+        "forceTotalGrams": 22.5,
+        "forceServingMg": 250,
+        "variantOverrides": {
+          "60 Capsules": 15.0,
+          "90 Capsules": 22.5
+        }
       }
     }
   }
@@ -183,7 +195,7 @@ Product `Handle` (URL slug or full URL) and the vendor's base URL are available 
 Go Scraper → data/*.json (raw) → analyzer.go → data/analysis_report.json → Next.js (dumb renderer)
 ```
 
-The Go backend is the single source of truth for all parsing, regex extraction, bioavailability math, multiplier assignment, vendor-name stripping, type classification, and synthetic subscription generation. The frontend contains zero duplicated logic. It reads `data/analysis_report.json` and renders it. Each product may appear twice in the report — once as a one-time purchase (`is_subscription: false`) and once as a subscription (`is_subscription: true`) — enabling the frontend to toggle between purchase types.
+The Go backend is the single source of truth for all parsing, regex extraction, bioavailability math, multiplier assignment, vendor-name stripping, type classification, and synthetic subscription generation. The analyzer implements a **Hybrid Catalog/Regex Engine**: products with `forceTotalGrams` overrides in `vendor_rules.json` bypass the regex mass-extraction pipeline entirely; all other products use the standard regex pipeline. The `rePack` (pack multiplier) regex always runs regardless of override source. `ApplyRules()` performs blocklist filtering only — it does not inject strings into product context. A **Triage Engine** runs after mass extraction: regex-resolved products are scanned against `dirtyKeywords` (flavors, blends, gummies, combos) and flagged with `needs_review: true` / `review_reason`. `cmd/main.go` extracts all flagged entries into `data/needs_review.json` for operator review. The frontend contains zero duplicated logic. It reads `data/analysis_report.json` and renders it. Each product may appear twice in the report — once as a one-time purchase (`is_subscription: false`) and once as a subscription (`is_subscription: true`) — enabling the frontend to toggle between purchase types.
 
 ## Frontend
 
