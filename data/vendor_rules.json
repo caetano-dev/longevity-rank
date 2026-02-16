@@ -4,18 +4,26 @@
     "variantBlocklist": ["Unflavored / 30 SERV", "Blue Raspberry / 30 SERV", "Fruit Punch / 30 SERV", "Watermelon / 30 SERV", "Sour Watermelon / 30 SERV", "Pineapple Mango / 30 SERV", "Grape / 30 SERV"],
     "globalSubscriptionDiscount": 0.20,
     "overrides": {
+      "nutricost-nmn":{
+        "forceType": "Capsules",
+        "forceActiveGrams": 150
+      },
       "nutricost-creatine-for-women":{
         "forceType": "Powder",
         "variantOverrides": {
           "Strawberry Lemonade / 100 Serv": 300,
           "Peach Mango / 100 Serv": 300,
           "Strawberry Lemonade / 50 Serv": 150.0,
-          "Peach Mango / 50 Serv": 150.0
+          "Peach Mango / 50 Serv": 150.0,
+          "Unflavored / 100 Serv": 300,
+          "Unflavored / 50 Serv": 150
         },
         "variantGrossOverrides": {
           "Strawberry Lemonade / 100 Serv": 570,
           "Strawberry Lemonade / 50 Serv": 285,
           "Peach Mango / 50 Serv": 260.0,
+          "Unflavored / 100 Serv": 318.0,
+          "Unflavored / 50 Serv": 159.0,
           "Peach Mango / 100 Serv": 520.0
         }
       },
@@ -60,22 +68,24 @@
     }
   },
   "Do Not Age": {
-    "blocklist": ["Test", "Kit", "Consultation", "Subscription", "Apigenin", "Pure NR"],
+    "blocklist": ["Test", "Kit", "Consultation", "Apigenin", "Pure NR"],
     "overrides": {}
   },
   "Renue By Science": {
     "blocklist": ["Test", "Cream", "Serum", "Pet", "Cleanser", "Lotion"],
     "globalSubscriptionDiscount": 0.10,
     "overrides": {
+      "pure-nad-nasal-spray-10-grams-pure-nicotinamide-adenine-dinucleotide-nad-new": {
+        "forceActiveGrams": 10
+      },
       "lipo-nad-complete-powdered-liposomal": {
         "forceType": "Capsules",
-        "forceActiveGrams": 22.5,
-        "forceServingMg": 250
+        "forceActiveGrams": 34.8
       },
       "lipo-nmn-powdered-liposomal-nmn2": {
         "forceType": "Capsules",
-        "forceActiveGrams": 22.5,
-        "forceServingMg": 250,
+        "forceActiveGrams": 225,
+        "forceServingMg": 500,
         "variantOverrides": {
           "60 Capsules": 15.0,
           "90 Capsules": 22.5
@@ -84,12 +94,12 @@
       "nmns-240-ct-sublingual-tablets-2": {
         "forceType": "Tablets",
         "forceActiveGrams": 30,
-        "forceServingMg": 125
+        "forceServingMg": 250
       },
       "nmn-lipo-gel-sublingual": {
         "forceType": "Gel",
-        "forceActiveGrams": 18,
-        "forceServingMg": 240
+        "forceActiveGrams": 21,
+        "forceServingMg": 280
       }
     }
   },
@@ -113,6 +123,16 @@
       "creatine": {
         "forceType": "Powder",
         "forceActiveGrams": 500
+      }
+    }
+  },
+  "ProHealth":{
+    "overrides": {
+      "prohealth-nad-triple-boost-with-nmn-90-capsules-ph659": {
+        "forceActiveGrams": 18.6
+      },
+      "nmn-pro-bundle-ph519": {
+        "forceActiveGrams": 24
       }
     }
   }
