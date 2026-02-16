@@ -179,9 +179,10 @@ func printTable(data []models.Analysis) {
 			color = "\033[32m" // Great Deal
 		}
 
-		// Show GrossGrams only when it differs from ActiveGrams and is non-zero
+		// Show GrossGrams whenever it is non-zero; only show — when truly 0
+		// (the correct state for Capsules/Tablets that don't advertise gross weight).
 		grossCol := "—"
-		if row.GrossGrams > 0 && row.GrossGrams != row.ActiveGrams {
+		if row.GrossGrams > 0 {
 			grossCol = fmt.Sprintf("%.1fg", row.GrossGrams)
 		}
 

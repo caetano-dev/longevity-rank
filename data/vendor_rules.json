@@ -1,12 +1,12 @@
 {
   "Nutricost": {
-    "blocklist": ["5-HTP", "Carnitine", "Caffeine", "Pre-Workout", "Gummies", "Vanadium"],
+    "blocklist": ["5-HTP", "Carnitine", "Caffeine", "Pre-Workout", "Gummies", "Vanadium", "Women", "NADH"],
     "variantBlocklist": ["Unflavored / 30 SERV", "Blue Raspberry / 30 SERV", "Fruit Punch / 30 SERV", "Watermelon / 30 SERV", "Sour Watermelon / 30 SERV", "Pineapple Mango / 30 SERV", "Grape / 30 SERV"],
     "globalSubscriptionDiscount": 0.20,
     "overrides": {
       "nutricost-nmn":{
         "forceType": "Capsules",
-        "forceActiveGrams": 150
+        "forceActiveGrams": 15.0
       },
       "nutricost-creatine-for-women":{
         "forceType": "Powder",
@@ -62,8 +62,7 @@
     "overrides": {
       "nmn-supplement-500mg-capsules-30-caps": {
         "forceType": "Capsules",
-        "forceActiveGrams": 15,
-        "forceServingMg": 500
+        "forceActiveGrams": 15
       }
     }
   },
@@ -76,7 +75,8 @@
     "globalSubscriptionDiscount": 0.10,
     "overrides": {
       "pure-nad-nasal-spray-10-grams-pure-nicotinamide-adenine-dinucleotide-nad-new": {
-        "forceActiveGrams": 10
+        "forceActiveGrams": 10.0,
+        "forceType": "Spray"
       },
       "lipo-nad-complete-powdered-liposomal": {
         "forceType": "Capsules",
@@ -84,8 +84,7 @@
       },
       "lipo-nmn-powdered-liposomal-nmn2": {
         "forceType": "Capsules",
-        "forceActiveGrams": 225,
-        "forceServingMg": 500,
+        "forceActiveGrams": 22.5,
         "variantOverrides": {
           "60 Capsules": 15.0,
           "90 Capsules": 22.5
@@ -133,6 +132,9 @@
       },
       "nmn-pro-bundle-ph519": {
         "forceActiveGrams": 24
+      },
+      "nmn-pro-1000-uthever-nmn-1000-mg-per-serving-60-capsules": {
+        "forceActiveGrams": 30.0
       }
     }
   }

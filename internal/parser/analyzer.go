@@ -362,6 +362,16 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 			}
 		}
 
+		// =================================================================
+		// PURE POWDER GROSS GRAMS FALLBACK
+		// =================================================================
+		// If the product is a Powder, grossGrams is still 0 (regex found
+		// nothing on the label), and it is NOT flagged for review, then the
+		// product is 100% pure active ingredient — gross weight equals active.
+		if productType == "Powder" && grossGrams == 0 && !needsReview {
+			grossGrams = activeGrams
+		}
+
 		// --- One-time purchase entry ---
 		// CostPerGram and EffectiveCost use ActiveGrams as the denominator.
 		costPerGram := price / activeGrams

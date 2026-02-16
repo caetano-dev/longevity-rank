@@ -40,9 +40,9 @@ function formatGrams(value: number): string {
   return `${(value * 1000).toFixed(0)}mg`;
 }
 
-/** Format gross grams — returns "—" when gross is 0 or equals active (N/A). */
-function formatGrossGrams(gross: number, active: number): string {
-  if (gross <= 0 || gross === active) return "—";
+/** Format gross grams — returns "—" when gross is 0 (Capsules/Tablets that don't advertise gross weight). */
+function formatGrossGrams(gross: number): string {
+  if (gross <= 0) return "—";
   return formatGrams(gross);
 }
 
@@ -213,7 +213,7 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
                       {formatGrams(item.activeGrams)}
                     </td>
                     <td className="px-4 py-3 text-right font-mono text-zinc-500">
-                      {formatGrossGrams(item.grossGrams, item.activeGrams)}
+                      {formatGrossGrams(item.grossGrams)}
                     </td>
                     <td className="px-4 py-3 text-right font-mono text-zinc-400">
                       {formatCostPerGram(item.costPerGram)}
@@ -299,7 +299,7 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
                         <p className="font-mono font-medium text-zinc-400">
                           {formatGrams(item.activeGrams)}
                         </p>
-                        {item.grossGrams > 0 && item.grossGrams !== item.activeGrams && (
+                        {item.grossGrams > 0 && (
                           <p className="text-[10px] text-zinc-500 mt-0.5">
                             Gross: {formatGrams(item.grossGrams)}
                           </p>
