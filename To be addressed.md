@@ -1,5 +1,6 @@
 # Things to check before launch:
 
+- [ ] Fix the active ingredient grams from needs_review.json
 - [ ] Check if the prices are correct
 - [ ] Check how to handle the donotage and nmnbio subscriptions, since they change
 - [ ] Check how to handle the jinfiniti subscriptions, since they are not percentages

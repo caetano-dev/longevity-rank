@@ -15,7 +15,7 @@ import (
 // regex entirely — they are not hints, they are overrides.
 type ProductSpec struct {
 	ForceType        string             `json:"forceType,omitempty"`
-	ForceTotalGrams  float64            `json:"forceTotalGrams,omitempty"`
+	ForceActiveGrams  float64            `json:"forceActiveGrams,omitempty"`
 	ForceServingMg   float64            `json:"forceServingMg,omitempty"`
 	VariantOverrides map[string]float64 `json:"variantOverrides,omitempty"`
 }

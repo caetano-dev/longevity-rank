@@ -28,7 +28,8 @@ type Analysis struct {
 	Name            string  `json:"name"`
 	Handle          string  `json:"handle"`
 	Price           float64 `json:"price"`
-	TotalGrams      float64 `json:"total_grams"`
+	ActiveGrams     float64 `json:"active_grams"`
+	GrossGrams      float64 `json:"gross_grams"`
 	CostPerGram     float64 `json:"cost_per_gram"`
 	EffectiveCost   float64 `json:"effective_cost"`
 	Multiplier      float64 `json:"multiplier"`

@@ -21,7 +21,8 @@ interface RawReportEntry {
   name: string;
   handle: string;
   price: number;
-  total_grams: number;
+  active_grams: number;
+  gross_grams: number;
   cost_per_gram: number;
   effective_cost: number;
   multiplier: number;
@@ -46,7 +47,8 @@ function mapEntry(raw: RawReportEntry): Analysis {
     name: raw.name,
     handle: raw.handle,
     price: raw.price,
-    totalGrams: raw.total_grams,
+    activeGrams: raw.active_grams,
+    grossGrams: raw.gross_grams,
     costPerGram: raw.cost_per_gram,
     effectiveCost: raw.effective_cost,
     multiplier: raw.multiplier,

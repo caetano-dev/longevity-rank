@@ -163,20 +163,15 @@ func main() {
 
 func printTable(data []models.Analysis) {
 	w := tabwriter.NewWriter(os.Stdout, 0, 0, 2, ' ', 0)
-	fmt.Fprintln(w, "\nRANK\tVENDOR\tPRODUCT (Truncated)\tTYPE\tPRICE\tGRAMS\t$/GRAM\tTRUE COST (Eff.)")
-	fmt.Fprintln(w, "----\t------\t-------------------\t-----\t-----\t-----\t------\t----------------")
+	fmt.Fprintln(w, "\nRANK\tVENDOR\tPRODUCT (Truncated)\tTYPE\tPRICE\tACTIVE g\tGROSS g\t$/GRAM\tTRUE COST (Eff.)")
+	fmt.Fprintln(w, "----\t------\t-------------------\t-----\t-----\t--------\t-------\t------\t----------------")
 
 	for i, row := range data {
 		shortName := row.Name
-		/*
-		if len(shortName) > 30 {
-			shortName = shortName[:27] + "..."
-		}
-		*/
 
 		reset := "\033[0m"
 		color := reset
-		
+
 		// Color logic based on Effective Cost now
 		if row.EffectiveCost < 0.5 {
 			color = "\033[31m" // Suspiciously cheap?
@@ -184,8 +179,14 @@ func printTable(data []models.Analysis) {
 			color = "\033[32m" // Great Deal
 		}
 
-		fmt.Fprintf(w, "%d\t%s\t%s\t%s\t$%.2f\t%.1fg\t$%.2f\t%s$%.2f%s\n",
-			i+1, row.Vendor, shortName, row.Type, row.Price, row.TotalGrams, row.CostPerGram, color, row.EffectiveCost, reset)
+		// Show GrossGrams only when it differs from ActiveGrams and is non-zero
+		grossCol := "—"
+		if row.GrossGrams > 0 && row.GrossGrams != row.ActiveGrams {
+			grossCol = fmt.Sprintf("%.1fg", row.GrossGrams)
+		}
+
+		fmt.Fprintf(w, "%d\t%s\t%s\t%s\t$%.2f\t%.1fg\t%s\t$%.2f\t%s$%.2f%s\n",
+			i+1, row.Vendor, shortName, row.Type, row.Price, row.ActiveGrams, grossCol, row.CostPerGram, color, row.EffectiveCost, reset)
 	}
 	w.Flush()
 }

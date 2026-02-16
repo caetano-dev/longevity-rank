@@ -16,6 +16,12 @@ var (
 	reKg      = regexp.MustCompile(`(?i)(\d+(?:\.\d+)?)\s*kg\b`)
 	rePack    = regexp.MustCompile("(?i)(\\d+)\\s*(?:Pack|Bottles?)")
 	reServing = regexp.MustCompile(`(?i)(\d+)\s*(?:capsules|caps).*?per\s*serving`)
+
+	// reLabelGrams and reLabelKg are used exclusively for Gross Grams extraction.
+	// They scan only variant.Title and product.Title (the label text), never body_html.
+	// Identical patterns to reGrams/reKg but kept separate for clarity of intent.
+	reLabelGrams = regexp.MustCompile("(?i)(\\d+)\\s*(?:grams?|gms?|g)\\b")
+	reLabelKg    = regexp.MustCompile(`(?i)(\d+(?:\.\d+)?)\s*kg\b`)
 )
 
 // dirtyKeywords flags products whose regex-extracted mass is likely unreliable.
@@ -34,12 +40,22 @@ var AllowedSupplements = []string{"nmn", "nad", "tmg", "trimethylglycine", "resv
 // AnalyzeProduct evaluates every available variant of a product and returns an
 // Analysis entry for each valid one. It implements a Hybrid Catalog/Regex Engine:
 //
-//   - If the product handle has an override in vendor_rules.json with ForceTotalGrams > 0,
+//   - If the product handle has an override in vendor_rules.json with ForceActiveGrams > 0,
 //     the regex mass-extraction pipeline is bypassed entirely and the override value is
-//     used as the base mass.
+//     used as ActiveGrams (the active ingredient mass).
 //   - If the override has a ForceType, it is used directly; otherwise, the existing
 //     string-matching logic determines the product type.
 //   - The pack multiplier regex (rePack) always runs regardless of overrides.
+//
+// Mass disambiguation:
+//   - ActiveGrams: the total active ingredient mass (used as the denominator for
+//     CostPerGram and EffectiveCost calculations).
+//   - GrossGrams: the physical label weight printed on the container (e.g., "500 GMS").
+//     Extracted from variant.Title and product.Title only. Defaults to 0 for capsule
+//     products or when no label weight is found.
+//   - For "Pure Powder" products (no flavor/dirty keywords), if GrossGrams was found
+//     and ActiveGrams was calculated via regex (not override), ActiveGrams is set equal
+//     to GrossGrams — because the entire container IS active ingredient.
 //
 // When the vendor has a GlobalSubscriptionDiscount configured in vendor_rules.json,
 // a synthetic "Subscribe & Save" entry is also emitted for each variant.
@@ -114,7 +130,7 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 		broadSearch := p.Title + " " + p.Context + " " + v.Title + " " + strings.ReplaceAll(p.Handle, "-", " ") + " " + p.BodyHTML
 
 		// =================================================================
-		// MASS EXTRACTION PHASE — Hybrid Engine
+		// ACTIVE GRAMS EXTRACTION — Hybrid Engine
 		// =================================================================
 		// capsuleMass and powderMass are hoisted here so type classification
 		// can reference them later (e.g., to distinguish Powder vs Capsules).
@@ -125,12 +141,12 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 		if hasOverride && spec.VariantOverrides != nil && spec.VariantOverrides[v.Title] > 0 {
 			// VARIANT CATALOG PATH: Per-variant override takes highest priority.
 			// Bypasses both the product-level override and the regex pipeline.
+			// The override value IS the active ingredient mass.
 			powderMass = spec.VariantOverrides[v.Title]
 			usedOverrideForMass = true
-		} else if hasOverride && spec.ForceTotalGrams > 0 {
-			// PRODUCT CATALOG PATH: Override provides the immutable total grams.
+		} else if hasOverride && spec.ForceActiveGrams > 0 {
 			// Skip ALL regex mass extraction (reGrams, reKg, reMg, reCount, reServing).
-			powderMass = spec.ForceTotalGrams
+			powderMass = spec.ForceActiveGrams
 			usedOverrideForMass = true
 		} else {
 			// REGEX PATH: Standard extraction pipeline for ~80% of products.
@@ -191,9 +207,60 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 			packMultiplier = mult
 		}
 
-		totalGrams := baseMass * packMultiplier
-		if totalGrams <= 0 {
+		activeGrams := baseMass * packMultiplier
+		if activeGrams <= 0 {
 			continue
+		}
+
+		// =================================================================
+		// GROSS GRAMS EXTRACTION — Label Weight
+		// =================================================================
+		// Scans ONLY variant.Title and product.Title for the physical weight
+		// printed on the label (e.g., "500 GMS", "1 KG"). This is independent
+		// of the ActiveGrams pipeline. Defaults to 0 for capsule products or
+		// when no label weight is found.
+		grossGrams := 0.0
+
+		// Only attempt extraction for non-capsule products (capsules don't
+		// have a meaningful gross weight — they list count, not weight).
+		// We check capsuleMass > 0 && powderMass == 0 as the indicator that
+		// the product is capsule-only (before type classification runs).
+		isCapsuleProduct := capsuleMass > 0 && powderMass == 0
+
+		if !isCapsuleProduct {
+			labelSearch := p.Title + " " + v.Title
+			labelGramMatch := reLabelGrams.FindStringSubmatch(labelSearch)
+			labelKgMatch := reLabelKg.FindStringSubmatch(labelSearch)
+
+			if len(labelGramMatch) > 1 {
+				g, _ := strconv.ParseFloat(labelGramMatch[1], 64)
+				grossGrams = g * packMultiplier
+			} else if len(labelKgMatch) > 1 {
+				kg, _ := strconv.ParseFloat(labelKgMatch[1], 64)
+				grossGrams = kg * 1000.0 * packMultiplier
+			}
+		}
+
+		// =================================================================
+		// PURE POWDER FALLBACK
+		// =================================================================
+		// If the product is a "Pure Powder" (no flavor/dirty keywords in its
+		// identity strings), and GrossGrams was found, and ActiveGrams was
+		// calculated via regex (not override), then ActiveGrams = GrossGrams.
+		// Rationale: for pure powders, the entire container IS active ingredient,
+		// so the label weight is the active weight.
+		if !usedOverrideForMass && grossGrams > 0 && !isCapsuleProduct {
+			triageTarget := strings.ToLower(p.Title + " " + v.Title + " " + p.Handle)
+			isPurePowder := true
+			for _, kw := range dirtyKeywords {
+				if strings.Contains(triageTarget, strings.ToLower(kw)) {
+					isPurePowder = false
+					break
+				}
+			}
+			if isPurePowder {
+				activeGrams = grossGrams
+			}
 		}
 
 		// =================================================================
@@ -276,7 +343,8 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 		}
 
 		// --- One-time purchase entry ---
-		costPerGram := price / totalGrams
+		// CostPerGram and EffectiveCost use ActiveGrams as the denominator.
+		costPerGram := price / activeGrams
 		effectiveCost := costPerGram / multiplier
 
 		results = append(results, models.Analysis{
@@ -284,7 +352,8 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 			Name:            displayName,
 			Handle:          p.Handle,
 			Price:           price,
-			TotalGrams:      totalGrams,
+			ActiveGrams:     activeGrams,
+			GrossGrams:      grossGrams,
 			CostPerGram:     costPerGram,
 			EffectiveCost:   effectiveCost,
 			Multiplier:      multiplier,
@@ -299,7 +368,7 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 		// --- Synthetic subscription entry ---
 		if subscriptionDiscount > 0 {
 			subPrice := price * (1 - subscriptionDiscount)
-			subCostPerGram := subPrice / totalGrams
+			subCostPerGram := subPrice / activeGrams
 			subEffectiveCost := subCostPerGram / multiplier
 
 			results = append(results, models.Analysis{
@@ -307,7 +376,8 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 				Name:            displayName + " (Subscribe & Save)",
 				Handle:          p.Handle,
 				Price:           subPrice,
-				TotalGrams:      totalGrams,
+				ActiveGrams:     activeGrams,
+				GrossGrams:      grossGrams,
 				CostPerGram:     subCostPerGram,
 				EffectiveCost:   subEffectiveCost,
 				Multiplier:      multiplier,

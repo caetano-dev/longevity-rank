@@ -13,7 +13,8 @@ export interface Analysis {
   name: string;
   handle: string;
   price: number;
-  totalGrams: number;
+  activeGrams: number;
+  grossGrams: number;
   costPerGram: number;
   effectiveCost: number;
   multiplier: number;

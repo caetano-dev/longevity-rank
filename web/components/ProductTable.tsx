@@ -40,6 +40,12 @@ function formatGrams(value: number): string {
   return `${(value * 1000).toFixed(0)}mg`;
 }
 
+/** Format gross grams — returns "—" when gross is 0 or equals active (N/A). */
+function formatGrossGrams(gross: number, active: number): string {
+  if (gross <= 0 || gross === active) return "—";
+  return formatGrams(gross);
+}
+
 function formatCostPerGram(value: number): string {
   return `$${value.toFixed(2)}/g`;
 }
@@ -138,7 +144,8 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
                   Price
                   <SortIndicator column="price" />
                 </th>
-                <th className="px-4 py-3 w-20 text-right">Grams</th>
+                <th className="px-4 py-3 w-20 text-right">Active</th>
+                <th className="px-4 py-3 w-20 text-right">Gross</th>
                 <th
                   className="px-4 py-3 w-24 cursor-pointer select-none hover:text-zinc-300 text-right"
                   onClick={() => handleSort("costPerGram")}
@@ -203,7 +210,10 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
                       {formatCurrency(item.price)}
                     </td>
                     <td className="px-4 py-3 text-right font-mono text-zinc-400">
-                      {formatGrams(item.totalGrams)}
+                      {formatGrams(item.activeGrams)}
+                    </td>
+                    <td className="px-4 py-3 text-right font-mono text-zinc-500">
+                      {formatGrossGrams(item.grossGrams, item.activeGrams)}
                     </td>
                     <td className="px-4 py-3 text-right font-mono text-zinc-400">
                       {formatCostPerGram(item.costPerGram)}
@@ -285,10 +295,15 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
                         </p>
                       </div>
                       <div>
-                        <span className="text-zinc-500">Total</span>
+                        <span className="text-zinc-500">Active</span>
                         <p className="font-mono font-medium text-zinc-400">
-                          {formatGrams(item.totalGrams)}
+                          {formatGrams(item.activeGrams)}
                         </p>
+                        {item.grossGrams > 0 && item.grossGrams !== item.activeGrams && (
+                          <p className="text-[10px] text-zinc-500 mt-0.5">
+                            Gross: {formatGrams(item.grossGrams)}
+                          </p>
+                        )}
                       </div>
                       <div>
                         <span className="text-zinc-500">$/Gram</span>

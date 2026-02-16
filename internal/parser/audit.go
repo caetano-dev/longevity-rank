@@ -11,7 +11,7 @@ import (
 )
 
 // AuditResult describes a product that passes interest/blocklist filters but
-// lacks enough data for the analyzer to compute totalGrams. It reports what
+// lacks enough data for the analyzer to compute activeGrams. It reports what
 // data we DO have and what is MISSING so the operator can add an override
 // in data/vendor_rules.json.
 type AuditResult struct {
@@ -33,7 +33,7 @@ type AuditResult struct {
 
 // AuditProduct runs the same extraction pipeline as AnalyzeProduct but never
 // silently discards products. If the product passes the supplement keyword
-// gate but the analyzer would return nil (no computable totalGrams), this
+// gate but the analyzer would return nil (no computable activeGrams), this
 // function returns an *AuditResult describing the gap. If the product is
 // fully analyzable (AnalyzeProduct would succeed), it returns nil — no gap.
 //
@@ -65,7 +65,7 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 	// --- Check if a catalog override already provides total grams ---
 	if rules.Registry != nil {
 		if config, exists := rules.Registry[vendorName]; exists {
-			if spec, hasOverride := config.Overrides[p.Handle]; hasOverride && spec.ForceTotalGrams > 0 {
+			if spec, hasOverride := config.Overrides[p.Handle]; hasOverride && spec.ForceActiveGrams > 0 {
 				// The hybrid engine will handle this product via catalog path.
 				// Verify the analyzer actually succeeds with this override.
 				if AnalyzeProduct(vendorName, p) != nil {
@@ -179,7 +179,7 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 	hasCapsuleMass := result.MgFound && result.CountFound
 
 	if !hasPowderMass && !hasCapsuleMass {
-		// Neither path can compute totalGrams
+		// Neither path can compute activeGrams
 		if !result.MgFound {
 			result.Missing = append(result.Missing, "mg per serving (forceServingMg)")
 		}
@@ -190,9 +190,9 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 			result.Missing = append(result.Missing, "total grams (forceTotalGrams)")
 		}
 	} else {
-		// We found partial data but totalGrams still came out zero or analysis
+		// We found partial data but activeGrams still came out zero or analysis
 		// still failed for some other reason — flag it generically
-		result.Missing = append(result.Missing, "data was partially found but totalGrams still computed to 0 (check overrides)")
+		result.Missing = append(result.Missing, "data was partially found but activeGrams still computed to 0 (check overrides)")
 	}
 
 	return result
