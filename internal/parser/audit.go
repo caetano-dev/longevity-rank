@@ -187,7 +187,7 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 			result.Missing = append(result.Missing, "capsule/tablet count")
 		}
 		if !result.GramsFound && !result.KgFound {
-			result.Missing = append(result.Missing, "total grams (forceTotalGrams)")
+			result.Missing = append(result.Missing, "active grams (forceActiveGrams)")
 		}
 	} else {
 		// We found partial data but activeGrams still came out zero or analysis
@@ -260,19 +260,19 @@ func FormatAuditReport(results []AuditResult) string {
 			b.WriteString(fmt.Sprintf("  │    \"%s\": {\n", r.Handle))
 			b.WriteString("  │      \"forceType\": \"Capsules\",\n")
 
-			// Calculate forceTotalGrams from extracted data if possible
+			// Calculate forceActiveGrams from extracted data if possible
 			if r.MgFound && r.CountFound {
-				totalGrams := r.MgValue * r.CountValue / 1000.0
-				b.WriteString(fmt.Sprintf("  │      \"forceTotalGrams\": %.1f,\n", totalGrams))
+				activeGrams := r.MgValue * r.CountValue / 1000.0
+				b.WriteString(fmt.Sprintf("  │      \"forceActiveGrams\": %.1f,\n", activeGrams))
 				b.WriteString(fmt.Sprintf("  │      \"forceServingMg\": %.0f\n", r.MgValue))
 			} else if r.GramsFound {
-				b.WriteString(fmt.Sprintf("  │      \"forceTotalGrams\": %.1f,\n", r.GramsValue))
+				b.WriteString(fmt.Sprintf("  │      \"forceActiveGrams\": %.1f,\n", r.GramsValue))
 				b.WriteString("  │      \"forceServingMg\": ???\n")
 			} else if r.KgFound {
-				b.WriteString(fmt.Sprintf("  │      \"forceTotalGrams\": %.1f,\n", r.KgValue*1000))
+				b.WriteString(fmt.Sprintf("  │      \"forceActiveGrams\": %.1f,\n", r.KgValue*1000))
 				b.WriteString("  │      \"forceServingMg\": ???\n")
 			} else {
-				b.WriteString("  │      \"forceTotalGrams\": ???,\n")
+				b.WriteString("  │      \"forceActiveGrams\": ???,\n")
 				if r.MgFound {
 					b.WriteString(fmt.Sprintf("  │      \"forceServingMg\": %.0f\n", r.MgValue))
 				} else {

@@ -29,8 +29,10 @@ var (
 // advertised weights that include non-active fillers. If no manual override
 // exists, the product is marked NeedsReview so an operator can add one.
 var dirtyKeywords = []string{
-	"flavor", "watermelon", "berry", "punch", "orange", "lemon", "mango",
-	"grape", "apple", "blend", "complex", "with", "+", "gumm", "chew", "bundle",
+	"flavor", "island cooler", "coastal explosion", "watermelon", "berry", "punch", 
+	"orange", "lemon", "mango", "grape", "apple", "blend", "complex", "with", "+", 
+	"gumm", "chew", "bundle", "blue raspberry", "fruit punch", "sour watermelon", 
+	"pineapple mango", "mandarin orange", "shaq's berry blast", "frozen lemonade",
 }
 
 // AllowedSupplements controls which supplement keywords the analyzer will accept.
@@ -227,7 +229,11 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 		// the product is capsule-only (before type classification runs).
 		isCapsuleProduct := capsuleMass > 0 && powderMass == 0
 
-		if !isCapsuleProduct {
+		if hasOverride && spec.VariantGrossOverrides != nil && spec.VariantGrossOverrides[v.Title] > 0 {
+			// VARIANT GROSS CATALOG PATH: Manual override for variants whose
+			// titles lack standard gram/kg patterns (e.g., "30 SERV").
+			grossGrams = spec.VariantGrossOverrides[v.Title]
+		} else if !isCapsuleProduct {
 			labelSearch := p.Title + " " + v.Title
 			labelGramMatch := reLabelGrams.FindStringSubmatch(labelSearch)
 			labelKgMatch := reLabelKg.FindStringSubmatch(labelSearch)
@@ -335,6 +341,20 @@ func AnalyzeProduct(vendorName string, p models.Product) []models.Analysis {
 			triageTarget := strings.ToLower(displayName + " " + p.Handle + " " + p.Title)
 			for _, kw := range dirtyKeywords {
 				if strings.Contains(triageTarget, strings.ToLower(kw)) {
+					// "unflavored" contains the substring "flavor" but is not
+					// a dirty signal — it indicates a pure, unflavored product.
+					// Skip this match only; other keywords still get checked.
+					if kw == "flavor" && strings.Contains(triageTarget, "unflavored") {
+							// However, if the product is sized by servings (e.g.,
+							// "Unflavored / 50 Serv"), the regex must guess scoop
+							// size to compute total mass — flag for manual review.
+							if strings.Contains(triageTarget, "serv") {
+								needsReview = true
+								reviewReason = "Detected 'unflavored' but uses 'servings' (needs manual math check)"
+								break
+							}
+							continue
+						}
 					needsReview = true
 					reviewReason = "Detected dirty keyword: " + kw
 					break

@@ -1,12 +1,62 @@
 {
   "Nutricost": {
-      "blocklist": ["5-HTP", "Carnitine", "Caffeine", "Pre-Workout", "Gummies", "Vanadium"],
-      "variantBlocklist": ["Unflavored / 30 SERV", "Blue Raspberry / 30 SERV", "Fruit Punch / 30 SERV", "Watermelon / 30 SERV", "Sour Watermelon / 30 SERV", "Pineapple Mango / 30 SERV", "Grape / 30 SERV"],
-      "globalSubscriptionDiscount": 0.20
-    },
+    "blocklist": ["5-HTP", "Carnitine", "Caffeine", "Pre-Workout", "Gummies", "Vanadium"],
+    "variantBlocklist": ["Unflavored / 30 SERV", "Blue Raspberry / 30 SERV", "Fruit Punch / 30 SERV", "Watermelon / 30 SERV", "Sour Watermelon / 30 SERV", "Pineapple Mango / 30 SERV", "Grape / 30 SERV"],
+    "globalSubscriptionDiscount": 0.20,
+    "overrides": {
+      "nutricost-creatine-for-women":{
+        "forceType": "Powder",
+        "variantOverrides": {
+          "Strawberry Lemonade / 100 Serv": 300,
+          "Peach Mango / 100 Serv": 300,
+          "Strawberry Lemonade / 50 Serv": 150.0,
+          "Peach Mango / 50 Serv": 150.0
+        },
+        "variantGrossOverrides": {
+          "Strawberry Lemonade / 100 Serv": 570,
+          "Strawberry Lemonade / 50 Serv": 285,
+          "Peach Mango / 50 Serv": 260.0,
+          "Peach Mango / 100 Serv": 520.0
+        }
+      },
+      "nutricost-creatine-monohydrate-powder-500-grams": {
+        "forceType": "Powder",
+        "variantOverrides": {
+          "Fruit Punch / 500 GMS": 380.0,
+          "Frozen Lemonade / 30 SERV": 150.0,
+          "Mandarin Orange / 500 GMS": 370.0,
+          "Watermelon / 500 GMS": 385.0,
+          "Blue Raspberry / 500 GMS": 380.0,
+          "Shaq's Berry Blast / 500 GMS": 370.0,
+          "Sour Watermelon / 500 GMS": 340.0,
+          "Pineapple Mango / 500 GMS": 385.0,
+          "Fruit Punch / 300 GMS": 225.0,
+          "Mandarin Orange / 300 GMS": 220.0,
+          "Blue Raspberry / 300 GMS": 225.0,
+          "Pineapple Mango / 300 GMS": 230.0,
+          "Watermelon / 300 GMS": 230.0,
+          "Grape / 300 GMS": 225.0,
+          "Coastal Explosion / 30 SERV": 150.0,
+          "Island Cooler / 30 SERV": 150.0,
+          "Coastal Explosion / 500 GMS": 375.0,
+          "Shaq's Berry Blast / 300 GMS": 220.0
+        },
+        "variantGrossOverrides": {
+          "Frozen Lemonade / 30 SERV": 207.0,
+          "Coastal Explosion / 30 SERV": 201.0,
+          "Island Cooler / 30 SERV": 198.0
+        }
+      }
+    }
+  },
   "NMN Bio": {
     "blocklist": ["Bundle", "Endurance", "Book"],
     "overrides": {
+      "nmn-supplement-500mg-capsules-30-caps": {
+        "forceType": "Capsules",
+        "forceActiveGrams": 15,
+        "forceServingMg": 500
+      }
     }
   },
   "Do Not Age": {
@@ -17,11 +67,43 @@
     "blocklist": ["Test", "Cream", "Serum", "Pet", "Cleanser", "Lotion"],
     "globalSubscriptionDiscount": 0.10,
     "overrides": {
+      "lipo-nad-complete-powdered-liposomal": {
+        "forceType": "Capsules",
+        "forceActiveGrams": 22.5,
+        "forceServingMg": 250
+      },
+      "lipo-nmn-powdered-liposomal-nmn2": {
+        "forceType": "Capsules",
+        "forceActiveGrams": 22.5,
+        "forceServingMg": 250,
+        "variantOverrides": {
+          "60 Capsules": 15.0,
+          "90 Capsules": 22.5
+        }
+      },
+      "nmns-240-ct-sublingual-tablets-2": {
+        "forceType": "Tablets",
+        "forceActiveGrams": 30,
+        "forceServingMg": 125
+      },
+      "nmn-lipo-gel-sublingual": {
+        "forceType": "Gel",
+        "forceActiveGrams": 18,
+        "forceServingMg": 240
+      }
     }
   },
   "Wonderfeel": {
     "blocklist": [],
     "overrides": {
+      "https://getwonderfeel.com/product/wonderfeel-youngr-nmn/": {
+        "forceType": "Capsules",
+        "forceActiveGrams": 27.0
+      },
+      "https://getwonderfeel.com/product/wonderfeel-nmn-capsuls/": {
+        "forceType": "Capsules",
+        "forceActiveGrams": 30.0
+      }
     }
   },
   "Blueprint": {

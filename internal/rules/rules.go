@@ -14,10 +14,11 @@ import (
 // regex engine cannot reliably extract. When present, these values bypass
 // regex entirely — they are not hints, they are overrides.
 type ProductSpec struct {
-	ForceType        string             `json:"forceType,omitempty"`
-	ForceActiveGrams  float64            `json:"forceActiveGrams,omitempty"`
-	ForceServingMg   float64            `json:"forceServingMg,omitempty"`
-	VariantOverrides map[string]float64 `json:"variantOverrides,omitempty"`
+	ForceType              string             `json:"forceType,omitempty"`
+	ForceActiveGrams       float64            `json:"forceActiveGrams,omitempty"`
+	ForceServingMg         float64            `json:"forceServingMg,omitempty"`
+	VariantOverrides       map[string]float64 `json:"variantOverrides,omitempty"`
+	VariantGrossOverrides  map[string]float64 `json:"variantGrossOverrides,omitempty"`
 }
 
 type VendorConfig struct {

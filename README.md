@@ -12,8 +12,8 @@ Architecture: **Git-Scraper**. Go scrapes vendor sites, runs the math engine, an
 - **Clean product names** — the analyzer strips redundant vendor name prefixes from product titles (case-insensitive). E.g., vendor `"Nutricost"` + title `"Nutricost Creatine Monohydrate"` → `"Creatine Monohydrate"`.
 - **Multi-supplement tracking** — NMN, NAD+, TMG, Resveratrol, and Creatine out of the box. Configurable via `--supplements` flag.
 - **Cloudflare-safe** — vendors behind Cloudflare (Jinfiniti, Wonderfeel) are flagged with `Cloudflare: true` in the vendor config. The scraper skips them on `--refresh` and uses manually-maintained JSON instead.
-- **Hybrid Catalog/Regex Engine** — the analyzer uses a two-path architecture with active/gross mass disambiguation. ~80% of standard products are handled automatically by the regex extraction pipeline. The remaining ~20% of complex products (multi-ingredient, non-standard weights) are handled by immutable overrides in `data/vendor_rules.json` that bypass regex entirely. Overrides specify `forceTotalGrams` (the pre-computed total active ingredient mass, mapped to `activeGrams`) and optionally `forceType` and `forceServingMg`. `activeGrams` is the denominator for all cost calculations. `grossGrams` (the physical label weight) is extracted independently from product/variant titles for frontend transparency. No OCR. No image parsing. The same file supports `globalSubscriptionDiscount` for synthetic subscription price generation.
-- **Triage Engine** — products whose mass was resolved by regex (no override) are scanned against a hardcoded `dirtyKeywords` list (flavors, blends, gummies, combos). Matches are flagged with `needs_review: true` and `review_reason` in the analysis output, and collected into `data/needs_review.json` for operator review. The triage is intentionally aggressive — it flags for human review, not rejection.
+- **Hybrid Catalog/Regex Engine** — the analyzer uses a two-path architecture with active/gross mass disambiguation. ~80% of standard products are handled automatically by the regex extraction pipeline. The remaining ~20% of complex products (multi-ingredient, non-standard weights) are handled by immutable overrides in `data/vendor_rules.json` that bypass regex entirely. Overrides specify `forceActiveGrams` (the pre-computed total active ingredient mass) and optionally `forceType` and `forceServingMg`. `activeGrams` is the denominator for all cost calculations. `grossGrams` (the physical label weight) is resolved via a two-tier chain: `variantGrossOverrides` (manual per-variant override for titles lacking gram/kg patterns) > regex extraction from product/variant titles. No OCR. No image parsing. The same file supports `globalSubscriptionDiscount` for synthetic subscription price generation.
+- **Triage Engine** — products whose mass was resolved by regex (no override) are scanned against a hardcoded `dirtyKeywords` list (flavors, blends, gummies, combos). A false-positive guard skips the `"flavor"` keyword when the target string contains `"unflavored"` — only that trigger is suppressed; the loop continues checking remaining keywords so that e.g. `"unflavored blend"` is still correctly flagged by `"blend"`. **Servings sub-exception:** before skipping the `"flavor"` match for an unflavored product, the engine checks if the target string also contains `"serv"`. If it does, the product is flagged with `review_reason: "Detected 'unflavored' but uses 'servings' (needs manual math check)"` — because servings-based sizing forces the regex to guess scoop size, making the computed mass mathematically unsafe. Only unflavored products with explicit gram/kg weights (e.g., `"Unflavored / 500 GMS"`) pass cleanly. Matches are flagged with `needs_review: true` and `review_reason` in the analysis output, and collected into `data/needs_review.json` for operator review. The triage is intentionally aggressive — it flags for human review, not rejection.
 - **Pagination safety** — Shopify scraper uses proper URL construction, product deduplication, and a hard page limit (50) to prevent infinite loops.
 - **Daily CI/CD** — GitHub Actions workflow scrapes daily, commits changed JSON, and triggers a Vercel build.
 
@@ -92,8 +92,8 @@ cmd/main.go                  CLI entry point. Flags: --refresh, --supplements, -
 internal/
   config/vendors.go          Vendor registry (name, URL, scraper type, cloudflare flag).
   models/types.go            Core structs: Vendor, Product, Variant, Analysis (with JSON tags, including ActiveGrams, GrossGrams, Multiplier, MultiplierLabel, IsSubscription, NeedsReview, and ReviewReason).
-  parser/analyzer.go         Hybrid Catalog/Regex Engine with three-tier mass resolution and active/gross mass disambiguation. Checks variantBlocklist to skip ghost variants. ActiveGrams priority: variantOverrides[v.Title] > forceTotalGrams > regex pipeline. GrossGrams extracted independently from product/variant titles via reLabelGrams/reLabelKg. Pure Powder fallback: if no dirty keywords and regex-resolved, activeGrams = grossGrams. Pack multiplier always runs. CostPerGram and EffectiveCost use activeGrams as denominator. Triage Engine scans regex-resolved products against dirtyKeywords and sets NeedsReview/ReviewReason. Returns []models.Analysis (all valid variants). Strips vendor name from product title. Populates multiplier and multiplier label. Emits synthetic "Subscribe & Save" entries when vendor has globalSubscriptionDiscount > 0.
-  parser/audit.go            Gap detector. Finds products that pass filters but lack data for analysis (activeGrams == 0). Prints override suggestions using forceTotalGrams/forceServingMg format.
+  parser/analyzer.go         Hybrid Catalog/Regex Engine with three-tier mass resolution and active/gross mass disambiguation. Checks variantBlocklist to skip ghost variants. ActiveGrams priority: variantOverrides[v.Title] > forceActiveGrams > regex pipeline. GrossGrams priority: variantGrossOverrides[v.Title] > reLabelGrams/reLabelKg regex on product/variant titles. Pure Powder fallback: if no dirty keywords and regex-resolved, activeGrams = grossGrams. Pack multiplier always runs. CostPerGram and EffectiveCost use activeGrams as denominator. Triage Engine scans regex-resolved products against dirtyKeywords and sets NeedsReview/ReviewReason. Returns []models.Analysis (all valid variants). Strips vendor name from product title. Populates multiplier and multiplier label. Emits synthetic "Subscribe & Save" entries when vendor has globalSubscriptionDiscount > 0.
+  parser/audit.go            Gap detector. Finds products that pass filters but lack data for analysis (activeGrams == 0). Prints override suggestions using forceActiveGrams/forceServingMg format.
   rules/rules.go             Loads vendor_rules.json. ApplyRules() evaluates product-level blocklist only (returns true/false). No data enrichment — overrides and variantBlocklist are consumed directly by the analyzer.
   scraper/router.go          Routes vendors to the correct scraper engine.
   scraper/shopify.go         Shopify products.json scraper with pagination safety.
@@ -132,23 +132,40 @@ Each vendor can have:
 - **`variantBlocklist`**: Variant title substrings to reject at the variant level (e.g. `"30 SERV"`, `"Sample"`). Evaluated inside the analyzer's variant loop — matched variants are skipped via `continue`. Use this to suppress ghost variants that share a product handle with valid variants.
 - **`overrides`**: Keyed by product handle. Each override is a `ProductSpec` with immutable math fields:
   - `forceType` (string): Product type override (e.g. `"Capsules"`, `"Powder"`, `"Tablets"`, `"Gel"`). Bypasses string-matching type classification.
-  - `forceTotalGrams` (float): Pre-computed total active ingredient mass in grams. Mapped to `ActiveGrams` in the Analysis output. When > 0, the regex mass-extraction pipeline is bypassed entirely. Formula: `mg_per_serving × count / 1000`. This is the denominator for all cost calculations.
-  - `forceServingMg` (float): Per-serving mg. Informational/documentation field — not consumed by the analyzer, but aids operators in verifying the `forceTotalGrams` calculation.
-  - `variantOverrides` (map[string]float64): Per-variant total grams, keyed by exact variant title string. When a variant title matches a key and the value is > 0, it takes highest priority — bypassing both `forceTotalGrams` and the regex pipeline. Use this when a single product handle groups variants with drastically different weights (e.g. Nutricost "500 GMS" vs "30 SERV" under one handle).
+  - `forceActiveGrams` (float): Pre-computed total active ingredient mass in grams. Mapped to `ActiveGrams` in the Analysis output. When > 0, the regex mass-extraction pipeline is bypassed entirely. Formula: `mg_per_serving × count / 1000`. This is the denominator for all cost calculations.
+  - `forceServingMg` (float): Per-serving mg. Informational/documentation field — not consumed by the analyzer, but aids operators in verifying the `forceActiveGrams` calculation.
+  - `variantOverrides` (map[string]float64): Per-variant active ingredient grams, keyed by exact variant title string. When a variant title matches a key and the value is > 0, it takes highest priority — bypassing both `forceActiveGrams` and the regex pipeline. Use this when a single product handle groups variants with drastically different active weights (e.g. Nutricost "500 GMS" vs "30 SERV" under one handle).
+  - `variantGrossOverrides` (map[string]float64): Per-variant gross (label) weight in grams, keyed by exact variant title string. When a variant title matches a key and the value is > 0, the regex label-weight extraction is bypassed for that variant. Use this for variants whose titles lack standard gram/kg patterns (e.g., `"30 SERV"`) where the physical container weight is known but not parseable.
 - **`globalSubscriptionDiscount`**: A float between 0 and 1 representing the fractional discount for subscription purchases (e.g., `0.10` = 10% off). When set, the analyzer emits a second "Subscribe & Save" entry for every valid variant of that vendor's products, with `is_subscription: true` and the discounted price. Used for vendors whose Shopify APIs do not expose subscription pricing directly.
 
 Example:
 
 ```json
 {
+  "Nutricost": {
+    "blocklist": ["5-HTP", "Carnitine"],
+    "globalSubscriptionDiscount": 0.20,
+    "variantBlocklist": ["Unflavored / 30 SERV"],
+    "overrides": {
+      "nutricost-creatine-monohydrate-powder-500-grams": {
+        "forceType": "Powder",
+        "variantOverrides": {
+          "Frozen Lemonade / 30 SERV": 150.0,
+          "Fruit Punch / 500 GMS": 380.0
+        },
+        "variantGrossOverrides": {
+          "Frozen Lemonade / 30 SERV": 207.0
+        }
+      }
+    }
+  },
   "Renue By Science": {
     "blocklist": ["Cream", "Serum", "Pet"],
     "globalSubscriptionDiscount": 0.10,
-    "variantBlocklist": ["Sample"],
     "overrides": {
       "lipo-nmn-powdered-liposomal-nmn2": {
         "forceType": "Capsules",
-        "forceTotalGrams": 22.5,
+        "forceActiveGrams": 22.5,
         "forceServingMg": 250,
         "variantOverrides": {
           "60 Capsules": 15.0,
@@ -195,7 +212,7 @@ Product `Handle` (URL slug or full URL) and the vendor's base URL are available 
 Go Scraper → data/*.json (raw) → analyzer.go → data/analysis_report.json → Next.js (dumb renderer)
 ```
 
-The Go backend is the single source of truth for all parsing, regex extraction, bioavailability math, multiplier assignment, vendor-name stripping, type classification, and synthetic subscription generation. The analyzer implements a **Hybrid Catalog/Regex Engine** with active/gross mass disambiguation: `activeGrams` (active ingredient mass) is populated via the priority chain (variant override > `forceTotalGrams` > regex pipeline) and serves as the denominator for `CostPerGram` and `EffectiveCost`. `grossGrams` (label weight) is extracted independently from product/variant titles via `reLabelGrams`/`reLabelKg` — it defaults to 0 for capsule products or when no label weight is found. For "Pure Powder" products (no dirty keywords), if `grossGrams` was found and `activeGrams` was regex-resolved (not override), `activeGrams` is set equal to `grossGrams`. Products with `forceTotalGrams` overrides in `vendor_rules.json` bypass the regex mass-extraction pipeline entirely; all other products use the standard regex pipeline. The `rePack` (pack multiplier) regex always runs regardless of override source. `ApplyRules()` performs blocklist filtering only — it does not inject strings into product context. A **Triage Engine** runs after mass extraction: regex-resolved products are scanned against `dirtyKeywords` (flavors, blends, gummies, combos) and flagged with `needs_review: true` / `review_reason`. `cmd/main.go` extracts all flagged entries into `data/needs_review.json` for operator review. The frontend contains zero duplicated logic. It reads `data/analysis_report.json` and renders it. Each product may appear twice in the report — once as a one-time purchase (`is_subscription: false`) and once as a subscription (`is_subscription: true`) — enabling the frontend to toggle between purchase types.
+The Go backend is the single source of truth for all parsing, regex extraction, bioavailability math, multiplier assignment, vendor-name stripping, type classification, and synthetic subscription generation. The analyzer implements a **Hybrid Catalog/Regex Engine** with active/gross mass disambiguation: `activeGrams` (active ingredient mass) is populated via the priority chain (variant override > `forceActiveGrams` > regex pipeline) and serves as the denominator for `CostPerGram` and `EffectiveCost`. `grossGrams` (label weight) is resolved via a two-tier chain: `variantGrossOverrides` (manual per-variant override for titles lacking gram/kg patterns) > `reLabelGrams`/`reLabelKg` regex on product/variant titles — it defaults to 0 for capsule products or when neither override nor regex yields a value. For "Pure Powder" products (no dirty keywords), if `grossGrams` was found and `activeGrams` was regex-resolved (not override), `activeGrams` is set equal to `grossGrams`. Products with `forceActiveGrams` overrides in `vendor_rules.json` bypass the regex mass-extraction pipeline entirely; all other products use the standard regex pipeline. The `rePack` (pack multiplier) regex always runs regardless of override source. `ApplyRules()` performs blocklist filtering only — it does not inject strings into product context. A **Triage Engine** runs after mass extraction: regex-resolved products are scanned against `dirtyKeywords` (flavors, blends, gummies, combos) and flagged with `needs_review: true` / `review_reason`. `cmd/main.go` extracts all flagged entries into `data/needs_review.json` for operator review. The frontend contains zero duplicated logic. It reads `data/analysis_report.json` and renders it. Each product may appear twice in the report — once as a one-time purchase (`is_subscription: false`) and once as a subscription (`is_subscription: true`) — enabling the frontend to toggle between purchase types.
 
 ## Frontend
 
