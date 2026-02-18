@@ -3,7 +3,6 @@
 ## 1. Project Overview
 
 **Objective:** Build a ruthless, high-performance, single-page aggregator that answers one question: *"Who has the cheapest authentic NMN (and other longevity supplements) today?"*
-**Business Model:** Affiliate marketing via geo-arbitrage and ROI calculation.
 **Architecture:** "Git-Scraper" model. $0/month infrastructure cost.
 
 ## 2. System Architecture
@@ -109,7 +108,7 @@ The `Analysis` struct is the schema for `data/analysis_report.json`. JSON field 
 
 * `web/lib/data.ts` reads `data/analysis_report.json` from the filesystem at build time using `fs.readFileSync`. The data directory is resolved relative to the `web/` working directory (`path.resolve(process.cwd(), '..', 'data')`).
 * `data.ts` maps the snake_case JSON fields (`active_grams`, `gross_grams`, `cost_per_gram`, `effective_cost`, `multiplier`, `multiplier_label`, `image_url`, `is_subscription`) to camelCase (`activeGrams`, `grossGrams`, `costPerGram`, `effectiveCost`, `multiplier`, `multiplierLabel`, `imageURL`, `isSubscription`) via a private `RawReportEntry` interface and a `mapEntry()` function. All downstream code uses the camelCase `Analysis` type.
-* `web/app/page.tsx` calls `loadReport()` in a Server Component, enriches each entry with `VendorInfo` from `web/lib/vendors.ts` (for affiliate link construction), and passes the result to `ProductTable`.
+* `web/app/page.tsx` calls `loadReport()` in a Server Component, enriches each entry with `VendorInfo` from `web/lib/vendors.ts`, and passes the result to `ProductTable`.
 * **The frontend contains zero parsing logic.** No regexes, no mg/count extraction, no bioavailability multipliers, no type classification. All of that lives exclusively in the Go backend's `analyzer.go`. The frontend is a dumb renderer of pre-computed data.
 
 ### 4.3. UI/UX Requirements
@@ -123,12 +122,11 @@ The `Analysis` struct is the schema for `data/analysis_report.json`. JSON field 
 
 ### 4.4. Frontend Features & Logic
 
-* **Affiliate Routing:** `web/lib/vendors.ts` exports `buildAffiliateUrl(vendor, handle, affiliateId)`. Shopify vendors construct `{baseUrl}/products/{handle}?ref={AFFILIATE_ID}`. Full-URL vendors (Do Not Age, Jinfiniti, Wonderfeel) use the handle as-is with `?ref=` appended. `AFFILIATE_ID` is read from `process.env.AFFILIATE_ID` at build time. When empty, links point to bare product URLs.
 * **Image Handling:** Product images use a standard `<img>` tag with `loading="lazy"`. `next.config.ts` defines `remotePatterns` for all vendor CDN hostnames (cdn.shopify.com, donotage.org, renuebyscience.com, etc.). Images are set to `unoptimized: true` for static export compatibility.
 * **Compliance Banners:** All rendered in the page footer (`web/app/page.tsx`):
   * *FDA Disclaimer:* "These statements have not been evaluated by the Food and Drug Administration..."
   * *EU Notice:* "NMN is classified as a Novel Food in the European Union. Listings are provided for research and personal import purposes only."
-* **Vendor Registry:** `web/lib/vendors.ts` maps each vendor name to its base URL and whether the handle is a full URL or a slug. This is used solely for constructing affiliate links. It does not reference any raw data files.
+* **Vendor Registry:** `web/lib/vendors.ts` maps each vendor name to its base URL and whether the handle is a full URL or a slug. It does not reference any raw data files.
 * **Allowed Frontend Math:** The only calculations permitted on the frontend are user-driven state computations (e.g., a future "Monthly Cost" column based on user dosage input). All product-level math ($/gram, effective cost, multiplier, type classification) is computed by the Go backend and consumed as-is.
 
 ---

@@ -110,14 +110,14 @@ web/
   app/page.tsx               Main SSG page. Reads analysis_report.json, renders table. Zero parsing logic.
   app/globals.css            Tailwind v4 styles, rank badges, type badges, custom scrollbar.
   components/
-    ProductTable.tsx          Desktop table + mobile card layout. Sorting, filtering, affiliate links.
+    ProductTable.tsx          Desktop table + mobile card layout. Sorting, filtering.
     SupplementFilter.tsx      Pill-style filter tabs (All, NMN, NAD+, TMG, Resveratrol, Creatine).
     TypeBadge.tsx             Colored badge for product type (Capsules, Powder, Tablets, Gel, etc.).
     RankBadge.tsx             Gold/silver/bronze for top 3, plain number for the rest.
   lib/
     data.ts                  Reads data/analysis_report.json. Maps snake_case → camelCase. Single file.
     types.ts                 Analysis interface (camelCase). The only data type the frontend uses.
-    vendors.ts               Vendor registry with base URLs. Affiliate link constructor.
+    vendors.ts               Vendor registry with base URLs.
   next.config.ts             Static export, remote image patterns for vendor CDNs.
   package.json               Next.js 15, React 19, Tailwind CSS v4.
   tsconfig.json              Path aliases (@/*).
@@ -197,15 +197,6 @@ Jinfiniti and Wonderfeel are behind Cloudflare. Their `Cloudflare: true` flag ca
 2. Extract product info into the matching JSON file in `data/`.
 3. Commit and push.
 
-## Affiliate Link Generation
-
-Product `Handle` (URL slug or full URL) and the vendor's base URL are available in the data. The frontend constructs affiliate links dynamically via `web/lib/vendors.ts`:
-
-- **Shopify vendors** (ProHealth, Renue By Science, NMN Bio, Nutricost): `{baseUrl}/products/{handle}?ref={AFFILIATE_ID}`
-- **Full-URL vendors** (Do Not Age, Jinfiniti, Wonderfeel): handle is the complete product URL, appended with `?ref={AFFILIATE_ID}`
-
-`AFFILIATE_ID` is read from `process.env.AFFILIATE_ID` at build time. Set it as a Vercel environment variable or in a `.env.local` file. When empty, links point to the bare product URL with no query parameter.
-
 ## Data Pipeline
 
 ```
@@ -221,7 +212,7 @@ The Go backend is the single source of truth for all parsing, regex extraction, 
 **How it works:**
 
 1. `lib/data.ts` reads `data/analysis_report.json` using `fs.readFileSync` during the build step. It maps the Go backend's snake_case JSON fields (including `active_grams`, `gross_grams`, `is_subscription`) to camelCase TypeScript (including `activeGrams`, `grossGrams`, `isSubscription`) via a `mapEntry()` function.
-2. `app/page.tsx` calls `loadReport()`, attaches `VendorInfo` metadata (for affiliate links), and passes the result to `ProductTable`. No parsing. No math.
+2. `app/page.tsx` calls `loadReport()`, attaches `VendorInfo` metadata, and passes the result to `ProductTable`. No parsing. No math.
 3. `ProductTable` is a client component that provides supplement filtering (pill tabs) and column sorting. Desktop shows a data table with separate Active and Gross columns; mobile (<768px) shows a card layout with Gross shown as subtext below Active when they differ. The Gross column displays "—" when `grossGrams` is 0 or equals `activeGrams`. The True Cost column header has a hover tooltip `(i)` explaining: "Base Price ÷ Bioavailability Multiplier". When a product's `multiplier > 1`, a muted subtext below the True Cost value shows the multiplier and its label (e.g., `(1.5x Lipo Bonus)`).
 4. The build produces a fully static `out/` directory. No server, no client-side API calls.
 
