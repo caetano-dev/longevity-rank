@@ -227,4 +227,3 @@ The Go backend is the single source of truth for all parsing, regex extraction, 
 
 **Allowed frontend math:** Only user-driven state calculations (e.g., a future "Monthly Cost" column based on dosage input). All product-level computation is pre-computed by Go.
 
-**Compliance banners** are rendered in the page footer: FDA disclaimer, EU Novel Food notice, and affiliate disclosure.

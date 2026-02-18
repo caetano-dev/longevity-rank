@@ -161,12 +161,6 @@ export default function Home() {
               provided for research and personal import purposes only. Check
               your local regulations before purchasing.
             </p>
-            <p>
-              <strong className="text-zinc-500">Affiliate Disclosure:</strong>{" "}
-              This site may earn a commission from qualifying purchases at no
-              extra cost to you. All rankings are based solely on
-              bioavailability-adjusted cost-per-gram calculations.
-            </p>
             <div className="pt-4 border-t border-zinc-800/40">
               <p className="text-zinc-700">
                 Longevity Ranker &middot; Data sourced from public vendor storefronts &middot;{" "}

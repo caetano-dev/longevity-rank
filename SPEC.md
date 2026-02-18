@@ -128,7 +128,6 @@ The `Analysis` struct is the schema for `data/analysis_report.json`. JSON field 
 * **Compliance Banners:** All rendered in the page footer (`web/app/page.tsx`):
   * *FDA Disclaimer:* "These statements have not been evaluated by the Food and Drug Administration..."
   * *EU Notice:* "NMN is classified as a Novel Food in the European Union. Listings are provided for research and personal import purposes only."
-  * *Affiliate Disclosure:* "This site may earn a commission from qualifying purchases..."
 * **Vendor Registry:** `web/lib/vendors.ts` maps each vendor name to its base URL and whether the handle is a full URL or a slug. This is used solely for constructing affiliate links. It does not reference any raw data files.
 * **Allowed Frontend Math:** The only calculations permitted on the frontend are user-driven state computations (e.g., a future "Monthly Cost" column based on user dosage input). All product-level math ($/gram, effective cost, multiplier, type classification) is computed by the Go backend and consumed as-is.
 
