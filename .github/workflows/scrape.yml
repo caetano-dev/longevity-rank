@@ -46,15 +46,3 @@ jobs:
           git add data/*.json
           git commit -m "Auto-update product data [skip ci]"
           git push
-
-      - name: Trigger Vercel build
-        if: steps.check_changes.outputs.changed == 'true'
-        env:
-          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
-        run: |
-          if [ -n "$VERCEL_DEPLOY_HOOK" ]; then
-            curl -s -X POST "$VERCEL_DEPLOY_HOOK"
-            echo "✅ Vercel build triggered."
-          else
-            echo "⚠️ VERCEL_DEPLOY_HOOK secret not set. Skipping."
-          fi
