@@ -164,7 +164,7 @@ export default function ProductTable({ analyses }: ProductTableProps) {
                       <span className="inline-flex h-4 w-4 items-center justify-center rounded-full border border-zinc-600 text-[10px] font-normal text-zinc-500 leading-none">
                         i
                       </span>
-                      <span className="pointer-events-none absolute bottom-full right-0 mb-2 w-48 rounded-lg bg-zinc-800 px-3 py-2 text-xs font-normal normal-case tracking-normal text-zinc-300 opacity-0 shadow-lg transition-opacity group-hover:opacity-100 z-50">
+                      <span className="pointer-events-none absolute top-full right-0 mt-2 w-48 rounded-lg bg-zinc-800 px-3 py-2 text-xs font-normal normal-case tracking-normal text-zinc-300 opacity-0 shadow-lg transition-opacity group-hover:opacity-100 z-50">
                         Base&nbsp;Price&nbsp;÷&nbsp;Bioavailability Multiplier
                       </span>
                     </span>
