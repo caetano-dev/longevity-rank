@@ -65,19 +65,3 @@ export function buildProductUrl(vendor: VendorInfo, handle: string): string {
   }
   return `${vendor.baseUrl}/products/${handle}`;
 }
-
-/**
- * Append an affiliate query parameter to a product URL.
- * Returns the bare URL unchanged when affiliateId is empty/undefined.
- */
-export function buildAffiliateUrl(
-  vendor: VendorInfo,
-  handle: string,
-  affiliateId?: string
-): string {
-  const base = buildProductUrl(vendor, handle);
-  if (!affiliateId) return base;
-
-  const separator = base.includes("?") ? "&" : "?";
-  return `${base}${separator}ref=${affiliateId}`;
-}

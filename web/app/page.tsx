@@ -5,8 +5,6 @@ import vendors from "@/lib/vendors";
 
 export const dynamic = "force-static";
 
-const AFFILIATE_ID = process.env.AFFILIATE_ID ?? "";
-
 export default function Home() {
   // loadReport() reads data/analysis_report.json and maps snake_case → camelCase.
   // No parsing, regex, or math — the Go backend did all of that.
@@ -98,7 +96,7 @@ export default function Home() {
 
       {/* Product Table */}
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <ProductTable analyses={enriched} affiliateId={AFFILIATE_ID || undefined} />
+        <ProductTable analyses={enriched} />
       </section>
 
       {/* FAQ */}
@@ -143,7 +141,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer — FDA, EU, Affiliate Disclosures */}
       <footer className="border-t border-zinc-800 bg-zinc-950">
         <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="space-y-4 text-center text-xs leading-relaxed text-zinc-600">

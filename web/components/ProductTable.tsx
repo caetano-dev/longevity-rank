@@ -3,7 +3,6 @@
 import { useState, useMemo } from "react";
 import type { Analysis } from "@/lib/types";
 import type { VendorInfo } from "@/lib/vendors";
-import { buildAffiliateUrl } from "@/lib/vendors";
 import RankBadge from "./RankBadge";
 import TypeBadge from "./TypeBadge";
 import SupplementFilter, {
@@ -17,7 +16,6 @@ interface AnalysisWithVendorInfo extends Analysis {
 interface ProductTableProps {
   /** All analyses pre-sorted by effectiveCost ascending, with vendorInfo attached */
   analyses: AnalysisWithVendorInfo[];
-  affiliateId?: string;
 }
 
 /** Maps supplement filter values to keyword strings for client-side filtering */
@@ -76,7 +74,7 @@ function matchesFilter(analysis: AnalysisWithVendorInfo, filter: FilterValue): b
   return keywords.some((kw) => searchStr.includes(kw));
 }
 
-export default function ProductTable({ analyses, affiliateId }: ProductTableProps) {
+export default function ProductTable({ analyses }: ProductTableProps) {
   const [filter, setFilter] = useState<FilterValue>("nmn");
   const [sortBy, setSortBy] = useState<"effectiveCost" | "costPerGram" | "price">("effectiveCost");
   const [sortAsc, setSortAsc] = useState(true);
@@ -179,7 +177,6 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
             <tbody>
               {filtered.map((item, idx) => {
                 const rank = idx + 1;
-                const href = buildAffiliateUrl(item.vendorInfo, item.handle, affiliateId);
                 const isBest = item.effectiveCost === bestEffectiveCost && sortBy === "effectiveCost" && sortAsc;
 
                 return (
@@ -236,12 +233,11 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
                     </td>
                     <td className="px-4 py-3 text-right">
                       <a
-                        href={href}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center rounded-lg bg-emerald-600/20 px-3 py-1.5 text-xs font-semibold text-emerald-400 transition-all hover:bg-emerald-600/30 hover:text-emerald-300"
                       >
-                        Buy →
+                        Buy
                       </a>
                     </td>
                   </tr>
@@ -257,7 +253,6 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
         <div className="md:hidden flex flex-col gap-3">
           {filtered.map((item, idx) => {
             const rank = idx + 1;
-            const href = buildAffiliateUrl(item.vendorInfo, item.handle, affiliateId);
             const isBest = item.effectiveCost === bestEffectiveCost && sortBy === "effectiveCost" && sortAsc;
 
             return (
@@ -332,7 +327,6 @@ export default function ProductTable({ analyses, affiliateId }: ProductTableProp
 
                 {/* Buy button */}
                 <a
-                  href={href}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-3 flex w-full items-center justify-center rounded-lg bg-emerald-600/20 py-2 text-sm font-semibold text-emerald-400 transition-all hover:bg-emerald-600/30 hover:text-emerald-300"
