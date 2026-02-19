@@ -2,12 +2,17 @@ package main
 
 import (
 	"encoding/json"
+	_ "net/http/pprof"
+	"runtime/pprof" 
+	"net/http"
+	"log"
 	"flag"
 	"fmt"
 	"os"
 	"path/filepath"
 	"sort"
 	"strings"
+	"sync"
 	"text/tabwriter"
 
 	"longevity-ranker/internal/config"
@@ -18,12 +23,39 @@ import (
 	"longevity-ranker/internal/storage"
 )
 
+// vendorResult holds the scraped/loaded products for a single vendor.
+// Collected via channel from concurrent goroutines.
+type vendorResult struct {
+	VendorName string
+	Products   []models.Product
+	Err        error
+}
+
 func main() {
+	go func() {
+        fmt.Println("📊 Profiling server started at http://localhost:6060/debug/pprof/")
+        if err := http.ListenAndServe("localhost:6060", nil); err != nil {
+            log.Printf("Could not start pprof server: %v", err)
+        }
+    }()
+	
 	refresh := flag.Bool("refresh", false, "Scrape websites to update local data")
+	cpuprofile := flag.String("cpuprofile", "", "write cpu profile to `file`")
 	audit := flag.Bool("audit", false, "Detect products that need manual overrides in vendor_rules.json")
 	supplements := flag.String("supplements", "nmn,nad,tmg,trimethylglycine,resveratrol,creatine", "Comma-separated list of supplement keywords to track")
 	flag.Parse()
-
+	
+	if *cpuprofile != "" {
+			f, err := os.Create(*cpuprofile)
+			if err != nil {
+				log.Fatal("could not create CPU profile: ", err)
+			}
+			defer f.Close() // Ensure file is closed at the end
+			if err := pprof.StartCPUProfile(f); err != nil {
+				log.Fatal("could not start CPU profile: ", err)
+			}
+			defer pprof.StopCPUProfile() 
+		}
 	// Apply supplement filter to the analyzer's gatekeeper
 	if *supplements != "" {
 		parts := strings.Split(*supplements, ",")
@@ -51,50 +83,76 @@ func main() {
 	}
 
 	vendors := config.GetVendors()
+
+	// --- Concurrent scraping/loading via goroutines ---
+	resultsCh := make(chan vendorResult, len(vendors))
+	var wg sync.WaitGroup
+
+	for _, v := range vendors {
+		wg.Add(1)
+		go func(v models.Vendor) {
+			defer wg.Done()
+
+			shouldScrape := *refresh
+			if !shouldScrape {
+				_, err := os.Stat(storage.GetFilename(v.Name))
+				if os.IsNotExist(err) {
+					shouldScrape = true
+				}
+			}
+
+			// Cloudflare-blocked vendors cannot be scraped automatically.
+			// They rely on manually-maintained JSON in the data/ directory.
+			if shouldScrape && v.Cloudflare {
+				fmt.Printf("🛡️  Skipping %s (Cloudflare-protected). Using local JSON if available.\n", v.Name)
+				shouldScrape = false
+			}
+
+			var products []models.Product
+			var err error
+
+			if shouldScrape {
+				products, err = scraper.FetchProducts(v)
+				if err != nil {
+					resultsCh <- vendorResult{VendorName: v.Name, Err: fmt.Errorf("scraping: %w", err)}
+					return
+				}
+				if saveErr := storage.SaveProducts(v.Name, products); saveErr != nil {
+					fmt.Printf("⚠️ Error saving data for %s: %v\n", v.Name, saveErr)
+				}
+				fmt.Printf("✅ Saved %d products for %s\n", len(products), v.Name)
+			} else {
+				products, err = storage.LoadProducts(v.Name)
+				if err != nil {
+					resultsCh <- vendorResult{VendorName: v.Name, Err: fmt.Errorf("loading: %w", err)}
+					return
+				}
+			}
+
+			resultsCh <- vendorResult{VendorName: v.Name, Products: products}
+		}(v)
+	}
+
+	// Close channel once all goroutines complete
+	go func() {
+		wg.Wait()
+		close(resultsCh)
+	}()
+
+	// --- Collect results from channel ---
 	var allProducts []struct {
 		VendorName string
 		Product    models.Product
 	}
 
-	for _, v := range vendors {
-		var products []models.Product
-		var err error
-
-		shouldScrape := *refresh
-		if !shouldScrape {
-			_, err := os.Stat(storage.GetFilename(v.Name))
-			if os.IsNotExist(err) {
-				shouldScrape = true
-			}
+	for res := range resultsCh {
+		if res.Err != nil {
+			fmt.Printf("❌ Error for %s: %v\n", res.VendorName, res.Err)
+			continue
 		}
 
-		// Cloudflare-blocked vendors cannot be scraped automatically.
-		// They rely on manually-maintained JSON in the data/ directory.
-		if shouldScrape && v.Cloudflare {
-			fmt.Printf("🛡️  Skipping %s (Cloudflare-protected). Using local JSON if available.\n", v.Name)
-			shouldScrape = false
-		}
-
-		if shouldScrape {
-			products, err = scraper.FetchProducts(v)
-			if err != nil {
-				fmt.Printf("❌ Error scraping %s: %v\n", v.Name, err)
-				continue
-			}
-			if err := storage.SaveProducts(v.Name, products); err != nil {
-				fmt.Printf("⚠️ Error saving data for %s: %v\n", v.Name, err)
-			}
-			fmt.Printf("✅ Saved %d products for %s\n", len(products), v.Name)
-		} else {
-			products, err = storage.LoadProducts(v.Name)
-			if err != nil {
-				fmt.Printf("❌ Error loading %s: %v\n", v.Name, err)
-				continue
-			}
-		}
-
-		for _, p := range products {
-			keep := rules.ApplyRules(v.Name, &p)
+		for _, p := range res.Products {
+			keep := rules.ApplyRules(res.VendorName, &p)
 			if !keep {
 				continue
 			}
@@ -102,7 +160,7 @@ func main() {
 			allProducts = append(allProducts, struct {
 				VendorName string
 				Product    models.Product
-			}{v.Name, p})
+			}{res.VendorName, p})
 		}
 	}
 

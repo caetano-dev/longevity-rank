@@ -27,8 +27,9 @@ The system is decoupled into two primary components communicating via a single s
 
 ### 3.1. Current State & Workflow
 
-* **Command:** `go run cmd/main.go -refresh` (Scrapes web → saves raw products to `data/*.json` → Analyzes → Saves report to `data/analysis_report.json` → Prints table to stdout).
-* **Command:** `go run cmd/main.go` (Reads local `data/*.json` → Analyzes → Saves report → Prints table). Instant execution for logic debugging.
+* **Command:** `go run cmd/main.go -refresh` (Scrapes web concurrently → saves raw products to `data/*.json` → Analyzes → Saves report to `data/analysis_report.json` → Prints table to stdout).
+* **Command:** `go run cmd/main.go` (Reads local `data/*.json` concurrently → Analyzes → Saves report → Prints table). Instant execution for logic debugging.
+* **Concurrency Model:** `cmd/main.go` launches one goroutine per vendor using `sync.WaitGroup`. Each goroutine scrapes (or loads from disk) independently and sends its results through a buffered `chan vendorResult` (capacity = number of vendors). A separate goroutine calls `wg.Wait()` then `close(resultsCh)`. The main goroutine drains the channel sequentially, applies blocklist rules, and collects products into the `allProducts` slice. All downstream processing (analysis, sorting, report generation) remains sequential and deterministic. Thread safety: `rules.Registry` is read-only after initial load; each goroutine operates on its own `[]models.Product` slice; `fmt.Printf` calls inside goroutines are interleaved but atomic per-call.
 * **Command:** `go run cmd/main.go -audit` (Runs the normal pipeline, then scans all products that pass the supplement keyword filter and vendor blocklist. Products that lack enough data for the analyzer to compute `activeGrams` are printed with a gap report: what data was extracted, what is missing, and a suggested `vendor_rules.json` override snippet. Combinable with `-refresh`.)
 * **Scraper Engines (`internal/scraper/`):**
   * `shopify.go`: Parses `products.json` endpoints.
