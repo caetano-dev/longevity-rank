@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import type { Analysis } from "@/lib/types";
 import type { VendorInfo } from "@/lib/vendors";
+import { buildProductUrl } from "@/lib/vendors";
 import RankBadge from "./RankBadge";
 import TypeBadge from "./TypeBadge";
 import SupplementFilter, {
@@ -233,6 +234,7 @@ export default function ProductTable({ analyses }: ProductTableProps) {
                     </td>
                     <td className="px-4 py-3 text-right">
                       <a
+                        href={buildProductUrl(item.vendorInfo, item.handle)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center rounded-lg bg-emerald-600/20 px-3 py-1.5 text-xs font-semibold text-emerald-400 transition-all hover:bg-emerald-600/30 hover:text-emerald-300"
@@ -327,6 +329,7 @@ export default function ProductTable({ analyses }: ProductTableProps) {
 
                 {/* Buy button */}
                 <a
+                  href={buildProductUrl(item.vendorInfo, item.handle)}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mt-3 flex w-full items-center justify-center rounded-lg bg-emerald-600/20 py-2 text-sm font-semibold text-emerald-400 transition-all hover:bg-emerald-600/30 hover:text-emerald-300"
