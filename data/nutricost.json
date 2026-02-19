@@ -690,7 +690,7 @@
       {
         "price": "18.97",
         "title": "1 lb",
-        "available": false
+        "available": true
       },
       {
         "price": "29.97",
@@ -755,7 +755,7 @@
       {
         "price": "82.97",
         "title": "Unflavored / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "46.97",
@@ -790,7 +790,7 @@
       {
         "price": "46.97",
         "title": "Vanilla / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "82.97",
@@ -2535,7 +2535,7 @@
       {
         "price": "15.97",
         "title": "200 MCG",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -2905,7 +2905,7 @@
       {
         "price": "17.97",
         "title": "240 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -3170,7 +3170,7 @@
       {
         "price": "24.97",
         "title": "250 Grams",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -7345,7 +7345,7 @@
       {
         "price": "15.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11960,7 +11960,7 @@
       {
         "price": "32.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
