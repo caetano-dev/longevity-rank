@@ -885,7 +885,7 @@
       {
         "price": "62.04",
         "title": "Unflavored / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "36.97",
@@ -7700,7 +7700,7 @@
       {
         "price": "60.97",
         "title": "Chocolate",
-        "available": true
+        "available": false
       },
       {
         "price": "60.97",
@@ -8485,7 +8485,7 @@
       {
         "price": "21.97",
         "title": "Passionfruit Guava",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
@@ -8550,7 +8550,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11275,7 +11275,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11515,7 +11515,7 @@
       {
         "price": "19.97",
         "title": "120 Tablets / 1000 Milligrams",
-        "available": true
+        "available": false
       },
       {
         "price": "29.97",
