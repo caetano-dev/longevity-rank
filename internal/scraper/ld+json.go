@@ -3,8 +3,6 @@ package scraper
 import (
 	"encoding/json"
 	"fmt"
-	"io"
-	"net/http"
 	"net/url"
 	"regexp"
 	"strings"
@@ -21,14 +19,14 @@ type LdNode struct {
 	Type        interface{} `json:"@type"`
 	Name        string      `json:"name"`
 	Description string      `json:"description"`
-	Image       interface{} `json:"image"` // NEW: Can be string or []string
+	Image       interface{} `json:"image"`
 	HasVariant  []LdVariant `json:"hasVariant"`
 	Offers      *LdOffer    `json:"offers,omitempty"`
 }
 
 type LdVariant struct {
-	Name        string  `json:"name"`
-	Description string  `json:"description"`
+	Name        string `json:"name"`
+	Description string `json:"description"`
 	Offers      LdOffer `json:"offers"`
 }
 
@@ -39,7 +37,6 @@ type LdOffer struct {
 }
 
 func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
-	client := &http.Client{Timeout: 30 * time.Second}
 	fmt.Printf("🔍 Crawling %s (%s)...\n", vendor.Name, vendor.Type)
 
 	baseURL, err := url.Parse(vendor.URL)
@@ -47,7 +44,7 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 		return nil, fmt.Errorf("invalid vendor URL: %v", err)
 	}
 
-	shopBody, err := fetchBody(client, vendor.URL)
+	shopBody, err := FetchBody(vendor.URL)
 	if err != nil {
 		return nil, err
 	}
@@ -57,8 +54,7 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 
 	uniqueLinks := make(map[string]bool)
 	for _, m := range matches {
-		rawLink := m[1]
-		relURL, err := url.Parse(rawLink)
+		relURL, err := url.Parse(m[1])
 		if err != nil {
 			continue
 		}
@@ -75,7 +71,7 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 	for link := range uniqueLinks {
 		time.Sleep(300 * time.Millisecond)
 
-		pageBody, err := fetchBody(client, link)
+		pageBody, err := FetchBody(link)
 		if err != nil {
 			continue
 		}
@@ -94,50 +90,42 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 					continue
 				}
 
-				imgURL := ""
-				if str, ok := node.Image.(string); ok {
-					imgURL = str
-				} else if arr, ok := node.Image.([]interface{}); ok && len(arr) > 0 {
-					if str, ok := arr[0].(string); ok {
-						imgURL = str
-					}
-				}
+				imgURL := extractImageURL(node.Image)
 
 				if len(node.HasVariant) > 0 {
 					for _, v := range node.HasVariant {
 						desc := v.Description
-						if desc == "" { desc = node.Description }
-						isAvailable := strings.Contains(v.Offers.Availability, "InStock")
+						if desc == "" {
+							desc = node.Description
+						}
 
 						products = append(products, models.Product{
 							ID:       v.Name,
 							Title:    v.Name,
 							Handle:   link,
 							BodyHTML: desc,
-							ImageURL: imgURL, // MAP
+							ImageURL: imgURL,
 							Variants: []models.Variant{
 								{
 									Price:     fmt.Sprintf("%v", v.Offers.Price),
 									Title:     v.Name,
-									Available: isAvailable,
+									Available: strings.Contains(v.Offers.Availability, "InStock"),
 								},
 							},
 						})
 					}
 				} else if node.Offers != nil {
-					isAvailable := strings.Contains(node.Offers.Availability, "InStock")
-
 					products = append(products, models.Product{
 						ID:       node.Name,
 						Title:    node.Name,
 						Handle:   link,
 						BodyHTML: node.Description,
-						ImageURL: imgURL, // MAP
+						ImageURL: imgURL,
 						Variants: []models.Variant{
 							{
 								Price:     fmt.Sprintf("%v", node.Offers.Price),
 								Title:     node.Name,
-								Available: isAvailable,
+								Available: strings.Contains(node.Offers.Availability, "InStock"),
 							},
 						},
 					})
@@ -147,6 +135,19 @@ func FetchLdJsonProducts(vendor models.Vendor) ([]models.Product, error) {
 	}
 
 	return products, nil
+}
+
+// extractImageURL handles the polymorphic image field (string or []string).
+func extractImageURL(img interface{}) string {
+	if s, ok := img.(string); ok {
+		return s
+	}
+	if arr, ok := img.([]interface{}); ok && len(arr) > 0 {
+		if s, ok := arr[0].(string); ok {
+			return s
+		}
+	}
+	return ""
 }
 
 func isProductType(t interface{}) bool {
@@ -161,15 +162,4 @@ func isProductType(t interface{}) bool {
 		}
 	}
 	return false
-}
-
-func fetchBody(client *http.Client, url string) ([]byte, error) {
-	req, _ := http.NewRequest("GET", url, nil)
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
-	resp, err := client.Do(req)
-	if err != nil {
-		return nil, err
-	}
-	defer resp.Body.Close()
-	return io.ReadAll(resp.Body)
 }

@@ -4,24 +4,22 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
-	"net/http"
 	"net/url"
-	"longevity-ranker/internal/models"
 	"strconv"
 	"time"
+
+	"longevity-ranker/internal/models"
 )
 
 const maxShopifyPages = 1000
 
 func FetchShopifyProducts(vendor models.Vendor) ([]models.Product, error) {
-	client := &http.Client{Timeout: 15 * time.Second}
 	var finalProducts []models.Product
 	seenIDs := make(map[string]bool)
 	page := 1
 
 	fmt.Printf("🔌 Connecting to %s...\n", vendor.Name)
 
-	// Parse the base URL once so we can safely append query params
 	baseURL, err := url.Parse(vendor.URL)
 	if err != nil {
 		return nil, fmt.Errorf("invalid vendor URL %q: %v", vendor.URL, err)
@@ -35,13 +33,15 @@ func FetchShopifyProducts(vendor models.Vendor) ([]models.Product, error) {
 		baseURL.RawQuery = q.Encode()
 		fetchURL := baseURL.String()
 
-		req, _ := http.NewRequest("GET", fetchURL, nil)
-		req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+		req, err := NewRequest(fetchURL)
+		if err != nil {
+			return nil, fmt.Errorf("failed building request for page %d: %v", page, err)
+		}
 		req.Header.Set("Cache-Control", "no-cache, no-store, must-revalidate")
 		req.Header.Set("Pragma", "no-cache")
 		req.Header.Set("Expires", "0")
 
-		resp, err := client.Do(req)
+		resp, err := DefaultClient.Do(req)
 		if err != nil {
 			return nil, fmt.Errorf("failed fetching page %d: %v", page, err)
 		}
@@ -69,15 +69,11 @@ func FetchShopifyProducts(vendor models.Vendor) ([]models.Product, error) {
 		if err := json.Unmarshal(body, &rawData); err != nil {
 			break
 		}
-
 		if len(rawData.Products) == 0 {
 			break
 		}
 
-		// Track how many new (unseen) products this page contributed.
-		// If every product on the page is a duplicate, the API is looping — bail out.
 		newOnPage := 0
-
 		for _, p := range rawData.Products {
 			pid := strconv.FormatInt(p.ID, 10)
 			if seenIDs[pid] {
@@ -86,7 +82,6 @@ func FetchShopifyProducts(vendor models.Vendor) ([]models.Product, error) {
 			seenIDs[pid] = true
 			newOnPage++
 
-			// Extract first image
 			img := ""
 			if len(p.Images) > 0 {
 				img = p.Images[0].Src
@@ -99,7 +94,6 @@ func FetchShopifyProducts(vendor models.Vendor) ([]models.Product, error) {
 				BodyHTML: p.BodyHTML,
 				ImageURL: img,
 			}
-
 			for _, v := range p.Variants {
 				newProd.Variants = append(newProd.Variants, models.Variant{
 					Price:     v.Price,
@@ -113,12 +107,10 @@ func FetchShopifyProducts(vendor models.Vendor) ([]models.Product, error) {
 
 		fmt.Printf("   -> Page %d: %d items (%d new)\n", page, len(rawData.Products), newOnPage)
 
-		// If no new products were found on this page, the API is recycling — stop.
 		if newOnPage == 0 {
 			fmt.Printf("   ⚠️  No new products on page %d, stopping pagination.\n", page)
 			break
 		}
-
 		page++
 	}
 

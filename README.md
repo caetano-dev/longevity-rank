@@ -63,6 +63,15 @@ go run cmd/main.go -cpuprofile cpu.prof
 go tool pprof cpu.prof
 ```
 
+### Live pprof server
+
+```
+go run cmd/main.go -pprof
+# Then visit http://localhost:6060/debug/pprof/
+```
+
+The pprof HTTP server is off by default. Pass `-pprof` to enable it.
+
 ### Filter by supplement type
 
 ```
@@ -96,18 +105,20 @@ Opens at `http://localhost:3000`. Reads `data/analysis_report.json` from the rep
 ## Project Structure
 
 ```
-cmd/main.go                  CLI entry point. Flags: --refresh, --supplements, --audit. After saving analysis_report.json, extracts all NeedsReview entries into data/needs_review.json.
+cmd/main.go                  CLI entry point. Flags: --refresh, --supplements, --audit, --pprof, --cpuprofile. No global state — constructs Analyzer struct with injected rules and supplements. scrapeAll() handles concurrent vendor fetching. saveReviewQueue() persists flagged entries.
 internal/
   config/vendors.go          Vendor registry (name, URL, scraper type, cloudflare flag).
   models/types.go            Core structs: Vendor, Product, Variant, Analysis (with JSON tags, including ActiveGrams, GrossGrams, Multiplier, MultiplierLabel, IsSubscription, NeedsReview, and ReviewReason).
-  parser/analyzer.go         Hybrid Catalog/Regex Engine with three-tier mass resolution and active/gross mass disambiguation. Checks variantBlocklist to skip ghost variants. ActiveGrams priority: variantOverrides[v.Title] > forceActiveGrams > regex pipeline. GrossGrams priority: variantGrossOverrides[v.Title] > reLabelGrams/reLabelKg regex on product/variant titles. Pure Powder fallback: if no dirty keywords and regex-resolved, activeGrams = grossGrams. Pack multiplier always runs. CostPerGram and EffectiveCost use activeGrams as denominator. Triage Engine scans regex-resolved products against dirtyKeywords and sets NeedsReview/ReviewReason. Returns []models.Analysis (all valid variants). Strips vendor name from product title. Populates multiplier and multiplier label. Emits synthetic "Subscribe & Save" entries when vendor has globalSubscriptionDiscount > 0.
-  parser/audit.go            Gap detector. Finds products that pass filters but lack data for analysis (activeGrams == 0). Prints override suggestions using forceActiveGrams/forceServingMg format.
-  rules/rules.go             Loads vendor_rules.json. ApplyRules() evaluates product-level blocklist only (returns true/false). No data enrichment — overrides and variantBlocklist are consumed directly by the analyzer.
-  scraper/router.go          Routes vendors to the correct scraper engine.
-  scraper/shopify.go         Shopify products.json scraper with pagination safety.
-  scraper/magento.go         Magento swatch-renderer JSON + bulk pricing scraper.
-  scraper/ld+json.go         Schema.org LD+JSON @graph scraper.
-  storage/json_store.go      Reads/writes data/*.json files. SaveReport() writes analysis_report.json.
+  parser/analyzer.go         Analyzer struct (holds Rules and Supplements, no globals). AnalyzeProduct() method implements Hybrid Catalog/Regex Engine. Mass extraction delegated to extractMass(). Gross weight delegated to extractGrossGrams(). Type classification via classifyType(). Bioavailability via bioavailabilityMultiplier(). Display name via buildDisplayName(). Dirty-data triage via triageDirtyData(). Cost metrics via buildAnalysis() — single helper for both one-time and subscription entries.
+  parser/audit.go            AuditProduct() method on Analyzer. Gap detector using extractFloat/extractFloatFrom helpers. Prints override suggestions using forceActiveGrams/forceServingMg format.
+  parser/extract.go          Shared regex helpers: extractFloat(re, s), extractFloatFrom(re, sources...), containsAny(s, substrs). Replaces ~13 instances of the 3-5 line regex→parse→check pattern.
+  rules/rules.go             LoadRules() returns (Registry, error) — no global variable. Registry is a type alias for map[string]VendorConfig. ApplyRules(reg, vendorName, p) evaluates product-level blocklist only (returns true/false). No data enrichment.
+  scraper/client.go          Shared HTTP infrastructure: DefaultClient (*http.Client), NewRequest(url), FetchBody(url). Eliminates duplicate client/header setup across scrapers.
+  scraper/router.go          FetchFunc type + map-based registry. FetchProducts() dispatches via map lookup — no switch statement.
+  scraper/shopify.go         Shopify products.json scraper with pagination safety. Uses shared DefaultClient/NewRequest.
+  scraper/magento.go         Magento swatch-renderer JSON + bulk pricing scraper. All regexps compiled once at package level. Uses shared FetchBody.
+  scraper/ld+json.go         Schema.org LD+JSON @graph scraper. Uses shared FetchBody.
+  storage/json_store.go      Generic SaveJSON[T](path, data) and LoadJSON[T](path). VendorFilename() converts vendor name to file path.
 data/
   analysis_report.json       ★ THE INTEGRATION POINT. Pre-computed Analysis array. Frontend reads ONLY this.
   needs_review.json          Triage Engine output. Subset of analysis_report.json entries where needs_review == true. Written by cmd/main.go after every run. Operator reviews this to decide which products need overrides in vendor_rules.json.

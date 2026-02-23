@@ -3,11 +3,9 @@ package parser
 import (
 	"fmt"
 	"math"
-	"strconv"
 	"strings"
 
 	"longevity-ranker/internal/models"
-	"longevity-ranker/internal/rules"
 )
 
 // AuditResult describes a product that passes interest/blocklist filters but
@@ -38,8 +36,7 @@ type AuditResult struct {
 // fully analyzable (AnalyzeProduct would succeed), it returns nil — no gap.
 //
 // This function assumes ApplyRules has already been called (blocklist filtering).
-// It does NOT re-check the blocklist — that is the caller's responsibility.
-func AuditProduct(vendorName string, p models.Product) *AuditResult {
+func (a *Analyzer) AuditProduct(vendorName string, p models.Product) *AuditResult {
 	if len(p.Variants) == 0 {
 		return &AuditResult{
 			Vendor:  vendorName,
@@ -49,38 +46,29 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 		}
 	}
 
-	// --- Supplement keyword gate (same as AnalyzeProduct) ---
-	identityString := strings.ToLower(p.Title + " " + p.Context + " " + p.Handle)
-	matched := false
-	for _, supp := range AllowedSupplements {
-		if strings.Contains(identityString, supp) {
-			matched = true
-			break
-		}
-	}
-	if !matched {
+	// Supplement keyword gate (same as AnalyzeProduct)
+	identity := strings.ToLower(p.Title + " " + p.Context + " " + p.Handle)
+	if !a.matchesSupplement(identity) {
 		return nil // Not a supplement we track — not a gap, just irrelevant
 	}
 
-	// --- Check if a catalog override already provides total grams ---
-	if rules.Registry != nil {
-		if config, exists := rules.Registry[vendorName]; exists {
+	// Check if a catalog override already provides total grams
+	if a.Rules != nil {
+		if config, exists := a.Rules[vendorName]; exists {
 			if spec, hasOverride := config.Overrides[p.Handle]; hasOverride && spec.ForceActiveGrams > 0 {
-				// The hybrid engine will handle this product via catalog path.
-				// Verify the analyzer actually succeeds with this override.
-				if AnalyzeProduct(vendorName, p) != nil {
+				if a.AnalyzeProduct(vendorName, p) != nil {
 					return nil
 				}
 			}
 		}
 	}
 
-	// --- Check if AnalyzeProduct already succeeds via regex path ---
-	if AnalyzeProduct(vendorName, p) != nil {
-		return nil // Product is fully analyzable, no audit needed
+	// Check if AnalyzeProduct already succeeds via regex path
+	if a.AnalyzeProduct(vendorName, p) != nil {
+		return nil
 	}
 
-	// --- The product IS interesting but the analyzer rejected it. Diagnose. ---
+	// The product IS interesting but the analyzer rejected it. Diagnose.
 	result := &AuditResult{
 		Vendor:    vendorName,
 		Title:     p.Title,
@@ -93,8 +81,8 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 		if !v.Available {
 			continue
 		}
-		price, _ := strconv.ParseFloat(v.Price, 64)
-		if price <= 0 {
+		price, ok := extractFloat(rePriceFloat, v.Price)
+		if !ok {
 			continue
 		}
 		availableCount++
@@ -110,76 +98,45 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 		return result
 	}
 
-	// Use the same search strings as the analyzer to probe for data
+	// Build search strings for probing
 	broadSearch := p.Title + " " + p.Context + " " + strings.ReplaceAll(p.Handle, "-", " ") + " " + p.BodyHTML
+	cleanSearch := p.Title
+	variantSearch := ""
 	for _, v := range p.Variants {
 		broadSearch += " " + v.Title
-	}
-	cleanSearch := p.Title
-	for _, v := range p.Variants {
 		cleanSearch += " " + v.Title
+		variantSearch += " " + v.Title
 	}
 
-	// Probe: explicit grams
-	gramMatch := reGrams.FindStringSubmatch(cleanSearch)
-	if len(gramMatch) > 1 {
-		g, _ := strconv.ParseFloat(gramMatch[1], 64)
-		if g > 0 {
-			result.GramsFound = true
-			result.GramsValue = g
-		}
-	} else {
-		// Fallback to broad search for grams
-		gramMatchBroad := reGrams.FindStringSubmatch(broadSearch)
-		if len(gramMatchBroad) > 1 {
-			g, _ := strconv.ParseFloat(gramMatchBroad[1], 64)
-			if g > 0 {
-				result.GramsFound = true
-				result.GramsValue = g
-			}
-		}
+	// Probe: explicit grams (clean first, then broad fallback)
+	if g, ok := extractFloatFrom(reGrams, cleanSearch, broadSearch); ok {
+		result.GramsFound = true
+		result.GramsValue = g
 	}
 
 	// Probe: kg
-	kgMatch := reKg.FindStringSubmatch(cleanSearch)
-	if len(kgMatch) > 1 {
-		kg, _ := strconv.ParseFloat(kgMatch[1], 64)
-		if kg > 0 {
-			result.KgFound = true
-			result.KgValue = kg
-		}
+	if kg, ok := extractFloat(reKg, cleanSearch); ok {
+		result.KgFound = true
+		result.KgValue = kg
 	}
 
 	// Probe: mg
-	mgMatch := reMg.FindStringSubmatch(broadSearch)
-	if len(mgMatch) > 1 {
-		mg, _ := strconv.ParseFloat(mgMatch[1], 64)
-		if mg > 0 {
-			result.MgFound = true
-			result.MgValue = mg
-		}
+	if mg, ok := extractFloat(reMg, broadSearch); ok {
+		result.MgFound = true
+		result.MgValue = mg
 	}
 
 	// Probe: count
-	variantSearch := ""
-	for _, v := range p.Variants {
-		variantSearch += " " + v.Title
-	}
-	countMatch := extractCount(variantSearch, cleanSearch, broadSearch)
-	if len(countMatch) > 1 {
-		c, _ := strconv.ParseFloat(countMatch[1], 64)
-		if c > 0 {
-			result.CountFound = true
-			result.CountValue = c
-		}
+	if c, ok := extractFloatFrom(reCount, variantSearch, cleanSearch, broadSearch); ok {
+		result.CountFound = true
+		result.CountValue = c
 	}
 
-	// --- Diagnose what's missing ---
+	// Diagnose what's missing
 	hasPowderMass := result.GramsFound || result.KgFound
 	hasCapsuleMass := result.MgFound && result.CountFound
 
 	if !hasPowderMass && !hasCapsuleMass {
-		// Neither path can compute activeGrams
 		if !result.MgFound {
 			result.Missing = append(result.Missing, "mg per serving (forceServingMg)")
 		}
@@ -190,8 +147,6 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 			result.Missing = append(result.Missing, "active grams (forceActiveGrams)")
 		}
 	} else {
-		// We found partial data but activeGrams still came out zero or analysis
-		// still failed for some other reason — flag it generically
 		result.Missing = append(result.Missing, "data was partially found but activeGrams still computed to 0 (check overrides)")
 	}
 
@@ -199,8 +154,7 @@ func AuditProduct(vendorName string, p models.Product) *AuditResult {
 }
 
 // FormatAuditReport produces a human-readable multi-line string from a slice
-// of AuditResults, suitable for printing to stdout. It groups results by
-// vendor and shows exactly what data is available and what needs an override.
+// of AuditResults, suitable for printing to stdout.
 func FormatAuditReport(results []AuditResult) string {
 	if len(results) == 0 {
 		return "✅ No gaps detected. All interesting products have enough data for analysis."
@@ -210,7 +164,7 @@ func FormatAuditReport(results []AuditResult) string {
 	b.WriteString(fmt.Sprintf("\n🔍 AUDIT: %d product(s) need manual overrides in data/vendor_rules.json\n", len(results)))
 	b.WriteString(strings.Repeat("─", 80) + "\n")
 
-	// Group by vendor
+	// Group by vendor, preserving insertion order
 	grouped := make(map[string][]AuditResult)
 	var vendorOrder []string
 	for _, r := range results {
@@ -255,23 +209,23 @@ func FormatAuditReport(results []AuditResult) string {
 			// Show what's MISSING
 			b.WriteString(fmt.Sprintf("  │  Missing: %s\n", strings.Join(r.Missing, "; ")))
 
-			// Suggest the override snippet using the new math format
+			// Suggest override snippet
 			b.WriteString("  │  Suggested override:\n")
 			b.WriteString(fmt.Sprintf("  │    \"%s\": {\n", r.Handle))
 			b.WriteString("  │      \"forceType\": \"Capsules\",\n")
 
-			// Calculate forceActiveGrams from extracted data if possible
-			if r.MgFound && r.CountFound {
+			switch {
+			case r.MgFound && r.CountFound:
 				activeGrams := r.MgValue * r.CountValue / 1000.0
 				b.WriteString(fmt.Sprintf("  │      \"forceActiveGrams\": %.1f,\n", activeGrams))
 				b.WriteString(fmt.Sprintf("  │      \"forceServingMg\": %.0f\n", r.MgValue))
-			} else if r.GramsFound {
+			case r.GramsFound:
 				b.WriteString(fmt.Sprintf("  │      \"forceActiveGrams\": %.1f,\n", r.GramsValue))
 				b.WriteString("  │      \"forceServingMg\": ???\n")
-			} else if r.KgFound {
+			case r.KgFound:
 				b.WriteString(fmt.Sprintf("  │      \"forceActiveGrams\": %.1f,\n", r.KgValue*1000))
 				b.WriteString("  │      \"forceServingMg\": ???\n")
-			} else {
+			default:
 				b.WriteString("  │      \"forceActiveGrams\": ???,\n")
 				if r.MgFound {
 					b.WriteString(fmt.Sprintf("  │      \"forceServingMg\": %.0f\n", r.MgValue))
