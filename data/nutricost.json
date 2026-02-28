@@ -380,7 +380,7 @@
       {
         "price": "27.97",
         "title": "250 Grams",
-        "available": false
+        "available": true
       },
       {
         "price": "49.97",
@@ -900,7 +900,7 @@
       {
         "price": "39.97",
         "title": "Strawberry Milkshake / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "82.97",
@@ -1130,7 +1130,7 @@
       {
         "price": "60.97",
         "title": "2 lbs / Chocolate",
-        "available": true
+        "available": false
       },
       {
         "price": "60.97",
@@ -1375,7 +1375,7 @@
       {
         "price": "38.97",
         "title": "240 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -1390,7 +1390,7 @@
       {
         "price": "16.97",
         "title": "120 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "27.97",
@@ -1595,7 +1595,7 @@
       {
         "price": "18.97",
         "title": "10000 IU",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -2905,7 +2905,7 @@
       {
         "price": "17.97",
         "title": "240 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -3060,7 +3060,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -3170,7 +3170,7 @@
       {
         "price": "24.97",
         "title": "250 Grams",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3325,7 +3325,7 @@
       {
         "price": "14.97",
         "title": "1,000mg / 120 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -3363,12 +3363,12 @@
         "available": true
       },
       {
-        "price": "10.97",
+        "price": "13.97",
         "title": "500 Million CFU",
         "available": true
       },
       {
-        "price": "14.97",
+        "price": "16.97",
         "title": "2 Billion CFU",
         "available": false
       }
@@ -3615,7 +3615,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3680,7 +3680,7 @@
       {
         "price": "29.97",
         "title": "1.5 lb",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -3740,7 +3740,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -4215,7 +4215,7 @@
       {
         "price": "38.97",
         "title": "2 lbs / Chocolate",
-        "available": false
+        "available": true
       },
       {
         "price": "38.97",
@@ -5315,7 +5315,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5445,7 +5445,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5465,7 +5465,7 @@
       {
         "price": "19.97",
         "title": "240 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "9.97",
@@ -5680,7 +5680,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5928,7 +5928,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OrganicAcaciaFiber_2LB_2750CC_Front_Square_50c0ee1b-a4e0-4fbb-a6a9-7e5c69f35736.jpg?v=1741969586",
     "variants": [
       {
-        "price": "27.97",
+        "price": "29.97",
         "title": "Default Title",
         "available": true
       }
@@ -6565,7 +6565,7 @@
       {
         "price": "15.97",
         "title": "1LB",
-        "available": false
+        "available": true
       },
       {
         "price": "29.97",
@@ -6920,7 +6920,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -7115,7 +7115,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8020,7 +8020,7 @@
       {
         "price": "43.97",
         "title": "8 OZ",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -8165,7 +8165,7 @@
       {
         "price": "19.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -9350,7 +9350,7 @@
       {
         "price": "35.97",
         "title": "Blue Raspberry / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "24.97",
@@ -9625,7 +9625,7 @@
       {
         "price": "29.95",
         "title": "Unflavored",
-        "available": false
+        "available": true
       },
       {
         "price": "29.95",
@@ -10270,7 +10270,7 @@
       {
         "price": "36.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11150,7 +11150,7 @@
       {
         "price": "15.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11455,7 +11455,7 @@
       {
         "price": "13.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11895,7 +11895,7 @@
       {
         "price": "30.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12545,7 +12545,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
