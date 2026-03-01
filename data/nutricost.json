@@ -5615,7 +5615,7 @@
       {
         "price": "24.97",
         "title": "2LBs",
-        "available": true
+        "available": false
       },
       {
         "price": "40.97",
@@ -10285,7 +10285,7 @@
       {
         "price": "26.97",
         "title": "Unflavored",
-        "available": true
+        "available": false
       },
       {
         "price": "26.97",
