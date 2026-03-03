@@ -23,7 +23,7 @@
         "available": true
       },
       {
-        "price": "736.00",
+        "price": "735.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -43,17 +43,17 @@
         "available": true
       },
       {
-        "price": "683.00",
+        "price": "682.00",
         "title": "3 Bundles",
         "available": true
       },
       {
-        "price": "1366.00",
+        "price": "1363.00",
         "title": "6 Bundles",
         "available": true
       },
       {
-        "price": "2732.00",
+        "price": "2726.00",
         "title": "12 Bundles",
         "available": true
       }
@@ -73,17 +73,17 @@
         "available": true
       },
       {
-        "price": "246.00",
+        "price": "245.00",
         "title": "3 Bottles",
         "available": true
       },
       {
-        "price": "491.00",
+        "price": "490.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "982.00",
+        "price": "980.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -103,17 +103,17 @@
         "available": true
       },
       {
-        "price": "254.00",
+        "price": "253.00",
         "title": "3 Bottles",
         "available": true
       },
       {
-        "price": "508.00",
+        "price": "507.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "1015.00",
+        "price": "1013.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -133,17 +133,17 @@
         "available": true
       },
       {
-        "price": "590.00",
+        "price": "589.00",
         "title": "3 Bundles",
         "available": true
       },
       {
-        "price": "1095.00",
+        "price": "1093.00",
         "title": "6 Bundles",
         "available": true
       },
       {
-        "price": "2022.00",
+        "price": "2018.00",
         "title": "12 Bundles",
         "available": true
       }
@@ -168,12 +168,12 @@
         "available": true
       },
       {
-        "price": "238.00",
+        "price": "237.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "475.00",
+        "price": "474.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -193,17 +193,17 @@
         "available": true
       },
       {
-        "price": "587.00",
+        "price": "586.00",
         "title": "3 Bottles Each",
         "available": true
       },
       {
-        "price": "1174.00",
+        "price": "1172.00",
         "title": "6 Bottles Each",
         "available": true
       },
       {
-        "price": "2347.00",
+        "price": "2343.00",
         "title": "12 Bottles Each",
         "available": true
       }
@@ -258,12 +258,12 @@
         "available": true
       },
       {
-        "price": "246.00",
+        "price": "245.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "491.00",
+        "price": "490.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -283,17 +283,17 @@
         "available": true
       },
       {
-        "price": "140.00",
+        "price": "139.00",
         "title": "3 Bottles",
         "available": true
       },
       {
-        "price": "279.00",
+        "price": "278.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "557.00",
+        "price": "555.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -318,7 +318,7 @@
         "available": true
       },
       {
-        "price": "473.00",
+        "price": "472.00",
         "title": "Maxi",
         "available": true
       }
@@ -333,12 +333,12 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0461/5222/0837/files/Rejuvenation_Bundle_Mock_Up.jpg?v=1755437266",
     "variants": [
       {
-        "price": "340.00",
+        "price": "339.00",
         "title": "1 Bundle",
         "available": true
       },
       {
-        "price": "721.00",
+        "price": "720.00",
         "title": "2 Bundles",
         "available": true
       }
@@ -358,12 +358,12 @@
         "available": true
       },
       {
-        "price": "287.00",
+        "price": "286.00",
         "title": "3 Bundles",
         "available": true
       },
       {
-        "price": "720.00",
+        "price": "719.00",
         "title": "6 Bundles",
         "available": true
       }
@@ -378,7 +378,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0461/5222/0837/files/Longevity_Essentials_Mock_Up.jpg?v=1755438783",
     "variants": [
       {
-        "price": "116.00",
+        "price": "115.00",
         "title": "1 Bundle",
         "available": true
       },
@@ -388,12 +388,12 @@
         "available": true
       },
       {
-        "price": "690.00",
+        "price": "689.00",
         "title": "6 Bundles",
         "available": true
       },
       {
-        "price": "1380.00",
+        "price": "1377.00",
         "title": "12 Bundles",
         "available": true
       }
@@ -404,7 +404,7 @@
     "title": "Endurance Bundle: NMN + Quercetin and Vitamin C",
     "context": "",
     "handle": "endurance-bundle-nmn-quercetin-vitamin-c",
-    "body_html": "\u003cp dir=\"ltr\"\u003e\u003cspan\u003eThe Endurance Bundle combines NMN with Quercetin and Vitamin C to enhance energy, support recovery, and defend against cellular stress.\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cstrong\u003eBenefits:\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cspan\u003e\u003cstrong\u003eEnergy \u0026amp; Stamina:\u003c/strong\u003e\u003c/span\u003e\u003cspan\u003e\u003cstrong\u003e \u003c/strong\u003eNMN boosts NAD+ for improved endurance.\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cstrong\u003eCell Renewal:\u003c/strong\u003e\u003cspan\u003e Quercetin clears senescent cells to support recovery.\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cstrong\u003eAntioxidant Defence:\u003c/strong\u003e\u003cspan\u003e Vitamin C and Quercetin protect against oxidative stress.\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cspan\u003e\u003cstrong\u003eHealthy Aging:\u003c/strong\u003e\u003c/span\u003e\u003cspan\u003e Promotes cellular longevity and metabolic balance.\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp dir=\"ltr\"\u003e\u003cstrong\u003eIncludes:\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cspan\u003e\u003cstrong\u003eNMN\u003c/strong\u003e \u003c/span\u003e\u003cspan\u003e– NMN, Capsule Shell (Vegetable Cellulose).\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cstrong\u003eQuercetin with Vitamin C\u003c/strong\u003e\u003cspan\u003e\u003cstrong\u003e \u003c/strong\u003e– Quercetin, Vitamin C (Ascorbic Acid), Grape Seed Extract, Microcrystalline Cellulose (Bulking agent), Bamboo Silica (Anti-caking agent), Capsule Shell (Vegetable Cellulose).\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp dir=\"ltr\"\u003e\u003cstrong\u003eAll products are Vegan, Non-GMO, and Allergen-Free.\u003cbr\u003eFree from gluten, soy, nuts, fish, shellfish, and dairy.\u003cbr\u003eThird-party tested and packaged in a GMP \u0026amp; ISO9001-certified UK facility.\u003c/strong\u003e\u003c/p\u003e",
+    "body_html": "\u003cp dir=\"ltr\"\u003e\u003cspan\u003eThe Endurance Bundle combines NMN with Quercetin and Vitamin C to enhance energy, support recovery, and defend against cellular stress.\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cstrong\u003eBenefits:\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cspan\u003e\u003cstrong\u003eEnergy \u0026amp; Stamina:\u003c/strong\u003e\u003c/span\u003e\u003cspan\u003e\u003cstrong\u003e \u003c/strong\u003eNMN boosts NAD+ for improved endurance.\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cstrong\u003eCell Renewal:\u003c/strong\u003e\u003cspan\u003e Quercetin clears senescent cells to support recovery.\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cstrong\u003eAntioxidant Defence:\u003c/strong\u003e\u003cspan\u003e Vitamin C and Quercetin protect against oxidative stress.\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cspan\u003e\u003cstrong\u003eHealthy Aging:\u003c/strong\u003e\u003c/span\u003e\u003cspan\u003e Promotes cellular longevity and metabolic balance.\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp dir=\"ltr\"\u003e\u003cstrong\u003eIncludes:\u003c/strong\u003e\u003c/p\u003e\n\u003cul\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cspan\u003e\u003cstrong\u003eNMN\u003c/strong\u003e \u003c/span\u003e\u003cspan\u003e– NMN, Capsule Shell (Vegetable Cellulose).\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003cli dir=\"ltr\" aria-level=\"1\"\u003e\n\u003cp dir=\"ltr\" role=\"presentation\"\u003e\u003cstrong\u003eQuercetin with Vitamin C\u003c/strong\u003e\u003cspan\u003e\u003cstrong\u003e \u003c/strong\u003e– Quercetin, Vitamin C (Ascorbic Acid), Grape Seed Extract, Microcrystalline Cellulose (Bulking agent), Bamboo Silica (Anti-caking agent), Capsule Shell (Vegetable Cellulose).\u003c/span\u003e\u003cspan\u003e\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan\u003e1 bundle contains x3 NMN 500 and \u003cmeta charset=\"utf-8\"\u003ex3 Quercetin\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003e2 bundles contain x6 \u003cmeta charset=\"utf-8\"\u003eNMN 500 and \u003cmeta charset=\"utf-8\"\u003ex6 Quercetin\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cstrong\u003eAll products are Vegan, Non-GMO, and Allergen-Free.\u003cbr\u003eFree from gluten, soy, nuts, fish, shellfish, and dairy.\u003cbr\u003eThird-party tested and packaged in a GMP \u0026amp; ISO9001-certified UK facility.\u003c/strong\u003e\u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0461/5222/0837/files/Endurance_Bundles_Mock_Up.jpg?v=1755438891",
     "variants": [
       {
@@ -413,8 +413,8 @@
         "available": true
       },
       {
-        "price": "660.00",
-        "title": "3 Bundles",
+        "price": "659.00",
+        "title": "2 Bundles",
         "available": true
       }
     ]

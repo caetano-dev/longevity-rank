@@ -95,7 +95,7 @@
       {
         "price": "27.97",
         "title": "120 capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -145,7 +145,7 @@
       {
         "price": "16.97",
         "title": "300 G",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -270,7 +270,7 @@
       {
         "price": "16.97",
         "title": "Blue Raspberry / 300 GMS",
-        "available": false
+        "available": true
       },
       {
         "price": "26.97",
@@ -825,7 +825,7 @@
       {
         "price": "104.97",
         "title": "Cookies and Cream / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "52.97",
@@ -900,7 +900,7 @@
       {
         "price": "39.97",
         "title": "Strawberry Milkshake / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "82.97",
@@ -930,7 +930,7 @@
       {
         "price": "40.97",
         "title": "Shaq's Double Double Chocolate / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "39.97",
@@ -957,11 +957,6 @@
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30 Servings of Women's Pre-Workout Powder Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian, Non-GMO \u0026amp; Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach Batch is Tested by Independent, ISO-Accredited Laboratories\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-Compliant and FDA-Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cstyle type=\"text/css\"\u003e\u003c!--\ntd {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}\n--\u003e\u003c/style\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_WPREforWomen_BlueRaspberry_30SERV_20OZ_Front1_Square.jpg?v=1740415708",
     "variants": [
-      {
-        "price": "21.97",
-        "title": "30 Servings / Blue Raspberry",
-        "available": true
-      },
       {
         "price": "21.97",
         "title": "30 Servings / Peach Mango",
@@ -1130,7 +1125,7 @@
       {
         "price": "60.97",
         "title": "2 lbs / Chocolate",
-        "available": false
+        "available": true
       },
       {
         "price": "60.97",
@@ -1145,7 +1140,7 @@
       {
         "price": "60.97",
         "title": "2 lbs / Chocolate Peanut Butter",
-        "available": false
+        "available": true
       },
       {
         "price": "131.97",
@@ -1595,7 +1590,7 @@
       {
         "price": "18.97",
         "title": "10000 IU",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -2905,7 +2900,7 @@
       {
         "price": "17.97",
         "title": "240 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -3075,7 +3070,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3170,7 +3165,7 @@
       {
         "price": "24.97",
         "title": "250 Grams",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -3325,7 +3320,7 @@
       {
         "price": "14.97",
         "title": "1,000mg / 120 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -3615,7 +3610,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -3675,7 +3670,7 @@
       {
         "price": "21.97",
         "title": "1 lb",
-        "available": true
+        "available": false
       },
       {
         "price": "29.97",
@@ -5465,7 +5460,7 @@
       {
         "price": "19.97",
         "title": "240 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "9.97",
@@ -5830,7 +5825,7 @@
       {
         "price": "16.97",
         "title": "120 Caps",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -6600,7 +6595,7 @@
       {
         "price": "18.97",
         "title": "30 Serv / Fruit Punch",
-        "available": true
+        "available": false
       },
       {
         "price": "18.97",
@@ -6705,7 +6700,7 @@
       {
         "price": "18.97",
         "title": "Peach Mango / 30 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
@@ -6920,7 +6915,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -7115,7 +7110,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -7328,7 +7323,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Quercetin_500MG_120CAP_225CC_Front1_Square_8c5517c4-f0b0-4898-8343-8d4b872155d4.jpg?v=1768502410",
     "variants": [
       {
-        "price": "24.97",
+        "price": "21.97",
         "title": "Default Title",
         "available": true
       }
@@ -8020,7 +8015,7 @@
       {
         "price": "43.97",
         "title": "8 OZ",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8565,7 +8560,7 @@
       {
         "price": "10.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -9594,8 +9589,13 @@
     "variants": [
       {
         "price": "8.99",
-        "title": "Default Title",
+        "title": "Chocolate Vanilla Strawberry",
         "available": false
+      },
+      {
+        "price": "8.99",
+        "title": "Pineapple Strawberry Chocolate",
+        "available": true
       }
     ]
   },
@@ -9710,7 +9710,7 @@
       {
         "price": "26.97",
         "title": "Strawberry Kiwi",
-        "available": false
+        "available": true
       },
       {
         "price": "26.97",
@@ -9980,7 +9980,7 @@
       {
         "price": "49.97",
         "title": "2 LB",
-        "available": true
+        "available": false
       },
       {
         "price": "30.97",
@@ -10270,7 +10270,7 @@
       {
         "price": "36.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10285,7 +10285,7 @@
       {
         "price": "26.97",
         "title": "Unflavored",
-        "available": false
+        "available": true
       },
       {
         "price": "26.97",
@@ -10615,17 +10615,17 @@
       {
         "price": "27.97",
         "title": "Hot Cocoa",
-        "available": false
+        "available": true
       },
       {
         "price": "27.97",
         "title": "Vanilla Chai",
-        "available": false
+        "available": true
       },
       {
         "price": "27.97",
         "title": "Cafe Latte",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10650,7 +10650,7 @@
       {
         "price": "27.97",
         "title": "Chocolate",
-        "available": false
+        "available": true
       }
     ]
   },
