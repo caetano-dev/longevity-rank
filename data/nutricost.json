@@ -95,7 +95,7 @@
       {
         "price": "27.97",
         "title": "120 capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -145,7 +145,7 @@
       {
         "price": "16.97",
         "title": "300 G",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -290,7 +290,7 @@
       {
         "price": "16.97",
         "title": "Watermelon / 300 GMS",
-        "available": true
+        "available": false
       },
       {
         "price": "26.97",
@@ -780,7 +780,7 @@
       {
         "price": "52.97",
         "title": "Strawberry Milkshake / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "104.97",
@@ -825,7 +825,7 @@
       {
         "price": "104.97",
         "title": "Cookies and Cream / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "52.97",
@@ -885,7 +885,7 @@
       {
         "price": "82.97",
         "title": "Unflavored / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "39.97",
@@ -895,7 +895,7 @@
       {
         "price": "82.97",
         "title": "Chocolate Peanut Butter / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "39.97",
@@ -930,7 +930,7 @@
       {
         "price": "40.97",
         "title": "Shaq's Double Double Chocolate / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "39.97",
@@ -1130,7 +1130,7 @@
       {
         "price": "60.97",
         "title": "2 lbs / Unflavored",
-        "available": true
+        "available": false
       },
       {
         "price": "60.97",
@@ -1325,7 +1325,7 @@
       {
         "price": "21.97",
         "title": "240 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -1790,7 +1790,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -1971,11 +1971,11 @@
   },
   {
     "id": "3700442234954",
-    "title": "Nutricost Korean Panax Ginseng",
+    "title": "Nutricost Korean Red Ginseng",
     "context": "",
     "handle": "nutricost-korean-red-ginseng-500mg-240-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,000mg of Premium Korean Ginseng Per Serving at 500mg per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eConvenient Dosage: With 240 capsules per bottle, you get a generous supply of 120 servings, making it easy to incorporate this supplement into your daily routine.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean Formulation: Crafted with care, this product is GMO Free and Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eQuality Assurance: Manufactured in a NSF Certified GMP compliant, FDA registered facility, you can trust the quality and safety standards upheld in the production process.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eTrusted Brand: Nutricost's reputation for excellence and commitment to providing high-quality supplements ensures you receive a reliable product.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_KoreanGinseng_500MG_240CAP_400CC_Front_Square.jpg?v=1739901423",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_KoreanGinseng__500MG__240CAP_400CC_Front1_Square.jpg?v=1772572182",
     "variants": [
       {
         "price": "27.95",
@@ -2035,7 +2035,7 @@
       {
         "price": "16.97",
         "title": "500mg",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -2290,7 +2290,7 @@
       {
         "price": "27.97",
         "title": "240 Caps",
-        "available": false
+        "available": true
       },
       {
         "price": "12.97",
@@ -2605,7 +2605,7 @@
       {
         "price": "16.97",
         "title": "120 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "20.97",
@@ -3070,7 +3070,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -3240,7 +3240,7 @@
       {
         "price": "18.97",
         "title": "120 Capsules / 100mg",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3320,7 +3320,7 @@
       {
         "price": "14.97",
         "title": "1,000mg / 120 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -6595,7 +6595,7 @@
       {
         "price": "18.97",
         "title": "30 Serv / Fruit Punch",
-        "available": false
+        "available": true
       },
       {
         "price": "18.97",
@@ -6700,7 +6700,7 @@
       {
         "price": "18.97",
         "title": "Peach Mango / 30 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "27.97",
@@ -7110,7 +7110,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -7340,7 +7340,7 @@
       {
         "price": "15.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -7940,7 +7940,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -8450,7 +8450,7 @@
       {
         "price": "17.97",
         "title": "30 Caps",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -8560,7 +8560,7 @@
       {
         "price": "10.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -9570,7 +9570,7 @@
       {
         "price": "21.97",
         "title": "15 MG",
-        "available": true
+        "available": false
       },
       {
         "price": "14.97",
@@ -9750,7 +9750,7 @@
       {
         "price": "36.95",
         "title": "Fruit Punch",
-        "available": false
+        "available": true
       },
       {
         "price": "36.95",
@@ -10380,7 +10380,7 @@
       {
         "price": "32.97",
         "title": "1 LB",
-        "available": true
+        "available": false
       },
       {
         "price": "20.97",
@@ -10400,7 +10400,7 @@
       {
         "price": "14.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10485,7 +10485,7 @@
       {
         "price": "30.97",
         "title": "Fruit Punch / 120 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -11245,7 +11245,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11425,7 +11425,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12545,7 +12545,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12900,7 +12900,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
