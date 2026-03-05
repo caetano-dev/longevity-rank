@@ -780,7 +780,7 @@
       {
         "price": "52.97",
         "title": "Strawberry Milkshake / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "104.97",
@@ -885,7 +885,7 @@
       {
         "price": "82.97",
         "title": "Unflavored / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "39.97",
@@ -895,7 +895,7 @@
       {
         "price": "82.97",
         "title": "Chocolate Peanut Butter / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "39.97",
@@ -1130,7 +1130,7 @@
       {
         "price": "60.97",
         "title": "2 lbs / Unflavored",
-        "available": false
+        "available": true
       },
       {
         "price": "60.97",
@@ -1325,7 +1325,7 @@
       {
         "price": "21.97",
         "title": "240 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -1790,7 +1790,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -2035,7 +2035,7 @@
       {
         "price": "16.97",
         "title": "500mg",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -2605,7 +2605,7 @@
       {
         "price": "16.97",
         "title": "120 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "20.97",
@@ -3240,7 +3240,7 @@
       {
         "price": "18.97",
         "title": "120 Capsules / 100mg",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -3320,7 +3320,7 @@
       {
         "price": "14.97",
         "title": "1,000mg / 120 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -7940,7 +7940,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -9570,7 +9570,7 @@
       {
         "price": "21.97",
         "title": "15 MG",
-        "available": false
+        "available": true
       },
       {
         "price": "14.97",
@@ -10485,7 +10485,7 @@
       {
         "price": "30.97",
         "title": "Fruit Punch / 120 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -11425,7 +11425,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11660,7 +11660,7 @@
       {
         "price": "21.97",
         "title": "Peach Mango",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -12825,7 +12825,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
