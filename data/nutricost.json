@@ -258,7 +258,7 @@
         "available": true
       },
       {
-        "price": "25.97",
+        "price": "26.97",
         "title": "Unflavored / 500 GMS",
         "available": true
       },
@@ -11515,7 +11515,7 @@
       {
         "price": "19.97",
         "title": "120 Tablets / 1000 Milligrams",
-        "available": true
+        "available": false
       },
       {
         "price": "29.97",
