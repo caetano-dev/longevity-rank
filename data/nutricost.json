@@ -1385,7 +1385,7 @@
       {
         "price": "16.97",
         "title": "120 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
@@ -1580,7 +1580,7 @@
       {
         "price": "14.97",
         "title": "2000 IU",
-        "available": true
+        "available": false
       },
       {
         "price": "14.97",
@@ -10505,7 +10505,7 @@
       {
         "price": "30.97",
         "title": "Grape / 120 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -12410,7 +12410,7 @@
       {
         "price": "10.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12560,7 +12560,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
