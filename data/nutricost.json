@@ -270,7 +270,7 @@
       {
         "price": "16.97",
         "title": "Blue Raspberry / 300 GMS",
-        "available": true
+        "available": false
       },
       {
         "price": "26.97",
@@ -325,7 +325,7 @@
       {
         "price": "16.97",
         "title": "Mandarin Orange / 300 GMS",
-        "available": false
+        "available": true
       },
       {
         "price": "26.97",
@@ -755,7 +755,7 @@
       {
         "price": "104.97",
         "title": "Unflavored / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "52.97",
@@ -1580,7 +1580,7 @@
       {
         "price": "14.97",
         "title": "2000 IU",
-        "available": true
+        "available": false
       },
       {
         "price": "14.97",
@@ -6165,7 +6165,7 @@
       {
         "price": "7.97",
         "title": "30 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8460,7 +8460,7 @@
       {
         "price": "17.97",
         "title": "30 Caps",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11675,7 +11675,7 @@
       {
         "price": "21.97",
         "title": "Peach Mango",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -12305,7 +12305,7 @@
       {
         "price": "16.49",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12348,7 +12348,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_LiposomalVitaminC_750MGX2_120CAP_275CC_Front_Square.jpg?v=1751056873",
     "variants": [
       {
-        "price": "19.97",
+        "price": "21.97",
         "title": "Default Title",
         "available": true
       }
@@ -12655,7 +12655,7 @@
       {
         "price": "38.97",
         "title": "4lb",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
