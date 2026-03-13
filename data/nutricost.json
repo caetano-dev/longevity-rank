@@ -750,12 +750,12 @@
       {
         "price": "52.97",
         "title": "Unflavored / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "104.97",
         "title": "Unflavored / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "52.97",
@@ -860,7 +860,7 @@
       {
         "price": "39.97",
         "title": "Vanilla / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "82.97",
@@ -1580,7 +1580,7 @@
       {
         "price": "14.97",
         "title": "2000 IU",
-        "available": false
+        "available": true
       },
       {
         "price": "14.97",
@@ -6605,7 +6605,7 @@
       {
         "price": "18.97",
         "title": "30 Serv / Fruit Punch",
-        "available": true
+        "available": false
       },
       {
         "price": "18.97",
@@ -8555,7 +8555,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -9810,7 +9810,7 @@
       {
         "price": "46.95",
         "title": "Unflavored",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12305,7 +12305,7 @@
       {
         "price": "16.49",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13000,7 +13000,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13090,7 +13090,7 @@
       {
         "price": "37.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
