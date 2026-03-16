@@ -270,7 +270,7 @@
       {
         "price": "16.97",
         "title": "Blue Raspberry / 300 GMS",
-        "available": true
+        "available": false
       },
       {
         "price": "26.97",
@@ -690,7 +690,7 @@
       {
         "price": "18.97",
         "title": "1 lb",
-        "available": true
+        "available": false
       },
       {
         "price": "29.97",
@@ -785,7 +785,7 @@
       {
         "price": "104.97",
         "title": "Strawberry Milkshake / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "52.97",
@@ -8025,7 +8025,7 @@
       {
         "price": "43.97",
         "title": "8 OZ",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -9625,7 +9625,7 @@
       {
         "price": "14.95",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -9645,7 +9645,7 @@
       {
         "price": "29.95",
         "title": "Orange Sunrise",
-        "available": true
+        "available": false
       },
       {
         "price": "29.95",
