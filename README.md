@@ -1,6 +1,8 @@
 # Longevity Ranker
 
-A ruthless, high-performance aggregator that answers one question: **"Who has the cheapest authentic NMN (and other longevity supplements) today?"**
+A price aggregator that answers one question: **"Who has the cheapest authentic longevity supplements today?"**
+
+![screenshot](./.github/assets/home.png)
 
 Architecture: **Git-Scraper**. Go scrapes vendor sites, runs the math engine, and writes a pre-computed `data/analysis_report.json`. Next.js reads that single file at build time and generates a static HTML page. $0/month infrastructure cost.
 
