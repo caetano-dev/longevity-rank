@@ -3610,7 +3610,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3834,7 +3834,12 @@
     "variants": [
       {
         "price": "20.97",
-        "title": "Default Title",
+        "title": "400 IU",
+        "available": true
+      },
+      {
+        "price": "27.97",
+        "title": "1000 IU",
         "available": true
       }
     ]
@@ -9158,7 +9163,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_WhiteCheddarCheesePowder_2.5LB_64OZClearSquare_Front_Square.jpg?v=1745441324",
     "variants": [
       {
-        "price": "32.97",
+        "price": "40.97",
         "title": "Default Title",
         "available": true
       }
@@ -9645,7 +9650,7 @@
       {
         "price": "29.95",
         "title": "Orange Sunrise",
-        "available": true
+        "available": false
       },
       {
         "price": "29.95",
@@ -10850,7 +10855,7 @@
       {
         "price": "26.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13494,6 +13499,21 @@
     "variants": [
       {
         "price": "38.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9671384924390",
+    "title": "Nutricost Epicatechin",
+    "context": "",
+    "handle": "nutricost-epicatechin",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving delivers 1,000mg of epicatechin in convenient capsule form.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 60 capsules for a total of 30 servings per bottle.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003ePlant-Derived Flavanol – Epicatechin is a naturally occurring flavanol found in foods such as cocoa and certain teas that has been studied for its role in vascular and circulation research.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean \u0026amp; Simple Formula – Vegan, non-GMO, and gluten-free for a supplement you can feel confident adding to your routine.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Epicatechin_500MGX2_60CAP_1500CCCOMPAX_Front_Square.jpg?v=1773775288",
+    "variants": [
+      {
+        "price": "32.97",
         "title": "Default Title",
         "available": true
       }
