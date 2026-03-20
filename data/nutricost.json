@@ -785,7 +785,7 @@
       {
         "price": "104.97",
         "title": "Strawberry Milkshake / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "52.97",
@@ -805,7 +805,7 @@
       {
         "price": "104.97",
         "title": "Chocolate Peanut Butter / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "52.97",
@@ -4165,7 +4165,7 @@
       {
         "price": "14.97",
         "title": "Melaleuca",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10855,7 +10855,7 @@
       {
         "price": "26.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
