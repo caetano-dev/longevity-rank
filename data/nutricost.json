@@ -4225,7 +4225,7 @@
       {
         "price": "73.97",
         "title": "5 lbs / Chocolate",
-        "available": false
+        "available": true
       },
       {
         "price": "73.97",
@@ -6003,7 +6003,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_KidsMelatonin_1MG_120GUM_250CC_Front1_Square.jpg?v=1724341865",
     "variants": [
       {
-        "price": "13.97",
+        "price": "14.97",
         "title": "Default Title",
         "available": true
       }
@@ -9430,7 +9430,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -9510,7 +9510,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
