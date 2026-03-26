@@ -800,12 +800,12 @@
       {
         "price": "52.97",
         "title": "Chocolate Peanut Butter / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "104.97",
         "title": "Chocolate Peanut Butter / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "52.97",
@@ -3100,7 +3100,7 @@
       {
         "price": "33.95",
         "title": "1 LB / Chocolate",
-        "available": true
+        "available": false
       },
       {
         "price": "33.95",
@@ -3545,12 +3545,12 @@
       {
         "price": "35.97",
         "title": "Strawberry Lemonade",
-        "available": false
+        "available": true
       },
       {
         "price": "49.97",
         "title": "Unflavored",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -4225,7 +4225,7 @@
       {
         "price": "73.97",
         "title": "5 lbs / Chocolate",
-        "available": true
+        "available": false
       },
       {
         "price": "73.97",
@@ -5835,7 +5835,7 @@
       {
         "price": "16.97",
         "title": "120 Caps",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -6790,7 +6790,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -8410,7 +8410,7 @@
       {
         "price": "27.97",
         "title": "Fruit Punch",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
@@ -9430,7 +9430,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10180,7 +10180,7 @@
       {
         "price": "20.97",
         "title": "Berry",
-        "available": false
+        "available": true
       },
       {
         "price": "20.97",
@@ -13060,7 +13060,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
