@@ -356,6 +356,11 @@
         "price": "16.97",
         "title": "Island Cooler / 30 SERV",
         "available": true
+      },
+      {
+        "price": "16.97",
+        "title": "Red Alert / 30 SERV",
+        "available": true
       }
     ]
   },
@@ -820,7 +825,7 @@
       {
         "price": "104.97",
         "title": "Cookies and Cream / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "52.97",
@@ -7890,7 +7895,7 @@
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -9425,7 +9430,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
