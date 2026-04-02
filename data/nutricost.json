@@ -3675,7 +3675,7 @@
       {
         "price": "21.97",
         "title": "1 lb",
-        "available": false
+        "available": true
       },
       {
         "price": "29.97",
@@ -3825,7 +3825,7 @@
       {
         "price": "23.97",
         "title": "25000",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -7484,7 +7484,7 @@
     "title": "Nutricost Stinging Nettle Root Extract",
     "context": "",
     "handle": "nutricost-stinging-nettle-root-extract",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e7,500mg Equivalent of Stinging Nettle, From 750mg of Stinging Nettle (10:1) Extract\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Servings of Stinging Nettle Extract Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1 Serving, Just 1 \"Veggie\" Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\u003c/ul\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e7,500mg Equivalent of Stinging Nettle, From 750mg of Stinging Nettle (20:1) Extract\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Servings of Stinging Nettle Extract Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1 Serving, Just 1 \"Veggie\" Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_StingingNettle_375MG_120CAP_225CC_Front_Suqare.jpg?v=1752012855",
     "variants": [
       {
@@ -8045,7 +8045,7 @@
       {
         "price": "43.97",
         "title": "8 OZ",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10575,7 +10575,7 @@
       {
         "price": "27.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11780,7 +11780,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
