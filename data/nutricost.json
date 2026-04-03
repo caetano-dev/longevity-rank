@@ -1575,7 +1575,7 @@
       {
         "price": "14.97",
         "title": "1000 IU",
-        "available": true
+        "available": false
       },
       {
         "price": "14.97",
@@ -10575,7 +10575,7 @@
       {
         "price": "27.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
