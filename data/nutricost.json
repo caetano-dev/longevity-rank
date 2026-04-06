@@ -930,7 +930,7 @@
       {
         "price": "41.97",
         "title": "Shaq's Double Double Chocolate / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "39.97",
@@ -2730,7 +2730,7 @@
       {
         "price": "14.97",
         "title": "30 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -8070,7 +8070,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -8305,7 +8305,7 @@
       {
         "price": "49.97",
         "title": "Double Chocolate",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -9670,7 +9670,7 @@
       {
         "price": "29.95",
         "title": "Unflavored",
-        "available": true
+        "available": false
       },
       {
         "price": "29.95",
@@ -10585,7 +10585,7 @@
       {
         "price": "27.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11055,7 +11055,7 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
