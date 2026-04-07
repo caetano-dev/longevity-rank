@@ -2730,7 +2730,7 @@
       {
         "price": "14.97",
         "title": "30 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -6783,7 +6783,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_TribulusTerrestris_750MG_240CAP_50_CC_Front_Square_2a631aaf-4adc-46ff-83e0-512f63559676.jpg?v=1770140836",
     "variants": [
       {
-        "price": "16.97",
+        "price": "18.97",
         "title": "120 Servings",
         "available": true
       },
@@ -8305,7 +8305,7 @@
       {
         "price": "49.97",
         "title": "Double Chocolate",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -9670,7 +9670,7 @@
       {
         "price": "29.95",
         "title": "Unflavored",
-        "available": false
+        "available": true
       },
       {
         "price": "29.95",
@@ -10345,7 +10345,7 @@
       {
         "price": "26.97",
         "title": "Mixed Berry",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10585,7 +10585,7 @@
       {
         "price": "27.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10800,7 +10800,7 @@
       {
         "price": "52.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11055,7 +11055,7 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "24.97",
@@ -11325,7 +11325,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12390,7 +12390,7 @@
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13160,7 +13160,7 @@
       {
         "price": "43.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13584,6 +13584,36 @@
     "variants": [
       {
         "price": "16.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9686016262374",
+    "title": "Nutricost Vegan Vitamin D3 Capsules",
+    "context": "",
+    "handle": "nutricost-vegan-vitamin-d3",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh-Potency Vitamin D3 – Provides 5,000 IU of vegan-friendly vitamin D3 per serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e60 Servings Per Bottle – Each bottle contains 60 easy-to-take capsules for a full 60-day supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSupports Bone \u0026amp; Immune Health – Vitamin D3 helps maintain strong bones and a healthy immune system\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean \u0026amp; Simple Ingredients – Vegan-friendly, non-GMO, and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VeganD3_5_000IU_60CAP_150CCCOMPAX_Front_Square.jpg?v=1775499791",
+    "variants": [
+      {
+        "price": "11.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9686034088166",
+    "title": "Nutricost Banaba Leaf Extract",
+    "context": "",
+    "handle": "nutricost-banaba-leaf-extract",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003ePotent Banaba Extract – Provides 250mg of 20:1 banaba leaf extract per serving for a concentrated dose\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e240 Servings Per Bottle – Each bottle contains 240 capsules, offering a full 240-day supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEnhanced Formula – Includes black pepper extract to complement the formula\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean \u0026amp; Simple Ingredients – Vegan-friendly, GMO-free, and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BanabaLeaf_250MG_240CAP_400CC_Front_Sqaure.jpg?v=1775502158",
+    "variants": [
+      {
+        "price": "21.97",
         "title": "Default Title",
         "available": true
       }
