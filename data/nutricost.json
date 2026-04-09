@@ -85,7 +85,7 @@
     "context": "",
     "handle": "nutricost-alpha-gpc-300mg",
     "body_html": "\u003cdiv\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e300mg Per Capsule of High Quality Alpha GPC (Glycerophosphocholine)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Vegetarian Capsules of Alpha GPC Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThird Party Tested, Soy Free, Gluten Free, and Non-GMO\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eRich in Choline, Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003cul\u003e\u003c/ul\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Alpha_GPC_600mg_60_CAP_175CC_Front.jpg?v=1724175829",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_AlphaGPC_300mgX2_120CAP_225CC_Front_Square_1.jpg?v=1773419705",
     "variants": [
       {
         "price": "16.97",
@@ -780,17 +780,17 @@
       {
         "price": "52.97",
         "title": "Strawberry Milkshake / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "104.97",
         "title": "Strawberry Milkshake / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "52.97",
         "title": "Vanilla / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "104.97",
@@ -825,7 +825,7 @@
       {
         "price": "104.97",
         "title": "Cookies and Cream / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "52.97",
@@ -835,7 +835,7 @@
       {
         "price": "52.97",
         "title": "Strawberry Banana / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "104.97",
@@ -905,7 +905,7 @@
       {
         "price": "82.97",
         "title": "Strawberry Milkshake / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "39.97",
@@ -930,7 +930,7 @@
       {
         "price": "41.97",
         "title": "Shaq's Double Double Chocolate / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "39.97",
@@ -3540,7 +3540,7 @@
     "context": "",
     "handle": "nutricost-ketone-bhb-salt-4-in-1-powder-20-servings",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30 Servings for Extended Support: With 30 servings per bottle, Nutricost's BHB Salts Drink Mix offers a generous supply to fuel your wellness journey for an extended period.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e5g of BHB Salts per Serving: Each serving delivers 5g of BHB salts, providing a potent source of exogenous ketones to support your energy levels and metabolic function.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in GMP Compliant Facility: Rest assured knowing that each bottle is produced in an NSF Certified GMP Compliant facility, ensuring strict adherence to quality and safety standards.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eRigorous Third-Party Testing: Prioritizing transparency and purity, every batch undergoes rigorous third-party testing by independent ISO-accredited laboratories, guaranteeing the integrity of the product you rely on.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan\u003e⚠️This product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003c/span\u003e\u003ca data-saferedirecturl=\"https://www.google.com/url?q=http://www.P65Warnings.ca.gov\u0026amp;source=gmail\u0026amp;ust=1608315246657000\u0026amp;usg=AFQjCNGixa745Oq769AHUbLUoMuG1NgTcA\" href=\"http://www.p65warnings.ca.gov/\" target=\"_blank\" data-mce-href=\"http://www.p65warnings.ca.gov/\"\u003ewww.P65Warnings.ca.gov\u003c/a\u003e\u003cspan\u003e.\u003c/span\u003e\u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BHB__RB2__FruitPunch__30SERV___20OZ_Front1_Square.jpg?v=1752245137",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/nutricost-ketone-bhb-salt-4-in-1-powder-flavored-932610.jpg?v=1752245137",
     "variants": [
       {
         "price": "35.97",
@@ -6955,7 +6955,7 @@
     "context": "",
     "handle": "nutricost-andrographis-extract-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eAndrographis Extract: Each capsule contains 500mg of Andrographis extract, offering a concentrated dose in an easy-to-take form.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTraditional Wellness Support: Derived from an ancient herb known for its historical use in various wellness practices.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Capsules: Ample supply for extended use, ensuring consistent support for your health routine. 60 servings, 2 capsules per serving.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eQuality Assurance: Rigorous testing for purity and potency guarantees a reliable and high-quality product.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eEasy Integration: Designed for modern lifestyles, this supplement seamlessly fits into your daily regimen for convenient support.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_AndrographisExtract_275CC_Front_3903b351-c4b6-402f-8963-620a0e76fdb5.jpg?v=1743529494",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_AndrographisExtract_1_000MG_120CAP_Front_Square.jpg?v=1743529503",
     "variants": [
       {
         "price": "16.97",
@@ -7070,7 +7070,7 @@
     "context": "",
     "handle": "nutricost-bacopa-monnieri",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,000mg Bacopa Monnieri Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eStandardized to 50% Bacosides\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Vegetarian Capsules and 60 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, and Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BacopaMonnieri_1000mg_120CAP_275CC_Front_Square_22338ecf-bb89-49ef-810d-40c8d02b91e8.jpg?v=1741636395",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BacopaMonnieri_500MG_120CAP_275CC_Front_Square.jpg?v=1775680375",
     "variants": [
       {
         "price": "18.97",
@@ -7485,7 +7485,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8070,7 +8070,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8395,7 +8395,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8420,7 +8420,7 @@
       {
         "price": "29.97",
         "title": "Blue Raspberry",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -9055,7 +9055,7 @@
     "context": "",
     "handle": "nutricost-bee-propolis-10-1",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNatural Bee-Derived Benefits: Bee Propolis is a resinous substance collected by bees from tree buds and is known for its rich content of various compounds, making it a popular choice for those seeking natural support for their well-being.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Capsules, 120 Servings: Each bottle contains 120 easy-to-swallow capsules, ensuring a generous supply for your daily needs.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh Potency Bee Propolis Extract: Packed with a 5,000 mg equivalent of bee propolis extract per serving, from 500mg of 10:1 Extract\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThird-Party Tested: To ensure the utmost purity and potency, each batch undergoes independent testing by ISO accredited laboratories.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eQuality Assured: The bee propolis supplement is produced in an NSF certified and GMP compliant facility, guaranteeing the highest manufacturing standards.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BeePropolis_500MG_120CAP_275CC_Front_Square_1.jpg?v=1757951972",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BeePropolis_10-1_500MG_120CAP_300CC_Front_Square.jpg?v=1775683203",
     "variants": [
       {
         "price": "16.97",
@@ -9265,7 +9265,7 @@
     "context": "",
     "handle": "bee-propolis-capsules-5-flavonoids-500-mg-v00-120-cap",
     "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNature's Secret: Nutricost Bee Propolis is a bee's best-kept secret, gathered by honeybees from tree resins and used to protect their hives. Now, you can harness its potential too!\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFlavonoid-Rich: Our bee propolis supplement is standardized at 5% flavonoids, enhancing the potent natural compounds found in this bee-made substance.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCapsule Convenience: Each bottle holds 120 easy-to-swallow capsules, with a substantial 500 mg of bee propolis per capsule. It's the perfect way to enjoy the benefits without the sticky mess.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eQuality Assurance: Rest easy knowing that every batch of Nutricost Bee Propolis is crafted in an NSF certified GMP compliant facility, adhering to strict quality and safety standards.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThird-Party Tested: We take quality seriously, which is why our product undergoes rigorous third-party testing by independent ISO accredited laboratories. You can trust that you're getting a top-notch supplement.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-bee-propolis-capsules-5-flavonoids-118624.jpg?v=1697529607",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BeePropolis_5_Flavonoids__500MG_120CAP_275CC_Front_Square.jpg?v=1775683280",
     "variants": [
       {
         "price": "21.97",
@@ -9670,7 +9670,7 @@
       {
         "price": "29.95",
         "title": "Unflavored",
-        "available": true
+        "available": false
       },
       {
         "price": "29.95",
@@ -9680,7 +9680,7 @@
       {
         "price": "29.95",
         "title": "Mixed Berry",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10555,7 +10555,7 @@
       {
         "price": "19.97",
         "title": "Pineapple Ice / 60 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -10585,7 +10585,7 @@
       {
         "price": "27.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10825,7 +10825,7 @@
     "context": "",
     "handle": "nutricost-berberine-hci-with-ceylon-cinnamon-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDynamic Combination: Harness the synergistic benefits of Berberine HCI and Ceylon Cinnamon in one convenient capsule, crafted to support your holistic wellness goals.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eAbundant Supply: With 120 capsules per bottle, you'll enjoy a generous 60 servings to seamlessly incorporate into your daily routine for long-lasting support.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003ePotent Formula: Each serving contains 1,200 MG of Berberine HCI, ensuring you receive a potent dose to maximize its potential benefits.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured with Care: Rest assured knowing that each batch is meticulously manufactured in an NSF Certified GMP Compliant facility, adhering to stringent quality standards.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eRigorous Testing: Prioritizing transparency and purity, Nutricost's Berberine HCI with Ceylon Cinnamon Capsules undergo rigorous third-party testing by independent ISO-accredited laboratories, guaranteeing the integrity of the product you rely on.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BerberineHClwithCeylonCinnamon_600MGX2__V00__120CAP_275CC_Front1_Square.jpg?v=1735854883",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BerberineHCLwithCeylonCinnamon_600MGX2_120CAP_275CC_Front_Square.jpg?v=1775683396",
     "variants": [
       {
         "price": "27.97",
@@ -12525,7 +12525,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13130,7 +13130,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13230,7 +13230,7 @@
       {
         "price": "14.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
