@@ -9725,7 +9725,7 @@
       {
         "price": "29.95",
         "title": "Mixed Berry",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12435,7 +12435,7 @@
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
