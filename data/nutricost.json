@@ -1628,7 +1628,7 @@
         "available": true
       },
       {
-        "price": "32.97",
+        "price": "28.97",
         "title": "500mg / 30 Capsules",
         "available": true
       }
@@ -2418,7 +2418,7 @@
         "available": false
       },
       {
-        "price": "18.95",
+        "price": "17.97",
         "title": "36 mg",
         "available": true
       }
@@ -2523,7 +2523,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Melatonin_3MG_240TAB_Front_8d48be6d-6408-4087-81a6-ad02a2a841fd.jpg?v=1724174492",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "5 mg",
         "available": true
       },
@@ -2770,7 +2770,7 @@
       {
         "price": "14.97",
         "title": "30 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -3508,7 +3508,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VitaminB1_500MG__G00__120CAP_275CC_Front1_Square.jpg?v=1752173983",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "100mg / 120 Capsules",
         "available": true
       },
@@ -3953,7 +3953,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BetaineAnhydrous_750GM_120CAP_275CC_Front_Square.jpg?v=1751915144",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -4360,7 +4360,7 @@
     "context": "",
     "handle": "nutricost-wormwood-450mg-120-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e450mg of Sweet Wormwood Per Capsule (1 Serving, Just 1 Capsule)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Wormwood Capsules Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian Friendly, Non-GMO, Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOnly High Quality Wormwood Used\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e3rd Party Tested, and Made in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Artemisinin_100MGX2_120CAP_175CC_Front_Square_436bc290-4cc1-47b2-b870-5970a80f3ee0.jpg?v=1770071194",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Wormwood_450MG_120CAP_225CC_Front_Square.jpg?v=1776444045",
     "variants": [
       {
         "price": "10.97",
@@ -4943,7 +4943,7 @@
         "available": true
       },
       {
-        "price": "52.97",
+        "price": "46.97",
         "title": "120 Servings / Watermelon",
         "available": true
       },
@@ -4951,11 +4951,6 @@
         "price": "52.97",
         "title": "120 Servings / Grape",
         "available": true
-      },
-      {
-        "price": "19.97",
-        "title": "120 Servings / Pomegranate Guava",
-        "available": false
       },
       {
         "price": "52.97",
@@ -6518,7 +6513,7 @@
         "available": false
       },
       {
-        "price": "9.97",
+        "price": "10.97",
         "title": "180 Tabs",
         "available": true
       }
@@ -6563,7 +6558,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Melatonin_FastDissolve__5MG_240TAB_150CC_Front_Square.jpg?v=1775839826",
     "variants": [
       {
-        "price": "17.97",
+        "price": "16.97",
         "title": "Default Title",
         "available": true
       }
@@ -7028,7 +7023,7 @@
         "available": true
       },
       {
-        "price": "15.97",
+        "price": "11.97",
         "title": "60 Capsules",
         "available": false
       }
@@ -8438,7 +8433,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-potassium-iodide-594832.jpg?v=1687483204",
     "variants": [
       {
-        "price": "16.97",
+        "price": "14.97",
         "title": "Default Title",
         "available": false
       }
@@ -8643,7 +8638,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ChromiumPicolinate_1_000MCG_240TAB_150CC_SuppFacts.jpg?v=1761679435",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -8733,7 +8728,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Myo_DChiroInositolforWomen__500MG_12.5MGX4__120CAP_225CC_Front.jpg?v=1731520296",
     "variants": [
       {
-        "price": "17.97",
+        "price": "16.97",
         "title": "Default Title",
         "available": true
       }
@@ -9725,7 +9720,7 @@
       {
         "price": "29.95",
         "title": "Mixed Berry",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10358,7 +10353,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GoatMilk_UF_2LB_64OZCLEARSquare_Front_Square.jpg?v=1751914262",
     "variants": [
       {
-        "price": "36.97",
+        "price": "37.97",
         "title": "Default Title",
         "available": true
       }
@@ -10813,7 +10808,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_HorseChestnut_350MGX2_180CAP_275CC_Front_Square.jpg?v=1774549417",
     "variants": [
       {
-        "price": "20.97",
+        "price": "17.97",
         "title": "Default Title",
         "available": true
       }
@@ -10843,7 +10838,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_YellowCheddarCheese_2.5LB_Front_square.jpg?v=1734113048",
     "variants": [
       {
-        "price": "52.97",
+        "price": "40.97",
         "title": "Default Title",
         "available": true
       }
@@ -11208,7 +11203,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Clove10_1_100MG_120CAP_175CC_Front1_Square.jpg?v=1739985053",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -11648,22 +11643,22 @@
         "available": true
       },
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Red Beet Root",
         "available": true
       },
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Purple Sweet Potatoe",
         "available": true
       },
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Pink Beet Root",
         "available": true
       },
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Green Pandan Leaf",
         "available": true
       },
@@ -12263,7 +12258,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_L-Methionine_500MGX2_120CAP_275CC_Front_Square.jpg?v=1750454701",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
