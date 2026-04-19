@@ -1755,7 +1755,7 @@
       {
         "price": "37.97",
         "title": "2 lb",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -4730,7 +4730,7 @@
       {
         "price": "27.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
