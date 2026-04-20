@@ -256,23 +256,6 @@
   },
   {
     "vendor": "Nutricost",
-    "name": "Creatine Monohydrate Powder (Coastal Explosion / 500 G)",
-    "handle": "nutricost-creatine-monohydrate-powder-500-grams",
-    "price": 26.97,
-    "active_grams": 500,
-    "gross_grams": 500,
-    "cost_per_gram": 0.053939999999999995,
-    "effective_cost": 0.053939999999999995,
-    "multiplier": 1,
-    "multiplier_label": "",
-    "type": "Powder",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
-    "is_subscription": false,
-    "needs_review": true,
-    "review_reason": "Detected dirty keyword: coastal explosion"
-  },
-  {
-    "vendor": "Nutricost",
     "name": "Creatine Monohydrate Powder (Watermelon / 500 G)",
     "handle": "nutricost-creatine-monohydrate-powder-500-grams",
     "price": 26.97,
@@ -338,6 +321,23 @@
     "is_subscription": false,
     "needs_review": true,
     "review_reason": "Detected dirty keyword: mango"
+  },
+  {
+    "vendor": "Nutricost",
+    "name": "Creatine Monohydrate Powder (Coastal Explosion / 500 G)",
+    "handle": "nutricost-creatine-monohydrate-powder-500-grams",
+    "price": 26.97,
+    "active_grams": 500,
+    "gross_grams": 500,
+    "cost_per_gram": 0.053939999999999995,
+    "effective_cost": 0.053939999999999995,
+    "multiplier": 1,
+    "multiplier_label": "",
+    "type": "Powder",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
+    "is_subscription": false,
+    "needs_review": true,
+    "review_reason": "Detected dirty keyword: coastal explosion"
   },
   {
     "vendor": "Nutricost",

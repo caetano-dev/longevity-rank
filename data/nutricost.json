@@ -10765,7 +10765,7 @@
       {
         "price": "31.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11095,7 +11095,7 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
@@ -12010,7 +12010,7 @@
       {
         "price": "19.97",
         "title": "Grape",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -12185,7 +12185,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
