@@ -1755,7 +1755,7 @@
       {
         "price": "37.97",
         "title": "2 lb",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5385,7 +5385,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -8335,7 +8335,7 @@
       {
         "price": "49.97",
         "title": "Chocolate Peanut Butter",
-        "available": false
+        "available": true
       },
       {
         "price": "49.97",
@@ -8855,7 +8855,7 @@
       {
         "price": "20.97",
         "title": "300 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10765,7 +10765,7 @@
       {
         "price": "31.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12185,7 +12185,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12215,7 +12215,7 @@
       {
         "price": "13.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12475,7 +12475,7 @@
       {
         "price": "10.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12595,7 +12595,7 @@
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13200,7 +13200,7 @@
       {
         "price": "43.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
