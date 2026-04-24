@@ -480,7 +480,7 @@
       {
         "price": "26.97",
         "title": "4 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "41.97",
@@ -548,7 +548,7 @@
         "available": true
       },
       {
-        "price": "9.97",
+        "price": "10.97",
         "title": "30 Capsules / 600 Milligrams",
         "available": true
       }
@@ -574,7 +574,7 @@
     "title": "Nutricost Pre-X Workout Complex Powder",
     "context": "",
     "handle": "nutricost-pre-workout-complex-powder-30-servings",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e15 Grams Of High Quality Pre-Workout Formula In Every Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30/60 Servings In Every Bottle (Scoop Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNutricost Pre-Workout Powder Contains L-Citrulline, Beta Alanine, Taurine, Nitrosigine, Caffeine Anhydrous, Theobromine, Huperzine A, Niacin, Vitamin B6, and Vitamin B12\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian Friendly, Non-GMO, Gluten Free, and 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003ePre-X Fruit Punch (60 SERV) Specific Warning. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003e⚠️This product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003c/span\u003e\u003ca href=\"http://www.p65warnings.ca.gov/\" data-saferedirecturl=\"https://www.google.com/url?q=http://www.P65Warnings.ca.gov\u0026amp;source=gmail\u0026amp;ust=1608315246657000\u0026amp;usg=AFQjCNGixa745Oq769AHUbLUoMuG1NgTcA\" target=\"_blank\"\u003ewww.P65Warnings.ca.gov\u003c/a\u003e\u003cspan\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\u003c/ul\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e15 Grams Of High Quality Pre-Workout Formula In Every Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30/60 Servings In Every Bottle (Scoop Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNutricost Pre-Workout Powder Contains L-Citrulline, Beta Alanine, Taurine, Nitrosigine, Caffeine Anhydrous, Theobromine, Huperzine A, Niacin, Vitamin B6, and Vitamin B12\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian Friendly, Non-GMO, Gluten Free, and 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003ePre-X Fruit Punch (60 SERV), Blue Raspberry (60 SERV) Specific Warning. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan\u003e⚠️This product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003c/span\u003e\u003ca href=\"http://www.p65warnings.ca.gov/\" data-saferedirecturl=\"https://www.google.com/url?q=http://www.P65Warnings.ca.gov\u0026amp;source=gmail\u0026amp;ust=1608315246657000\u0026amp;usg=AFQjCNGixa745Oq769AHUbLUoMuG1NgTcA\" target=\"_blank\"\u003ewww.P65Warnings.ca.gov\u003c/a\u003e\u003cspan\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\u003c/ul\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_PRE-XBlueRaspberry_30SERV_25OZ_Front_Square.jpg?v=1768516179",
     "variants": [
       {
@@ -858,9 +858,9 @@
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "39.97",
         "title": "Vanilla / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "82.97",
@@ -1085,7 +1085,7 @@
     "context": "",
     "handle": "nutricost-grass-fed-whey-protein-concentrate-powder-5-lbs",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eUndenatured, Grass-Fed Whey Protein Concentrate\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e2 LBS or 5 LBS of Grass-Fed Whey Protein Concentrate Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eUnflavored, Pure Whey Protein Concentrate\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003erBGH Free, Undenatured, Non-GMO \u0026amp; Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003eChocolate (2 LB, 5 LB), Chocolate Peanut Butter (5 LB) Specific Warning.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e \u003cmeta charset=\"utf-8\"\u003e \u003cb id=\"docs-internal-guid-09e42350-7fff-39de-3572-cdcfc6d7993e\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003eWARNING: This product can expose you to chemicals including Lead, which are known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003ca href=\"http://www.p65warnings.ca.gov/food\"\u003ewww.P65Warnings.ca.gov/food\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GF_WPC_Unflavored_2_LB_2750_CC_Front_Square.jpg?v=1731707382",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GF_WPC_Vanilla_2_LB_2750_CC_Front_Square.jpg?v=1731707492",
     "variants": [
       {
         "price": "47.97",
@@ -1685,7 +1685,7 @@
     "context": "",
     "handle": "nutricost-cdp-choline-300mg-capsules",
     "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e300mg Of CDP Choline In Every (Vegetarian) Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEasy To Swallow\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e60/120 Capsules in Every Bottle (1 Capsule Servings)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eGluten Free \u0026amp; Non-GMO\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CDPCholine_300MG_60CAP_175CC_Front_Square.jpg?v=1768583265",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CDPCholine_300MG_120CAP_225CC_Front_Square.jpg?v=1768583265",
     "variants": [
       {
         "price": "18.97",
@@ -1848,7 +1848,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Resveratrol_700MGX2_120CAP_275CC_Front_Square.jpg?v=1744133472",
     "variants": [
       {
-        "price": "30.95",
+        "price": "24.97",
         "title": "Default Title",
         "available": true
       }
@@ -1990,7 +1990,7 @@
     "context": "",
     "handle": "nutricost-korean-red-ginseng-500mg-240-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,000mg of Premium Korean Ginseng Per Serving at 500mg per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eConvenient Dosage: With 240 capsules per bottle, you get a generous supply of 120 servings, making it easy to incorporate this supplement into your daily routine.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean Formulation: Crafted with care, this product is GMO Free and Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eQuality Assurance: Manufactured in a NSF Certified GMP compliant, FDA registered facility, you can trust the quality and safety standards upheld in the production process.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eTrusted Brand: Nutricost's reputation for excellence and commitment to providing high-quality supplements ensures you receive a reliable product.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_KoreanGinseng__500MG__240CAP_400CC_Front1_Square.jpg?v=1772572182",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_KoreanGinseng_500MG_240CAP_400CC_Front_Square_6cd57419-3f28-4463-8b29-04b3537a205e.jpg?v=1776970499",
     "variants": [
       {
         "price": "21.97",
@@ -2150,7 +2150,7 @@
     "context": "",
     "handle": "nutricost-bitter-melon-180-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e2,400mg equivalent (From 600mg of 4:1 Extract) of Bitter Melon (Momordica Charantia) Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e180 Capsules of Bitter Melon Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh Quality Bitter Melon In Every Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Complaint, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-bitter-melon-capsules-587012.jpg?v=1687482924",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BitterMelon_600MG_180CAP_400CC_Front_Square.jpg?v=1776970682",
     "variants": [
       {
         "price": "17.97",
@@ -3175,7 +3175,7 @@
       {
         "price": "27.97",
         "title": "1 LB / Chocolate Peanut Butter",
-        "available": false
+        "available": true
       },
       {
         "price": "14.97",
@@ -3340,7 +3340,7 @@
     "context": "",
     "handle": "nutricost-elderberry-575mg-120-capsules",
     "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Vegetarian Capsules in Every Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eA Potent 575mg of Black Elderberry Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Servings in Every Bottle (1 Serving, Just 1 Capsule)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_575MG_120CAP_275CC_Front_Square.jpg?v=1745515833",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Elderberry_575MG_120CAP_275CC_Front_Square.jpg?v=1776970166",
     "variants": [
       {
         "price": "13.97",
@@ -3493,7 +3493,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_TMG_750MG_120CAP_275CC_Front_Square.jpg?v=1775844660",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -3513,7 +3513,7 @@
         "available": true
       },
       {
-        "price": "15.97",
+        "price": "16.97",
         "title": "500mg / 120 Capsules",
         "available": true
       }
@@ -4390,7 +4390,7 @@
     "context": "",
     "handle": "nutricost-cinnamon-1200mg-150-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,200mg Per Serving With 75 Servings In A Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e150 High Quality Potent Vegetarian Capsules per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian Friendly Organic Ceylon Cinnamon Supplement\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, And 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e(240 CAPS) Specific Warning.\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta charset=\"utf-8\"\u003e⚠️WARNING: This product can expose you to chemicals including Lead, which are known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003ca href=\"http://www.p65warnings.ca.gov/food\"\u003ewww.P65Warnings.ca.gov/food\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Organics_Cinnamon_MWO__600MGX2_240CAP_500CC_Front_Square.jpg?v=1775757353",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Cinnamon_600MG_150CAP_400CC_Front_Square.jpg?v=1775757803",
     "variants": [
       {
         "price": "17.97",
@@ -4610,7 +4610,7 @@
     "context": "",
     "handle": "nutricost-zeaxanthin-with-lutein-120-softgels",
     "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Zeaxanthin with Lutein Softgels Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e20mg of Lutein Per Capsule (120 Servings)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e4mg of Zeaxanthin Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e3rd Party Tested by Independent, ISO-Accredited Laboratories\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, and Made in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul\u003e\u003c/ul\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ZeaxanthinwithLutein_120SFG_175CC_Front1_Square.jpg?v=1752246055",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ZeaxanthinwithLutein_120SFG_175CC_Front1_Square_1.jpg?v=1752246055",
     "variants": [
       {
         "price": "16.97",
@@ -5310,7 +5310,7 @@
       {
         "price": "14.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5385,7 +5385,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5673,12 +5673,12 @@
         "available": true
       },
       {
-        "price": "24.97",
+        "price": "21.97",
         "title": "2LBs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "32.97",
         "title": "5LBs",
         "available": false
       }
@@ -5858,7 +5858,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_HimalayanSalt_1000MG_240CAP_500CC_Front_Square.jpg?v=1775835775",
     "variants": [
       {
-        "price": "21.97",
+        "price": "17.97",
         "title": "Default Title",
         "available": true
       }
@@ -6043,7 +6043,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-kids-elderberry-gummies-893802.jpg?v=1706644283",
     "variants": [
       {
-        "price": "17.95",
+        "price": "16.97",
         "title": "Default Title",
         "available": true
       }
@@ -6055,7 +6055,7 @@
     "context": "",
     "handle": "nutricost-kids-melatonin-gummies",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1mg of Melatonin Per Gummy. For Kids (ages 4+). Uses Child-Lock Lids\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Melatonin Gummies In Each Bottle.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eStrawberry Flavored! One Serving, Just One Gummy\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eUses Natural Flavors, No Artificial Sweeteners\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_KidsMelatonin_1MG_120GUM_250CC_Front1_Square.jpg?v=1724341865",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Kids_Melatonin_1MG_120GUM_250CC_Front_Square.jpg?v=1776970938",
     "variants": [
       {
         "price": "14.97",
@@ -6390,7 +6390,7 @@
     "context": "",
     "handle": "nutricost-iron-as-ferrous-sulfate",
     "body_html": "\u003cp\u003e\u003cbr\u003e\u003c/p\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eIron (As Ferrous Sulfate) Is The Only Active Ingredient\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003e65mg Of Iron Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003e240 Tablets, 240 Servings - Just 1 Tablet For A Full Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian Friendly, Non-GMO, Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eMade In A GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Iron_65MG_240TBL_225CC_Front1_Square.jpg?v=1761066769",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Iron_asFerrousSulfate__65MG_240TAB_225CC_Front_Square.jpg?v=1776971586",
     "variants": [
       {
         "price": "15.97",
@@ -7285,7 +7285,7 @@
     "context": "",
     "handle": "nutricost-devils-claw",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1200mg Equivalent Of Devil's Claw Extract (from 300mg of 4:1 extract)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Vegetarian (\"Veggie\" Plant Based) Capsules and Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e4 Month Supply (If Taken As Directed)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian, Gluten Free, and Non-GMO\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Devil_sClaw_1200MG_120CAP_Front_dc0d4741-4f68-4d71-9829-6d321b99fa15.jpg?v=1736447891",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Devil_sClaw_1200MG_120CAP_225CC_Front_Square.jpg?v=1776970412",
     "variants": [
       {
         "price": "12.97",
@@ -7330,7 +7330,7 @@
     "context": "",
     "handle": "nutricost-pregnenolone",
     "body_html": "\u003cul data-mce-fragment=\"1\" class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003e120 Capsules, 120 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003eServing Size of 1 Easy-to-swallow Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003e10, 30, 50 or 100mg of Pregnenolone in Each Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Plant-Based \"Veggie\" Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade In A GMP Compliant Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003e\u003cspan\u003eWARNING: NOT FOR USE BY INDIVIDUALS UNDER THE AGE OF 18 YEARS. DO NOT USE IF PREGNANT OR NURSING. Consult a physician or licensed qualified health care professional before using this product if you have, or have a family history or, prostate cancer, prostate enlargement, heart disease, low “good” cholesterol (HDL), or if you are using any other dietary supplement, prescription drug, or over-the-counter drug. Do not exceed recommended serving. Exceeding recommended serving may cause serious adverse health effects. Possible side effects include acne, hair loss, hair growth on the face (in women), aggressiveness, irritability, and increased levels of estrogen. Discontinue use and call a physician or licensed qualified health care professional immediately if you experience rapid heartbeat, dizziness, blurred vision, or other similar symptoms. KEEP OUT OF REACH OF CHILDREN.\u003c/span\u003e\u003cbr\u003e\u003cspan\u003eTo report any adverse events call 1-800-332-1088.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Pregnenolone_100MG__V1__120CAP_225CC_Front1_Square.jpg?v=1757955524",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Pregnenolone_30MG_120CAP_Front_de750212-f359-4473-9629-ebd032624587.jpg?v=1757955524",
     "variants": [
       {
         "price": "12.97",
@@ -7820,7 +7820,7 @@
     "context": "",
     "handle": "nutricost-electrolyte-8-hydrating-electrolytes-vitamins-120-cap",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli data-index=\"0\"\u003e\u003cspan\u003e8 Hydrating Electrolytes \u0026amp; Vitamins\u003c/span\u003e\u003c/li\u003e\n\u003cli data-index=\"1\"\u003e\u003cspan\u003eAdvanced Hydration\u003c/span\u003e\u003c/li\u003e\n\u003cli data-index=\"2\"\u003e\u003cspan\u003e120 Capsules for 120 Servings Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli data-index=\"3\"\u003e\u003cspan\u003eNon-GMO, Gluten Free, Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli data-index=\"4\"\u003e\u003cspan\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ElectrolyteComplex_900MG_120CAP_275CC_Front_Square.jpg?v=1775831400",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ElectrolyteComplex_900MG_120CAP_275CC_Front_Square_1.jpg?v=1776969649",
     "variants": [
       {
         "price": "15.95",
@@ -7835,7 +7835,7 @@
     "context": "",
     "handle": "nutricost-r-alpha-lipoic-acid-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli\u003e\u003cspan style=\"font-size: 0.875rem;\"\u003e100mg of R-Alpha Lipoic Acid (R-ALA) Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003e120 or 240 \"Veggie Caps\" for 120 or 240 Servings Per Bottle (1 Serving, Just 1 Capsule)\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eJust the R-ALA Version of Alpha Lipoic Acid\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Vegetarian Friendly, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-r-alpha-lipoic-acid-capsules-671679.jpg?v=1745435916",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_R-AlphaLipoicAcid_100MG_120CAP_175CC_Front_Square.jpg?v=1773447228",
     "variants": [
       {
         "price": "24.97",
@@ -8090,7 +8090,7 @@
     "context": "",
     "handle": "nutricost-colostrum-30-powder",
     "body_html": "\u003cul data-mce-fragment=\"1\" class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNutricost Bovine Colostrum Powder 8/16oz is pure colostrum and contains 3 grams of colostrum in every serving, 76/151 servings.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMinimum 30% IgG Antibodies. Healthy Gut and Immune Support!\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach batch is tested by independent, ISO-accredited laboratories to insure safety and quality.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOur Colostrum is manufactured in a GMP Compliant and FDA Registered Facility.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003ePure \u0026amp; Bioavailable Colostrum, Non-GMO and Gluten Free.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ColostrumPowder_8_oz_Front1_1.jpg?v=1748903153",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Colostrum30__8OZ_20OZ_Front_Square.jpg?v=1776973362",
     "variants": [
       {
         "price": "43.97",
@@ -8523,7 +8523,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Turkesterone_600MG_30CAP_150CC_Front_Square.jpg?v=1758130904",
     "variants": [
       {
-        "price": "41.97",
+        "price": "38.97",
         "title": "120 Caps",
         "available": true
       },
@@ -8845,7 +8845,7 @@
     "context": "",
     "handle": "nutricost-organic-fiber-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e3 Grams Of Fiber Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e150 or 300 Capsules Per Bottle for 30 or 60 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified by CCOF Made With Organic Psyllium Husk \u0026amp; Organic Jerusalem Artichoke\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian, Gluten Free, Non-GMO\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cb id=\"docs-internal-guid-48c08b5d-7fff-b36f-4fcd-feeef7b71d1c\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003eWARNING: This product can expose you to chemicals including Lead, which are known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003ca href=\"http://www.p65warnings.ca.gov/food\"\u003ewww.P65Warnings.ca.gov/food\u003c/a\u003e\u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_FiberCapsules_600MG_150CAP_225CC_Front_Square.jpg?v=1745344033",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Fiber_600MG_300CAP_500C_Front_Square.jpg?v=1770142080",
     "variants": [
       {
         "price": "15.97",
@@ -8855,7 +8855,7 @@
       {
         "price": "20.97",
         "title": "300 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -9535,7 +9535,7 @@
     "context": "",
     "handle": "nutricost-magnesium-taurate",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eLong-Lasting Supply: Each bottle of Nutricost Magnesium Taurate comes with a generous 240 capsules, ensuring a long-lasting supply that allows you to stay on top of your wellness goals without frequent reordering.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOptimal Dose: With a potent 1,500 mg of magnesium taurate per serving, you can rest assured that you're getting a concentrated dose of these essential nutrients, supporting your overall health and vitality.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVersatile Formulation: With 80 servings in each bottle, you have the flexibility to incorporate this supplement seamlessly into your daily routine, making it easier than ever to prioritize your well-being.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eQuality Manufacturing: Produced in an NSF certified, GMP compliant facility, Nutricost takes pride in maintaining the highest manufacturing standards to deliver a premium product you can trust.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eRigorous Testing: Every batch of Nutricost Magnesium Taurate Capsules undergoes independent testing by third-party, ISO accredited laboratories, ensuring purity, potency, and safety in every single bottle.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumTaurate_500MGX3_240CAP_275CC_Front_Square_c7d8784d-600e-4f7d-ba97-452f79a81a2c.jpg?v=1770140114",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumTaurate_500MGX3_240CAP_275CC_Front_Square_2773dca2-0913-455b-80fa-74a9a6e01d65.jpg?v=1776970870",
     "variants": [
       {
         "price": "19.97",
@@ -9883,7 +9883,7 @@
         "available": true
       },
       {
-        "price": "46.95",
+        "price": "30.97",
         "title": "Unflavored",
         "available": true
       }
@@ -10320,7 +10320,7 @@
     "context": "",
     "handle": "natural-energy-complex-120-cap",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e100mg of Caffeine Per Capsule: Each capsule delivers 100mg of caffeine\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-Free Formula: Carefully crafted to support dietary needs and provide a gluten-free energy supplement.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGuarana, Gotu Kola \u0026amp; Yerba Mate: Formulated with Guarana, Gotu Kola, and Yerba Mate for additional natural energy support.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Capsules Per Bottle: Offers a long-lasting supply of energy, ensuring you're always ready to take on the day.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP Compliant Facility: Ensures the highest standards for every bottle.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_NaturalEnergyComplex_120CAP_225CC_Front_Square_b4af3357-eaea-4f76-b0c9-659c426bf4a2.jpg?v=1758037841",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_NaturalEnergyComplex_120CAP_225CC_Front_Square_8ba7d363-da7e-4554-a79a-39164fe1368a.jpg?v=1776973194",
     "variants": [
       {
         "price": "14.97",
@@ -10750,7 +10750,7 @@
       {
         "price": "31.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11053,7 +11053,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_NAD__500MGX2_60CAP_150CCCOMPAX_Front_Square.jpg?v=1772846079",
     "variants": [
       {
-        "price": "39.97",
+        "price": "32.97",
         "title": "120 caps",
         "available": true
       },
@@ -12575,12 +12575,12 @@
     "context": "",
     "handle": "nutricost-nopal-cactus",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e180 vegan capsules, providing 60 servings of nopal cactus supplement\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving delivers 2000mg of potent nopal cactus powder\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNopal cactus (prickly pear) is a popular traditional plant known for its nutritional benefits\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free, Gluten-free, and Vegan – suitable for various dietary needs\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e⚠️WARNING: This product can expose you to chemicals including Lead, which are known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003ca href=\"http://www.p65warnings.ca.gov/food\"\u003ewww.P65Warnings.ca.gov/food\u003c/a\u003e\u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_NopalCactus_2000MG_180CAP_60SERV_Front_Square.jpg?v=1751995905",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_NopalCactus_667MGX3_180CAP_400CC_Front_Square.jpg?v=1776972111",
     "variants": [
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12800,7 +12800,7 @@
     "context": "",
     "handle": "nutricost-vitamin-c-gummies",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Vitamin C Gummies In Each Bottle. Uses Child Lock Lids\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGreat Tasting Orange Flavor, And Made For Kids (Ages 4+)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e250mg of Vitamin C Per Serving \u0026amp; 60 Servings per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNo Corn Syrup, No Preservatives\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-Free and Made In A GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VitaminC_125MGX4_240GUM_950CCCLEAR_Front_Square.jpg?v=1756828304",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_125MGX4_120GUM_500CCCLEAR_Front_Square.jpg?v=1756828448",
     "variants": [
       {
         "price": "16.97",
@@ -13108,7 +13108,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_YellowDock_50MGX3_180CAP_225CC_Front_Square.jpg?v=1764614911",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -13520,7 +13520,7 @@
       {
         "price": "19.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
