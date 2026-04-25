@@ -533,7 +533,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_N-AcetylL-Cysteine_600MG_240CAP_Front.jpg?v=1736883921",
     "variants": [
       {
-        "price": "16.67",
+        "price": "14.97",
         "title": "120 Capsules / 600 Milligrams",
         "available": true
       },
@@ -858,7 +858,7 @@
         "available": true
       },
       {
-        "price": "39.97",
+        "price": "40.97",
         "title": "Vanilla / 2 lbs",
         "available": true
       },
@@ -868,7 +868,7 @@
         "available": true
       },
       {
-        "price": "46.95",
+        "price": "40.97",
         "title": "Milk Chocolate / 2 lbs",
         "available": true
       },
@@ -1363,7 +1363,7 @@
         "available": true
       },
       {
-        "price": "9.97",
+        "price": "10.97",
         "title": "30 Capsules",
         "available": true
       }
@@ -2170,7 +2170,7 @@
       {
         "price": "40.97",
         "title": "500 Grams",
-        "available": false
+        "available": true
       },
       {
         "price": "63.97",
@@ -2553,7 +2553,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MilkThistle_300MG_120CAP_225CC_Front_Square.jpg?v=1775840031",
     "variants": [
       {
-        "price": "16.95",
+        "price": "15.97",
         "title": "240 Caps",
         "available": true
       },
@@ -3533,7 +3533,7 @@
         "available": true
       },
       {
-        "price": "8.97",
+        "price": "9.97",
         "title": "100mg / 30 Capsules",
         "available": true
       },
@@ -4363,7 +4363,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Wormwood_450MG_120CAP_225CC_Front_Square.jpg?v=1776444045",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -6828,7 +6828,7 @@
         "available": true
       },
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "60 Servings",
         "available": true
       }
@@ -6895,7 +6895,7 @@
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -7858,7 +7858,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_PassionFlowerExtract__375MG___V00__120CAP_275CC_Front1_Square.jpg?v=1760719115",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -8743,7 +8743,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Turmeric__RB2__50MGX2_120GUM_400CCCLEAR_Front1_Square.jpg?v=1736276403",
     "variants": [
       {
-        "price": "22.95",
+        "price": "20.97",
         "title": "120 Gummies",
         "available": false
       },
@@ -9553,7 +9553,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_IronBisglycinate_25MG_240CAPS_275CC_Front1_Square.jpg?v=1745440127",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "120 Capsules",
         "available": true
       },
@@ -9878,7 +9878,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MultiCollagenBeautyProtein_UF_30SERV_460Z_Front1_Square.jpg?v=1731709592",
     "variants": [
       {
-        "price": "46.95",
+        "price": "31.97",
         "title": "Hot Cocoa",
         "available": true
       },
@@ -10750,7 +10750,7 @@
       {
         "price": "31.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13654,6 +13654,21 @@
     "variants": [
       {
         "price": "16.97",
+        "title": "Default Title",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": "9698818064614",
+    "title": "Nutricost Phosphatidylcholine",
+    "context": "",
+    "handle": "phosphatidylcholine-softgels",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 420mg of phosphatidylcholine per serving for a precise, consistent dose\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 softgels per bottle, offering 120 convenient single-serving portions\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003ePhosphatidylcholine is a naturally occurring phospholipid commonly found in foods like eggs and soy\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFormulated to be GMO-free and gluten-free for quality you can trust\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Phosphatidylcholine_420MG_120SFG_300CC_Front1_Square.jpg?v=1777069323",
+    "variants": [
+      {
+        "price": "25.97",
         "title": "Default Title",
         "available": true
       }
