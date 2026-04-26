@@ -8530,7 +8530,7 @@
       {
         "price": "17.97",
         "title": "30 Caps",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12170,7 +12170,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
