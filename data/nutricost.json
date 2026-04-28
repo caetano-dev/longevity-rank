@@ -538,12 +538,12 @@
         "available": true
       },
       {
-        "price": "20.97",
+        "price": "17.97",
         "title": "180 Capsules / 600 Milligrams",
         "available": true
       },
       {
-        "price": "29.97",
+        "price": "24.97",
         "title": "240 Capsules / 600 Milligrams",
         "available": true
       },
@@ -1628,7 +1628,7 @@
         "available": true
       },
       {
-        "price": "28.97",
+        "price": "27.97",
         "title": "500mg / 30 Capsules",
         "available": true
       }
@@ -2593,7 +2593,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VitaminB12_1MG__V1__240CAPS_275CC_Front1_Square_61b8f3f5-7ae9-453e-b08d-172aa7c8fe0d.jpg?v=1768597251",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "1000 MCG / 120 Caps",
         "available": true
       },
@@ -3168,7 +3168,7 @@
         "available": true
       },
       {
-        "price": "33.95",
+        "price": "27.97",
         "title": "1 LB / Vanilla",
         "available": true
       },
@@ -3463,7 +3463,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MultivitaminforMen_1200MG_120CAP_225CC_Front_Square.jpg?v=1773445126",
     "variants": [
       {
-        "price": "17.97",
+        "price": "16.97",
         "title": "Default Title",
         "available": true
       }
@@ -3528,12 +3528,12 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VitaminB2_100MG_120CAP_Front1_fe8d5492-c88c-4831-8b97-6601c031ec1e.jpg?v=1745439537",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "100mg / 120 Capsules",
         "available": true
       },
       {
-        "price": "9.97",
+        "price": "10.97",
         "title": "100mg / 30 Capsules",
         "available": true
       },
@@ -3758,7 +3758,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_DMAE_350MG_286SER_Front.jpg?v=1724254836",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -3908,23 +3908,23 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ProbioticComplex_10_Billion_60CAP_150CCFront.jpg?v=1724779677",
     "variants": [
       {
+        "price": "11.97",
+        "title": "1 Billion CFU",
+        "available": true
+      },
+      {
         "price": "14.97",
         "title": "10 Billion CFU",
         "available": true
       },
       {
-        "price": "21.97",
-        "title": "50 Billion CFU",
-        "available": true
-      },
-      {
-        "price": "10.97",
-        "title": "1 Billion CFU",
-        "available": true
-      },
-      {
         "price": "18.97",
         "title": "40 Billion CFU",
+        "available": true
+      },
+      {
+        "price": "21.97",
+        "title": "50 Billion CFU",
         "available": true
       }
     ]
@@ -5518,7 +5518,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumCitrate_105MGX4_120CAP_275CC_Front_Square.jpg?v=1751921470",
     "variants": [
       {
-        "price": "14.97",
+        "price": "13.97",
         "title": "120 Capsules",
         "available": true
       },
@@ -5528,7 +5528,7 @@
         "available": true
       },
       {
-        "price": "9.97",
+        "price": "10.97",
         "title": "60 Capsules",
         "available": true
       }
@@ -5598,7 +5598,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CitiricAcid_1000MG_240CAP_500CC_Front.jpg?v=1738268079",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "120 Capsules",
         "available": true
       },
@@ -6623,13 +6623,13 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-baking-soda-877799.jpg?v=1702335844",
     "variants": [
       {
-        "price": "16.97",
-        "title": "2LB",
+        "price": "15.97",
+        "title": "1LB",
         "available": true
       },
       {
-        "price": "15.97",
-        "title": "1LB",
+        "price": "16.97",
+        "title": "2LB",
         "available": true
       },
       {
@@ -6895,7 +6895,7 @@
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -6953,7 +6953,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-c8-mct-oil-253855.jpg?v=1687482928",
     "variants": [
       {
-        "price": "29.97",
+        "price": "27.87",
         "title": "Default Title",
         "available": false
       }
@@ -7579,12 +7579,17 @@
     "title": "Nutricost Nattokinase (2,000FU) (120 Caps)",
     "context": "",
     "handle": "nutricost-nattokinase-2-000fu-120-caps",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e2,000FU of Nattokinase Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Nattokinase Servings Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1 Capsule For 1 Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, And Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003e3rd Party Tested by ISO-accredited Laboratories\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\u003c/ul\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e2,000FU of Nattokinase Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e4,000FU of Nattokinase Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Nattokinase Servings Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1 Capsule For 1 Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, And Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003e3rd Party Tested by ISO-accredited Laboratories\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Nattokinase_100MG_120CAP_175CC_Front_Square.jpg?v=1751917930",
     "variants": [
       {
         "price": "16.97",
-        "title": "Default Title",
+        "title": "120 Cap 2000FU",
+        "available": true
+      },
+      {
+        "price": "18.97",
+        "title": "120 CAP 4000FU",
         "available": true
       }
     ]
@@ -7688,7 +7693,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-grape-seed-extract-400-mg-240-cap-440975.jpg?v=1702998509",
     "variants": [
       {
-        "price": "26.95",
+        "price": "21.97",
         "title": "Default Title",
         "available": true
       }
@@ -7823,7 +7828,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ElectrolyteComplex_900MG_120CAP_275CC_Front_Square_1.jpg?v=1776969649",
     "variants": [
       {
-        "price": "15.95",
+        "price": "15.97",
         "title": "Default Title",
         "available": true
       }
@@ -8178,7 +8183,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_W_FolicAcidforWomen_1200MCG_120CAP_175CC_Front.jpg?v=1724345133",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -8530,7 +8535,7 @@
       {
         "price": "17.97",
         "title": "30 Caps",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8883,7 +8888,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumBisglycinate__RB2__FruitPunch_250GM_12OZ_Front1_Square.jpg?v=1745445525",
     "variants": [
       {
-        "price": "25.97",
+        "price": "24.97",
         "title": "Fruit Punch",
         "available": false
       },
@@ -9713,12 +9718,12 @@
         "available": true
       },
       {
-        "price": "29.95",
+        "price": "28.97",
         "title": "Orange Sunrise",
         "available": false
       },
       {
-        "price": "29.95",
+        "price": "28.97",
         "title": "Mixed Berry",
         "available": true
       }
@@ -9930,7 +9935,7 @@
       {
         "price": "38.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10605,7 +10610,7 @@
       {
         "price": "19.97",
         "title": "Watermelon / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -10638,7 +10643,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CitrusBergamot_600MGX2_120CAP_275CC_Front_Square.jpg?v=1758040352",
     "variants": [
       {
-        "price": "14.95",
+        "price": "16.97",
         "title": "Default Title",
         "available": true
       }
@@ -10808,7 +10813,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OrganicButterPwd_48oz_Front_square.jpg?v=1734110753",
     "variants": [
       {
-        "price": "38.97",
+        "price": "39.97",
         "title": "Default Title",
         "available": true
       }
@@ -11038,7 +11043,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CopperGlycinate_3MG__V1__120CAP_175CC_Front1_Square.jpg?v=1738950407",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -11333,7 +11338,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_FolicAcid_1MG_120GUM_250CC_Front_Square_2.jpg?v=1773429813",
     "variants": [
       {
-        "price": "14.97",
+        "price": "15.97",
         "title": "Default Title",
         "available": true
       }
@@ -11423,7 +11428,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BetaEcdysterone_300MGX2_120CAP_225CC_Front_Square.jpg?v=1741635676",
     "variants": [
       {
-        "price": "32.97",
+        "price": "30.97",
         "title": "Default Title",
         "available": true
       }
@@ -11623,7 +11628,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Color_Red_Front.jpg?v=1758039799",
     "variants": [
       {
-        "price": "9.97",
+        "price": "10.97",
         "title": "Yellow Turmeric",
         "available": true
       },
@@ -12183,7 +12188,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CornSilk_150MG_90CAP_150CC_Front_Square.jpg?v=1750454116",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -12563,7 +12568,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_LemonBalm__10_1__150MGX2__V1__120CAP_175CC_Front1_Square.jpg?v=1751995431",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -12705,7 +12710,7 @@
       {
         "price": "38.97",
         "title": "4lb",
-        "available": false
+        "available": true
       },
       {
         "price": "27.97",
@@ -13198,7 +13203,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Chlorophyll_50MG_30SFG_100CC_Front_Square_09b2a854-9e3c-428e-ba96-342f37d64000.jpg?v=1765585342",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "50 mg 30 softgels",
         "available": true
       },
@@ -13655,7 +13660,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13669,6 +13674,96 @@
     "variants": [
       {
         "price": "25.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9701003657446",
+    "title": "Nutricost NAD+ Resveratrol",
+    "context": "",
+    "handle": "nutricost-nad-resveratrol",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eAdvanced NAD+ Formula – Provides 1,000mg of NAD+ and 100mg of resveratrol per serving, enhanced with grape seed extract, quercetin, and CoQ10 for comprehensive support\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30 Servings Per Bottle – Includes 60 capsules, delivering a full 30-day supply when taken as directed\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSynergistic Blend – Carefully combined ingredients work together to help support cellular health, energy production, and overall wellness\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean \u0026amp; Quality Formula – Made with GMO-free and gluten-free ingredients for a supplement you can trust\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_NAD_Resveratrol_50MGX2_60CAP_150COMPAX_Front_Square.jpg?v=1777300784",
+    "variants": [
+      {
+        "price": "21.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9701045272806",
+    "title": "Nutricost TTFD Thiamine (Vitamin B1)",
+    "context": "",
+    "handle": "nutricost-ttfd-thiamine-vitamin-b1",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 100mg of Thiamine Tetrahydrofurfuryl Disulfide (TTFD) per serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 easy-to-take capsules for 120 servings per bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes magnesium to complement TTFD for daily nutritional support\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, gluten-free, and made without GMOs\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ThiamineTTFD_100MG_120CAP_175CC_Front_Square.jpg?v=1777309476",
+    "variants": [
+      {
+        "price": "21.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9701048680678",
+    "title": "Nutricost Lecithin",
+    "context": "",
+    "handle": "nutricost-lecithin",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 1,200mg of soybean lecithin per serving to support your daily routine\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 easy-to-take softgels for 120 servings per bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSoy lecithin is a natural phospholipid that helps support overall nutrition\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade with a GMO-free and gluten-free formula\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_SoybeanLecithin_1200MG_120SFG_400CC_Front_Square.jpg?v=1777310566",
+    "variants": [
+      {
+        "price": "24.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9701050843366",
+    "title": "Nutricost Calcium Citrate Tablets",
+    "context": "",
+    "handle": "nutricost-calcium-citrate-tablets",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh-Potency Calcium Support – Provides 1,000mg of calcium citrate per serving to help maintain strong, healthy bones\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e60 Servings Per Bottle – Includes 180 tablets, delivering a full 60-day supply when taken as directed\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSuperior Absorption – Calcium citrate is more easily absorbed than other forms of calcium, supporting bone density and overall health\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean \u0026amp; Vegan-Friendly Formula – Made with vegan, GMO-free, and gluten-free ingredients you can trust\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CalciumCitrate_334MGX3_180TAB_500CC_Front1_Square.jpg?v=1777311221",
+    "variants": [
+      {
+        "price": "18.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9701052514534",
+    "title": "Nutricost Calcium Hydroxyapatite",
+    "context": "",
+    "handle": "nutricost-calcium-hydroxyapatite",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh-Potency Bone Support – Provides 1,000mg of calcium hydroxyapatite per serving to help maintain strong bones and teeth\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30 Servings Per Bottle – Includes 120 capsules, delivering a convenient 30-day supply when taken as directed\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNatural Bone Form – Calcium hydroxyapatite mirrors the form of calcium found in bones, supporting superior absorption and overall skeletal health\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean \u0026amp; Quality Formula – Made with GMO-free ingredients you can trust\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CalciumHydroxyapatite_250MGX4_120CAP_300CC_Front_Square.jpg?v=1777311734",
+    "variants": [
+      {
+        "price": "16.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9701062770918",
+    "title": "Nutricost Calcium Citrate with Vitamin D Tablets",
+    "context": "",
+    "handle": "nutricost-calcium-citrate-with-vitamin-d-tablets",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh-Potency Calcium Support – Provides 1,260mg of calcium citrate per serving, paired with 25mcg of vitamin D for enhanced support\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e60 Servings Per Bottle – Includes 240 tablets, offering a full 60-day supply when taken as directed\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEnhanced Absorption Formula – Vitamin D works alongside calcium to help support optimal absorption and promote strong, healthy bones\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean \u0026amp; Quality Ingredients – Made with GMO-free and gluten-free ingredients for a supplement you can trust\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CalciumCitrate_VitaminD_315MGX4_6.25MCGX4_240TAB_500CC_Front_Square.jpg?v=1777313980",
+    "variants": [
+      {
+        "price": "21.97",
         "title": "Default Title",
         "available": true
       }
