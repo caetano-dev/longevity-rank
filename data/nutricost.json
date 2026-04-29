@@ -745,7 +745,7 @@
       {
         "price": "104.97",
         "title": "Chocolate / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "52.97",
@@ -853,7 +853,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_WPC_Chocolate_2LB_2750CC_Front_Square.jpg?v=1731705048",
     "variants": [
       {
-        "price": "32.97",
+        "price": "37.97",
         "title": "Vanilla / 1.5 lbs",
         "available": true
       },
@@ -2008,13 +2008,13 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_L-CarnitneTartrate_500MGX2_120CAP_275CC_Front_Sqaure.jpg?v=1768583926",
     "variants": [
       {
-        "price": "21.97",
-        "title": "240 Capsules",
+        "price": "16.97",
+        "title": "120 Capsules",
         "available": true
       },
       {
-        "price": "16.97",
-        "title": "120 Capsules",
+        "price": "21.97",
+        "title": "240 Capsules",
         "available": true
       }
     ]
@@ -2110,7 +2110,7 @@
       {
         "price": "10.97",
         "title": "30 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -2168,7 +2168,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-creatine-monohydrate-creapure-powder-882328.jpg?v=1702004144",
     "variants": [
       {
-        "price": "40.97",
+        "price": "41.97",
         "title": "500 Grams",
         "available": true
       },
@@ -2413,7 +2413,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_FerrochelIron_240CAP_275CC_Front_48fe1e8c-b96d-4a03-9813-ac544ef40f94.jpg?v=1745447148",
     "variants": [
       {
-        "price": "17.95",
+        "price": "17.97",
         "title": "18 mg",
         "available": false
       },
@@ -2598,7 +2598,7 @@
         "available": true
       },
       {
-        "price": "16.97",
+        "price": "11.97",
         "title": "1000 MCG / 240 Caps",
         "available": false
       },
@@ -2658,7 +2658,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VitCwithRoseHips_240CAP_500CC_Front_767bf619-3be7-4a72-bb33-333d83b50006.jpg?v=1768501654",
     "variants": [
       {
-        "price": "16.97",
+        "price": "15.97",
         "title": "120 Capsules",
         "available": true
       },
@@ -2753,7 +2753,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_RhodiolaRosea_500MG_60CAP_150CC_Front.jpg?v=1697664966",
     "variants": [
       {
-        "price": "17.97",
+        "price": "18.97",
         "title": "60 Capsules",
         "available": true
       }
@@ -3063,7 +3063,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-glucomannan-capsules-707472.jpg?v=1687483055",
     "variants": [
       {
-        "price": "18.97",
+        "price": "15.97",
         "title": "Default Title",
         "available": true
       }
@@ -4428,7 +4428,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-guarana-capsules-147230.jpg?v=1701755641",
     "variants": [
       {
-        "price": "18.95",
+        "price": "16.97",
         "title": "Default Title",
         "available": true
       }
@@ -6225,7 +6225,7 @@
       {
         "price": "8.97",
         "title": "30 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -6448,7 +6448,7 @@
         "available": true
       },
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "10MG",
         "available": true
       },
@@ -7043,7 +7043,7 @@
         "available": true
       },
       {
-        "price": "11.97",
+        "price": "12.97",
         "title": "90 Capsules",
         "available": true
       }
@@ -7078,13 +7078,13 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Kids_VitaminC_125MG_120GUM_500CCCLEAR_Front1_Square.jpg?v=1760738072",
     "variants": [
       {
-        "price": "15.97",
-        "title": "60 serv",
+        "price": "11.97",
+        "title": "60 GUM",
         "available": true
       },
       {
-        "price": "10.97",
-        "title": "30 serv",
+        "price": "15.97",
+        "title": "120 GUM",
         "available": true
       }
     ]
@@ -7198,7 +7198,7 @@
         "available": true
       },
       {
-        "price": "29.97",
+        "price": "30.97",
         "title": "240 Capsules",
         "available": true
       }
@@ -7553,7 +7553,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_LithiumOrotate_5MG_120CAP_Front.jpg?v=1724776288",
     "variants": [
       {
-        "price": "19.97",
+        "price": "17.97",
         "title": "5mg",
         "available": true
       },
@@ -7618,7 +7618,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/AMZ_Multivitamin_Gummies_Berry_180GUM_Front_1.jpg?v=1724175425",
     "variants": [
       {
-        "price": "22.95",
+        "price": "20.97",
         "title": "Default Title",
         "available": false
       }
@@ -8735,7 +8735,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -9173,7 +9173,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Pantry_OrganicStevia_8OZ_16OZCLEAR_Front_Square.jpg?v=1775844003",
     "variants": [
       {
-        "price": "27.97",
+        "price": "30.97",
         "title": "Default Title",
         "available": true
       }
@@ -10124,12 +10124,12 @@
     "variants": [
       {
         "price": "32.97",
-        "title": "Chicken Soup",
+        "title": "Chicken Flavored",
         "available": true
       },
       {
         "price": "32.97",
-        "title": "Chicken Flavored",
+        "title": "Chicken Soup",
         "available": true
       }
     ]
@@ -12218,7 +12218,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_SodiumBicarbonate_1250MGX2__V00__120CAP_275CC_Front1_Square.jpg?v=1750454524",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -12278,7 +12278,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Kale_200MG__V1__120CAP_175CC_Front1_Square.jpg?v=1750455670",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -12308,7 +12308,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_RedClover_200MG_120CAP_225CC_Front_Square.jpg?v=1750456835",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -12383,7 +12383,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_SarsaparillaRoot_151__100MG__V1__120CAP_175CC_Front1_Square.jpg?v=1751052291",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -12688,7 +12688,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MuiraPuama_150MGX2__V1__120CAP_175CC_Front1_Square.jpg?v=1754686747",
     "variants": [
       {
-        "price": "10.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -12858,7 +12858,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OrganicSpirulina_Chlorella_500MGx6_360TAB_300CC_Front_Square.jpg?v=1758925405",
     "variants": [
       {
-        "price": "30.97",
+        "price": "27.97",
         "title": "360 TABS",
         "available": true
       },
@@ -12895,7 +12895,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
