@@ -745,7 +745,7 @@
       {
         "price": "104.97",
         "title": "Chocolate / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "52.97",
@@ -840,7 +840,7 @@
       {
         "price": "104.97",
         "title": "Pumpkin Spice / 5 lbs",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -2170,7 +2170,7 @@
       {
         "price": "41.97",
         "title": "500 Grams",
-        "available": true
+        "available": false
       },
       {
         "price": "63.97",
@@ -3163,7 +3163,7 @@
         "available": true
       },
       {
-        "price": "33.95",
+        "price": "27.97",
         "title": "1 LB / Salted Caramel",
         "available": true
       },
@@ -3215,7 +3215,7 @@
       {
         "price": "32.97",
         "title": "600 Grams",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
@@ -3328,7 +3328,7 @@
         "available": true
       },
       {
-        "price": "9.97",
+        "price": "11.97",
         "title": "30 Capsules",
         "available": true
       }
@@ -4090,7 +4090,7 @@
       {
         "price": "18.97",
         "title": "500 MG / 120 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "13.97",
@@ -5413,7 +5413,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_DHEA_25MG_120CAP_Front.jpg?v=1745514533",
     "variants": [
       {
-        "price": "10.97",
+        "price": "13.97",
         "title": "120 / 25mg",
         "available": true
       },
@@ -8735,7 +8735,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -9380,7 +9380,7 @@
       {
         "price": "24.97",
         "title": "1LB / Fruit Punch",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -9430,7 +9430,7 @@
       {
         "price": "35.97",
         "title": "Blue Raspberry / 60 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
@@ -10610,7 +10610,7 @@
       {
         "price": "19.97",
         "title": "Watermelon / 60 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -12000,7 +12000,7 @@
       {
         "price": "19.97",
         "title": "Grape",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -12895,7 +12895,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
