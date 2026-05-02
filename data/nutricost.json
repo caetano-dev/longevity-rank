@@ -840,7 +840,7 @@
       {
         "price": "104.97",
         "title": "Pumpkin Spice / 5 lbs",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5385,7 +5385,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8515,7 +8515,7 @@
       {
         "price": "27.97",
         "title": "Peach Ring",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10600,7 +10600,7 @@
       {
         "price": "19.97",
         "title": "Pineapple Ice / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -10610,7 +10610,7 @@
       {
         "price": "19.97",
         "title": "Watermelon / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -10690,7 +10690,7 @@
       {
         "price": "27.97",
         "title": "Hot Cocoa",
-        "available": false
+        "available": true
       },
       {
         "price": "27.97",
@@ -12720,7 +12720,7 @@
       {
         "price": "38.97",
         "title": "4lb Chocolate",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12895,7 +12895,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
