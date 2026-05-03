@@ -840,7 +840,7 @@
       {
         "price": "104.97",
         "title": "Pumpkin Spice / 5 lbs",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10610,7 +10610,7 @@
       {
         "price": "19.97",
         "title": "Watermelon / 60 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -11180,7 +11180,7 @@
       {
         "price": "20.97",
         "title": "240 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12720,7 +12720,7 @@
       {
         "price": "38.97",
         "title": "4lb Chocolate",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13175,7 +13175,7 @@
       {
         "price": "19.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
