@@ -2335,7 +2335,7 @@
       {
         "price": "13.97",
         "title": "60 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3545,7 +3545,7 @@
       {
         "price": "9.97",
         "title": "400mg / 30 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10610,7 +10610,7 @@
       {
         "price": "19.97",
         "title": "Watermelon / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -10755,7 +10755,7 @@
       {
         "price": "31.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11120,7 +11120,7 @@
       {
         "price": "38.97",
         "title": "Tropical Punch",
-        "available": true
+        "available": false
       },
       {
         "price": "38.97",
@@ -11319,7 +11319,7 @@
     "title": "Nutricost Pantry Organic Flaxseeds",
     "context": "",
     "handle": "nutricost-pantry-organic-flaxseeds",
-    "body_html": "\u003cp\u003e\u003cspan\u003eOrganic Brown Flaxseeds\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e2 Pounds Per Container: Offers 2 pounds of organic flaxseeds for great value.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan Friendly: 100% plant-based and suitable for vegan diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-Free \u0026amp; Gluten-Free: Free from GMOs and gluten, with no artificial additives.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eUSDA Organic \u0026amp; CCOF Certified: Sourced from certified organic farms, ensuring high-quality ingredients.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant \u0026amp; Third-Party Tested: Made in a GMP-compliant facility and third-party tested for purity.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e",
+    "body_html": "\u003cp\u003e\u003cspan\u003eOrganic Brown Flaxseeds\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e2 Pounds Per Container: Offers 2 pounds of organic flaxseeds for great value.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan Friendly: 100% plant-based and suitable for vegan diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-Free \u0026amp; Gluten-Free: Free from GMOs and gluten, with no artificial additives.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eUSDA Organic \u0026amp; CCOF Certified: Sourced from certified organic farms, ensuring high-quality ingredients.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant \u0026amp; Third-Party Tested: Made in a GMP-compliant facility and third-party tested for purity.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan\u003e\u003cmeta charset=\"utf-8\"\u003e\n\u003cmeta charset=\"utf-8\"\u003e\n\u003cb id=\"docs-internal-guid-05c79866-7fff-e81d-659b-ad48bfbb55e6\"\u003e⚠️\u003c/b\u003eWARNING: This product can expose you to chemicals including Lead, which are known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003ca href=\"http://www.p65warnings.ca.gov/food\"\u003ewww.P65Warnings.ca.gov/food\u003c/a\u003e\u003c/span\u003e\u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Pantry_OrganicFlaxSeed_2LB_48OZCLEARSQUARE_Front_Square.jpg?v=1740591767",
     "variants": [
       {
@@ -12325,7 +12325,7 @@
       {
         "price": "19.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13100,7 +13100,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
