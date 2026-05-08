@@ -18,12 +18,12 @@
         "available": true
       },
       {
-        "price": "376.00",
+        "price": "375.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "751.00",
+        "price": "750.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -53,7 +53,7 @@
         "available": true
       },
       {
-        "price": "2784.00",
+        "price": "2783.00",
         "title": "12 Bundles",
         "available": true
       }
@@ -73,17 +73,17 @@
         "available": true
       },
       {
-        "price": "251.00",
+        "price": "250.00",
         "title": "3 Bottles",
         "available": true
       },
       {
-        "price": "501.00",
+        "price": "500.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "1001.00",
+        "price": "1000.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -113,7 +113,7 @@
         "available": true
       },
       {
-        "price": "1034.00",
+        "price": "1033.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -138,12 +138,12 @@
         "available": true
       },
       {
-        "price": "1117.00",
+        "price": "1116.00",
         "title": "6 Bundles",
         "available": true
       },
       {
-        "price": "2061.00",
+        "price": "2060.00",
         "title": "12 Bundles",
         "available": true
       }
@@ -193,17 +193,17 @@
         "available": true
       },
       {
-        "price": "599.00",
+        "price": "598.00",
         "title": "3 Bottles Each",
         "available": true
       },
       {
-        "price": "1197.00",
+        "price": "1196.00",
         "title": "6 Bottles Each",
         "available": true
       },
       {
-        "price": "2393.00",
+        "price": "2391.00",
         "title": "12 Bottles Each",
         "available": true
       }
@@ -253,17 +253,17 @@
         "available": true
       },
       {
-        "price": "126.00",
+        "price": "125.00",
         "title": "3 Bottles",
         "available": true
       },
       {
-        "price": "251.00",
+        "price": "250.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "501.00",
+        "price": "500.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -318,7 +318,7 @@
         "available": true
       },
       {
-        "price": "483.00",
+        "price": "482.00",
         "title": "Maxi",
         "available": true
       }
@@ -408,12 +408,12 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0461/5222/0837/files/Endurance_Bundles_Mock_Up.jpg?v=1755438891",
     "variants": [
       {
-        "price": "337.00",
+        "price": "336.00",
         "title": "1 Bundle",
         "available": true
       },
       {
-        "price": "673.00",
+        "price": "672.00",
         "title": "2 Bundles",
         "available": true
       }
