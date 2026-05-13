@@ -900,7 +900,7 @@
       {
         "price": "40.97",
         "title": "Strawberry Milkshake / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "82.97",
@@ -2335,7 +2335,7 @@
       {
         "price": "13.97",
         "title": "60 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10010,7 +10010,7 @@
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11120,7 +11120,7 @@
       {
         "price": "38.97",
         "title": "Tropical Punch",
-        "available": true
+        "available": false
       },
       {
         "price": "38.97",
@@ -11730,7 +11730,7 @@
       {
         "price": "21.97",
         "title": "Fruit Punch",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -13365,7 +13365,7 @@
       {
         "price": "11.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13435,7 +13435,7 @@
       {
         "price": "11.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
