@@ -64,7 +64,7 @@
     "variants": [
       {
         "price": "15.97",
-        "title": "100 G",
+        "title": "4 Oz",
         "available": true
       },
       {
@@ -909,12 +909,12 @@
       },
       {
         "price": "40.97",
-        "title": "Pineapple / 2 lbs",
+        "title": "Pineapple Cream / 2 lbs",
         "available": true
       },
       {
         "price": "82.97",
-        "title": "Pineapple / 5 lbs",
+        "title": "Pineapple Cream / 5 lbs",
         "available": true
       },
       {
@@ -928,7 +928,7 @@
         "available": false
       },
       {
-        "price": "41.97",
+        "price": "43.97",
         "title": "Shaq's Double Double Chocolate / 2 lbs",
         "available": false
       },
@@ -1024,7 +1024,7 @@
     "variants": [
       {
         "price": "21.97",
-        "title": "250 Grams / Unflavored",
+        "title": "Unflavored",
         "available": true
       }
     ]
@@ -2430,7 +2430,7 @@
     "context": "",
     "handle": "nutricost-folic-acid-vitamin-b9-1000mcg-240-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e240 Capsules of Folic Acid In Each Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,000 MCG of Folic Acid Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh Quality Folic Acid\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Soy Free, And Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-folic-acid-vitamin-b9-capsules-713169.jpg?v=1697778258",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_FolicAcid_1MG_30CAP_Front_1.jpg?v=1723822458",
     "variants": [
       {
         "price": "8.97",
@@ -3533,7 +3533,7 @@
         "available": true
       },
       {
-        "price": "10.97",
+        "price": "9.97",
         "title": "100mg / 30 Capsules",
         "available": true
       },
@@ -4859,7 +4859,7 @@
       },
       {
         "price": "19.97",
-        "title": "30 Servings / Peach",
+        "title": "30 Servings / Peach Pear",
         "available": true
       },
       {
@@ -6710,7 +6710,7 @@
     "context": "",
     "handle": "nutricost-kelp-240-tablets",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNatural Source Of Iodine, Made With Sea Greens\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e325mcg Of Iodine (From Sea Kelp) In Each Tablet\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e240 Easy-To-Swallow Tablets\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade In A GMP Compliant Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-kelp-tablets-644311.jpg?v=1702501373",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Kelp_325MCG_240TBL_150CC_Front_Square.jpg?v=1778867974",
     "variants": [
       {
         "price": "13.97",
@@ -6810,26 +6810,6 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
-    "id": "6805225570497",
-    "title": "Nutricost Tribulus Capsules",
-    "context": "",
-    "handle": "nutricost-tribulus-capsules-1500mg",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e240/120 Capsules of Tribulus Terrestris Per Bottle, 120/60 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade With High Quality Tribulus Terrestris with 45% Saponins\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1500mg of Tribulus Terrestris Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Soy Free, and Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_TribulusTerrestris_750MG_240CAP_50_CC_Front_Square_2a631aaf-4adc-46ff-83e0-512f63559676.jpg?v=1770140836",
-    "variants": [
-      {
-        "price": "18.97",
-        "title": "120 Servings",
-        "available": true
-      },
-      {
-        "price": "11.97",
-        "title": "60 Servings",
         "available": true
       }
     ]
@@ -10438,7 +10418,7 @@
         "available": true
       },
       {
-        "price": "60.97",
+        "price": "62.97",
         "title": "Chocolate PB",
         "available": true
       }
@@ -10475,21 +10455,6 @@
       {
         "price": "20.97",
         "title": ".5 LBS",
-        "available": false
-      }
-    ]
-  },
-  {
-    "id": "8872693563622",
-    "title": "Nutricost L. Acidophilus",
-    "context": "",
-    "handle": "nutricost-l-acidophilus",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e2Billion CFU Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThird Party Tested, GMP Compliant Facility and NON-GMO Product\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eConvenient Capsule Form: Easy-to-take capsules, designed for daily use.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_LactobacillusAcidophilus_2BillionCFU_120CAP_225CC_Front_Square.jpg?v=1729629579",
-    "variants": [
-      {
-        "price": "14.97",
-        "title": "Default Title",
         "available": false
       }
     ]
@@ -12120,21 +12085,6 @@
     ]
   },
   {
-    "id": "9029802197222",
-    "title": "Nutricost L-Histidine Capsules",
-    "context": "",
-    "handle": "nutricost-l-histidine-capsules",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides a full month’s supply (30 servings), ideal for those looking to add a quality L-Histidine supplement to their daily regimen.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving includes 1,200mg of L-Histidine, a commonly used amino acid, offered in convenient capsule form.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFormulated without gluten, GMOs, or artificial additives.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eAs a dietary supplement, take 2 capsule daily with 8-12 oz of water or as directed by your healthcare professional\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_L-Histidine_600MGX2_60CAP_175CC_Front_Suqare.jpg?v=1749246564",
-    "variants": [
-      {
-        "price": "16.97",
-        "title": "Default Title",
-        "available": false
-      }
-    ]
-  },
-  {
     "id": "9029804392678",
     "title": "Nutricost Pantry Ground Black Pepper",
     "context": "",
@@ -12175,7 +12125,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13830,6 +13780,21 @@
       {
         "price": "21.97",
         "title": "240 Tab",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9723063828710",
+    "title": "Nutricost Cognizin Citicoline",
+    "context": "",
+    "handle": "nutricost-cognizin-citicoline",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 1,000mg of Cognizin Citicoline (CDP-Choline) per serving in a convenient, easy-to-take capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle holds 60 capsules and provides 30 servings for consistent daily use\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCiticoline (CDP-Choline) is a well-rounded supplement to support sustained focus and overall wellness\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly and made without GMOs, ideal for a variety of dietary preferences.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Cognizin_500MGX2_60CAP_175CC_Front_Square.jpg?v=1778882817",
+    "variants": [
+      {
+        "price": "38.97",
+        "title": "Default Title",
         "available": true
       }
     ]
