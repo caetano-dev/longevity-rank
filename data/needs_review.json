@@ -1,58 +1,24 @@
 [
   {
     "vendor": "Nutricost",
+    "name": "Creatine Monohydrate Powder (Fruit Punch / 500 G) (Subscribe \u0026 Save)",
+    "handle": "nutricost-creatine-monohydrate-powder-500-grams",
+    "price": 21.576,
+    "active_grams": 500,
+    "gross_grams": 500,
+    "cost_per_gram": 0.043152,
+    "effective_cost": 0.043152,
+    "multiplier": 1,
+    "multiplier_label": "",
+    "type": "Powder",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
+    "is_subscription": true,
+    "needs_review": true,
+    "review_reason": "Detected dirty keyword: punch"
+  },
+  {
+    "vendor": "Nutricost",
     "name": "Creatine Monohydrate Powder (Blue Raspberry / 500 G) (Subscribe \u0026 Save)",
-    "handle": "nutricost-creatine-monohydrate-powder-500-grams",
-    "price": 21.576,
-    "active_grams": 500,
-    "gross_grams": 500,
-    "cost_per_gram": 0.043152,
-    "effective_cost": 0.043152,
-    "multiplier": 1,
-    "multiplier_label": "",
-    "type": "Powder",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
-    "is_subscription": true,
-    "needs_review": true,
-    "review_reason": "Detected dirty keyword: berry"
-  },
-  {
-    "vendor": "Nutricost",
-    "name": "Creatine Monohydrate Powder (Mandarin Orange / 500 G) (Subscribe \u0026 Save)",
-    "handle": "nutricost-creatine-monohydrate-powder-500-grams",
-    "price": 21.576,
-    "active_grams": 500,
-    "gross_grams": 500,
-    "cost_per_gram": 0.043152,
-    "effective_cost": 0.043152,
-    "multiplier": 1,
-    "multiplier_label": "",
-    "type": "Powder",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
-    "is_subscription": true,
-    "needs_review": true,
-    "review_reason": "Detected dirty keyword: orange"
-  },
-  {
-    "vendor": "Nutricost",
-    "name": "Creatine Monohydrate Powder (Pineapple Mango / 500 G) (Subscribe \u0026 Save)",
-    "handle": "nutricost-creatine-monohydrate-powder-500-grams",
-    "price": 21.576,
-    "active_grams": 500,
-    "gross_grams": 500,
-    "cost_per_gram": 0.043152,
-    "effective_cost": 0.043152,
-    "multiplier": 1,
-    "multiplier_label": "",
-    "type": "Powder",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
-    "is_subscription": true,
-    "needs_review": true,
-    "review_reason": "Detected dirty keyword: mango"
-  },
-  {
-    "vendor": "Nutricost",
-    "name": "Creatine Monohydrate Powder (Shaq's Berry Blast / 500 G) (Subscribe \u0026 Save)",
     "handle": "nutricost-creatine-monohydrate-powder-500-grams",
     "price": 21.576,
     "active_grams": 500,
@@ -86,7 +52,7 @@
   },
   {
     "vendor": "Nutricost",
-    "name": "Creatine Monohydrate Powder (Fruit Punch / 500 G) (Subscribe \u0026 Save)",
+    "name": "Creatine Monohydrate Powder (Shaq's Berry Blast / 500 G) (Subscribe \u0026 Save)",
     "handle": "nutricost-creatine-monohydrate-powder-500-grams",
     "price": 21.576,
     "active_grams": 500,
@@ -99,7 +65,41 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
     "is_subscription": true,
     "needs_review": true,
-    "review_reason": "Detected dirty keyword: punch"
+    "review_reason": "Detected dirty keyword: berry"
+  },
+  {
+    "vendor": "Nutricost",
+    "name": "Creatine Monohydrate Powder (Pineapple Mango / 500 G) (Subscribe \u0026 Save)",
+    "handle": "nutricost-creatine-monohydrate-powder-500-grams",
+    "price": 21.576,
+    "active_grams": 500,
+    "gross_grams": 500,
+    "cost_per_gram": 0.043152,
+    "effective_cost": 0.043152,
+    "multiplier": 1,
+    "multiplier_label": "",
+    "type": "Powder",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
+    "is_subscription": true,
+    "needs_review": true,
+    "review_reason": "Detected dirty keyword: mango"
+  },
+  {
+    "vendor": "Nutricost",
+    "name": "Creatine Monohydrate Powder (Mandarin Orange / 500 G) (Subscribe \u0026 Save)",
+    "handle": "nutricost-creatine-monohydrate-powder-500-grams",
+    "price": 21.576,
+    "active_grams": 500,
+    "gross_grams": 500,
+    "cost_per_gram": 0.043152,
+    "effective_cost": 0.043152,
+    "multiplier": 1,
+    "multiplier_label": "",
+    "type": "Powder",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
+    "is_subscription": true,
+    "needs_review": true,
+    "review_reason": "Detected dirty keyword: orange"
   },
   {
     "vendor": "Nutricost",
@@ -120,7 +120,7 @@
   },
   {
     "vendor": "Nutricost",
-    "name": "Creatine Monohydrate Powder (Watermelon / 300 G) (Subscribe \u0026 Save)",
+    "name": "Creatine Monohydrate Powder (Mandarin Orange / 300 G) (Subscribe \u0026 Save)",
     "handle": "nutricost-creatine-monohydrate-powder-500-grams",
     "price": 13.576,
     "active_grams": 300,
@@ -133,7 +133,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
     "is_subscription": true,
     "needs_review": true,
-    "review_reason": "Detected dirty keyword: watermelon"
+    "review_reason": "Detected dirty keyword: orange"
   },
   {
     "vendor": "Nutricost",
@@ -171,7 +171,7 @@
   },
   {
     "vendor": "Nutricost",
-    "name": "Creatine Monohydrate Powder (Mandarin Orange / 300 G) (Subscribe \u0026 Save)",
+    "name": "Creatine Monohydrate Powder (Watermelon / 300 G) (Subscribe \u0026 Save)",
     "handle": "nutricost-creatine-monohydrate-powder-500-grams",
     "price": 13.576,
     "active_grams": 300,
@@ -184,7 +184,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
     "is_subscription": true,
     "needs_review": true,
-    "review_reason": "Detected dirty keyword: orange"
+    "review_reason": "Detected dirty keyword: watermelon"
   },
   {
     "vendor": "Nutricost",
