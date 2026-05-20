@@ -878,6 +878,11 @@
         "available": true
       },
       {
+        "price": "37.97",
+        "title": "Milk Chocolate / 1.5 lb",
+        "available": true
+      },
+      {
         "price": "40.97",
         "title": "Unflavored / 2 lbs",
         "available": true
@@ -1170,7 +1175,7 @@
       {
         "price": "131.97",
         "title": "5 lbs / Vanilla",
-        "available": true
+        "available": false
       },
       {
         "price": "131.97",
@@ -1530,7 +1535,7 @@
       {
         "price": "29.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -2666,6 +2671,11 @@
         "price": "19.97",
         "title": "240 Capsules",
         "available": true
+      },
+      {
+        "price": "9.97",
+        "title": "30 Capsules",
+        "available": true
       }
     ]
   },
@@ -2753,7 +2763,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_RhodiolaRosea_500MG_60CAP_150CC_Front.jpg?v=1697664966",
     "variants": [
       {
-        "price": "18.97",
+        "price": "19.97",
         "title": "60 Capsules",
         "available": true
       }
@@ -3374,12 +3384,12 @@
     "variants": [
       {
         "price": "14.97",
-        "title": "1,000mg / 120 Capsules",
+        "title": "120 Capsules",
         "available": true
       },
       {
         "price": "19.97",
-        "title": "1,500mg / 180 Capsules",
+        "title": "180 Capsules",
         "available": true
       }
     ]
@@ -4280,7 +4290,7 @@
       {
         "price": "73.97",
         "title": "5 lbs / Chocolate",
-        "available": false
+        "available": true
       },
       {
         "price": "73.97",
@@ -6310,7 +6320,7 @@
       {
         "price": "14.97",
         "title": "90 Gummies (45 Serv)",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10418,7 +10428,7 @@
         "available": true
       },
       {
-        "price": "62.97",
+        "price": "60.97",
         "title": "Chocolate PB",
         "available": true
       }
@@ -10555,7 +10565,7 @@
       {
         "price": "19.97",
         "title": "Blue Raspberry / 60 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "30.97",
@@ -10580,7 +10590,7 @@
       {
         "price": "19.97",
         "title": "Strawberry Lemonade / 60 Servings",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11050,12 +11060,12 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
         "title": "360 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11830,7 +11840,7 @@
       {
         "price": "35.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11940,7 +11950,7 @@
       {
         "price": "30.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12305,7 +12315,7 @@
       {
         "price": "16.49",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12655,12 +12665,12 @@
       {
         "price": "27.97",
         "title": "2lb",
-        "available": true
+        "available": false
       },
       {
         "price": "38.97",
         "title": "4lb",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
@@ -13794,6 +13804,36 @@
     "variants": [
       {
         "price": "38.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9726400037094",
+    "title": "Nutricost Iron with Vitamin C",
+    "context": "",
+    "handle": "nutricost-iron-with-vitamin-c",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 65mg of iron with 270mg of vitamin C per serving in a convenient, easy-to-take capsule.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle holds 120 capsules and provides 120 servings for consistent daily use.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVitamin C pairs with iron as part of a well-rounded supplement, bringing both nutrients into one simple daily routine.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly and made without GMOs, ideal for a variety of dietary preferences.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VitaminC_Iron_270MG_65MG_120CAP_225CC_Front_Square.jpg?v=1779222423",
+    "variants": [
+      {
+        "price": "14.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9726402560230",
+    "title": "Nutricost Fucoidan",
+    "context": "",
+    "handle": "nutricost-fucoidan",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 750mg of fucoidan extract per serving in a convenient, easy-to-take capsule.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle holds 120 capsules and provides 60 servings for consistent daily use.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFucoidan is sourced from brown seaweed and designed to support overall wellness and boost immunity.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly formula made without GMOs, ideal for a variety of dietary preferences.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Fucoidan_375MGX2_120CAP_225CC_Front_Square.jpg?v=1779222811",
+    "variants": [
+      {
+        "price": "24.97",
         "title": "Default Title",
         "available": true
       }
