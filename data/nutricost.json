@@ -26,6 +26,11 @@
         "price": "18.97",
         "title": "200mg / 120 Capsules",
         "available": true
+      },
+      {
+        "price": "10.99",
+        "title": "100mg / 30 Capsules",
+        "available": true
       }
     ]
   },
@@ -221,6 +226,11 @@
         "price": "11.97",
         "title": "200mg / 120 Capsules",
         "available": true
+      },
+      {
+        "price": "8.99",
+        "title": "200mg / 30 Capsules",
+        "available": true
       }
     ]
   },
@@ -350,7 +360,7 @@
       {
         "price": "16.97",
         "title": "Frozen Lemonade / 30 SERV",
-        "available": true
+        "available": false
       },
       {
         "price": "16.97",
@@ -875,7 +885,7 @@
       {
         "price": "82.97",
         "title": "Milk Chocolate / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "37.97",
@@ -895,7 +905,7 @@
       {
         "price": "40.97",
         "title": "Chocolate Peanut Butter / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "82.97",
@@ -915,7 +925,7 @@
       {
         "price": "40.97",
         "title": "Pineapple Cream / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "82.97",
@@ -925,7 +935,7 @@
       {
         "price": "40.97",
         "title": "Churro / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "32.97",
@@ -950,7 +960,7 @@
       {
         "price": "82.97",
         "title": "Pumpkin Spice / 5 lbs",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -2054,12 +2064,17 @@
     "variants": [
       {
         "price": "13.97",
-        "title": "100mg",
+        "title": "100mg / 240 Capsules",
         "available": true
       },
       {
         "price": "16.97",
-        "title": "500mg",
+        "title": "500mg / 240 Capsules",
+        "available": true
+      },
+      {
+        "price": "9.00",
+        "title": "500mg / 30 Capsules",
         "available": true
       }
     ]
@@ -2855,7 +2870,7 @@
       {
         "price": "20.97",
         "title": "120 Caps",
-        "available": false
+        "available": true
       },
       {
         "price": "15.97",
@@ -3004,7 +3019,7 @@
     "title": "Nutricost Taurine Capsules",
     "context": "",
     "handle": "nutricost-taurine-1000mg-400-capsules",
-    "body_html": "\u003cdiv\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1000mg of Taurine Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e240 or 400 Taurine Capsules Per Bottle For 240 Servings: 1 Serving is 1 Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO \u0026amp; Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTested by Independent, ISO-Accredited Laboratories\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-Compliant, FDA-Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
+    "body_html": "\u003cdiv\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1000mg of Taurine Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30, 240 or 400 Taurine Capsules Per Bottle For 240 Servings: 1 Serving is 1 Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO \u0026amp; Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTested by Independent, ISO-Accredited Laboratories\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-Compliant, FDA-Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Taurine_1000MG__G00__240CAP_500CC_Front1_Square.jpg?v=1751919800",
     "variants": [
       {
@@ -3015,6 +3030,11 @@
       {
         "price": "21.97",
         "title": "400 Capsules",
+        "available": true
+      },
+      {
+        "price": "7.99",
+        "title": "30 Capsules",
         "available": true
       }
     ]
@@ -3890,7 +3910,7 @@
       {
         "price": "23.97",
         "title": "25000",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -4300,7 +4320,7 @@
       {
         "price": "73.97",
         "title": "5 lbs / Vanilla",
-        "available": false
+        "available": true
       },
       {
         "price": "38.97",
@@ -5800,7 +5820,7 @@
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -7595,7 +7615,7 @@
       {
         "price": "18.97",
         "title": "120 CAP 4000FU",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -8345,7 +8365,7 @@
       {
         "price": "49.97",
         "title": "Chocolate Peanut Butter",
-        "available": false
+        "available": true
       },
       {
         "price": "49.97",
@@ -8460,7 +8480,7 @@
       {
         "price": "29.97",
         "title": "Peach Mango",
-        "available": true
+        "available": false
       },
       {
         "price": "29.97",
@@ -10635,7 +10655,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
