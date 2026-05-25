@@ -875,17 +875,17 @@
       {
         "price": "82.97",
         "title": "Vanilla / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "40.97",
         "title": "Milk Chocolate / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "82.97",
         "title": "Milk Chocolate / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "37.97",
@@ -1615,7 +1615,7 @@
       {
         "price": "14.97",
         "title": "2000 IU",
-        "available": true
+        "available": false
       },
       {
         "price": "14.97",
@@ -2565,7 +2565,7 @@
       {
         "price": "15.97",
         "title": "5 mg Extended Release",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3275,7 +3275,7 @@
       {
         "price": "25.97",
         "title": "Unflavored / 500 Grams",
-        "available": true
+        "available": false
       },
       {
         "price": "32.97",
@@ -3930,7 +3930,7 @@
       {
         "price": "27.97",
         "title": "1000 IU",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -6065,7 +6065,7 @@
       {
         "price": "24.97",
         "title": "2 LBS",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10700,7 +10700,7 @@
       {
         "price": "27.97",
         "title": "Hot Cocoa",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
