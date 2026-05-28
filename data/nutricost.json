@@ -113,7 +113,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Astaxanthin_Softgels_4MG_120SFG_Front.jpg?v=1735937127",
     "variants": [
       {
-        "price": "32.97",
+        "price": "30.97",
         "title": "12mg / 120 Softgels",
         "available": true
       },
@@ -875,7 +875,7 @@
       {
         "price": "82.97",
         "title": "Vanilla / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "40.97",
@@ -885,7 +885,7 @@
       {
         "price": "82.97",
         "title": "Milk Chocolate / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "37.97",
@@ -1270,7 +1270,7 @@
       {
         "price": "27.97",
         "title": "250 Grams",
-        "available": true
+        "available": false
       },
       {
         "price": "43.97",
@@ -1898,7 +1898,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Turmeric_766MGX3_120CAP_275CC_Front_Square_1.jpg?v=1775843234",
     "variants": [
       {
-        "price": "18.97",
+        "price": "16.97",
         "title": "120 Caps",
         "available": true
       },
@@ -3275,7 +3275,7 @@
       {
         "price": "25.97",
         "title": "Unflavored / 500 Grams",
-        "available": false
+        "available": true
       },
       {
         "price": "32.97",
@@ -3910,7 +3910,7 @@
       {
         "price": "23.97",
         "title": "25000",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -3930,7 +3930,7 @@
       {
         "price": "27.97",
         "title": "1000 IU",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -4320,7 +4320,7 @@
       {
         "price": "73.97",
         "title": "5 lbs / Vanilla",
-        "available": false
+        "available": true
       },
       {
         "price": "38.97",
@@ -5329,7 +5329,7 @@
     "variants": [
       {
         "price": "16.97",
-        "title": "240 Cap Bottle",
+        "title": "240 Capsules",
         "available": true
       }
     ]
@@ -7610,7 +7610,7 @@
       {
         "price": "16.97",
         "title": "120 Cap 2000FU",
-        "available": false
+        "available": true
       },
       {
         "price": "18.97",
@@ -10595,7 +10595,7 @@
       {
         "price": "30.97",
         "title": "Grape / 120 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -11335,7 +11335,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12080,7 +12080,7 @@
       {
         "price": "25.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -12320,7 +12320,7 @@
       {
         "price": "19.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12595,7 +12595,7 @@
       {
         "price": "13.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13010,7 +13010,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13255,7 +13255,7 @@
       {
         "price": "14.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13360,7 +13360,7 @@
       {
         "price": "11.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
