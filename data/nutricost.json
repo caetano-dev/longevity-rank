@@ -164,7 +164,7 @@
     "title": "Nutricost C8 MCT Oil Powder",
     "context": "",
     "handle": "nutricost-c8-mct-oil-unflavored-powder",
-    "body_html": "\u003cul class=\"listing\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIf you want a simple way to add medium-chain triglycerides into your diet, this is it.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMCT oil powder is a powerful supplement that has many uses, such as: baking, as an alternative to coffee creamer, it is easier to transport powder than liquid for on-the-go nutrition. And you get the benefits of MCT oil without the traditional “run to the bathroom” trips some experience with oil compared to powdered MCT oil.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Made in a NSF Certified Facility\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP compliant, FDA registered facility to ensure product quality and integrity.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003ePremium Quality, Non-GMO, Gluten-Free\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cspan\u003e⚠️This product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003c/span\u003e\u003ca data-saferedirecturl=\"https://www.google.com/url?q=http://www.P65Warnings.ca.gov\u0026amp;source=gmail\u0026amp;ust=1608315246657000\u0026amp;usg=AFQjCNGixa745Oq769AHUbLUoMuG1NgTcA\" href=\"http://www.p65warnings.ca.gov/\" target=\"_blank\" data-mce-href=\"http://www.p65warnings.ca.gov/\"\u003ewww.P65Warnings.ca.gov\u003c/a\u003e\u003cspan\u003e.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
+    "body_html": "\u003cul class=\"listing\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIf you want a simple way to add medium-chain triglycerides into your diet, this is it.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMCT oil powder is a powerful supplement that has many uses, such as: baking, as an alternative to coffee creamer, it is easier to transport powder than liquid for on-the-go nutrition. And you get the benefits of MCT oil without the traditional “run to the bathroom” trips some experience with oil compared to powdered MCT oil.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Made in a NSF Certified Facility\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP compliant, FDA registered facility to ensure product quality and integrity.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003ePremium Quality, Non-GMO, Gluten-Free\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cspan\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\n\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-c8-mct-oil-powder-879483.jpg?v=1689400081",
     "variants": [
       {
@@ -885,7 +885,7 @@
       {
         "price": "82.97",
         "title": "Milk Chocolate / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "37.97",
@@ -935,7 +935,7 @@
       {
         "price": "40.97",
         "title": "Churro / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "32.97",
@@ -1270,7 +1270,7 @@
       {
         "price": "27.97",
         "title": "250 Grams",
-        "available": false
+        "available": true
       },
       {
         "price": "43.97",
@@ -1615,7 +1615,7 @@
       {
         "price": "14.97",
         "title": "2000 IU",
-        "available": true
+        "available": false
       },
       {
         "price": "14.97",
@@ -3955,7 +3955,7 @@
       {
         "price": "18.97",
         "title": "40 Billion CFU",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -4320,7 +4320,7 @@
       {
         "price": "73.97",
         "title": "5 lbs / Vanilla",
-        "available": true
+        "available": false
       },
       {
         "price": "38.97",
@@ -4435,7 +4435,7 @@
       {
         "price": "21.97",
         "title": "240 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10615,7 +10615,7 @@
       {
         "price": "19.97",
         "title": "Orchard Blast / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -10700,7 +10700,7 @@
       {
         "price": "27.97",
         "title": "Hot Cocoa",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
@@ -11095,7 +11095,7 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "24.97",
@@ -12350,7 +12350,7 @@
       {
         "price": "16.49",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
