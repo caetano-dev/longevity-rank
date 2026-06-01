@@ -780,7 +780,7 @@
       {
         "price": "54.97",
         "title": "Vanilla / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "108.97",
@@ -860,12 +860,12 @@
       {
         "price": "40.97",
         "title": "Milk Chocolate / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "82.97",
         "title": "Milk Chocolate / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "37.97",
@@ -915,7 +915,7 @@
       {
         "price": "40.97",
         "title": "Churro / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "32.97",
@@ -3255,7 +3255,7 @@
       {
         "price": "25.97",
         "title": "Unflavored / 500 Grams",
-        "available": false
+        "available": true
       },
       {
         "price": "32.97",
@@ -4960,7 +4960,7 @@
       {
         "price": "46.97",
         "title": "120 Servings / Watermelon",
-        "available": true
+        "available": false
       },
       {
         "price": "52.97",
@@ -6045,7 +6045,7 @@
       {
         "price": "24.97",
         "title": "2 LBS",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -7785,7 +7785,7 @@
       {
         "price": "60.97",
         "title": "Chocolate",
-        "available": false
+        "available": true
       },
       {
         "price": "60.97",
@@ -10575,7 +10575,7 @@
       {
         "price": "30.97",
         "title": "Grape / 120 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
