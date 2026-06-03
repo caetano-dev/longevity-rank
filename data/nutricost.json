@@ -28,7 +28,7 @@
         "available": true
       },
       {
-        "price": "10.99",
+        "price": "9.97",
         "title": "100mg / 30 Capsules",
         "available": true
       }
@@ -218,7 +218,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
     "variants": [
       {
-        "price": "16.97",
+        "price": "18.97",
         "title": "Unflavored / 300 G",
         "available": true
       },
@@ -755,7 +755,7 @@
       {
         "price": "54.97",
         "title": "Vanilla / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "108.97",
@@ -835,7 +835,7 @@
       {
         "price": "40.97",
         "title": "Milk Chocolate / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "82.97",
@@ -1225,7 +1225,7 @@
       {
         "price": "27.97",
         "title": "250 Grams",
-        "available": false
+        "available": true
       },
       {
         "price": "43.97",
@@ -1873,7 +1873,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ValerianRoot_4000MG_120CAP_Front.jpg?v=1700512006",
     "variants": [
       {
-        "price": "12.97",
+        "price": "13.97",
         "title": "Default Title",
         "available": true
       }
@@ -3230,7 +3230,7 @@
       {
         "price": "25.97",
         "title": "Unflavored / 500 Grams",
-        "available": true
+        "available": false
       },
       {
         "price": "32.97",
@@ -6898,7 +6898,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Omega3_1250MG_120SFG_400CC_Front_Square_52811e1c-5437-49f1-91ad-26a28b6aa520.jpg?v=1775841507",
     "variants": [
       {
-        "price": "33.95",
+        "price": "23.97",
         "title": "Default Title",
         "available": true
       }
@@ -7129,7 +7129,7 @@
     "title": "Nutricost Organic Barley Grass Juice Powder",
     "context": "",
     "handle": "organic-barley-grass-juice-powder",
-    "body_html": "\u003cp\u003e1lb \u0026amp; 2lb options of Organic Barley Grass Juice Powder Per Bottle\u003cbr\u003eUnflavored making it easy to add to drinks, smoothies, and more!\u003cbr\u003eCCOF Certified USDA Organic Powder\u003cbr\u003eNon-GMO, Soy Free\u003cbr\u003eConvenient Serving Scoop Included\u003cbr\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e\u003cspan\u003e⚠️This product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003c/span\u003e\u003ca href=\"http://www.p65warnings.ca.gov/\" data-saferedirecturl=\"https://www.google.com/url?q=http://www.P65Warnings.ca.gov\u0026amp;source=gmail\u0026amp;ust=1608315246657000\u0026amp;usg=AFQjCNGixa745Oq769AHUbLUoMuG1NgTcA\" data-mce-href=\"http://www.p65warnings.ca.gov/\" target=\"_blank\"\u003ewww.P65Warnings.ca.gov\u003c/a\u003e\u003cspan\u003e.\u003c/span\u003e\u003c/p\u003e",
+    "body_html": "\u003cp\u003e1lb \u0026amp; 2lb options of Organic Barley Grass Juice Powder Per Bottle\u003cbr\u003eUnflavored making it easy to add to drinks, smoothies, and more!\u003cbr\u003eCCOF Certified USDA Organic Powder\u003cbr\u003eNon-GMO, Soy Free\u003cbr\u003eConvenient Serving Scoop Included\u003cbr\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003cp\u003e\u003cspan\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\n\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OrganicBarleyGrassJuice_UF_1LB_43OZ_Front1_Square.jpg?v=1743533850",
     "variants": [
       {
@@ -7585,7 +7585,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -7943,7 +7943,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BeetRoot_MWO__800MG_180CAPS_400CC_Front1_Sqaure.jpg?v=1745252351",
     "variants": [
       {
-        "price": "18.97",
+        "price": "16.97",
         "title": "Default Title",
         "available": true
       }
@@ -8495,7 +8495,7 @@
       {
         "price": "27.97",
         "title": "Peach Ring",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8715,7 +8715,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10895,7 +10895,7 @@
       {
         "price": "65.97",
         "title": "1 LB",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11145,7 +11145,7 @@
       {
         "price": "20.97",
         "title": "240 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13385,7 +13385,7 @@
       {
         "price": "11.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
