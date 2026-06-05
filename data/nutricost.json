@@ -169,22 +169,22 @@
     "variants": [
       {
         "price": "18.97",
-        "title": "0.5 lb / Unflavored",
+        "title": "Unflavored / 0.5 lb",
         "available": true
       },
       {
         "price": "31.97",
-        "title": "1 lb / Unflavored",
-        "available": true
-      },
-      {
-        "price": "31.97",
-        "title": "1 lb / Vanilla",
+        "title": "Unflavored / 1 lb",
         "available": true
       },
       {
         "price": "51.97",
-        "title": "2 lbs / Unflavored",
+        "title": "Unflavored / 2 lbs",
+        "available": true
+      },
+      {
+        "price": "31.97",
+        "title": "Vanilla / 1 lb",
         "available": true
       }
     ]
@@ -4775,7 +4775,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10575,7 +10575,7 @@
       {
         "price": "19.97",
         "title": "Watermelon / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -11055,7 +11055,7 @@
       {
         "price": "24.97",
         "title": "360 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11095,6 +11095,11 @@
       {
         "price": "38.97",
         "title": "Berry Blast",
+        "available": true
+      },
+      {
+        "price": "38.97",
+        "title": "Strawberry Banana",
         "available": true
       }
     ]
@@ -13385,7 +13390,7 @@
       {
         "price": "11.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13550,7 +13555,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
