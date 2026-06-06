@@ -1159,12 +1159,12 @@
     "variants": [
       {
         "price": "13.97",
-        "title": "250G / Unflavored",
+        "title": "Unflavored / 250G",
         "available": true
       },
       {
         "price": "19.97",
-        "title": "500G / Unflavored",
+        "title": "Unflavored / 500G",
         "available": true
       }
     ]
@@ -4259,32 +4259,32 @@
     "variants": [
       {
         "price": "38.97",
-        "title": "2 lbs / Chocolate",
+        "title": "Chocolate / 2 lbs",
+        "available": true
+      },
+      {
+        "price": "73.97",
+        "title": "Chocolate / 5 lbs",
         "available": true
       },
       {
         "price": "38.97",
-        "title": "2 lbs / Vanilla",
+        "title": "Vanilla / 2 lbs",
         "available": true
       },
       {
         "price": "73.97",
-        "title": "5 lbs / Chocolate",
-        "available": true
-      },
-      {
-        "price": "73.97",
-        "title": "5 lbs / Vanilla",
+        "title": "Vanilla / 5 lbs",
         "available": false
       },
       {
         "price": "38.97",
-        "title": "2 lbs / Unflavored",
+        "title": "Unflavored / 2 lbs",
         "available": true
       },
       {
         "price": "73.97",
-        "title": "5 lbs / Unflavored",
+        "title": "Unflavored / 5 lbs",
         "available": true
       }
     ]
@@ -6020,7 +6020,7 @@
       {
         "price": "24.97",
         "title": "2 LBS",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10575,7 +10575,7 @@
       {
         "price": "19.97",
         "title": "Watermelon / 60 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
