@@ -185,7 +185,7 @@
       {
         "price": "31.97",
         "title": "Vanilla / 1 lb",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -240,7 +240,7 @@
       {
         "price": "26.97",
         "title": "Blue Raspberry / 500 G",
-        "available": true
+        "available": false
       },
       {
         "price": "16.97",
