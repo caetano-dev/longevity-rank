@@ -2605,7 +2605,7 @@
       {
         "price": "15.97",
         "title": "500 MCG / 240 Caps",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11655,7 +11655,7 @@
       {
         "price": "52.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
