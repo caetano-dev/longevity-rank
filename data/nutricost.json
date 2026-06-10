@@ -185,7 +185,7 @@
       {
         "price": "31.97",
         "title": "Vanilla / 1 lb",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -240,7 +240,7 @@
       {
         "price": "26.97",
         "title": "Blue Raspberry / 500 G",
-        "available": false
+        "available": true
       },
       {
         "price": "16.97",
@@ -265,7 +265,7 @@
       {
         "price": "26.97",
         "title": "Sour Watermelon / 500 G",
-        "available": false
+        "available": true
       },
       {
         "price": "16.97",
@@ -315,7 +315,7 @@
       {
         "price": "16.97",
         "title": "Frozen Lemonade / 30 SERV",
-        "available": false
+        "available": true
       },
       {
         "price": "16.97",
@@ -570,7 +570,7 @@
       {
         "price": "41.97",
         "title": "Fruit Punch / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "27.97",
@@ -840,7 +840,7 @@
       {
         "price": "82.97",
         "title": "Milk Chocolate / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "37.97",
@@ -930,7 +930,7 @@
       {
         "price": "21.97",
         "title": "30 Servings / Peach Mango",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -940,12 +940,12 @@
       {
         "price": "32.97",
         "title": "60 Servings / Blue Raspberry",
-        "available": false
+        "available": true
       },
       {
         "price": "32.97",
         "title": "60 Servings / Fruit Punch",
-        "available": false
+        "available": true
       },
       {
         "price": "32.97",
@@ -955,7 +955,7 @@
       {
         "price": "32.97",
         "title": "60 Servings / Peach Mango",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -1030,7 +1030,7 @@
       {
         "price": "25.97",
         "title": "500 Grams / Fruit Punch",
-        "available": true
+        "available": false
       },
       {
         "price": "25.97",
@@ -1195,7 +1195,7 @@
       {
         "price": "38.97",
         "title": "Sodium",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -1210,7 +1210,7 @@
       {
         "price": "16.97",
         "title": "250 Grams",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -1225,7 +1225,7 @@
       {
         "price": "27.97",
         "title": "250 Grams",
-        "available": true
+        "available": false
       },
       {
         "price": "43.97",
@@ -1330,7 +1330,7 @@
       {
         "price": "13.97",
         "title": "120 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -1550,7 +1550,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -1910,7 +1910,7 @@
       {
         "price": "16.97",
         "title": "240 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -2395,7 +2395,7 @@
       {
         "price": "17.97",
         "title": "18 mg",
-        "available": false
+        "available": true
       },
       {
         "price": "17.97",
@@ -2580,7 +2580,7 @@
       {
         "price": "15.97",
         "title": "1000 MCG / 240 Caps",
-        "available": false
+        "available": true
       },
       {
         "price": "13.97",
@@ -2590,7 +2590,7 @@
       {
         "price": "16.97",
         "title": "2000 MCG / 240 Caps",
-        "available": false
+        "available": true
       },
       {
         "price": "18.97",
@@ -2605,7 +2605,7 @@
       {
         "price": "15.97",
         "title": "500 MCG / 240 Caps",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -2890,7 +2890,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3315,7 +3315,7 @@
       {
         "price": "19.97",
         "title": "120 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "11.97",
@@ -3575,12 +3575,12 @@
       {
         "price": "35.97",
         "title": "Fruit Punch",
-        "available": false
+        "available": true
       },
       {
         "price": "35.97",
         "title": "Green Apple",
-        "available": false
+        "available": true
       },
       {
         "price": "35.97",
@@ -4080,7 +4080,7 @@
       {
         "price": "18.97",
         "title": "500 MG / 120 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "13.97",
@@ -4090,7 +4090,7 @@
       {
         "price": "27.97",
         "title": "550 MG / 240 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -4275,7 +4275,7 @@
       {
         "price": "73.97",
         "title": "Vanilla / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "38.97",
@@ -4520,12 +4520,12 @@
       {
         "price": "31.97",
         "title": "2 LBS",
-        "available": false
+        "available": true
       },
       {
         "price": "54.97",
         "title": "5 LBS",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -4700,12 +4700,12 @@
       {
         "price": "24.97",
         "title": "Unflavored",
-        "available": false
+        "available": true
       },
       {
         "price": "24.97",
         "title": "Chocolate",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -4775,7 +4775,7 @@
       {
         "price": "17.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5670,7 +5670,7 @@
       {
         "price": "32.97",
         "title": "5LBs",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5775,7 +5775,7 @@
       {
         "price": "18.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -6175,7 +6175,7 @@
       {
         "price": "19.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -6210,7 +6210,7 @@
       {
         "price": "15.97",
         "title": "240 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "8.97",
@@ -6305,7 +6305,7 @@
       {
         "price": "14.97",
         "title": "90 Gummies (45 Serv)",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -6980,7 +6980,7 @@
       {
         "price": "17.97",
         "title": "180 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -7000,7 +7000,7 @@
       {
         "price": "11.97",
         "title": "60 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -7135,7 +7135,7 @@
       {
         "price": "32.97",
         "title": "1LB",
-        "available": false
+        "available": true
       },
       {
         "price": "54.95",
@@ -7190,7 +7190,7 @@
       {
         "price": "26.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -8540,7 +8540,7 @@
       {
         "price": "24.97",
         "title": "Strawberry Kiwi",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -8730,7 +8730,7 @@
       {
         "price": "20.97",
         "title": "120 Gummies",
-        "available": false
+        "available": true
       },
       {
         "price": "29.97",
@@ -8750,7 +8750,7 @@
       {
         "price": "19.97",
         "title": "10 Billion CFU",
-        "available": false
+        "available": true
       },
       {
         "price": "25.97",
@@ -9355,7 +9355,7 @@
       {
         "price": "21.97",
         "title": "1LB / Unflavored",
-        "available": false
+        "available": true
       },
       {
         "price": "24.97",
@@ -9640,7 +9640,7 @@
       {
         "price": "14.97",
         "title": "1000 MCG",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -10198,7 +10198,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_EpsomSalt_8LB_1GALCLEAR_Front_SQUARE.jpg?v=1728935749",
     "variants": [
       {
-        "price": "27.97",
+        "price": "30.97",
         "title": "Default Title",
         "available": true
       }
@@ -10555,7 +10555,7 @@
       {
         "price": "19.97",
         "title": "Blue Raspberry / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "30.97",
@@ -10565,7 +10565,7 @@
       {
         "price": "19.97",
         "title": "Pineapple Ice / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -10850,7 +10850,7 @@
       {
         "price": "26.97",
         "title": "Raspberry Lemonade",
-        "available": false
+        "available": true
       },
       {
         "price": "26.97",
@@ -11050,12 +11050,12 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "24.97",
         "title": "360 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11278,7 +11278,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Essentials_CastorOil_8OZ_Front_SQUARE.jpg?v=1740591140",
     "variants": [
       {
-        "price": "14.97",
+        "price": "17.97",
         "title": "Default Title",
         "available": true
       }
@@ -11655,7 +11655,7 @@
       {
         "price": "52.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11850,7 +11850,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12100,7 +12100,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12670,7 +12670,7 @@
       {
         "price": "27.97",
         "title": "2lb Chocolate",
-        "available": true
+        "available": false
       },
       {
         "price": "38.97",
@@ -13200,7 +13200,7 @@
       {
         "price": "19.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13390,7 +13390,7 @@
       {
         "price": "11.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13555,7 +13555,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13630,7 +13630,7 @@
       {
         "price": "25.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
