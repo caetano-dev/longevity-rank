@@ -840,7 +840,7 @@
       {
         "price": "82.97",
         "title": "Milk Chocolate / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "37.97",
@@ -1330,7 +1330,7 @@
       {
         "price": "13.97",
         "title": "120 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -2150,7 +2150,7 @@
       {
         "price": "41.97",
         "title": "500 Grams",
-        "available": false
+        "available": true
       },
       {
         "price": "65.97",
@@ -3720,7 +3720,7 @@
       {
         "price": "29.97",
         "title": "1.5 lb",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11085,7 +11085,7 @@
       {
         "price": "38.97",
         "title": "Tropical Punch",
-        "available": false
+        "available": true
       },
       {
         "price": "38.97",
@@ -11460,7 +11460,7 @@
       {
         "price": "26.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13350,7 +13350,7 @@
       {
         "price": "38.97",
         "title": "Tropical Punch",
-        "available": false
+        "available": true
       },
       {
         "price": "38.97",
@@ -13390,7 +13390,7 @@
       {
         "price": "11.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
