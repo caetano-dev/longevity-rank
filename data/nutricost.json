@@ -2150,7 +2150,7 @@
       {
         "price": "41.97",
         "title": "500 Grams",
-        "available": true
+        "available": false
       },
       {
         "price": "65.97",
@@ -2890,7 +2890,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -5220,7 +5220,7 @@
       {
         "price": "32.97",
         "title": "600G / Strawberry Kiwi",
-        "available": true
+        "available": false
       },
       {
         "price": "32.97",
@@ -5480,7 +5480,7 @@
       {
         "price": "14.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
