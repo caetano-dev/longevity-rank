@@ -515,7 +515,7 @@
       {
         "price": "10.97",
         "title": "30 Capsules / 600 Milligrams",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -840,7 +840,7 @@
       {
         "price": "82.97",
         "title": "Milk Chocolate / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "37.97",
@@ -2890,7 +2890,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5220,7 +5220,7 @@
       {
         "price": "32.97",
         "title": "600G / Strawberry Kiwi",
-        "available": false
+        "available": true
       },
       {
         "price": "32.97",
@@ -5480,7 +5480,7 @@
       {
         "price": "14.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
