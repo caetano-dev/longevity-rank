@@ -515,7 +515,7 @@
       {
         "price": "10.97",
         "title": "30 Capsules / 600 Milligrams",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -2150,7 +2150,7 @@
       {
         "price": "41.97",
         "title": "500 Grams",
-        "available": false
+        "available": true
       },
       {
         "price": "65.97",
@@ -3625,7 +3625,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -5960,7 +5960,7 @@
       {
         "price": "32.97",
         "title": "Peach Mango",
-        "available": false
+        "available": true
       },
       {
         "price": "32.97",
@@ -10570,7 +10570,7 @@
       {
         "price": "19.97",
         "title": "Orchard Blast / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -11434,7 +11434,7 @@
     "title": "Nutricost Pantry Cayenne Pepper",
     "context": "",
     "handle": "nutricost-pantry-cayenne-pepper",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOffers 2 pounds of cayenne pepper powder for great value.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan: 100% plant-based and suitable for vegan diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-Free \u0026amp; Gluten-Free: Free from GMOs and gluten, with no artificial additives.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThis Ground Red Pepper is for those who enjoy a spicy kick in their food.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP-compliant facility and third-party tested for quality.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOffers 2 pounds of cayenne pepper powder for great value.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan: 100% plant-based and suitable for vegan diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-Free \u0026amp; Gluten-Free: Free from GMOs and gluten, with no artificial additives.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThis Ground Red Pepper is for those who enjoy a spicy kick in their food.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP-compliant facility and third-party tested for quality.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e\n\u003cspan style=\"font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; font-size: 0.875rem;\"\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e \u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CayennePepper_2LB_Front_square_5c96438c-c156-437f-ac76-bda5228006e5.jpg?v=1741638318",
     "variants": [
       {
