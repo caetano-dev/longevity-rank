@@ -1140,7 +1140,7 @@
       {
         "price": "131.97",
         "title": "5 lbs / Vanilla",
-        "available": false
+        "available": true
       },
       {
         "price": "131.97",
@@ -2150,7 +2150,7 @@
       {
         "price": "41.97",
         "title": "500 Grams",
-        "available": true
+        "available": false
       },
       {
         "price": "65.97",
@@ -2890,7 +2890,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -4705,7 +4705,7 @@
       {
         "price": "24.97",
         "title": "Chocolate",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -5200,7 +5200,7 @@
       {
         "price": "21.97",
         "title": "300G / Blue Raspberry",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -5480,7 +5480,7 @@
       {
         "price": "14.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11985,7 +11985,7 @@
       {
         "price": "19.97",
         "title": "Watermelon",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13354,7 +13354,7 @@
     "title": "Nutricost Clear Whey Protein Isolate [OFFER]",
     "context": "",
     "handle": "nutricost-clear-whey-protein-isolate-offer",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eEnjoy a refreshing flavor\u003c/span\u003e\u003cspan class=\"a-list-item\"\u003e\u003c/span\u003e\n\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving provides 20 grams of protein\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eContains zero added sugar and mixes easily with water\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle contains 1 pound of whey protein isolate\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a NSF Certified, GMP-compliant facility \u003cbr\u003e\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1 Nutricost Shaker Bottle (Available for first Subscription order only) \u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eEnjoy a refreshing flavor\u003c/span\u003e\u003cspan class=\"a-list-item\"\u003e\u003c/span\u003e\n\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving provides 20 grams of protein\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eContains zero added sugar and mixes easily with water\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle contains 1 pound of whey protein isolate\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a NSF Certified, GMP-compliant facility \u003cbr\u003e\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003e1 Nutricost Shaker Bottle (Available for first Subscription order only) \u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003eSpecific warning for Electric Grape and Blue Razz Pop. \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e \u003cb id=\"docs-internal-guid-38b9d7f0-7fff-92d6-29c5-1bfa1aae15be\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ClearWPI_TropicalPunch_1LB_1500CC_Front_Square.jpg?v=1765837990",
     "variants": [
       {
@@ -13370,6 +13370,21 @@
       {
         "price": "38.97",
         "title": "Berry Blast",
+        "available": true
+      },
+      {
+        "price": "38.97",
+        "title": "Strawberry Banana",
+        "available": true
+      },
+      {
+        "price": "38.97",
+        "title": "Electric Grape",
+        "available": true
+      },
+      {
+        "price": "38.97",
+        "title": "Blue Razz Pop",
         "available": true
       }
     ]
@@ -13640,7 +13655,7 @@
       {
         "price": "25.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
