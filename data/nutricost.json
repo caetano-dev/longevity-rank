@@ -515,7 +515,7 @@
       {
         "price": "10.97",
         "title": "30 Capsules / 600 Milligrams",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -660,7 +660,7 @@
       {
         "price": "29.97",
         "title": "2 lb",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -1225,7 +1225,7 @@
       {
         "price": "27.97",
         "title": "250 Grams",
-        "available": false
+        "available": true
       },
       {
         "price": "43.97",
@@ -2705,7 +2705,7 @@
       {
         "price": "19.97",
         "title": "240 Caps",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3625,7 +3625,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -3910,7 +3910,7 @@
       {
         "price": "18.97",
         "title": "40 Billion CFU",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -5200,7 +5200,7 @@
       {
         "price": "21.97",
         "title": "300G / Blue Raspberry",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -6399,8 +6399,8 @@
     "title": "Nutricost Niacin (as Inositol Hexanicotinate) Capsules (Flush Free)",
     "context": "",
     "handle": "nutricost-niacin-w-inositol-hexanicotinate-flush-free-500mg-120-caps",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO and Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500mg of Niacin Per Capsule, 120 Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-niacin-as-inositol-hexanicotinate-capsules-flush-free-697930.jpg?v=1706644330",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO and Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500mg of Niacin Per Capsule, 120 Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_InositolHexanicotinate_FlushFree_500MG_120CAP_225CC_Front_Square.jpg?v=1781711443",
     "variants": [
       {
         "price": "18.97",
@@ -7100,7 +7100,7 @@
     "context": "",
     "handle": "nutricost-gaba-b6",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003e500mg of GABA \u0026amp; 2mg of Vitamin B6 in Every Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003e240 Plant-Based \"Veggie\" Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003e8 month supply (if taken as recommended)\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003eVegetarian, Non-GMO, Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GABA_500MG_B6_2MG__240CAP_500CC_Front_Square.jpg?v=1773076313",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GABA_500MG_B6_2MG__240CAP_500CC_Front_Square_c46e2b99-c7ec-44d9-87f2-dfdc95d57ed6.jpg?v=1781713203",
     "variants": [
       {
         "price": "18.97",
@@ -8560,7 +8560,7 @@
     "context": "",
     "handle": "nutricost-vitamin-c-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500mg of Vitamin C Ascorbic Acid Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e240 Servings of Vitamin C Per Bottle, 1 Serving is Just 1 Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach Batch is Tested by Independent, ISO-Accredited Laboratories\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-Compliant and FDA-Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GrapeSeedExtract_400MG_240CAP_400CC_Front_Square.jpg?v=1778701179",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VitaminC_500MG_240CAP_400CC_Front_Square.jpg?v=1781729500",
     "variants": [
       {
         "price": "15.97",
@@ -9915,7 +9915,7 @@
       {
         "price": "38.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13155,7 +13155,7 @@
       {
         "price": "43.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13415,7 +13415,7 @@
       {
         "price": "11.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
