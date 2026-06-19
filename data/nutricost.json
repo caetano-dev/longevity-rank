@@ -270,7 +270,7 @@
       {
         "price": "16.97",
         "title": "Pineapple Mango / 300 G",
-        "available": false
+        "available": true
       },
       {
         "price": "26.97",
@@ -4445,7 +4445,7 @@
     "context": "",
     "handle": "nutricost-ox-bile-125mg-240-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500mg of Ox Bile Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Capsules Per Bottle, 120 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO \u0026amp; Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh Quality \u0026amp; 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Complaint, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-ox-bile-capsules-693461.jpg?v=1697695511",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OxBile_500MG_120CAP_225CC_Front_Square.jpg?v=1781792871",
     "variants": [
       {
         "price": "21.97",
@@ -7029,7 +7029,7 @@
     "title": "Nutricost Turkey Tail Mushroom Capsules",
     "context": "",
     "handle": "nutricost-turkey-tail-mushroom-capsules",
-    "body_html": "\u003cdiv\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,200mg Turkey Tail Mushrooms Per Serving, 600mg Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120/240 Vegetarian Capsules Per Bottle for 60/120 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e4 Month Supply (If Taken As Directed)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian, Gluten Free, Soy Free, and Non-GMO\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\u003c/ul\u003e",
+    "body_html": "\u003cdiv\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,200mg Turkey Tail Mushrooms Per Serving, 600mg Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120/240 Vegetarian Capsules Per Bottle for 60/120 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e4 Month Supply (If Taken As Directed)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian, Gluten Free, Soy Free, and Non-GMO\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e\n\u003cb id=\"docs-internal-guid-5cf9c0d1-7fff-14ed-bfa9-1e4a56c45a71\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/div\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_TurkeyTailMushroom_600MG_120CAP_275CC_Front_Square.jpg?v=1775843590",
     "variants": [
       {
@@ -12050,7 +12050,7 @@
       {
         "price": "25.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
