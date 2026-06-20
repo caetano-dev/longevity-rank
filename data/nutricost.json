@@ -500,7 +500,7 @@
       {
         "price": "14.97",
         "title": "120 Capsules / 600 Milligrams",
-        "available": true
+        "available": false
       },
       {
         "price": "17.97",
@@ -515,7 +515,7 @@
       {
         "price": "10.97",
         "title": "30 Capsules / 600 Milligrams",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -800,7 +800,7 @@
       {
         "price": "54.97",
         "title": "Strawberry Banana / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "108.97",
@@ -5505,7 +5505,7 @@
     "context": "",
     "handle": "nutricost-magnesium-citrate-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120/240 Magnesium Citrate Capsules Per Bottle (30/60 Servings)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e420mg of (elemental) Magnesium Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian Friendly Plant Based Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Soy Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumCitrate_105MGX4_120CAP_275CC_Front_Square.jpg?v=1751921470",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumCitrate_150MGX4_60CAP_175CC_Front_Square.jpg?v=1753374597",
     "variants": [
       {
         "price": "13.97",
@@ -7244,8 +7244,8 @@
     "title": "Nutricost Glycine Powder",
     "context": "",
     "handle": "nutricost-glycine-powder",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003e1lb (16oz/454g) of Glycine Powder Per Container\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003eConvenient Serving Scoop Included\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003e5 Month Supply, If Taken As Suggested\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003eNon-GMO \u0026amp; Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-glycine-powder-902370.jpg?v=1687483057",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003e1lb (16oz/454g) of Glycine Powder Per Container\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eConvenient Serving Scoop Included\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003e5 Month Supply, If Taken As Suggested\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO \u0026amp; Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Glycine_1LBS_20OZ_Front1_Square.jpg?v=1781906540",
     "variants": [
       {
         "price": "24.97",
@@ -12080,7 +12080,7 @@
       {
         "price": "40.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
