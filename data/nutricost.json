@@ -270,7 +270,7 @@
       {
         "price": "16.97",
         "title": "Pineapple Mango / 300 G",
-        "available": true
+        "available": false
       },
       {
         "price": "26.97",
@@ -800,7 +800,7 @@
       {
         "price": "54.97",
         "title": "Strawberry Banana / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "108.97",
@@ -10965,7 +10965,7 @@
       {
         "price": "14.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
