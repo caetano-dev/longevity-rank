@@ -13,7 +13,7 @@
         "available": true
       },
       {
-        "price": "9.97",
+        "price": "10.97",
         "title": "200mg / 30 Capsules",
         "available": false
       },
@@ -214,13 +214,13 @@
     "title": "Nutricost Creatine Monohydrate Powder",
     "context": "",
     "handle": "nutricost-creatine-monohydrate-powder-500-grams",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh Quality Micronized Creatine Monohydrate\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGet The Strength and Endurance You've Been Working For\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500 Grams/ I KG of Creatine Monohydrate Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e5 Grams Per Serving (Scoop Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOur Creatine Monohydrate provides you with an ultra premium quality product at a fraction of the cost of many other brands. Our customers love this pre and post-workout supplement as much as we do.  \u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003eCreatine Monohydrate Pineapple Mango (500 GM).\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cb id=\"docs-internal-guid-0b1ba175-7fff-49ef-1161-68d947b3990f\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003eWARNING: This product can expose you to chemicals including Lead, which are known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003ca href=\"http://www.p65warnings.ca.gov/food\"\u003ewww.P65Warnings.ca.gov/food\u003c/a\u003e\u003c/p\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh Quality Micronized Creatine Monohydrate\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGet The Strength and Endurance You've Been Working For\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500 Grams/ I KG of Creatine Monohydrate Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e5 Grams Per Serving (Scoop Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOur Creatine Monohydrate provides you with an ultra premium quality product at a fraction of the cost of many other brands. Our customers love this pre and post-workout supplement as much as we do.  \u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003eCreatine Monohydrate Pineapple Mango (500 GM).\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan class=\"a-list-item\"\u003e\u003cb id=\"docs-internal-guid-38b9d7f0-7fff-92d6-29c5-1bfa1aae15be\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cbr\u003e\u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CreatineMonohydrate_Unflavored_500G_Front_SQUARE_98526928-e1cc-4ff6-9918-430654760159.jpg?v=1760650358",
     "variants": [
       {
         "price": "18.97",
         "title": "Unflavored / 300 G",
-        "available": false
+        "available": true
       },
       {
         "price": "23.97",
@@ -660,7 +660,7 @@
       {
         "price": "29.97",
         "title": "2 lb",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -835,7 +835,7 @@
       {
         "price": "40.97",
         "title": "Milk Chocolate / 2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "82.97",
@@ -2954,7 +2954,7 @@
     "title": "Nutricost Psyllium Husk Capsules",
     "context": "",
     "handle": "nutricost-psyllium-husk-500mg-500-capsules",
-    "body_html": "\u003cdiv\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500mg of Psyllium Husk Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncrease Your Dietary Fiber Intake\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500 Capsules Of High Quality Psyllium Husk In Every Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
+    "body_html": "\u003cdiv\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500mg of Psyllium Husk Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncrease Your Dietary Fiber Intake\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500 Capsules Of High Quality Psyllium Husk In Every Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e\n\u003cspan\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e WARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003c/div\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_PsylliumHusk_500MGX3_500CAP_750CC_Front_Square.jpg?v=1779828301",
     "variants": [
       {
@@ -3580,7 +3580,7 @@
       {
         "price": "35.97",
         "title": "Green Apple",
-        "available": true
+        "available": false
       },
       {
         "price": "35.97",
@@ -3709,7 +3709,7 @@
     "title": "Nutricost Psyllium Husk (Ground) Powder",
     "context": "",
     "handle": "nutricost-psyllium-husk-ground-powder-1-lb",
-    "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncrease Your Dietary Fiber Intake\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNewly Sourced Psyllium Husk for High Quality\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian Friendly and 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Soy Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan\u003e⚠️This product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003c/span\u003e\u003ca href=\"http://www.p65warnings.ca.gov/\" data-saferedirecturl=\"https://www.google.com/url?q=http://www.P65Warnings.ca.gov\u0026amp;source=gmail\u0026amp;ust=1608315246657000\u0026amp;usg=AFQjCNGixa745Oq769AHUbLUoMuG1NgTcA\" data-mce-href=\"http://www.p65warnings.ca.gov/\" target=\"_blank\"\u003ewww.P65Warnings.ca.gov\u003c/a\u003e\u003cspan\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
+    "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncrease Your Dietary Fiber Intake\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNewly Sourced Psyllium Husk for High Quality\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian Friendly and 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Soy Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e WARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/p\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_PsylliumHusk_1.5LB_44OZ_Front_Square.jpg?v=1775843627",
     "variants": [
       {
@@ -3774,7 +3774,7 @@
     "title": "Nutricost Psyllium Husk (Whole Husk) Powder",
     "context": "",
     "handle": "nutricost-psyllium-husk-whole-powder-8-oz",
-    "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNewly Sourced Psyllium Husk for Highest Quality\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eWhole Husk Flakes (Not Ground Powder)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncrease Your Dietary Fiber Intake\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\n\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
+    "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNewly Sourced Psyllium Husk for Highest Quality\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eWhole Husk Flakes (Not Ground Powder)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncrease Your Dietary Fiber Intake\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e \u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-psyllium-husk-whole-husk-powder-308206.jpg?v=1687483209",
     "variants": [
       {
@@ -3958,7 +3958,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ColeusForskohlii__250MGx2___G0__60CAP_150CCCOMPAX_Front1_Square_b845bd31-f66f-4168-b918-a9b513e42296.jpg?v=1760718867",
     "variants": [
       {
-        "price": "15.97",
+        "price": "21.97",
         "title": "60 Capsules",
         "available": true
       }
@@ -4729,7 +4729,7 @@
     "title": "Nutricost Organic Pea Protein Powder",
     "context": "",
     "handle": "organic-pea-protein-powder",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified USDA Organic Pea Protein Powder\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e5lbs of Vegetarian Friendly Pea Protein\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e20 Grams of Pea Protein In Each Scoop (Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003ePea Protein Chocolate (1 LB) Specific Warning\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e \u003cmeta charset=\"utf-8\"\u003e \u003cb id=\"docs-internal-guid-38b9d7f0-7fff-92d6-29c5-1bfa1aae15be\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified USDA Organic Pea Protein Powder\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e5lbs of Vegetarian Friendly Pea Protein\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e20 Grams of Pea Protein In Each Scoop (Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003ePea Protein Chocolate (1 LB) Specific Warning\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e \u003cmeta charset=\"utf-8\"\u003e \u003cb id=\"docs-internal-guid-38b9d7f0-7fff-92d6-29c5-1bfa1aae15be\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OrganicPeaProtein_5LBS_1.8GAL_Front_Square.jpg?v=1731708965",
     "variants": [
       {
@@ -5200,7 +5200,7 @@
       {
         "price": "21.97",
         "title": "300G / Blue Raspberry",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -10610,7 +10610,7 @@
       {
         "price": "16.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11665,7 +11665,7 @@
       {
         "price": "52.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
