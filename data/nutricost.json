@@ -500,7 +500,7 @@
       {
         "price": "14.97",
         "title": "120 Capsules / 600 Milligrams",
-        "available": false
+        "available": true
       },
       {
         "price": "17.97",
@@ -800,7 +800,7 @@
       {
         "price": "54.97",
         "title": "Strawberry Banana / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "108.97",
@@ -1080,7 +1080,7 @@
       {
         "price": "93.97",
         "title": "5 lbs / Chocolate",
-        "available": false
+        "available": true
       },
       {
         "price": "93.97",
@@ -3910,7 +3910,7 @@
       {
         "price": "18.97",
         "title": "40 Billion CFU",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -5200,7 +5200,7 @@
       {
         "price": "21.97",
         "title": "300G / Blue Raspberry",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -6765,7 +6765,7 @@
       {
         "price": "18.97",
         "title": "Peach Mango / 30 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
@@ -11665,7 +11665,7 @@
       {
         "price": "52.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
