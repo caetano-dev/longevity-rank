@@ -703,107 +703,107 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_WPI_Chocolate_2LB_2750CC_Front_Square.jpg?v=1754598088",
     "variants": [
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Chocolate / 2 lbs",
         "available": true
       },
       {
-        "price": "108.97",
+        "price": "137.97",
         "title": "Chocolate / 5 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Unflavored / 2 lbs",
         "available": true
       },
       {
-        "price": "108.97",
+        "price": "137.97",
         "title": "Unflavored / 5 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Mocha / 2 lbs",
         "available": true
       },
       {
-        "price": "108.97",
+        "price": "137.97",
         "title": "Mocha / 5 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Salted Caramel / 2 lbs",
         "available": true
       },
       {
-        "price": "108.97",
+        "price": "137.97",
         "title": "Salted Caramel / 5 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Strawberry Milkshake / 2 lbs",
         "available": true
       },
       {
-        "price": "108.97",
+        "price": "137.97",
         "title": "Strawberry Milkshake / 5 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Vanilla / 2 lbs",
         "available": false
       },
       {
-        "price": "108.97",
+        "price": "137.97",
         "title": "Vanilla / 5 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Chocolate Peanut Butter / 2 lbs",
         "available": true
       },
       {
-        "price": "108.97",
+        "price": "137.97",
         "title": "Chocolate Peanut Butter / 5 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Cake Batter / 2 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Strawberry Acai / 2 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Cookies and Cream / 2 lbs",
         "available": false
       },
       {
-        "price": "108.97",
+        "price": "137.97",
         "title": "Cookies and Cream / 5 lbs",
         "available": true
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Churro / 2 lbs",
         "available": false
       },
       {
-        "price": "54.97",
+        "price": "65.97",
         "title": "Strawberry Banana / 2 lbs",
         "available": false
       },
       {
-        "price": "108.97",
+        "price": "137.97",
         "title": "Pumpkin Spice / 5 lbs",
         "available": false
       }
@@ -818,77 +818,77 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_WPC_Chocolate_2LB_2750CC_Front_Square.jpg?v=1731705048",
     "variants": [
       {
-        "price": "37.97",
+        "price": "51.97",
         "title": "Vanilla / 1.5 lbs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "60.97",
         "title": "Vanilla / 2 lbs",
         "available": true
       },
       {
-        "price": "82.97",
+        "price": "120.97",
         "title": "Vanilla / 5 lbs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "60.97",
         "title": "Milk Chocolate / 2 lbs",
         "available": true
       },
       {
-        "price": "82.97",
+        "price": "120.97",
         "title": "Milk Chocolate / 5 lbs",
         "available": false
       },
       {
-        "price": "37.97",
+        "price": "51.97",
         "title": "Milk Chocolate / 1.5 lb",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "60.97",
         "title": "Unflavored / 2 lbs",
         "available": true
       },
       {
-        "price": "82.97",
+        "price": "120.97",
         "title": "Unflavored / 5 lbs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "60.97",
         "title": "Chocolate Peanut Butter / 2 lbs",
         "available": false
       },
       {
-        "price": "82.97",
+        "price": "120.97",
         "title": "Chocolate Peanut Butter / 5 lbs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "60.97",
         "title": "Strawberry Milkshake / 2 lbs",
         "available": false
       },
       {
-        "price": "82.97",
+        "price": "120.97",
         "title": "Strawberry Milkshake / 5 lbs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "60.97",
         "title": "Pineapple Cream / 2 lbs",
         "available": false
       },
       {
-        "price": "82.97",
+        "price": "120.97",
         "title": "Pineapple Cream / 5 lbs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "60.97",
         "title": "Churro / 2 lbs",
         "available": false
       },
@@ -898,22 +898,22 @@
         "available": false
       },
       {
-        "price": "43.97",
+        "price": "62.97",
         "title": "Shaq's Double Double Chocolate / 2 lbs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "60.97",
         "title": "Strawberry Banana / 2 lbs",
         "available": false
       },
       {
-        "price": "40.97",
+        "price": "60.97",
         "title": "S'mores / 2 lbs",
         "available": true
       },
       {
-        "price": "82.97",
+        "price": "120.97",
         "title": "Pumpkin Spice / 5 lbs",
         "available": false
       }
@@ -1058,42 +1058,42 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GF_WPC_Vanilla_2_LB_2750_CC_Front_Square.jpg?v=1731707492",
     "variants": [
       {
-        "price": "47.97",
+        "price": "63.97",
         "title": "2 lbs / Chocolate",
         "available": true
       },
       {
-        "price": "47.97",
+        "price": "63.97",
         "title": "2 lbs / Unflavored",
         "available": true
       },
       {
-        "price": "47.97",
+        "price": "63.97",
         "title": "2 lbs / Vanilla",
         "available": true
       },
       {
-        "price": "47.97",
+        "price": "63.97",
         "title": "2 lbs / Chocolate Peanut Butter",
         "available": false
       },
       {
-        "price": "93.97",
+        "price": "131.97",
         "title": "5 lbs / Chocolate",
         "available": true
       },
       {
-        "price": "93.97",
+        "price": "131.97",
         "title": "5 lbs / Unflavored",
         "available": true
       },
       {
-        "price": "93.97",
+        "price": "131.97",
         "title": "5 lbs / Vanilla",
         "available": true
       },
       {
-        "price": "93.97",
+        "price": "131.97",
         "title": "5 lbs / Chocolate Peanut Butter",
         "available": true
       }
@@ -1108,42 +1108,42 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Grass-FedWPI_UF_2LB_2750CC_Front_Square.jpg?v=1752785264",
     "variants": [
       {
-        "price": "60.97",
+        "price": "65.97",
         "title": "2 lbs / Chocolate",
         "available": true
       },
       {
-        "price": "60.97",
+        "price": "65.97",
         "title": "2 lbs / Unflavored",
         "available": true
       },
       {
-        "price": "60.97",
+        "price": "65.97",
         "title": "2 lbs / Vanilla",
         "available": true
       },
       {
-        "price": "60.97",
+        "price": "65.97",
         "title": "2 lbs / Chocolate Peanut Butter",
         "available": true
       },
       {
-        "price": "131.97",
+        "price": "139.97",
         "title": "5 lbs / Chocolate",
         "available": true
       },
       {
-        "price": "131.97",
+        "price": "139.97",
         "title": "5 lbs / Unflavored",
         "available": true
       },
       {
-        "price": "131.97",
+        "price": "139.97",
         "title": "5 lbs / Vanilla",
         "available": true
       },
       {
-        "price": "131.97",
+        "price": "139.97",
         "title": "5 lbs / Chocolate Peanut Butter",
         "available": true
       }
@@ -4258,32 +4258,32 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CaseinPowderChocolate_2LB_2750CC_Front_Square_fb0707fa-88d4-4453-84ea-6ea0f2de3c1d.jpg?v=1752248027",
     "variants": [
       {
-        "price": "38.97",
+        "price": "40.97",
         "title": "Chocolate / 2 lbs",
         "available": true
       },
       {
-        "price": "73.97",
+        "price": "76.97",
         "title": "Chocolate / 5 lbs",
         "available": true
       },
       {
-        "price": "38.97",
+        "price": "40.97",
         "title": "Vanilla / 2 lbs",
         "available": true
       },
       {
-        "price": "73.97",
+        "price": "76.97",
         "title": "Vanilla / 5 lbs",
         "available": false
       },
       {
-        "price": "38.97",
+        "price": "40.97",
         "title": "Unflavored / 2 lbs",
         "available": true
       },
       {
-        "price": "73.97",
+        "price": "76.97",
         "title": "Unflavored / 5 lbs",
         "available": true
       }
@@ -4729,7 +4729,7 @@
     "title": "Nutricost Organic Pea Protein Powder",
     "context": "",
     "handle": "organic-pea-protein-powder",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified USDA Organic Pea Protein Powder\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e5lbs of Vegetarian Friendly Pea Protein\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e20 Grams of Pea Protein In Each Scoop (Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003ePea Protein Chocolate (1 LB) Specific Warning\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e \u003cmeta charset=\"utf-8\"\u003e \u003cb id=\"docs-internal-guid-38b9d7f0-7fff-92d6-29c5-1bfa1aae15be\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified USDA Organic Pea Protein Powder\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e5lbs of Vegetarian Friendly Pea Protein\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e20 Grams of Pea Protein In Each Scoop (Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003eSpecific Warning for Pea Protein Chocolate (1 LB) and Unflavored (5LB). \u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e \u003cmeta charset=\"utf-8\"\u003e \u003cb id=\"docs-internal-guid-38b9d7f0-7fff-92d6-29c5-1bfa1aae15be\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OrganicPeaProtein_5LBS_1.8GAL_Front_Square.jpg?v=1731708965",
     "variants": [
       {
@@ -5200,7 +5200,7 @@
       {
         "price": "21.97",
         "title": "300G / Blue Raspberry",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -6765,7 +6765,7 @@
       {
         "price": "18.97",
         "title": "Peach Mango / 30 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "27.97",
@@ -10360,7 +10360,7 @@
       {
         "price": "26.97",
         "title": "Orange Sunrise",
-        "available": true
+        "available": false
       },
       {
         "price": "26.97",
@@ -11665,7 +11665,7 @@
       {
         "price": "52.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
