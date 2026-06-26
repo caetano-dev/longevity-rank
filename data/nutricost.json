@@ -1095,7 +1095,7 @@
       {
         "price": "131.97",
         "title": "5 lbs / Chocolate Peanut Butter",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -2196,7 +2196,7 @@
   },
   {
     "id": "3702120677450",
-    "title": "Nutricost Ashwagandha Root Capsules",
+    "title": "Nutricost Ashwagandha Root Extract Capsules",
     "context": "",
     "handle": "nutricost-ashwagandha-root-600mg-120-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eConvenient daily support: Nutricost Ashwagandha Root Extract Capsules provide a hassle-free way to incorporate ashwagandha into your daily routine.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh potency: Each serving of these capsules contains a robust 600 mg of pure ashwagandha extract, ensuring you receive a potent dose of this traditional herb.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eLong-lasting supply: With 120 capsules per bottle, Nutricost Ashwagandha Root Extract Capsules offer a generous supply, providing you with 120 servings to support your wellness journey.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eQuality assurance: Every batch of Nutricost Ashwagandha Root Extract Capsules is manufactured in an NSF certified, GMP compliant facility, ensuring strict quality control standards are met.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach batch is independent, third-party, ISO accredited laboratories, and manufactured in a NSF certified GMP compliant, FDA registered facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
@@ -5200,7 +5200,7 @@
       {
         "price": "21.97",
         "title": "300G / Blue Raspberry",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -5946,7 +5946,7 @@
   },
   {
     "id": "6552018190529",
-    "title": "Nutricost Stim Free Preworkout",
+    "title": "Nutricost Stim Free Pre-Workout",
     "context": "",
     "handle": "nutricost-stim-free-preworkouts-30-servings",
     "body_html": "\u003cdiv id=\"dpx-product-description_feature_div\"\u003e\n\u003cdiv class=\"celwidget\" data-csa-c-id=\"ilf5of-qrvj8u-bcqcye-l5m0oo\" data-cel-widget=\"dpx-product-description_csm_instrumentation_wrapper\"\u003e\n\u003cdiv id=\"descriptionAndDetails\" class=\"a-section a-spacing-extra-large\"\u003e\n\u003cdiv id=\"productDescription_feature_div\" class=\"celwidget\" data-feature-name=\"productDescription\" data-csa-c-id=\"nmdeor-m1yi4y-ha2iix-8im8m8\" data-cel-widget=\"productDescription_feature_div\"\u003e\n\u003cdiv data-feature-name=\"productDescription\" data-template-name=\"productDescription\" id=\"productDescription_feature_div\" class=\"a-row feature\" data-cel-widget=\"productDescription_feature_div\"\u003e\n\u003cdiv id=\"productDescription\" class=\"a-section a-spacing-small\"\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30 Servings Of Nutricost Performance Stim-Free Pre-Workout In Every Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e6,000mg Of L-Citrulline, 1,200mg Of Beta-Alanine\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eStimulant Free Formula, Including No Caffeine\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Soy Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cspan\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\n\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
@@ -10565,7 +10565,7 @@
       {
         "price": "19.97",
         "title": "Pineapple Ice / 60 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -10655,7 +10655,7 @@
       {
         "price": "27.97",
         "title": "Hot Cocoa",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
@@ -10965,7 +10965,7 @@
       {
         "price": "14.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11665,7 +11665,7 @@
       {
         "price": "52.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12860,7 +12860,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -13685,7 +13685,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
