@@ -5955,7 +5955,7 @@
       {
         "price": "32.97",
         "title": "Blue Raspberry",
-        "available": false
+        "available": true
       },
       {
         "price": "32.97",
@@ -7015,7 +7015,7 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "12.97",
@@ -10565,7 +10565,7 @@
       {
         "price": "19.97",
         "title": "Pineapple Ice / 60 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -12860,7 +12860,7 @@
       {
         "price": "24.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -13685,7 +13685,7 @@
       {
         "price": "21.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
