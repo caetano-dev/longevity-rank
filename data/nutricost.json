@@ -1105,7 +1105,7 @@
       {
         "price": "131.97",
         "title": "5 lbs / Chocolate Peanut Butter",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -5965,7 +5965,7 @@
       {
         "price": "32.97",
         "title": "Blue Raspberry",
-        "available": true
+        "available": false
       },
       {
         "price": "32.97",
@@ -7770,7 +7770,7 @@
       {
         "price": "60.97",
         "title": "Chocolate",
-        "available": true
+        "available": false
       },
       {
         "price": "60.97",
@@ -8330,7 +8330,7 @@
       {
         "price": "49.97",
         "title": "Chocolate Peanut Butter",
-        "available": true
+        "available": false
       },
       {
         "price": "49.97",
@@ -9485,7 +9485,7 @@
     "context": "",
     "handle": "nutricost-essentials-bentonite-clay",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli class=\"a-spacing-mini\" data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003eCleanse Naturally: Nutricost's Bentonite Clay is a pure and natural way to cleanse your skin, promoting a revitalized complexion.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\" data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003eSpa-Like Rejuvenation: Transform your home into a spa with this rejuvenating clay mask, offering a pampering experience for health-conscious individuals.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\" data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003e1 lb Jar: The generous 1 lb jar provides an ample supply, allowing you to incorporate the benefits of bentonite clay into your skincare routine consistently.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\" data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003eManufacturing Excellence: Crafted in an NSF Certified GMP Compliant facility, Nutricost prioritizes quality, ensuring that each jar of Bentonite Clay meets the highest industry standards.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\" data-mce-fragment=\"1\"\u003e\u003cspan class=\"a-list-item\" data-mce-fragment=\"1\"\u003eThird-Party Validation: Rigorous third-party testing by independent ISO-accredited laboratories guarantees the purity and quality of every batch, providing you with confidence in the effectiveness of Nutricost's Bentonite Clay. Treat your skin to the care it deserves with this rejuvenating clay mask\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-essentials-bentonite-clay-434475.jpg?v=1707555800",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_BentoniteClay_1LB_20OZCLEAR_Front.jpg?v=1782939650",
     "variants": [
       {
         "price": "16.97",
@@ -10100,7 +10100,7 @@
       {
         "price": "20.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10205,7 +10205,7 @@
     "context": "",
     "handle": "ntc-pure-epsom-salt",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eRelaxing Soak: Enjoy the calming benefits of Epsom salt with Nutricost's Essentials Pure Epsom Salt, perfect for creating a tranquil bathing experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh-Quality Ingredients: Made from pure Epsom salt crystals, this product is free from additives and fillers, ensuring you receive only the best for your self-care routine.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGenerous Supply: Each bottle contains 8 lbs of Epsom salt, providing you with an ample amount for multiple relaxing baths.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified Manufacturing: Produced in an NSF Certified GMP Compliant facility, Nutricost's Epsom salt adheres to strict quality standards for purity and safety.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThird-Party Testing: Every batch undergoes rigorous third-party testing by independent ISO-accredited laboratories, confirming the purity and potency of the Epsom salt.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_EpsomSalt_8LB_1GALCLEAR_Front_SQUARE.jpg?v=1728935749",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_EpsomSalt_8LB_1GALCLEAR_Front_square_a864da7c-23b2-4f2d-a069-58e9d71ec794.jpg?v=1782939881",
     "variants": [
       {
         "price": "30.97",
@@ -11065,7 +11065,7 @@
       {
         "price": "24.97",
         "title": "360 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -11675,7 +11675,7 @@
       {
         "price": "52.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
