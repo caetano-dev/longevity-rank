@@ -2385,7 +2385,7 @@
     "context": "",
     "handle": "nutricost-fenugreek-750mg-240-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e240 Capsules of High Quality Fenugreek\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1350mg of High Quality Fenugreek In Each Serving (675mg Per Capsule)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTraditionally used in Ancient Greece, Egypt, India and China\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Soy Free, and Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-fenugreek-capsules-511957.jpg?v=1690311583",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Fenugreek_675MG_240CAP_500CC_Front_Square.jpg?v=1783025990",
     "variants": [
       {
         "price": "16.97",
@@ -2440,7 +2440,7 @@
     "context": "",
     "handle": "nutricost-ginger-root-extract-550mg-240-capsules",
     "body_html": "\u003cul class=\"listing\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e2,200mg Equivalent of Ginger Root Extract (From 550mg of 4:1 Extract)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO and Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e240 Capsules (240 Servings) of Ginger Root Extract In Each Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThis Product Does Not Contain Yeast, Has No Artiﬁcial Color, No Flavor or Sweetener, No Preservatives, No Sugar, No Soy, No Egg, No Lactose, No Gluten, No Wheat, No Fish, No Sodium\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GingerRootExtract_240CAP_Front1.jpg?v=1690323321",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GingerRoot_550MG_240CAP_500CC_Front_Square.jpg?v=1783031875",
     "variants": [
       {
         "price": "19.97",
@@ -2470,7 +2470,7 @@
     "context": "",
     "handle": "nutricost-glucosamine-sulfate-750mg-240-capsules",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e240 Capsules of Glucosamine Sulfate Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1500mg of Glucosamine Sulfate Per Serving (120 Servings)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-glucosamine-sulfate-capsules-831327.jpg?v=1687483056",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GlucosamineSulfate_750MG_240CAP_400CC_Front_Square.jpg?v=1783033222",
     "variants": [
       {
         "price": "20.97",
@@ -4845,7 +4845,7 @@
       {
         "price": "46.97",
         "title": "Watermelon / 120 Servings",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -7770,7 +7770,7 @@
       {
         "price": "60.97",
         "title": "Chocolate",
-        "available": false
+        "available": true
       },
       {
         "price": "60.97",
@@ -8170,7 +8170,7 @@
     "context": "",
     "handle": "nutricost-folic-acid-for-women",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Capsules of Folic Acid Formulated for Women In Each Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,200 MCG of Folic Acid Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eComplex Also Includes Biotin and Vitamin B12\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian, Non-GMO, Soy Free, And Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_W_FolicAcidforWomen_1200MCG_120CAP_175CC_Front.jpg?v=1724345133",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Organic_FolicAcidforWomen_750MG_120CAP_275CC1200MCG_120CAP_175CC_Front_Square.jpg?v=1783029509",
     "variants": [
       {
         "price": "11.97",
@@ -10100,7 +10100,7 @@
       {
         "price": "20.97",
         "title": "Default Title",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -11060,7 +11060,7 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
@@ -11449,7 +11449,12 @@
     "variants": [
       {
         "price": "24.97",
-        "title": "Default Title",
+        "title": "2 LB",
+        "available": true
+      },
+      {
+        "price": "38.97",
+        "title": "1 KG",
         "available": true
       }
     ]
@@ -11520,7 +11525,7 @@
     "context": "",
     "handle": "nutricost-flaxseed-oil",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle contains 120 softgels, offering a long-lasting supply for daily use.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eWith only 10 calories per serving, this supplement provides the benefits of flaxseed oil without added calories.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving delivers 1200mg of flaxseed oil to support overall health.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNutricost Flaxseed Oil is GMO-free and gluten-free, making it suitable for various dietary preferences.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-compliant, NSF-certified facility, ensuring high-quality production standards.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_FlaxseedOil_1200MG_120SFG_400CC_Front1_Square.jpg?v=1742582860",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_FlaxseedOil_1200MG_120SFG_400CC_Front1_Square_4c6aba90-b7c4-4592-910e-3ff1491495c8.jpg?v=1783028370",
     "variants": [
       {
         "price": "13.97",
