@@ -3495,7 +3495,7 @@
       {
         "price": "11.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -3725,7 +3725,7 @@
       {
         "price": "21.97",
         "title": "1 lb",
-        "available": true
+        "available": false
       },
       {
         "price": "29.97",
@@ -4710,7 +4710,7 @@
       {
         "price": "24.97",
         "title": "Unflavored",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
@@ -7025,7 +7025,7 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "12.97",
@@ -13155,7 +13155,7 @@
       {
         "price": "19.97",
         "title": "Default Title",
-        "available": true
+        "available": false
       }
     ]
   },
