@@ -270,7 +270,7 @@
       {
         "price": "16.97",
         "title": "Pineapple Mango / 300 G",
-        "available": false
+        "available": true
       },
       {
         "price": "26.97",
@@ -3344,21 +3344,6 @@
     "variants": [
       {
         "price": "14.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
-    "id": "3702380396618",
-    "title": "Nutricost TMG Capsules",
-    "context": "",
-    "handle": "nutricost-tmg-750mg-120-capsules",
-    "body_html": "\u003cdiv\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e750mg of TMG Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Capsules Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eHigh Quality TMG (Trimethylglycine)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_TMG_750MG_120CAP_275CC_Front_Square.jpg?v=1775844660",
-    "variants": [
-      {
-        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
@@ -9525,7 +9510,7 @@
       {
         "price": "30.97",
         "title": "Fruit Punch / 120 Servings",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
@@ -12420,21 +12405,6 @@
     ]
   },
   {
-    "id": "9727386681574",
-    "title": "Zinc with Selenium",
-    "context": "",
-    "handle": "zinc-with-selenium",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 50mg of Zinc with 200mcg of Selenium and 2mg of Copper per serving in a convenient, easy-to-take capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle holds 240 capsules and provides 240 servings for consistent daily use\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSelenium pairs with Zinc as part of a well-rounded supplement, bringing both nutrients into one simple daily routine\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, gluten-free, and made without GMOs, this formula is thoughtfully crafted to fit a wide range of dietary preferences\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Zinc_50MG_Selenium_200MCG_240CAP_275CC_Front_Square.jpg?v=1779317437",
-    "variants": [
-      {
-        "price": "20.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "9728504103142",
     "title": "Nutricost Black Currant Oil",
     "context": "",
@@ -12594,6 +12564,36 @@
     "variants": [
       {
         "price": "16.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9466922533094",
+    "title": "Nutricost Jiaogulan Extract Capsules",
+    "context": "",
+    "handle": "nutricost-jiaogulan-extract-capsules",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 500mg of 20:1 Jiaogulan extract per serving — equivalent to 25,000mg of Jiaogulan herb\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 120 capsules per bottle for up to a 4-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eJiaogulan (also known as “Southern Ginseng”) is a traditional herb valued for its adaptogenic properties\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free, gluten-free, and vegan-friendly formula\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Jiaogulan_500MG_120CAP_300CC_Front_Square.jpg?v=1762551293",
+    "variants": [
+      {
+        "price": "16.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9727386681574",
+    "title": "Zinc with Selenium",
+    "context": "",
+    "handle": "zinc-with-selenium",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 50mg of Zinc with 200mcg of Selenium and 2mg of Copper per serving in a convenient, easy-to-take capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle holds 240 capsules and provides 240 servings for consistent daily use\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSelenium pairs with Zinc as part of a well-rounded supplement, bringing both nutrients into one simple daily routine\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, gluten-free, and made without GMOs, this formula is thoughtfully crafted to fit a wide range of dietary preferences\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Zinc_50MG_Selenium_200MCG_240CAP_275CC_Front_Square.jpg?v=1779317437",
+    "variants": [
+      {
+        "price": "20.97",
         "title": "Default Title",
         "available": true
       }
