@@ -1100,7 +1100,7 @@
       {
         "price": "131.97",
         "title": "5 lbs / Vanilla",
-        "available": true
+        "available": false
       },
       {
         "price": "131.97",
@@ -3545,7 +3545,7 @@
       {
         "price": "21.97",
         "title": "1 lb",
-        "available": false
+        "available": true
       },
       {
         "price": "29.97",
@@ -3740,7 +3740,7 @@
       {
         "price": "18.97",
         "title": "40 Billion CFU",
-        "available": false
+        "available": true
       },
       {
         "price": "21.97",
@@ -5345,7 +5345,7 @@
     "context": "",
     "handle": "nutricost-100-inositol-powder-1lb",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1 Pound (16oz, 454G) of Inositol Powder Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEasy To Serve Scoop Included (1000mg)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO \u0026amp; Gluten Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTested by Independent, ISO-Accredited Laboratories\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Inositol_Powder_1LB_25OZ_Front_Square.jpg?v=1724779126",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_InositolPowder_1G_1LB_25OZ_Front_Square.jpg?v=1784215593",
     "variants": [
       {
         "price": "29.97",
@@ -7480,7 +7480,7 @@
       {
         "price": "21.97",
         "title": "Strawberry Lemonade / 50 Serv",
-        "available": false
+        "available": true
       },
       {
         "price": "30.97",
@@ -9945,7 +9945,7 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "24.97",
@@ -10606,21 +10606,6 @@
     "handle": "nutricost-methylated-multivitamin",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNutricost Methylated Multivitamin Contains 23 vitamins and minerals, including Vitamins A, C, D, E, K, B-complex (B1, B2, B3, B6, B12, Biotin, Folate, Pantothenic Acid), Calcium, Iron, Iodine, Magnesium, Zinc, Selenium, Copper, Manganese, Chromium, and Molybdenum.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThis formula contains a variety of important minerals, including calcium, magnesium, and zinc.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle includes 120 capsules, with 60 servings of two capsules each.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThis multivitamin is gluten-free and third-party tested for quality.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant Facility to ensure high-quality standards.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MethylatedMultivitamin_120CAP_275CC_Front_Sqaure.jpg?v=1768586771",
-    "variants": [
-      {
-        "price": "17.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
-    "id": "8973595115750",
-    "title": "Nutricost Methylated Vitamin B Complex",
-    "context": "",
-    "handle": "nutricost-methylated-vitamin-b-complex",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle contains 120 capsules, providing a total of 60 servings for a two-month supply.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThis formula is packed with essential vitamins, including B1, B2, B6, B12, Folate, and Biotin, along with key minerals such as Zinc, Iron, Magnesium, and Iodine.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIt is completely gluten-free, making it a great choice for those with dietary restrictions.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTake 2 capsules daily with 8-12 oz of water or as directed by your healthcare professional.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThe product is third-party tested to ensure quality and purity and is produced in an NSF-certified, GMP-compliant facility.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MethylatedVitaminBComplex__V00__120CAP_275CC_Front1_Square.jpg?v=1760720047",
     "variants": [
       {
         "price": "17.97",
@@ -12600,21 +12585,6 @@
     ]
   },
   {
-    "id": "9727386681574",
-    "title": "Zinc with Selenium",
-    "context": "",
-    "handle": "zinc-with-selenium",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 50mg of Zinc with 200mcg of Selenium and 2mg of Copper per serving in a convenient, easy-to-take capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle holds 240 capsules and provides 240 servings for consistent daily use\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSelenium pairs with Zinc as part of a well-rounded supplement, bringing both nutrients into one simple daily routine\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, gluten-free, and made without GMOs, this formula is thoughtfully crafted to fit a wide range of dietary preferences\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Zinc_50MG_Selenium_200MCG_240CAP_275CC_Front_Square.jpg?v=1779317437",
-    "variants": [
-      {
-        "price": "20.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "8378579157222",
     "title": "Nutricost Lactoferrin Capsules",
     "context": "",
@@ -12669,6 +12639,51 @@
     "variants": [
       {
         "price": "31.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "7627584372966",
+    "title": "Nutricost Made With Organic Beet Root Capsules",
+    "context": "",
+    "handle": "organic-beet-root-capsules",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\" data-mce-fragment=\"1\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified Made With Organic Beet Root By CCOF\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e2,400mg of Organic Beet Root Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e180 Capsules for 60 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOrganic, Vegetarian, Gluten Free, Non-GMO, Soy Free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cspan data-sheets-userformat='{\"2\":4542,\"4\":{\"1\":2,\"2\":16777215},\"5\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"6\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"7\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"8\":{\"1\":[{\"1\":2,\"2\":0,\"5\":{\"1\":2,\"2\":0}},{\"1\":0,\"2\":0,\"3\":3},{\"1\":1,\"2\":0,\"4\":1}]},\"10\":2,\"11\":0,\"15\":\"Roboto\"}' data-sheets-value='{\"1\":2,\"2\":\"WARNING: This product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov.\"}' data-sheets-root=\"1\"\u003eWARNING: This product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Organic_BeetRoot_800MG_P00_180CAP_Front_Square.jpg?v=1782512745",
+    "variants": [
+      {
+        "price": "16.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "8973595115750",
+    "title": "Nutricost Methylated Vitamin B Complex",
+    "context": "",
+    "handle": "nutricost-methylated-vitamin-b-complex",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle contains 120 capsules, providing a total of 60 servings for a two-month supply.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThis formula is packed with essential vitamins, including B1, B2, B6, B12, Folate, and Biotin, along with key minerals such as Zinc, Iron, Magnesium, and Iodine.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIt is completely gluten-free, making it a great choice for those with dietary restrictions.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTake 2 capsules daily with 8-12 oz of water or as directed by your healthcare professional.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThe product is third-party tested to ensure quality and purity and is produced in an NSF-certified, GMP-compliant facility.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MethylatedVitaminBComplex__V00__120CAP_275CC_Front1_Square.jpg?v=1760720047",
+    "variants": [
+      {
+        "price": "17.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9061508841702",
+    "title": "Magnesium Glycinate 1 Bottle",
+    "context": "",
+    "handle": "magnesium-glycinate-1-bottle",
+    "body_html": "",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumGlycinate_210MGX3_180CAP_300CC_Front_Square_bc84db4a-eec0-4f77-8af3-86e218ea8ab2.jpg?v=1751036267",
+    "variants": [
+      {
+        "price": "16.49",
         "title": "Default Title",
         "available": true
       }
