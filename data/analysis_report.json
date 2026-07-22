@@ -1,5 +1,37 @@
 [
   {
+    "vendor": "Blueprint",
+    "name": "Creatine (Subscribe \u0026 Save)",
+    "handle": "creatine",
+    "price": 32,
+    "active_grams": 500,
+    "gross_grams": 500,
+    "cost_per_gram": 0.064,
+    "effective_cost": 0.064,
+    "multiplier": 1,
+    "multiplier_label": "",
+    "type": "Powder",
+    "image_url": "https://cdn.shopify.com/s/files/1/0772/3129/2701/files/Blueprint_Creatine_supplement_pouch.webp?v=1769456712",
+    "is_subscription": true,
+    "needs_review": false
+  },
+  {
+    "vendor": "Blueprint",
+    "name": "Creatine",
+    "handle": "creatine",
+    "price": 40,
+    "active_grams": 500,
+    "gross_grams": 500,
+    "cost_per_gram": 0.08,
+    "effective_cost": 0.08,
+    "multiplier": 1,
+    "multiplier_label": "",
+    "type": "Powder",
+    "image_url": "https://cdn.shopify.com/s/files/1/0772/3129/2701/files/Blueprint_Creatine_supplement_pouch.webp?v=1769456712",
+    "is_subscription": false,
+    "needs_review": false
+  },
+  {
     "vendor": "Do Not Age",
     "name": "Pure TMG Supplement (366 Capsules)",
     "handle": "https://donotage.org/pure-tmg",
