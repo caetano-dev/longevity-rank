@@ -29,7 +29,12 @@
     "variants": [
       {
         "price": "39.00",
-        "title": "Default Title",
+        "title": "30-Day Supply",
+        "available": true
+      },
+      {
+        "price": "117.00",
+        "title": "90-Day Supply",
         "available": true
       }
     ]
@@ -119,7 +124,12 @@
     "variants": [
       {
         "price": "27.00",
-        "title": "Default Title",
+        "title": "30-Day Supply",
+        "available": true
+      },
+      {
+        "price": "81.00",
+        "title": "90-Day Supply",
         "available": true
       }
     ]
