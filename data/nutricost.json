@@ -775,7 +775,7 @@
       {
         "price": "65.97",
         "title": "Chocolate Peanut Butter / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "137.97",
@@ -3020,7 +3020,7 @@
       {
         "price": "14.97",
         "title": "4 oz / Unflavored",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -8715,7 +8715,7 @@
       {
         "price": "26.97",
         "title": "Strawberry Kiwi",
-        "available": true
+        "available": false
       },
       {
         "price": "26.97",
