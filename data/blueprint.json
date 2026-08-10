@@ -125,12 +125,12 @@
       {
         "price": "27.00",
         "title": "30-Day Supply",
-        "available": true
+        "available": false
       },
       {
         "price": "81.00",
         "title": "90-Day Supply",
-        "available": true
+        "available": false
       }
     ]
   },
