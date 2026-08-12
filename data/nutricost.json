@@ -525,7 +525,7 @@
       {
         "price": "10.97",
         "title": "30 Capsules / 600 Milligrams",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12525,7 +12525,7 @@
       {
         "price": "12.97",
         "title": "90 Capsules",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -12720,15 +12720,15 @@
     ]
   },
   {
-    "id": "9701003657446",
-    "title": "Nutricost NAD+ Resveratrol",
+    "id": "6877997039809",
+    "title": "Nutricost Gymnema Sylvestre",
     "context": "",
-    "handle": "nutricost-nad-resveratrol",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eAdvanced NAD+ Formula – Provides 1,000mg of NAD+ and 100mg of resveratrol per serving, enhanced with grape seed extract, quercetin, and CoQ10 for comprehensive support\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30 Servings Per Bottle – Includes 60 capsules, delivering a full 30-day supply when taken as directed\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSynergistic Blend – Carefully combined ingredients work together to help support cellular health, energy production, and overall wellness\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean \u0026amp; Quality Formula – Made with GMO-free and gluten-free ingredients for a supplement you can trust\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_NAD_Resveratrol_50MGX2_60CAP_150COMPAX_Front_Square.jpg?v=1777300784",
+    "handle": "nutricost-gymnema-sylvestre",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e3,500mg Equivalent of Gymnema Sylvestre Extract Per Serving (From 175mg of 20:1 Extract)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e180 Vegetarian Capsules Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eJust 1 Capsule For 1 Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, and Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\n\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-gymnema-sylvestre-406316.jpg?v=1702335552",
     "variants": [
       {
-        "price": "21.97",
+        "price": "14.97",
         "title": "Default Title",
         "available": true
       }
