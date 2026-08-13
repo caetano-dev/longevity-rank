@@ -525,7 +525,7 @@
       {
         "price": "10.97",
         "title": "30 Capsules / 600 Milligrams",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -1020,7 +1020,7 @@
       {
         "price": "17.97",
         "title": "250 Grams / Peach Mango",
-        "available": true
+        "available": false
       },
       {
         "price": "17.97",
@@ -11415,21 +11415,6 @@
     ]
   },
   {
-    "id": "9576687239398",
-    "title": "Nutricost Yellow Dock Extract",
-    "context": "",
-    "handle": "nutricost-yellow-dock-extract",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 15mg of 20:1 Yellow Dock Extract per serving, providing a 3,000mg root equivalent\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 60 servings per bottle for a convenient 2-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade from carefully sourced Yellow Dock root, known for its traditional use in herbal preparations\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, GMO-free, and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_YellowDock_50MGX3_180CAP_225CC_Front_Square.jpg?v=1764614911",
-    "variants": [
-      {
-        "price": "11.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "9579439948006",
     "title": "Nutricost Black Cherry Extract",
     "context": "",
@@ -12340,26 +12325,6 @@
     ]
   },
   {
-    "id": "3700448165962",
-    "title": "Nutricost Creatine Monohydrate (Creapure®) Powder",
-    "context": "",
-    "handle": "nutricost-creapure-creatine-monohydrate-powder",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade with pure Creapure Creatine Monohydrate, the world's premier creatine powder\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500/1000 Grams of Pure Creapure Per Bottle (1 KG, 2.2lbs)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e100/200 Servings Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eServing Size: 5g (Scoop Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Vegetarian, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-creatine-monohydrate-creapure-powder-105915.jpg?v=1745253996",
-    "variants": [
-      {
-        "price": "41.97",
-        "title": "500 Grams",
-        "available": true
-      },
-      {
-        "price": "65.97",
-        "title": "1 KG",
-        "available": false
-      }
-    ]
-  },
-  {
     "id": "9719380279526",
     "title": "Nutricost Resveratrol Complex",
     "context": "",
@@ -12729,6 +12694,36 @@
     "variants": [
       {
         "price": "14.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9701003657446",
+    "title": "Nutricost NAD+ Resveratrol",
+    "context": "",
+    "handle": "nutricost-nad-resveratrol",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eAdvanced NAD+ Formula – Provides 1,000mg of NAD+ and 100mg of resveratrol per serving, enhanced with grape seed extract, quercetin, and CoQ10 for comprehensive support\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e30 Servings Per Bottle – Includes 60 capsules, delivering a full 30-day supply when taken as directed\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSynergistic Blend – Carefully combined ingredients work together to help support cellular health, energy production, and overall wellness\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eClean \u0026amp; Quality Formula – Made with GMO-free and gluten-free ingredients for a supplement you can trust\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_NAD_Resveratrol_50MGX2_60CAP_150COMPAX_Front_Square.jpg?v=1777300784",
+    "variants": [
+      {
+        "price": "21.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9576687239398",
+    "title": "Nutricost Yellow Dock Extract",
+    "context": "",
+    "handle": "nutricost-yellow-dock-extract",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 15mg of 20:1 Yellow Dock Extract per serving, providing a 3,000mg root equivalent\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 60 servings per bottle for a convenient 2-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade from carefully sourced Yellow Dock root, known for its traditional use in herbal preparations\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, GMO-free, and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_YellowDock_50MGX3_180CAP_225CC_Front_Square.jpg?v=1764614911",
+    "variants": [
+      {
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
