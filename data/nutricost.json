@@ -1205,21 +1205,6 @@
     ]
   },
   {
-    "id": "3699315310666",
-    "title": "Nutricost Calcium Ascorbate Powder",
-    "context": "",
-    "handle": "nutricost-calcium-ascorbate-powder",
-    "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eA Combination of Both Calcium and Vitamin C\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500 Grams Per Bottle (1 Gram Per Serving)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e100% Pure Calcium Ascorbate\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Third Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CalciumAscorbate_UF_250GM_20OZ_Front_Square.jpg?v=1745513230",
-    "variants": [
-      {
-        "price": "16.97",
-        "title": "250 Grams",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "3699316555850",
     "title": "Nutricost N-Acetyl Cysteine (NAC) Vegetarian Powder",
     "context": "",
@@ -12726,6 +12711,46 @@
         "price": "11.97",
         "title": "Default Title",
         "available": true
+      }
+    ]
+  },
+  {
+    "id": "3702142271562",
+    "title": "Nutricost Ferrochel Iron Capsules",
+    "context": "",
+    "handle": "nutricost-ferrochel-iron-36mg-240-capsules",
+    "body_html": "\u003cul\u003e\n\u003cli\u003eFerrochel Iron Provides a Safe, Effective and Well-Tolerated Form of Iron\u003c/li\u003e\n\u003cli\u003eManufactured in a GMP Compliant, FDA Registered Facility\u003c/li\u003e\n\u003cli\u003e36mg or 18mg of Iron in Every Capsule (240 Servings)\u003c/li\u003e\n\u003cli\u003e240 Vegetarian Capsules Per Bottle\u003c/li\u003e\n\u003cli\u003eNon-GMO and Gluten Free\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_FerrochelIron_240CAP_275CC_Front_48fe1e8c-b96d-4a03-9813-ac544ef40f94.jpg?v=1745447148",
+    "variants": [
+      {
+        "price": "17.97",
+        "title": "18 mg",
+        "available": true
+      },
+      {
+        "price": "17.97",
+        "title": "36 mg",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": "3700448165962",
+    "title": "Nutricost Creatine Monohydrate (Creapure®) Powder",
+    "context": "",
+    "handle": "nutricost-creapure-creatine-monohydrate-powder",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade with pure Creapure Creatine Monohydrate, the world's premier creatine powder\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e500/1000 Grams of Pure Creapure Per Bottle (1 KG, 2.2lbs)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e100/200 Servings Per Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eServing Size: 5g (Scoop Included)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Vegetarian, Gluten Free, 3rd Party Tested\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-creatine-monohydrate-creapure-powder-105915.jpg?v=1745253996",
+    "variants": [
+      {
+        "price": "41.97",
+        "title": "500 Grams",
+        "available": true
+      },
+      {
+        "price": "65.97",
+        "title": "1 KG",
+        "available": false
       }
     ]
   }
