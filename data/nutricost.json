@@ -780,7 +780,7 @@
       {
         "price": "137.97",
         "title": "Chocolate Peanut Butter / 5 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "65.97",
@@ -8605,7 +8605,7 @@
       {
         "price": "26.97",
         "title": "Unflavored",
-        "available": true
+        "available": false
       },
       {
         "price": "28.97",
@@ -9705,7 +9705,7 @@
       {
         "price": "16.97",
         "title": "180 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
