@@ -380,7 +380,7 @@
       {
         "price": "20.97",
         "title": "2 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "31.97",
@@ -1045,7 +1045,7 @@
       {
         "price": "25.97",
         "title": "500 Grams / Raspberry Lemonade",
-        "available": true
+        "available": false
       },
       {
         "price": "18.97",
@@ -8600,7 +8600,7 @@
       {
         "price": "28.97",
         "title": "Mixed Berry",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -9665,7 +9665,7 @@
       {
         "price": "24.97",
         "title": "360 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10415,7 +10415,7 @@
       {
         "price": "19.97",
         "title": "Grape",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -12765,6 +12765,26 @@
       {
         "price": "14.97",
         "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "8459568185574",
+    "title": "Nutricost Iron Bisglycinate",
+    "context": "",
+    "handle": "nutricost-iron-bisglycinate",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEssential Mineral Support: Nutricost Iron Bisglycinate Supplement offers essential support for overall health and vitality, helping you feel your best every day. Iron from Ferrochel (Ferrous Bisglycinate Chelate).\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e25mg of Iron Bisglycinate: Each capsule provides 25mg of iron bisglycinate, a highly bioavailable form of iron to support your overall well-being.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 or 240 Capsules per Bottle: Enjoy a generous supply with 120 or 240 capsules in each bottle, providing you with ample support for your daily iron needs.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in NSF-Certified GMP-Compliant Facility: Trust in the quality of our product, crafted in a facility adhering to the highest standards of quality and safety, certified by NSF and compliant with GMP.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eRigorous Third-Party Testing: Each batch undergoes meticulous third-party testing by independent ISO-accredited laboratories, ensuring the purity and potency of our formula.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_IronBisglycinate_25MG_240CAPS_275CC_Front1_Square.jpg?v=1745440127",
+    "variants": [
+      {
+        "price": "11.97",
+        "title": "120 Capsules",
+        "available": false
+      },
+      {
+        "price": "17.97",
+        "title": "240 Capsules",
         "available": true
       }
     ]
