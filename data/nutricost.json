@@ -4264,8 +4264,8 @@
     "title": "Nutricost Organic Rice Protein Powder",
     "context": "",
     "handle": "nutricost-organic-rice-protein-powder",
-    "body_html": "\u003cul\u003e\n\u003cli\u003e2LBS or 5LBS per container (39 or 99 servings per container)\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 2 LB of rice protein powder for your protein needs.\u003cbr\u003e\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\n\u003cspan class=\"a-list-item\"\u003eIncludes 5 LB of rice protein powder for your protein needs.\u003c/span\u003e\u003cspan class=\"a-list-item\"\u003e\u003c/span\u003e\n\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMix 1 scoop (approx 1/4 cup) with 8-12 oz of water or your preferred beverage.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-free and non-GMO, making it a good choice for a variety of diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian-friendly, perfect for plant-based diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-compliant facility and third-party tested.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OrganicRiceProtein_UF__RB2__2LB_2750CC_Front1_Square_d3f75f44-9024-4587-8ff2-33ef13c32862.jpg?v=1730491550",
+    "body_html": "\u003cul\u003e\n\u003cli\u003e2LBS or 5LBS per container (39 or 99 servings per container)\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 2 LB of rice protein powder for your protein needs.\u003cbr\u003e\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\n\u003cspan class=\"a-list-item\"\u003eIncludes 5 LB of rice protein powder for your protein needs.\u003c/span\u003e\u003cspan class=\"a-list-item\"\u003e\u003c/span\u003e\n\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMix 1 scoop (approx 1/4 cup) with 8-12 oz of water or your preferred beverage.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-free and non-GMO, making it a good choice for a variety of diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian-friendly, perfect for plant-based diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-compliant facility and third-party tested.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/p\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Organic_RiceProtein__RB2__UF_5LB_1.8GAL_Front1_Square_776638db-9fc0-4eea-a620-eb2625867575.jpg?v=1730491696",
     "variants": [
       {
         "price": "31.97",
@@ -8590,7 +8590,7 @@
       {
         "price": "26.97",
         "title": "Unflavored",
-        "available": false
+        "available": true
       },
       {
         "price": "28.97",
@@ -8865,7 +8865,7 @@
       {
         "price": "15.97",
         "title": "60",
-        "available": false
+        "available": true
       },
       {
         "price": "24.97",
@@ -11568,7 +11568,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OrganicCatsClaw_150MG_4OZ_AmberGlassBoston_Front_Square.jpg?v=1770421103",
     "variants": [
       {
-        "price": "11.97",
+        "price": "18.97",
         "title": "Default Title",
         "available": true
       }
@@ -12144,21 +12144,6 @@
     "variants": [
       {
         "price": "52.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
-    "id": "9061508841702",
-    "title": "Magnesium Glycinate 1 Bottle",
-    "context": "",
-    "handle": "magnesium-glycinate-1-bottle",
-    "body_html": "",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumGlycinate_210MGX3_180CAP_300CC_Front_Square_bc84db4a-eec0-4f77-8af3-86e218ea8ab2.jpg?v=1751036267",
-    "variants": [
-      {
-        "price": "16.49",
         "title": "Default Title",
         "available": true
       }
@@ -12820,6 +12805,21 @@
     ]
   },
   {
+    "id": "8841455075558",
+    "title": "Nutricost Pets Seasonal Allergy Chews [60 Chews] [Beef]",
+    "context": "",
+    "handle": "nutricost-pets-seasonal-allergy-chews-60-chw-beef",
+    "body_html": "\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eGive your dog a breath of fresh air with Nutricost Pets Seasonal Allergy soft chews, featuring soft chews with a delicious beef flavor that your dog is sure to love. Each batch is rigorously third-party tested and made in a GMP compliant facility to ensure your best friend gets only the best.\u003cbr\u003e\u003cbr\u003eIncluding Paw-some ingredients like… \u003cbr\u003e\u003cbr\u003eColostrum\u003cbr\u003eTurmeric\u003cbr\u003eQuercetin\u003cbr\u003e———\u003cbr\u003e60 softchews / 6.4 oz\u003c/span\u003e\u003cbr\u003e\u003c/p\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_AllergyChew_60CHEW_16OZ_Front_Square.jpg?v=1726605425",
+    "variants": [
+      {
+        "price": "18.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
     "id": "8872688615654",
     "title": "Nutricost Organic MCT Oil Powder",
     "context": "",
@@ -12840,15 +12840,15 @@
     ]
   },
   {
-    "id": "8841455075558",
-    "title": "Nutricost Pets Seasonal Allergy Chews [60 Chews] [Beef]",
+    "id": "9061508841702",
+    "title": "Magnesium Glycinate 1 Bottle",
     "context": "",
-    "handle": "nutricost-pets-seasonal-allergy-chews-60-chw-beef",
-    "body_html": "\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eGive your dog a breath of fresh air with Nutricost Pets Seasonal Allergy soft chews, featuring soft chews with a delicious beef flavor that your dog is sure to love. Each batch is rigorously third-party tested and made in a GMP compliant facility to ensure your best friend gets only the best.\u003cbr\u003e\u003cbr\u003eIncluding Paw-some ingredients like… \u003cbr\u003e\u003cbr\u003eColostrum\u003cbr\u003eTurmeric\u003cbr\u003eQuercetin\u003cbr\u003e———\u003cbr\u003e60 softchews / 6.4 oz\u003c/span\u003e\u003cbr\u003e\u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_AllergyChew_60CHEW_16OZ_Front_Square.jpg?v=1726605425",
+    "handle": "magnesium-glycinate-1-bottle",
+    "body_html": "",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumGlycinate_210MGX3_180CAP_300CC_Front_Square_bc84db4a-eec0-4f77-8af3-86e218ea8ab2.jpg?v=1751036267",
     "variants": [
       {
-        "price": "18.97",
+        "price": "16.49",
         "title": "Default Title",
         "available": true
       }
