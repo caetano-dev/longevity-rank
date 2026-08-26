@@ -780,7 +780,7 @@
       {
         "price": "137.97",
         "title": "Chocolate Peanut Butter / 5 lbs",
-        "available": false
+        "available": true
       },
       {
         "price": "65.97",
@@ -1014,42 +1014,42 @@
     "variants": [
       {
         "price": "17.97",
-        "title": "250 Grams / Fruit Punch",
+        "title": "Fruit Punch / 250 Grams",
+        "available": false
+      },
+      {
+        "price": "25.97",
+        "title": "Fruit Punch / 500 Grams",
         "available": false
       },
       {
         "price": "17.97",
-        "title": "250 Grams / Peach Mango",
+        "title": "Peach Mango / 250 Grams",
         "available": false
       },
       {
+        "price": "25.97",
+        "title": "Peach Mango / 500 Grams",
+        "available": true
+      },
+      {
         "price": "17.97",
-        "title": "250 Grams / Raspberry Lemonade",
+        "title": "Raspberry Lemonade / 250 Grams",
         "available": false
+      },
+      {
+        "price": "25.97",
+        "title": "Raspberry Lemonade / 500 Grams",
+        "available": true
       },
       {
         "price": "14.97",
-        "title": "250 Grams / Unflavored",
-        "available": true
-      },
-      {
-        "price": "25.97",
-        "title": "500 Grams / Fruit Punch",
-        "available": false
-      },
-      {
-        "price": "25.97",
-        "title": "500 Grams / Peach Mango",
-        "available": true
-      },
-      {
-        "price": "25.97",
-        "title": "500 Grams / Raspberry Lemonade",
+        "title": "Unflavored / 250 Grams",
         "available": true
       },
       {
         "price": "18.97",
-        "title": "500 Grams / Unflavored",
+        "title": "Unflavored / 500 Grams",
         "available": true
       }
     ]
@@ -6160,56 +6160,6 @@
     ]
   },
   {
-    "id": "6805202698433",
-    "title": "Nutricost Calcium Citrate + Magnesium Citrate Powder",
-    "context": "",
-    "handle": "nutricost-calcium-citrate-magnesium-citrate-powder",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCalcium-Magnesium Harmony: Nutricost's Calcium Magnesium Powder combines the synergistic benefits of 1,000/1,420mg of Calcium Citrate and 420mg of Magnesium Citrate in each serving, promoting a balanced mineral intake for overall wellness.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSize and Flavor Options: Tailor your supplement routine with the flexibility of 30 servings or 60 servings.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFruit-Infused Enjoyment: Transform your daily routine with the delightful Fruit Punch or Peach Mango flavors, making your mineral supplementation a tasty and enjoyable experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant Manufacturing: Crafted in an NSF Certified GMP Compliant facility, Nutricost upholds the highest manufacturing standards, ensuring you receive a product aligned with your health-conscious choices.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eThird-Party Quality Assurance: Rigorous third-party testing by independent ISO-accredited laboratories guarantees the quality and purity of every batch, instilling confidence in the effectiveness of Nutricost's Calcium Magnesium Powder. Embrace the balance your body deserves with Nutricost's commitment to excellence.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Ca-Citrate_Mg-Citrate_Ras-Lemonade_60Serv_Front1.jpg?v=1738342829",
-    "variants": [
-      {
-        "price": "18.97",
-        "title": "Fruit Punch / 30 Servings",
-        "available": true
-      },
-      {
-        "price": "27.97",
-        "title": "Fruit Punch / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Peach Mango / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "27.97",
-        "title": "Peach Mango / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Raspberry Lemonade / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Raspberry Lemonade / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Unflavored / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Unflavored / 60 Servings",
-        "available": false
-      }
-    ]
-  },
-  {
     "id": "6805210562753",
     "title": "Nutricost Calcium \u0026 Magnesium Carbonate Tablets",
     "context": "",
@@ -8865,7 +8815,7 @@
       {
         "price": "15.97",
         "title": "60",
-        "available": true
+        "available": false
       },
       {
         "price": "24.97",
@@ -10264,21 +10214,6 @@
     "variants": [
       {
         "price": "21.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
-    "id": "8973577093350",
-    "title": "Nutricost Zembrin (Sceletium Tortuosum)",
-    "context": "",
-    "handle": "nutricost-zembrin-sceletium-tortuosum",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSupports Your Wellness Journey: Nutricost Zembrin is a thoughtful addition to your wellness routine, crafted to complement your lifestyle with the utmost quality.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e50mg of Sceletium Tortuosum per Capsule: Each capsule is precisely dosed with 50mg of Sceletium Tortuosum, allowing you to incorporate this natural botanical into your lifestyle with ease.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e60 Capsules per Bottle: Enjoy a generous supply with 60 capsules in each bottle, providing you with a convenient and easily manageable addition to your daily routine.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eRigorous Third-Party Testing: To ensure the purity and potency of our product, each batch undergoes rigorous third-party testing by independent ISO-accredited laboratories.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Zembrin_Capsules_60CAP_50MG_Front.jpg?v=1743096390",
-    "variants": [
-      {
-        "price": "32.97",
         "title": "Default Title",
         "available": true
       }
@@ -12340,7 +12275,7 @@
       {
         "price": "12.97",
         "title": "90 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "16.97",
@@ -12385,7 +12320,7 @@
     "context": "",
     "handle": "nutricost-liposomal-glutathione",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eContains 60 capsules per bottle.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 30 servings of liposomal glutathione.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade in a GMP-compliant facility and third-party tested.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-free to suit dietary needs.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly for plant-based lifestyles.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_LiposomalGlutathione__250MGx2__60CAPS_150CC_Front1_Square.jpg?v=1733777382",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_LiposomalGlutathione_250MGX2_60CAP_150CC_Front_Square.jpg?v=1787694414",
     "variants": [
       {
         "price": "31.97",
@@ -12820,37 +12755,67 @@
     ]
   },
   {
-    "id": "8872688615654",
-    "title": "Nutricost Organic MCT Oil Powder",
+    "id": "3813055037514",
+    "title": "Nutricost Organic Spinach Powder",
     "context": "",
-    "handle": "nutricost-organic-mct-oil-powder",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e10g Per Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e45 Servings Per Container\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1LB Per Container\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian Product\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eGMP Compliant \u0026amp; Third-Party Tested: Manufactured in a certified facility with stringent quality control.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MCTOilPowder_1LB_46OZ_Front_Square_1194c26c-2fba-411c-acf3-211dc308e9f1.jpg?v=1743098043",
+    "handle": "nutricost-100-organic-spinach-powder-8oz",
+    "body_html": "\u003cul\u003e\n\u003cli\u003eNutricost's Organic Spinach Powder is USDA Certified Organic\u003c/li\u003e\n\u003cli\u003e1 Gram of Organic Spinach Per Serving (227 Servings) (Scoop Included)\u003c/li\u003e\n\u003cli\u003e8 oz of Spinach Powder Per Bottle\u003c/li\u003e\n\u003cli\u003eNon-GMO, Gluten Free, 3rd Party Tested\u003c/li\u003e\n\u003cli\u003eMade in a GMP Compliant, FDA Registered Facility \u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e \u003cspan data-mce-fragment=\"1\"\u003e⚠️This product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to \u003c/span\u003e\u003ca data-saferedirecturl=\"https://www.google.com/url?q=http://www.P65Warnings.ca.gov\u0026amp;source=gmail\u0026amp;ust=1608315246657000\u0026amp;usg=AFQjCNGixa745Oq769AHUbLUoMuG1NgTcA\" href=\"http://www.p65warnings.ca.gov/\" data-mce-fragment=\"1\" target=\"_blank\"\u003ewww.P65Warnings.ca.gov\u003c/a\u003e\u003cspan data-mce-fragment=\"1\"\u003e.\u003c/span\u003e\u003c/p\u003e\n\u003cul\u003e\u003c/ul\u003e\n\u003cul\u003e\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Organic_SpinachUF_8OZ_20OZ_Front_Square.jpg?v=1745512300",
     "variants": [
       {
-        "price": "32.97",
-        "title": "1 LB",
+        "price": "15.97",
+        "title": "Default Title",
         "available": true
-      },
-      {
-        "price": "20.97",
-        "title": ".5 LBS",
-        "available": false
       }
     ]
   },
   {
-    "id": "9061508841702",
-    "title": "Magnesium Glycinate 1 Bottle",
+    "id": "6805202698433",
+    "title": "Nutricost Calcium Citrate + Magnesium Citrate Powder",
     "context": "",
-    "handle": "magnesium-glycinate-1-bottle",
-    "body_html": "",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_MagnesiumGlycinate_210MGX3_180CAP_300CC_Front_Square_bc84db4a-eec0-4f77-8af3-86e218ea8ab2.jpg?v=1751036267",
+    "handle": "nutricost-calcium-citrate-magnesium-citrate-powder",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCalcium-Magnesium Harmony: Nutricost's Calcium Magnesium Powder combines the synergistic benefits of 1,000/1,420mg of Calcium Citrate and 420mg of Magnesium Citrate in each serving, promoting a balanced mineral intake for overall wellness.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSize and Flavor Options: Tailor your supplement routine with the flexibility of 30 servings or 60 servings.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFruit-Infused Enjoyment: Transform your daily routine with the delightful Fruit Punch or Peach Mango flavors, making your mineral supplementation a tasty and enjoyable experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant Manufacturing: Crafted in an NSF Certified GMP Compliant facility, Nutricost upholds the highest manufacturing standards, ensuring you receive a product aligned with your health-conscious choices.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eThird-Party Quality Assurance: Rigorous third-party testing by independent ISO-accredited laboratories guarantees the quality and purity of every batch, instilling confidence in the effectiveness of Nutricost's Calcium Magnesium Powder. Embrace the balance your body deserves with Nutricost's commitment to excellence.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Ca-Citrate_Mg-Citrate_Ras-Lemonade_60Serv_Front1.jpg?v=1738342829",
     "variants": [
       {
-        "price": "16.49",
-        "title": "Default Title",
+        "price": "18.97",
+        "title": "Fruit Punch / 30 Servings",
         "available": true
+      },
+      {
+        "price": "27.97",
+        "title": "Fruit Punch / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Peach Mango / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "27.97",
+        "title": "Peach Mango / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Raspberry Lemonade / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Raspberry Lemonade / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Unflavored / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Unflavored / 60 Servings",
+        "available": false
       }
     ]
   }
