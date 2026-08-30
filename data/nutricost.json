@@ -845,7 +845,7 @@
       {
         "price": "60.97",
         "title": "Milk Chocolate / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "120.97",
@@ -4490,7 +4490,7 @@
       {
         "price": "27.97",
         "title": "Chocolate / 1lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "58.97",
