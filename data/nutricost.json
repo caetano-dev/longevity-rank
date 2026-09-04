@@ -1328,7 +1328,7 @@
         "available": true
       },
       {
-        "price": "21.97",
+        "price": "19.97",
         "title": "240 Capsules",
         "available": true
       },
@@ -3350,7 +3350,7 @@
       {
         "price": "16.97",
         "title": "400mg / 120 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "10.97",
@@ -4028,32 +4028,32 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_CaseinPowderChocolate_2LB_2750CC_Front_Square_fb0707fa-88d4-4453-84ea-6ea0f2de3c1d.jpg?v=1752248027",
     "variants": [
       {
-        "price": "40.97",
+        "price": "42.97",
         "title": "Chocolate / 2 lbs",
         "available": true
       },
       {
-        "price": "76.97",
+        "price": "82.97",
         "title": "Chocolate / 5 lbs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "42.97",
         "title": "Vanilla / 2 lbs",
         "available": true
       },
       {
-        "price": "76.97",
+        "price": "82.97",
         "title": "Vanilla / 5 lbs",
         "available": true
       },
       {
-        "price": "40.97",
+        "price": "42.97",
         "title": "Unflavored / 2 lbs",
         "available": true
       },
       {
-        "price": "76.97",
+        "price": "82.97",
         "title": "Unflavored / 5 lbs",
         "available": false
       }
@@ -6579,7 +6579,7 @@
     "title": "Nutricost Pregnenolone",
     "context": "",
     "handle": "nutricost-pregnenolone",
-    "body_html": "\u003cul data-mce-fragment=\"1\" class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003e120 Capsules, 120 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003eServing Size of 1 Easy-to-swallow Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003e10, 30, 50 or 100mg of Pregnenolone in Each Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli data-mce-fragment=\"1\"\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Plant-Based \"Veggie\" Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade In A GMP Compliant Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan data-mce-fragment=\"1\" class=\"a-list-item\"\u003e\u003cspan\u003eWARNING: NOT FOR USE BY INDIVIDUALS UNDER THE AGE OF 18 YEARS. DO NOT USE IF PREGNANT OR NURSING. Consult a physician or licensed qualified health care professional before using this product if you have, or have a family history or, prostate cancer, prostate enlargement, heart disease, low “good” cholesterol (HDL), or if you are using any other dietary supplement, prescription drug, or over-the-counter drug. Do not exceed recommended serving. Exceeding recommended serving may cause serious adverse health effects. Possible side effects include acne, hair loss, hair growth on the face (in women), aggressiveness, irritability, and increased levels of estrogen. Discontinue use and call a physician or licensed qualified health care professional immediately if you experience rapid heartbeat, dizziness, blurred vision, or other similar symptoms. KEEP OUT OF REACH OF CHILDREN.\u003c/span\u003e\u003cbr\u003e\u003cspan\u003eTo report any adverse events call 1-800-332-1088.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003e120 Capsules, 120 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eServing Size of 1 Easy-to-swallow Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003e10, 30, 50 or 100mg of Pregnenolone in Each Serving\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Plant-Based Vegan Capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade In A GMP Compliant Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cspan\u003eWARNING: NOT FOR USE BY INDIVIDUALS UNDER THE AGE OF 18 YEARS. DO NOT USE IF PREGNANT OR NURSING. Consult a physician or licensed qualified health care professional before using this product if you have, or have a family history or, prostate cancer, prostate enlargement, heart disease, low “good” cholesterol (HDL), or if you are using any other dietary supplement, prescription drug, or over-the-counter drug. Do not exceed recommended serving. Exceeding recommended serving may cause serious adverse health effects. Possible side effects include acne, hair loss, hair growth on the face (in women), aggressiveness, irritability, and increased levels of estrogen. Discontinue use and call a physician or licensed qualified health care professional immediately if you experience rapid heartbeat, dizziness, blurred vision, or other similar symptoms. KEEP OUT OF REACH OF CHILDREN.\u003c/span\u003e\u003cbr\u003e\u003cspan\u003eTo report any adverse events call 1-800-332-1088.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Pregnenolone_30MG_120CAP_Front_de750212-f359-4473-9629-ebd032624587.jpg?v=1757955524",
     "variants": [
       {
@@ -7588,7 +7588,7 @@
         "available": false
       },
       {
-        "price": "26.97",
+        "price": "27.97",
         "title": "Raspberry Lemonade",
         "available": true
       },
@@ -10079,7 +10079,7 @@
     "title": "Nutricost Calcium, Magnesium \u0026 Zinc Tablets",
     "context": "",
     "handle": "nutricost-calcium-magnesium-zinc-tablets",
-    "body_html": "\u003cdiv id=\"featurebullets_feature_div\" class=\"celwidget\" data-feature-name=\"featurebullets\" data-csa-c-type=\"widget\" data-csa-c-content-id=\"featurebullets\" data-csa-c-slot-id=\"featurebullets_feature_div\" data-csa-c-asin=\"B0CCZR81HQ\" data-csa-c-is-in-initial-active-row=\"false\" data-csa-c-id=\"hfe9px-bhmo8o-aao13w-rlin6n\" data-cel-widget=\"featurebullets_feature_div\"\u003e\n\u003cdiv id=\"feature-bullets\" class=\"a-section a-spacing-medium a-spacing-top-small\"\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOptimal Mineral Blend: Each serving provides 1,000 mg of calcium, 400 mg of magnesium, and 15 mg of zinc, offering a well-balanced combination of essential minerals that are crucial for various bodily functions.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eLong-Lasting Quantity: With a generous 180 tablets per bottle, you can enjoy a consistent supply of these essential nutrients for an extended period, ensuring you stay on top of your wellness game.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEasy Integration: These tablets are easy to incorporate into your daily routine, making it convenient to support your body's mineral needs without any hassle.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTrusted Manufacturing: Rest assured that your health comes first with our NSF certified, GMP compliant facility, where each batch of Calcium Magnesium Zinc Tablets is expertly crafted with the utmost care and attention to detail.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eRigorous Third-Party Testing: Your safety is our priority. That's why every batch undergoes independent testing at ISO accredited laboratories, ensuring the product's purity, quality, and potency.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv id=\"provenanceCertifications_feature_div\" class=\"celwidget\" data-feature-name=\"provenanceCertifications\" data-csa-c-type=\"widget\" data-csa-c-content-id=\"provenanceCertifications\" data-csa-c-slot-id=\"provenanceCertifications_feature_div\" data-csa-c-asin=\"B0CCZR81HQ\" data-csa-c-is-in-initial-active-row=\"false\" data-csa-c-id=\"8l7drb-t4bhb2-67wim9-hif8n0\" data-cel-widget=\"provenanceCertifications_feature_div\"\u003e\u003c/div\u003e\n\u003cdiv id=\"handmadeArtisanCard_feature_div\" class=\"celwidget\" data-feature-name=\"handmadeArtisanCard\" data-csa-c-type=\"widget\" data-csa-c-content-id=\"handmadeArtisanCard\" data-csa-c-slot-id=\"handmadeArtisanCard_feature_div\" data-csa-c-asin=\"B0CCZR81HQ\" data-csa-c-is-in-initial-active-row=\"false\" data-csa-c-id=\"59d6kq-miuubq-3pihr8-264m6i\" data-cel-widget=\"handmadeArtisanCard_feature_div\"\u003e\u003c/div\u003e\n\u003cdiv id=\"globalStoreInfoBullets_feature_div\" class=\"celwidget\" data-feature-name=\"globalStoreInfoBullets\" data-csa-c-type=\"widget\" data-csa-c-content-id=\"globalStoreInfoBullets\" data-csa-c-slot-id=\"globalStoreInfoBullets_feature_div\" data-csa-c-asin=\"B0CCZR81HQ\" data-csa-c-is-in-initial-active-row=\"false\" data-csa-c-id=\"frfiw6-lzku75-m6ner3-uv9noi\" data-cel-widget=\"globalStoreInfoBullets_feature_div\"\u003e\u003c/div\u003e\n\u003cdiv id=\"HLCXComparisonJumplink_feature_div\"\u003e\u003c/div\u003e\n\u003cdiv id=\"addOnItem_feature_div\" class=\"celwidget\" data-feature-name=\"addOnItem\" data-csa-c-type=\"widget\" data-csa-c-content-id=\"addOnItem\" data-csa-c-slot-id=\"addOnItem_feature_div\" data-csa-c-asin=\"B0CCZR81HQ\" data-csa-c-is-in-initial-active-row=\"false\" data-csa-c-id=\"svze5s-trgclz-t40jze-turvan\" data-cel-widget=\"addOnItem_feature_div\"\u003e\u003c/div\u003e\n\u003cdiv id=\"giftcard-holiday-availability-messaging_feature_div\" class=\"celwidget\" data-feature-name=\"giftCardHolidayAvailabilityMessaging\" data-csa-c-type=\"widget\" data-csa-c-content-id=\"giftCardHolidayAvailabilityMessaging\" data-csa-c-slot-id=\"giftcard-holiday-availability-messaging_feature_div\" data-csa-c-asin=\"B0CCZR81HQ\" data-csa-c-is-in-initial-active-row=\"false\" data-csa-c-id=\"b2k3p4-mant8p-g8nvru-zhtz2v\" data-cel-widget=\"giftcard-holiday-availability-messaging_feature_div\"\u003e\u003c/div\u003e\n\u003cdiv id=\"olp_feature_div\" class=\"celwidget\" data-feature-name=\"olp\" data-csa-c-type=\"widget\" data-csa-c-content-id=\"olp\" data-csa-c-slot-id=\"olp_feature_div\" data-csa-c-asin=\"B0CCZR81HQ\" data-csa-c-is-in-initial-active-row=\"false\" data-csa-c-id=\"jdrfgg-sk3r97-g0v2gl-5rtc2w\" data-cel-widget=\"olp_feature_div\"\u003e\n\u003cdiv id=\"all-offers-display\" class=\"a-section\"\u003e\u003c/div\u003e\n\u003cspan class=\"a-declarative\" data-action=\"close-all-offers-display\" data-close-all-offers-display=\"{}\"\u003e\u003c/span\u003e\n\u003c/div\u003e\n\u003cdiv id=\"buyingOptionNostosBadge_feature_div\" class=\"celwidget\" data-feature-name=\"buyingOptionNostosBadge\" data-csa-c-type=\"widget\" data-csa-c-content-id=\"buyingOptionNostosBadge\" data-csa-c-slot-id=\"buyingOptionNostosBadge_feature_div\" data-csa-c-asin=\"B0CCZR81HQ\" data-csa-c-is-in-initial-active-row=\"false\" data-csa-c-id=\"wdi65u-77ndgz-ympi5g-9fayra\" data-cel-widget=\"buyingOptionNostosBadge_feature_div\"\u003e\u003c/div\u003e\n\u003cdiv id=\"tellAmazon_feature_div\" class=\"celwidget\" data-feature-name=\"tellAmazon\" data-csa-c-type=\"widget\" data-csa-c-content-id=\"tellAmazon\" data-csa-c-slot-id=\"tellAmazon_feature_div\" data-csa-c-asin=\"B0CCZR81HQ\" data-csa-c-is-in-initial-active-row=\"false\" data-csa-c-id=\"rocgas-3kpdno-6z578s-m9dqb9\" data-cel-widget=\"tellAmazon_feature_div\"\u003e\n\u003cdiv class=\"celwidget c-f\" data-csa-op-log-render=\"\" data-csa-c-content-id=\"DsUnknown\" data-csa-c-slot-id=\"DsUnknown-7\" data-csa-c-type=\"widget\" data-csa-c-painter=\"tell-amazon-desktop-cards\" data-csa-c-id=\"7hnbyw-o75t4z-cw3a9z-h57bt6\" data-cel-widget=\"tell-amazon-desktop_DetailPage_6\"\u003e\n\u003cdiv id=\"CardInstanceYn1NryHFgqw7tV7yAVXhMQ\" data-card-metrics-id=\"tell-amazon-desktop_DetailPage_6\" data-acp-tracking=\"{}\" data-acp-region-info=\"us-east-1\" data-mix-claimed=\"true\"\u003e\n\u003cdiv data-asin=\"B0CCZR81HQ\" data-marketplace=\"ATVPDKIKX0DER\" data-logged-in=\"false\" class=\"_tell-amazon-desktop_style_tell_amazon_div__1YDZk\"\u003e\u003ca class=\"a-link-normal _tell-amazon-desktop_style_tell_amazon_link__1KW5z\" href=\"https://www.amazon.com/Nutricost-Calcium-Magnesium-Zinc-Tablets/dp/B0CCZR81HQ/ref=sr_1_1_sspa?crid=1IT8ZJQL0FCTI\u0026amp;dib=eyJ2IjoiMSJ9.e-Oi009aPTblQayNgZA9_j3EXYJ63BPHjCA9hlvKbek7uegBlLMTMdVyCsNeEd_wXd-jdq24PouXbTZ_t7EkdYMYiHrMJbHLdP-WwH0fnidi9i_QY5x0dHtsx4MQAT9kiphrj1OBgV_eB_cC_e5tn3mE4CYhGbcjAtDR2Wuv1LXukEAY9FvxI2vez6LgcsFSQxyIkdXk23xLY7FppUVYnIRPay7OYiV8jLv1rCu8BSxMrlNSh4uo2OBE5K6H9l5Tz07qoP7Vwo0RjtFvoXlgOz2TY9ZJ6GPcBaPVi9K6aE4.fqiGLLg9eu0sl5cn5zX6gi4AJgZJ3UMoR9jx4WsHKnI\u0026amp;dib_tag=se\u0026amp;keywords=nutricost+calcium+magnesium+zinc\u0026amp;qid=1742924063\u0026amp;sprefix=nutricost+calcium+magnesium+zinc%2Caps%2C139\u0026amp;sr=8-1-spons\u0026amp;sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY\u0026amp;psc=1#\" data-mix-operations=\"openTellAmazonModal\"\u003e\u003ci aria-hidden=\"true\" class=\"a-icon a-icon-share-sms a-icon-mini\" role=\"presentation\"\u003e\u003c/i\u003e\u003cspan\u003e \u003c/span\u003e  Report an issue with this product or seller\u003c/a\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e",
+    "body_html": "\u003cdiv id=\"featurebullets_feature_div\" class=\"celwidget\"\u003e\n\u003cdiv id=\"feature-bullets\" class=\"a-section a-spacing-medium a-spacing-top-small\"\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOptimal Mineral Blend: Each serving provides 1,000 mg of calcium, 400 mg of magnesium, and 15 mg of zinc, offering a well-balanced combination of essential minerals that are crucial for various bodily functions.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eLong-Lasting Quantity: With a generous 180 tablets per bottle, you can enjoy a consistent supply of these essential nutrients for an extended period, ensuring you stay on top of your wellness game.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEasy Integration: These tablets are easy to incorporate into your daily routine, making it convenient to support your body's mineral needs without any hassle.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTrusted Manufacturing: Rest assured that your health comes first with our NSF certified, GMP compliant facility, where each batch of Calcium Magnesium Zinc Tablets is expertly crafted with the utmost care and attention to detail.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eRigorous Third-Party Testing: Your safety is our priority. That's why every batch undergoes independent testing at ISO accredited laboratories, ensuring the product's purity, quality, and potency.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv id=\"provenanceCertifications_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"handmadeArtisanCard_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"globalStoreInfoBullets_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"HLCXComparisonJumplink_feature_div\"\u003e\u003c/div\u003e\n\u003cdiv id=\"addOnItem_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"giftcard-holiday-availability-messaging_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"olp_feature_div\" class=\"celwidget\"\u003e\n\u003cdiv id=\"all-offers-display\" class=\"a-section\"\u003e\u003c/div\u003e\n\u003cspan class=\"a-declarative\"\u003e\u003c/span\u003e\n\u003c/div\u003e\n\u003cdiv id=\"buyingOptionNostosBadge_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"tellAmazon_feature_div\" class=\"celwidget\"\u003e\n\u003cdiv class=\"celwidget c-f\"\u003e\n\u003cdiv id=\"CardInstanceYn1NryHFgqw7tV7yAVXhMQ\"\u003e\u003cspan class=\"a-list-item\"\u003e\u003cb id=\"docs-internal-guid-f7386116-7fff-eae2-2660-764f43c2561b\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Calcium_1000MGX3_Magnesium_400MGX3_Zinc_15MGX3_D3_3mcg_180TAB_275CC_Front_Square.jpg?v=1768585759",
     "variants": [
       {
@@ -10994,7 +10994,7 @@
     "title": "Nutricost Organic Spirulina + Chlorella",
     "context": "",
     "handle": "nutricost-organic-spirulina-chlorella",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e360 tablets per bottle, providing a full 2-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving delivers 1,500mg of organic spirulina and 1,500mg of organic chlorella\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified USDA Organic and CCOF Organic\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free, gluten-free, and vegan-friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e \u003cmeta charset=\"utf-8\"\u003e \u003cb id=\"docs-internal-guid-f7386116-7fff-eae2-2660-764f43c2561b\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e360 tablets per bottle, providing a full 2-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving delivers 1,500mg of organic spirulina and 1,500mg of organic chlorella\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified USDA Organic and CCOF Organic\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free, gluten-free, and vegan-friendly\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e \u003cmeta charset=\"utf-8\"\u003e \u003cb id=\"docs-internal-guid-f7386116-7fff-eae2-2660-764f43c2561b\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_OrganicSpirulina_Chlorella_500MGx6_360TAB_300CC_Front_Square.jpg?v=1758925405",
     "variants": [
       {
@@ -12695,56 +12695,6 @@
     ]
   },
   {
-    "id": "6805202698433",
-    "title": "Nutricost Calcium Citrate + Magnesium Citrate Powder",
-    "context": "",
-    "handle": "nutricost-calcium-citrate-magnesium-citrate-powder",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCalcium-Magnesium Harmony: Nutricost's Calcium Magnesium Powder combines the synergistic benefits of 1,000/1,420mg of Calcium Citrate and 420mg of Magnesium Citrate in each serving, promoting a balanced mineral intake for overall wellness.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSize and Flavor Options: Tailor your supplement routine with the flexibility of 30 servings or 60 servings.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFruit-Infused Enjoyment: Transform your daily routine with the delightful Fruit Punch or Peach Mango flavors, making your mineral supplementation a tasty and enjoyable experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant Manufacturing: Crafted in an NSF Certified GMP Compliant facility, Nutricost upholds the highest manufacturing standards, ensuring you receive a product aligned with your health-conscious choices.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eThird-Party Quality Assurance: Rigorous third-party testing by independent ISO-accredited laboratories guarantees the quality and purity of every batch, instilling confidence in the effectiveness of Nutricost's Calcium Magnesium Powder. Embrace the balance your body deserves with Nutricost's commitment to excellence.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Ca-Citrate_Mg-Citrate_Ras-Lemonade_60Serv_Front1.jpg?v=1738342829",
-    "variants": [
-      {
-        "price": "18.97",
-        "title": "Fruit Punch / 30 Servings",
-        "available": true
-      },
-      {
-        "price": "27.97",
-        "title": "Fruit Punch / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Peach Mango / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "27.97",
-        "title": "Peach Mango / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Raspberry Lemonade / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Raspberry Lemonade / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Unflavored / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Unflavored / 60 Servings",
-        "available": false
-      }
-    ]
-  },
-  {
     "id": "3702380396618",
     "title": "Nutricost TMG Capsules",
     "context": "",
@@ -12841,6 +12791,56 @@
         "price": "18.97",
         "title": "Default Title",
         "available": true
+      }
+    ]
+  },
+  {
+    "id": "6805202698433",
+    "title": "Nutricost Calcium Citrate + Magnesium Citrate Powder",
+    "context": "",
+    "handle": "nutricost-calcium-citrate-magnesium-citrate-powder",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCalcium-Magnesium Harmony: Nutricost's Calcium Magnesium Powder combines the synergistic benefits of 1,000/1,420mg of Calcium Citrate and 420mg of Magnesium Citrate in each serving, promoting a balanced mineral intake for overall wellness.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSize and Flavor Options: Tailor your supplement routine with the flexibility of 30 servings or 60 servings.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFruit-Infused Enjoyment: Transform your daily routine with the delightful Fruit Punch or Peach Mango flavors, making your mineral supplementation a tasty and enjoyable experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant Manufacturing: Crafted in an NSF Certified GMP Compliant facility, Nutricost upholds the highest manufacturing standards, ensuring you receive a product aligned with your health-conscious choices.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eThird-Party Quality Assurance: Rigorous third-party testing by independent ISO-accredited laboratories guarantees the quality and purity of every batch, instilling confidence in the effectiveness of Nutricost's Calcium Magnesium Powder. Embrace the balance your body deserves with Nutricost's commitment to excellence.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Ca-Citrate_Mg-Citrate_Ras-Lemonade_60Serv_Front1.jpg?v=1738342829",
+    "variants": [
+      {
+        "price": "18.97",
+        "title": "Fruit Punch / 30 Servings",
+        "available": true
+      },
+      {
+        "price": "27.97",
+        "title": "Fruit Punch / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Peach Mango / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "27.97",
+        "title": "Peach Mango / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Raspberry Lemonade / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Raspberry Lemonade / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Unflavored / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Unflavored / 60 Servings",
+        "available": false
       }
     ]
   }
