@@ -850,7 +850,7 @@
       {
         "price": "60.97",
         "title": "Milk Chocolate / 2 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "120.97",
@@ -9585,7 +9585,7 @@
       {
         "price": "32.97",
         "title": "120 caps",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
