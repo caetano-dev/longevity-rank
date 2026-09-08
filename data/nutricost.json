@@ -11495,21 +11495,6 @@
     ]
   },
   {
-    "id": "9631427887334",
-    "title": "Nutricost S.O.D.",
-    "context": "",
-    "handle": "nutricost-s-o-d",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 300mg of Superoxide Dismutase (S.O.D.) delivering 2,400 AU per serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 capsules per bottle for a full 120-day supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eS.O.D. is a naturally occurring antioxidant enzyme that supports cellular health\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, GMO-free, and gluten-free to fit a variety of lifestyles\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_S.O.D._300MG_120CAP_175CC_Front_Square.jpg?v=1779828547",
-    "variants": [
-      {
-        "price": "15.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "9631496306918",
     "title": "Nutricost Schisandra",
     "context": "",
@@ -12730,56 +12715,6 @@
     ]
   },
   {
-    "id": "6805202698433",
-    "title": "Nutricost Calcium Citrate + Magnesium Citrate Powder",
-    "context": "",
-    "handle": "nutricost-calcium-citrate-magnesium-citrate-powder",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCalcium-Magnesium Harmony: Nutricost's Calcium Magnesium Powder combines the synergistic benefits of 1,000/1,420mg of Calcium Citrate and 420mg of Magnesium Citrate in each serving, promoting a balanced mineral intake for overall wellness.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSize and Flavor Options: Tailor your supplement routine with the flexibility of 30 servings or 60 servings.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFruit-Infused Enjoyment: Transform your daily routine with the delightful Fruit Punch or Peach Mango flavors, making your mineral supplementation a tasty and enjoyable experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant Manufacturing: Crafted in an NSF Certified GMP Compliant facility, Nutricost upholds the highest manufacturing standards, ensuring you receive a product aligned with your health-conscious choices.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eThird-Party Quality Assurance: Rigorous third-party testing by independent ISO-accredited laboratories guarantees the quality and purity of every batch, instilling confidence in the effectiveness of Nutricost's Calcium Magnesium Powder. Embrace the balance your body deserves with Nutricost's commitment to excellence.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Ca-Citrate_Mg-Citrate_Ras-Lemonade_60Serv_Front1.jpg?v=1738342829",
-    "variants": [
-      {
-        "price": "18.97",
-        "title": "Fruit Punch / 30 Servings",
-        "available": true
-      },
-      {
-        "price": "27.97",
-        "title": "Fruit Punch / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Peach Mango / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "27.97",
-        "title": "Peach Mango / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Raspberry Lemonade / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Raspberry Lemonade / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Unflavored / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Unflavored / 60 Servings",
-        "available": false
-      }
-    ]
-  },
-  {
     "id": "8970817503462",
     "title": "Nutricost Calcium, Magnesium \u0026 Zinc Tablets",
     "context": "",
@@ -12825,6 +12760,71 @@
       {
         "price": "65.97",
         "title": "1 KG",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": "9631427887334",
+    "title": "Nutricost S.O.D.",
+    "context": "",
+    "handle": "nutricost-s-o-d",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 300mg of Superoxide Dismutase (S.O.D.) delivering 2,400 AU per serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 capsules per bottle for a full 120-day supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eS.O.D. is a naturally occurring antioxidant enzyme that supports cellular health\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, GMO-free, and gluten-free to fit a variety of lifestyles\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_S.O.D._300MG_120CAP_175CC_Front_Square.jpg?v=1779828547",
+    "variants": [
+      {
+        "price": "15.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "6805202698433",
+    "title": "Nutricost Calcium Citrate + Magnesium Citrate Powder",
+    "context": "",
+    "handle": "nutricost-calcium-citrate-magnesium-citrate-powder",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCalcium-Magnesium Harmony: Nutricost's Calcium Magnesium Powder combines the synergistic benefits of 1,000/1,420mg of Calcium Citrate and 420mg of Magnesium Citrate in each serving, promoting a balanced mineral intake for overall wellness.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSize and Flavor Options: Tailor your supplement routine with the flexibility of 30 servings or 60 servings.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFruit-Infused Enjoyment: Transform your daily routine with the delightful Fruit Punch or Peach Mango flavors, making your mineral supplementation a tasty and enjoyable experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant Manufacturing: Crafted in an NSF Certified GMP Compliant facility, Nutricost upholds the highest manufacturing standards, ensuring you receive a product aligned with your health-conscious choices.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eThird-Party Quality Assurance: Rigorous third-party testing by independent ISO-accredited laboratories guarantees the quality and purity of every batch, instilling confidence in the effectiveness of Nutricost's Calcium Magnesium Powder. Embrace the balance your body deserves with Nutricost's commitment to excellence.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Ca-Citrate_Mg-Citrate_Ras-Lemonade_60Serv_Front1.jpg?v=1738342829",
+    "variants": [
+      {
+        "price": "18.97",
+        "title": "Fruit Punch / 30 Servings",
+        "available": true
+      },
+      {
+        "price": "27.97",
+        "title": "Fruit Punch / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Peach Mango / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "27.97",
+        "title": "Peach Mango / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Raspberry Lemonade / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Raspberry Lemonade / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Unflavored / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Unflavored / 60 Servings",
         "available": false
       }
     ]
