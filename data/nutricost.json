@@ -7595,7 +7595,7 @@
       {
         "price": "26.97",
         "title": "Peach Mango",
-        "available": true
+        "available": false
       },
       {
         "price": "27.97",
@@ -10425,21 +10425,6 @@
     ]
   },
   {
-    "id": "9039294333158",
-    "title": "Nutricost Benfotiamine (600 mg) 180 Capsules",
-    "context": "",
-    "handle": "benfotiamine",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving delivers 600 mg of benfotiamine, a lipid-soluble and bioavailable form of Vitamin B1 (thiamine)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eContains 180 capsules per bottle with a suggested serving size of 2 capsules per day for 90 servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFat-soluble thiamine alternative, a highly absorbable form of Vitamin B1 designed to support daily wellness\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free, gluten-free, and 100% vegan for those seeking a high-quality B1 supplement\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Benfotiamine_300MGX2__V1__180CAP_225CC_Front1_Square.jpg?v=1750453868",
-    "variants": [
-      {
-        "price": "21.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "9039295381734",
     "title": "Nutricost Corn Silk Capsules",
     "context": "",
@@ -11458,7 +11443,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VitaminB12_5MG_4OZ_GlassAmberBoston_FrontSquare.jpg?v=1770421775",
     "variants": [
       {
-        "price": "11.97",
+        "price": "16.97",
         "title": "Default Title",
         "available": true
       }
@@ -12340,21 +12325,6 @@
     ]
   },
   {
-    "id": "9576687239398",
-    "title": "Nutricost Yellow Dock Extract",
-    "context": "",
-    "handle": "nutricost-yellow-dock-extract",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 15mg of 20:1 Yellow Dock Extract per serving, providing a 3,000mg root equivalent\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 60 servings per bottle for a convenient 2-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade from carefully sourced Yellow Dock root, known for its traditional use in herbal preparations\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, GMO-free, and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_YellowDock_50MGX3_180CAP_225CC_Front_Square.jpg?v=1764614911",
-    "variants": [
-      {
-        "price": "11.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "3702142271562",
     "title": "Nutricost Ferrochel Iron Capsules",
     "context": "",
@@ -12461,36 +12431,6 @@
         "price": "27.97",
         "title": "Default Title",
         "available": true
-      }
-    ]
-  },
-  {
-    "id": "8867548299494",
-    "title": "Nutricost Organic Super Greens Stickpacks",
-    "context": "",
-    "handle": "organic-super-greens-orange-sunrise",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThese super greens are Unflavored \u0026amp; Orange Sunrise flavored.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eComes with 20 individually sealed stickpacks, offering a convenient and portable option for enjoying your greens anytime, anywhere.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVariety Pack - 10 stickpacks in mixed berry flavor, 10 stickpacks in orange sunrise flavor.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eComes with 20 individually sealed stickpacks, offering a convenient and portable option for enjoying your greens anytime, anywhere.\u003c/span\u003e\u003cspan class=\"a-list-item\"\u003e\u003c/span\u003e\n\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOur Super Greens are third-party tested and produced in a GMP-compliant facility.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThis formula is free from gluten, catering to those who prefer or require gluten-free options.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade with vegan ingredients and certified organic by the USDA, this blend aligns with plant-based and organic lifestyle preferences.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Organic_SuperGreensOrangeSunrise_20SPK_55OZCLEAR_Front1_Square.jpg?v=1729118482",
-    "variants": [
-      {
-        "price": "26.97",
-        "title": "Unflavored",
-        "available": true
-      },
-      {
-        "price": "26.97",
-        "title": "Orange Sunrise",
-        "available": false
-      },
-      {
-        "price": "26.97",
-        "title": "Variety",
-        "available": false
-      },
-      {
-        "price": "26.97",
-        "title": "Mixed Berry",
-        "available": false
       }
     ]
   },
@@ -12806,6 +12746,36 @@
         "price": "18.97",
         "title": "Unflavored / 60 Servings",
         "available": false
+      }
+    ]
+  },
+  {
+    "id": "9596811378918",
+    "title": "Nutricost Organic Ionic Zinc Drops",
+    "context": "",
+    "handle": "nutricost-organic-ionic-zinc-drops",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 11mg of ionic zinc per serving in a convenient liquid form\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 servings per bottle with an easy-to-use dropper\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eUSDA Organic and OTCO-certified for trusted quality\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian-friendly, GMO-free, and gluten-free for clean supplementation\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Zinc_11MG2ML_4OZAmberGlassBoston_Front_Square.jpg?v=1767028240",
+    "variants": [
+      {
+        "price": "11.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9576687239398",
+    "title": "Nutricost Yellow Dock Extract",
+    "context": "",
+    "handle": "nutricost-yellow-dock-extract",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 15mg of 20:1 Yellow Dock Extract per serving, providing a 3,000mg root equivalent\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 60 servings per bottle for a convenient 2-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade from carefully sourced Yellow Dock root, known for its traditional use in herbal preparations\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, GMO-free, and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_YellowDock_50MGX3_180CAP_225CC_Front_Square.jpg?v=1764614911",
+    "variants": [
+      {
+        "price": "11.97",
+        "title": "Default Title",
+        "available": true
       }
     ]
   },
