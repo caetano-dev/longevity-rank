@@ -84,7 +84,12 @@
     "variants": [
       {
         "price": "63.95",
-        "title": "Default Title",
+        "title": "Single",
+        "available": true
+      },
+      {
+        "price": "119.99",
+        "title": "2-Pack",
         "available": true
       }
     ]

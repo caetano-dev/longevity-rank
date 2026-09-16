@@ -7470,7 +7470,7 @@
       {
         "price": "60.97",
         "title": "Chocolate Peanut Butter",
-        "available": false
+        "available": true
       },
       {
         "price": "60.97",
@@ -9570,7 +9570,7 @@
       {
         "price": "32.97",
         "title": "120 caps",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -12640,21 +12640,6 @@
     ]
   },
   {
-    "id": "8865447182566",
-    "title": "Nutricost Calcium Peach Mango",
-    "context": "",
-    "handle": "ntc-calcium",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFlavorful Nutrient Boost: Transform your daily nutrition routine with delicious flavors, making your supplement regimen a refreshing and enjoyable experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVariety of Servings: Choose between 30 or 60 servings for a longer-term nutritional support plan, catering to your specific needs and preferences\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEssential Micronutrient Blend: Each serving delivers a strategic blend of Calcium (1000 MG), Magnesium (420 MG), Zinc (16.5 MG), and Vitamin D3 (30 MCG), supporting overall well-being for the gym-goer and health-conscious individual.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGym and Wellness Synergy: Tailored to support the needs of those leading an active lifestyle, this powder seamlessly integrates into your fitness routine and daily wellness regimen.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufacturing Excellence: Crafted in an NSF Certified GMP Compliant facility and rigorously tested by independent ISO-accredited laboratories, Nutricost's commitment to quality ensures you receive a reliable and high-quality nutritional supplement with each batch.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ClaciumCitrate_1000MG_MagnesiumCitrate_420MG_PeachMango_60SERV_43OZ_Front_Square_4065edde-5bfe-4fe7-a538-e9371d4a2c06.jpg?v=1729881283",
-    "variants": [
-      {
-        "price": "18.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "8704464584934",
     "title": "Nutricost So Fresh and So Green Bottle",
     "context": "",
@@ -12730,6 +12715,51 @@
     ]
   },
   {
+    "id": "9039294333158",
+    "title": "Nutricost Benfotiamine (600 mg) 180 Capsules",
+    "context": "",
+    "handle": "benfotiamine",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving delivers 600 mg of benfotiamine, a lipid-soluble and bioavailable form of Vitamin B1 (thiamine)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eContains 180 capsules per bottle with a suggested serving size of 2 capsules per day for 90 servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFat-soluble thiamine alternative, a highly absorbable form of Vitamin B1 designed to support daily wellness\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free, gluten-free, and 100% vegan for those seeking a high-quality B1 supplement\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Benfotiamine_300MGX2__V1__180CAP_225CC_Front1_Square.jpg?v=1750453868",
+    "variants": [
+      {
+        "price": "21.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "4778920837194",
+    "title": "Nutricost Amla Made With Organic Amla Capsules",
+    "context": "",
+    "handle": "nutricosr-organic-amla-1000mg-120-capsules",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified Made With Organic AMLA by CCOF\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,000mg of Organic Amla Per Serving, 500mg Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Vegetarian Capsules Per Bottle for 60 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian, Certified Organic, Gluten Free, Soy Free, Non-GMO\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e3rd Party Tested by ISO-Accredited Laboratories, and Made in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\n\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Amla_500MG_120CAP_225CC_Front_Square_502ff898-3ca9-4fc9-9ba1-c10400333f17.jpg?v=1775841669",
+    "variants": [
+      {
+        "price": "14.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9748940652774",
+    "title": "Nutricost GABA (750mg) + L-Theanine (200mg)",
+    "context": "",
+    "handle": "nutricost-gaba-750mg-l-theanine-200mg",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 750mg of GABA and 200mg of L-Theanine per serving in convenient, easy-to-take capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 120 capsules per bottle, offering 60 servings for consistent daily use\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFormulated with GABA and L-Theanine—two well-known amino acid compounds commonly included in relaxation and wind-down routines\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-free and made without GMOs, suitable for a variety of dietary preferences\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GABA_375MGX2_L-Theanine_100MGX2_120CAP_300CC_Front_Square.jpg?v=1781304105",
+    "variants": [
+      {
+        "price": "19.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
     "id": "6805202698433",
     "title": "Nutricost Calcium Citrate + Magnesium Citrate Powder",
     "context": "",
@@ -12776,51 +12806,6 @@
         "price": "18.97",
         "title": "Unflavored / 60 Servings",
         "available": false
-      }
-    ]
-  },
-  {
-    "id": "9039294333158",
-    "title": "Nutricost Benfotiamine (600 mg) 180 Capsules",
-    "context": "",
-    "handle": "benfotiamine",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving delivers 600 mg of benfotiamine, a lipid-soluble and bioavailable form of Vitamin B1 (thiamine)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eContains 180 capsules per bottle with a suggested serving size of 2 capsules per day for 90 servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFat-soluble thiamine alternative, a highly absorbable form of Vitamin B1 designed to support daily wellness\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free, gluten-free, and 100% vegan for those seeking a high-quality B1 supplement\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Benfotiamine_300MGX2__V1__180CAP_225CC_Front1_Square.jpg?v=1750453868",
-    "variants": [
-      {
-        "price": "21.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
-    "id": "4778920837194",
-    "title": "Nutricost Amla Made With Organic Amla Capsules",
-    "context": "",
-    "handle": "nutricosr-organic-amla-1000mg-120-capsules",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCertified Made With Organic AMLA by CCOF\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e1,000mg of Organic Amla Per Serving, 500mg Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Vegetarian Capsules Per Bottle for 60 Servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian, Certified Organic, Gluten Free, Soy Free, Non-GMO\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e3rd Party Tested by ISO-Accredited Laboratories, and Made in a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\n\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Amla_500MG_120CAP_225CC_Front_Square_502ff898-3ca9-4fc9-9ba1-c10400333f17.jpg?v=1775841669",
-    "variants": [
-      {
-        "price": "14.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
-    "id": "9748940652774",
-    "title": "Nutricost GABA (750mg) + L-Theanine (200mg)",
-    "context": "",
-    "handle": "nutricost-gaba-750mg-l-theanine-200mg",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 750mg of GABA and 200mg of L-Theanine per serving in convenient, easy-to-take capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 120 capsules per bottle, offering 60 servings for consistent daily use\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFormulated with GABA and L-Theanine—two well-known amino acid compounds commonly included in relaxation and wind-down routines\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-free and made without GMOs, suitable for a variety of dietary preferences\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_GABA_375MGX2_L-Theanine_100MGX2_120CAP_300CC_Front_Square.jpg?v=1781304105",
-    "variants": [
-      {
-        "price": "19.97",
-        "title": "Default Title",
-        "available": true
       }
     ]
   },
