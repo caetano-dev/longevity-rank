@@ -3053,7 +3053,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-l-citrulline-base-powder-152255.jpg?v=1702004219",
     "variants": [
       {
-        "price": "24.97",
+        "price": "21.97",
         "title": "250 Grams",
         "available": true
       },
@@ -3176,7 +3176,7 @@
   },
   {
     "id": "3702375252042",
-    "title": "Nutricost Elderberry Capsules",
+    "title": "Nutricost Black Elderberry Capsules",
     "context": "",
     "handle": "nutricost-elderberry-575mg-120-capsules",
     "body_html": "\u003cul\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Vegetarian Capsules in Every Bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eA Potent 575mg of Black Elderberry Per Capsule\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 Servings in Every Bottle (1 Serving, Just 1 Capsule)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured In a GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eNon-GMO, Gluten Free, Vegetarian Friendly\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cul class=\"listing\"\u003e\u003c/ul\u003e",
@@ -3350,7 +3350,7 @@
       {
         "price": "16.97",
         "title": "400mg / 120 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "10.97",
@@ -3648,7 +3648,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/Untitled_design_6.png?v=1758747793",
     "variants": [
       {
-        "price": "21.97",
+        "price": "19.97",
         "title": "10000",
         "available": true
       },
@@ -4513,7 +4513,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-guarana-powder-775669.jpg?v=1694049635",
     "variants": [
       {
-        "price": "17.97",
+        "price": "16.97",
         "title": "Default Title",
         "available": true
       }
@@ -4868,7 +4868,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/products/nutricost-l-citrulline-malate-21-flavored-powder-860246.jpg?v=1723660357",
     "variants": [
       {
-        "price": "21.97",
+        "price": "20.97",
         "title": "300G / Blue Raspberry",
         "available": true
       },
@@ -7408,7 +7408,7 @@
         "available": true
       },
       {
-        "price": "20.97",
+        "price": "19.97",
         "title": "Unflavored",
         "available": true
       }
@@ -9570,7 +9570,7 @@
       {
         "price": "32.97",
         "title": "120 caps",
-        "available": true
+        "available": false
       },
       {
         "price": "19.97",
