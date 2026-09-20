@@ -380,7 +380,7 @@
       {
         "price": "53.97",
         "title": "10 lbs",
-        "available": true
+        "available": false
       },
       {
         "price": "20.97",
@@ -3370,7 +3370,7 @@
       {
         "price": "10.97",
         "title": "400mg / 30 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -10110,7 +10110,7 @@
       {
         "price": "11.97",
         "title": "Green Pandan Leaf",
-        "available": true
+        "available": false
       },
       {
         "price": "21.97",
@@ -12654,21 +12654,6 @@
     "variants": [
       {
         "price": "17.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
-    "id": "8704464584934",
-    "title": "Nutricost So Fresh and So Green Bottle",
-    "context": "",
-    "handle": "nutricost-so-fresh-and-so-green-bottle-white-logo",
-    "body_html": "",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/nutricost-so-fresh-and-so-green-bottle-859690.jpg?v=1718088154",
-    "variants": [
-      {
-        "price": "9.95",
         "title": "Default Title",
         "available": true
       }
