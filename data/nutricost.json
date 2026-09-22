@@ -2415,7 +2415,7 @@
       {
         "price": "15.97",
         "title": "5 mg Extended Release",
-        "available": false
+        "available": true
       }
     ]
   },
@@ -2790,7 +2790,7 @@
       {
         "price": "36.97",
         "title": "500 Capsules",
-        "available": true
+        "available": false
       }
     ]
   },
@@ -8529,7 +8529,7 @@
     "title": "Whey Protein Sample Pack",
     "context": "",
     "handle": "nutricost-whey-protein-sampler",
-    "body_html": "\u003cp dir=\"ltr\"\u003e\u003cspan\u003e💪\u003c/span\u003e\u003cspan\u003e Introducing our game-changing 3 Whey Protein Sample Packs! \u003c/span\u003e\u003cspan\u003e💪\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e🍦 Get lost in the velvety smoothness of Vanilla.\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e🍫 Dive into the decadent richness of Milk Chocolate.\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e🍓 Indulge in the luscious sweetness of Strawberry Milkshake.\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003eBut hold on, there's more to love! We've kicked things up a notch with these extra perks:\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e🎁 FREE Shaker Bottle for effortless mixing and on-the-go convenience.\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e🚚 FREE Shipping, because getting your gains should be hassle-free.\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e\u003cb id=\"docs-internal-guid-4f4a57a3-7fff-65b2-6bcd-5febcbf11d84\"\u003e\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003c!----\u003e",
+    "body_html": "\u003cp dir=\"ltr\"\u003e\u003cspan\u003e💪\u003c/span\u003e\u003cspan\u003e Introducing our game-changing 3 Whey Protein Sample Packs! \u003c/span\u003e\u003cspan\u003e💪\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e🍦 Get lost in the velvety smoothness of Vanilla.\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e🍫 Dive into the decadent richness of Milk Chocolate.\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e🍓 Indulge in the luscious sweetness of Strawberry Milkshake.\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003eBut hold on, there's more to love! We've kicked things up a notch with these extra perks:\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e🎁 FREE Shaker Bottle for effortless mixing and on-the-go convenience.\u003c/span\u003e\u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e \u003c/p\u003e\n\u003cp dir=\"ltr\"\u003e\u003cspan\u003e\u003cb id=\"docs-internal-guid-4f4a57a3-7fff-65b2-6bcd-5febcbf11d84\"\u003e\u003c/b\u003e\u003cbr\u003e\u003cbr\u003e\u003c/span\u003e\u003c/p\u003e\n\u003cp\u003e \u003c/p\u003e\n\u003c!----\u003e",
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Landing_Page_Pack_Bundle_4.png?v=1730843429",
     "variants": [
       {
@@ -11726,7 +11726,7 @@
   },
   {
     "id": "9719411376358",
-    "title": "Nutricost Vitamin C Chewabl",
+    "title": "Nutricost Vitamin C Chewable",
     "context": "",
     "handle": "nutricost-vitamin-c-chewabl",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 1,000mg of chewable vitamin C per serving in a convenient tablet\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 chewable tablets per bottle, providing 60 easy-to-take servings\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003e240 chewable tablets per bottle, providing 120 easy-to-take servings\u003c/span\u003e\u003cspan class=\"a-list-item\"\u003e\u003c/span\u003e\n\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFormulated to support immune health and help maintain healthy vitamin C levels\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly formula made without GMOs\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
@@ -12660,21 +12660,6 @@
     ]
   },
   {
-    "id": "9576687239398",
-    "title": "Nutricost Yellow Dock Extract",
-    "context": "",
-    "handle": "nutricost-yellow-dock-extract",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 15mg of 20:1 Yellow Dock Extract per serving, providing a 3,000mg root equivalent\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 60 servings per bottle for a convenient 2-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade from carefully sourced Yellow Dock root, known for its traditional use in herbal preparations\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, GMO-free, and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_YellowDock_50MGX3_180CAP_225CC_Front_Square.jpg?v=1764614911",
-    "variants": [
-      {
-        "price": "11.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "9631427887334",
     "title": "Nutricost S.O.D.",
     "context": "",
@@ -12935,15 +12920,15 @@
     ]
   },
   {
-    "id": "8970817503462",
-    "title": "Nutricost Calcium, Magnesium \u0026 Zinc Tablets",
+    "id": "9576687239398",
+    "title": "Nutricost Yellow Dock Extract",
     "context": "",
-    "handle": "nutricost-calcium-magnesium-zinc-tablets",
-    "body_html": "\u003cdiv id=\"featurebullets_feature_div\" class=\"celwidget\"\u003e\n\u003cdiv id=\"feature-bullets\" class=\"a-section a-spacing-medium a-spacing-top-small\"\u003e\n\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eOptimal Mineral Blend: Each serving provides 1,000 mg of calcium, 400 mg of magnesium, and 15 mg of zinc, offering a well-balanced combination of essential minerals that are crucial for various bodily functions.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eLong-Lasting Quantity: With a generous 180 tablets per bottle, you can enjoy a consistent supply of these essential nutrients for an extended period, ensuring you stay on top of your wellness game.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEasy Integration: These tablets are easy to incorporate into your daily routine, making it convenient to support your body's mineral needs without any hassle.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eTrusted Manufacturing: Rest assured that your health comes first with our NSF certified, GMP compliant facility, where each batch of Calcium Magnesium Zinc Tablets is expertly crafted with the utmost care and attention to detail.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eRigorous Third-Party Testing: Your safety is our priority. That's why every batch undergoes independent testing at ISO accredited laboratories, ensuring the product's purity, quality, and potency.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\u003cdiv id=\"provenanceCertifications_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"handmadeArtisanCard_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"globalStoreInfoBullets_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"HLCXComparisonJumplink_feature_div\"\u003e\u003c/div\u003e\n\u003cdiv id=\"addOnItem_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"giftcard-holiday-availability-messaging_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"olp_feature_div\" class=\"celwidget\"\u003e\n\u003cdiv id=\"all-offers-display\" class=\"a-section\"\u003e\u003c/div\u003e\n\u003cspan class=\"a-declarative\"\u003e\u003c/span\u003e\n\u003c/div\u003e\n\u003cdiv id=\"buyingOptionNostosBadge_feature_div\" class=\"celwidget\"\u003e\u003c/div\u003e\n\u003cdiv id=\"tellAmazon_feature_div\" class=\"celwidget\"\u003e\n\u003cdiv class=\"celwidget c-f\"\u003e\n\u003cdiv id=\"CardInstanceYn1NryHFgqw7tV7yAVXhMQ\"\u003e\u003cspan class=\"a-list-item\"\u003e\u003cb id=\"docs-internal-guid-f7386116-7fff-eae2-2660-764f43c2561b\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/div\u003e\n\u003c/div\u003e\n\u003c/div\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Calcium_1000MGX3_Magnesium_400MGX3_Zinc_15MGX3_D3_3mcg_180TAB_275CC_Front_Square.jpg?v=1768585759",
+    "handle": "nutricost-yellow-dock-extract",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eDelivers 15mg of 20:1 Yellow Dock Extract per serving, providing a 3,000mg root equivalent\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 60 servings per bottle for a convenient 2-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade from carefully sourced Yellow Dock root, known for its traditional use in herbal preparations\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegan-friendly, GMO-free, and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_YellowDock_50MGX3_180CAP_225CC_Front_Square.jpg?v=1764614911",
     "variants": [
       {
-        "price": "15.97",
+        "price": "11.97",
         "title": "Default Title",
         "available": true
       }
