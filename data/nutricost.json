@@ -3365,7 +3365,7 @@
       {
         "price": "16.97",
         "title": "400mg / 120 Capsules",
-        "available": false
+        "available": true
       },
       {
         "price": "10.97",
@@ -10050,7 +10050,7 @@
     "context": "",
     "handle": "nutricost-theacrine-teacrine",
     "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach serving delivers 100mg of Teacrine for a well balanced supplement\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eEach bottle contains 60 capsules, offering a full 30-day supply when taken as directed.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eThis product is vegan-friendly and free from GMOs, ensuring a clean, supplement.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eAs a dietary supplement, take 2 capsuless daily with 8-12 oz of water or as directed by your healthcare professional.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-compliant facility and third-party tested for quality and purity.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_TheacrineTeacrine_50MGX2_60CAP_100CC_Front_Square.jpg?v=1742586829",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_TheacrineTeacrine_50MGX2_60CAP_100CC_Front_Square_8efb234a-11c3-4eda-938e-97ebfe436787.jpg?v=1790093595",
     "variants": [
       {
         "price": "14.97",
@@ -11144,21 +11144,6 @@
     "variants": [
       {
         "price": "32.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
-    "id": "9497133088998",
-    "title": "Nutricost Choline \u0026 Inositol Supplement",
-    "context": "",
-    "handle": "nutricost-choline-inositol-supplement",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 500mg of choline and 500mg of inositol per serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 120 capsules per bottle, offering a 4-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSupports convenient daily supplementation with easy-to-take capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Choline_250MGX2_Inositol_250MGX2__V00E__240CAP_500CC_Front1_Square.jpg?v=1764191443",
-    "variants": [
-      {
-        "price": "20.97",
         "title": "Default Title",
         "available": true
       }
@@ -12929,6 +12914,51 @@
     "variants": [
       {
         "price": "11.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9698818064614",
+    "title": "Nutricost Phosphatidylcholine",
+    "context": "",
+    "handle": "phosphatidylcholine-softgels",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 420mg of phosphatidylcholine per serving for a precise, consistent dose\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 softgels per bottle, offering 120 convenient single-serving portions\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003ePhosphatidylcholine is a naturally occurring phospholipid commonly found in foods like eggs and soy\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFormulated to be GMO-free and gluten-free for quality you can trust\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Phosphatidylcholine_420MG_120SFG_300CC_Front1_Square.jpg?v=1777069323",
+    "variants": [
+      {
+        "price": "25.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9497133088998",
+    "title": "Nutricost Choline \u0026 Inositol Supplement",
+    "context": "",
+    "handle": "nutricost-choline-inositol-supplement",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 500mg of choline and 500mg of inositol per serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 120 capsules per bottle, offering a 4-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSupports convenient daily supplementation with easy-to-take capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Choline_250MGX2_Inositol_250MGX2__V00E__240CAP_500CC_Front1_Square.jpg?v=1764191443",
+    "variants": [
+      {
+        "price": "20.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9701048680678",
+    "title": "Nutricost Lecithin",
+    "context": "",
+    "handle": "nutricost-lecithin",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 1,200mg of soybean lecithin per serving to support your daily routine\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003e120 easy-to-take softgels for 120 servings per bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSoy lecithin is a natural phospholipid that helps support overall nutrition\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMade with a GMO-free and gluten-free formula\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_SoybeanLecithin_1200MG_120SFG_400CC_Front_Square.jpg?v=1777310566",
+    "variants": [
+      {
+        "price": "24.97",
         "title": "Default Title",
         "available": true
       }
