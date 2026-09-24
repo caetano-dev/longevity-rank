@@ -1319,7 +1319,7 @@
       },
       {
         "price": "12.97",
-        "title": "30 Capsules",
+        "title": "60 Capsules",
         "available": true
       }
     ]
@@ -12935,21 +12935,6 @@
     ]
   },
   {
-    "id": "9497133088998",
-    "title": "Nutricost Choline \u0026 Inositol Supplement",
-    "context": "",
-    "handle": "nutricost-choline-inositol-supplement",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 500mg of choline and 500mg of inositol per serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 120 capsules per bottle, offering a 4-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSupports convenient daily supplementation with easy-to-take capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Choline_250MGX2_Inositol_250MGX2__V00E__240CAP_500CC_Front1_Square.jpg?v=1764191443",
-    "variants": [
-      {
-        "price": "20.97",
-        "title": "Default Title",
-        "available": true
-      }
-    ]
-  },
-  {
     "id": "9701048680678",
     "title": "Nutricost Lecithin",
     "context": "",
@@ -12959,6 +12944,21 @@
     "variants": [
       {
         "price": "24.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9497133088998",
+    "title": "Nutricost Choline \u0026 Inositol Supplement",
+    "context": "",
+    "handle": "nutricost-choline-inositol-supplement",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 500mg of choline and 500mg of inositol per serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 120 capsules per bottle, offering a 4-month supply\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSupports convenient daily supplementation with easy-to-take capsules\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free and gluten-free\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Choline_250MGX2_Inositol_250MGX2__V00E__240CAP_500CC_Front1_Square.jpg?v=1764191443",
+    "variants": [
+      {
+        "price": "20.97",
         "title": "Default Title",
         "available": true
       }
