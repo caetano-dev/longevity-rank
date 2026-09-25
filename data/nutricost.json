@@ -43,7 +43,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_AcetylL-Carnitine_UF_100GM_8OZ_Front_Square.jpg?v=1773419365",
     "variants": [
       {
-        "price": "20.97",
+        "price": "18.97",
         "title": "100 G",
         "available": true
       },
@@ -4284,8 +4284,8 @@
     "title": "Nutricost Organic Rice Protein Powder",
     "context": "",
     "handle": "nutricost-organic-rice-protein-powder",
-    "body_html": "\u003cul\u003e\n\u003cli\u003e2LBS or 5LBS per container (39 or 99 servings per container)\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 2 LB of rice protein powder for your protein needs.\u003cbr\u003e\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\n\u003cspan class=\"a-list-item\"\u003eIncludes 5 LB of rice protein powder for your protein needs.\u003c/span\u003e\u003cspan class=\"a-list-item\"\u003e\u003c/span\u003e\n\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMix 1 scoop (approx 1/4 cup) with 8-12 oz of water or your preferred beverage.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-free and non-GMO, making it a good choice for a variety of diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian-friendly, perfect for plant-based diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-compliant facility and third-party tested.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/p\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Organic_RiceProtein__RB2__UF_5LB_1.8GAL_Front1_Square_776638db-9fc0-4eea-a620-eb2625867575.jpg?v=1730491696",
+    "body_html": "\u003cul\u003e\n\u003cli\u003e2LBS or 5LBS per container (38 or 94 servings per container)\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eIncludes 2 LB of rice protein powder for your protein needs.\u003cbr\u003e\u003c/span\u003e\u003c/li\u003e\n\u003cli\u003e\n\u003cspan class=\"a-list-item\"\u003eIncludes 5 LB of rice protein powder for your protein needs.\u003c/span\u003e\u003cspan class=\"a-list-item\"\u003e\u003c/span\u003e\n\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMix 1 scoop (approx 1/4 cup) with 8-12 oz of water or your preferred beverage.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGluten-free and non-GMO, making it a good choice for a variety of diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eVegetarian-friendly, perfect for plant-based diets.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in a GMP-compliant facility and third-party tested.\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cmeta charset=\"utf-8\"\u003e\u003cmeta charset=\"utf-8\"\u003e⚠️\u003cmeta charset=\"utf-8\"\u003e\u003cspan\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/p\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Organic_RiceProtein_UF_5LB_1.8GAL_Front_Square.jpg?v=1790274665",
     "variants": [
       {
         "price": "31.97",
@@ -9585,7 +9585,7 @@
       {
         "price": "32.97",
         "title": "120 caps",
-        "available": false
+        "available": true
       },
       {
         "price": "19.97",
@@ -12720,56 +12720,6 @@
     ]
   },
   {
-    "id": "6805202698433",
-    "title": "Nutricost Calcium Citrate + Magnesium Citrate Powder",
-    "context": "",
-    "handle": "nutricost-calcium-citrate-magnesium-citrate-powder",
-    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCalcium-Magnesium Harmony: Nutricost's Calcium Magnesium Powder combines the synergistic benefits of 1,000/1,420mg of Calcium Citrate and 420mg of Magnesium Citrate in each serving, promoting a balanced mineral intake for overall wellness.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSize and Flavor Options: Tailor your supplement routine with the flexibility of 30 servings or 60 servings.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFruit-Infused Enjoyment: Transform your daily routine with the delightful Fruit Punch or Peach Mango flavors, making your mineral supplementation a tasty and enjoyable experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant Manufacturing: Crafted in an NSF Certified GMP Compliant facility, Nutricost upholds the highest manufacturing standards, ensuring you receive a product aligned with your health-conscious choices.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eThird-Party Quality Assurance: Rigorous third-party testing by independent ISO-accredited laboratories guarantees the quality and purity of every batch, instilling confidence in the effectiveness of Nutricost's Calcium Magnesium Powder. Embrace the balance your body deserves with Nutricost's commitment to excellence.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
-    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Ca-Citrate_Mg-Citrate_Ras-Lemonade_60Serv_Front1.jpg?v=1738342829",
-    "variants": [
-      {
-        "price": "18.97",
-        "title": "Fruit Punch / 30 Servings",
-        "available": true
-      },
-      {
-        "price": "27.97",
-        "title": "Fruit Punch / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Peach Mango / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "27.97",
-        "title": "Peach Mango / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Raspberry Lemonade / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Raspberry Lemonade / 60 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Unflavored / 30 Servings",
-        "available": false
-      },
-      {
-        "price": "18.97",
-        "title": "Unflavored / 60 Servings",
-        "available": false
-      }
-    ]
-  },
-  {
     "id": "8909822951654",
     "title": "Nutricost Organic Ceylon Cinnamon Powder",
     "context": "",
@@ -12959,6 +12909,86 @@
     "variants": [
       {
         "price": "20.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "9393925128422",
+    "title": "Methylated Vitamin B12 + Folate",
+    "context": "",
+    "handle": "methylated-vitamin-b12-folate",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eMethylated Formula – Each serving provides 1,000mcg of methylated Vitamin B12 (methylcobalamin) and 1,000mcg of methyl folate (Vitamin B9)\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGenerous Supply – 120 easy-to-swallow capsules per bottle\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eAdded Support – Includes 30mg of calcium per serving\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eQuality Choice – Gluten-free and made with high standards\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_VitaminB12_1MG_Folate_1MG_120CAP_175CC_Front_Square.jpg?v=1756505216",
+    "variants": [
+      {
+        "price": "12.97",
+        "title": "Default Title",
+        "available": true
+      }
+    ]
+  },
+  {
+    "id": "6805202698433",
+    "title": "Nutricost Calcium Citrate + Magnesium Citrate Powder",
+    "context": "",
+    "handle": "nutricost-calcium-citrate-magnesium-citrate-powder",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eCalcium-Magnesium Harmony: Nutricost's Calcium Magnesium Powder combines the synergistic benefits of 1,000/1,420mg of Calcium Citrate and 420mg of Magnesium Citrate in each serving, promoting a balanced mineral intake for overall wellness.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eSize and Flavor Options: Tailor your supplement routine with the flexibility of 30 servings or 60 servings.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eFruit-Infused Enjoyment: Transform your daily routine with the delightful Fruit Punch or Peach Mango flavors, making your mineral supplementation a tasty and enjoyable experience.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMP Compliant Manufacturing: Crafted in an NSF Certified GMP Compliant facility, Nutricost upholds the highest manufacturing standards, ensuring you receive a product aligned with your health-conscious choices.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\n\u003cspan class=\"a-list-item\"\u003eThird-Party Quality Assurance: Rigorous third-party testing by independent ISO-accredited laboratories guarantees the quality and purity of every batch, instilling confidence in the effectiveness of Nutricost's Calcium Magnesium Powder. Embrace the balance your body deserves with Nutricost's commitment to excellence.\u003c/span\u003e\u003cbr\u003e\n\u003c/li\u003e\n\u003c/ul\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_Ca-Citrate_Mg-Citrate_Ras-Lemonade_60Serv_Front1.jpg?v=1738342829",
+    "variants": [
+      {
+        "price": "18.97",
+        "title": "Fruit Punch / 30 Servings",
+        "available": true
+      },
+      {
+        "price": "27.97",
+        "title": "Fruit Punch / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Peach Mango / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "27.97",
+        "title": "Peach Mango / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Raspberry Lemonade / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Raspberry Lemonade / 60 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Unflavored / 30 Servings",
+        "available": false
+      },
+      {
+        "price": "18.97",
+        "title": "Unflavored / 60 Servings",
+        "available": false
+      }
+    ]
+  },
+  {
+    "id": "8978272321766",
+    "title": "Nutricost Apple Pectin Powder",
+    "context": "",
+    "handle": "nutricost-apple-pectin-powder",
+    "body_html": "\u003cul class=\"a-unordered-list a-vertical a-spacing-mini\"\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eContains 1 pound of apple pectin powder per bottle.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eProvides 5 grams of apple pectin per serving.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eUnflavored for easy mixing into drinks or recipes.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eGMO-free and gluten-free.\u003c/span\u003e\u003c/li\u003e\n\u003cli class=\"a-spacing-mini\"\u003e\u003cspan class=\"a-list-item\"\u003eManufactured in an NSF Certified, GMP Compliant, FDA Registered Facility\u003c/span\u003e\u003c/li\u003e\n\u003c/ul\u003e\n\u003cp\u003e\u003cspan class=\"a-list-item\"\u003e\u003cmeta charset=\"utf-8\"\u003e \u003cmeta charset=\"utf-8\"\u003e \u003cb id=\"docs-internal-guid-5cf9c0d1-7fff-14ed-bfa9-1e4a56c45a71\"\u003e\u003cspan\u003e⚠️\u003c/span\u003e\u003c/b\u003e\u003cspan data-sheets-root=\"1\"\u003eWARNING: Consuming this product can expose you to chemicals including lead, which is known to the State of California to cause birth defects or other reproductive harm. For more information, go to www.P65Warnings.ca.gov/food.\u003c/span\u003e\u003c/span\u003e\u003c/p\u003e",
+    "image_url": "https://cdn.shopify.com/s/files/1/0222/4128/0074/files/NTC_ApplePectin_UF_1LB_32OZ_Front_Square.jpg?v=1743530577",
+    "variants": [
+      {
+        "price": "32.97",
         "title": "Default Title",
         "available": true
       }
