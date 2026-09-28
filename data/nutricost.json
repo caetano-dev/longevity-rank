@@ -8945,12 +8945,12 @@
       {
         "price": "60.97",
         "title": "2 LB / Chocolate Peanut Butter",
-        "available": false
+        "available": true
       },
       {
         "price": "60.97",
         "title": "2 LB / Double Chocolate Flavor:",
-        "available": false
+        "available": true
       },
       {
         "price": "60.97",
