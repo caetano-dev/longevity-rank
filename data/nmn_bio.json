@@ -23,7 +23,7 @@
         "available": true
       },
       {
-        "price": "733.00",
+        "price": "734.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -43,17 +43,17 @@
         "available": true
       },
       {
-        "price": "680.00",
+        "price": "681.00",
         "title": "3 Bundles",
         "available": true
       },
       {
-        "price": "1359.00",
+        "price": "1362.00",
         "title": "6 Bundles",
         "available": true
       },
       {
-        "price": "2718.00",
+        "price": "2724.00",
         "title": "12 Bundles",
         "available": true
       }
@@ -78,12 +78,12 @@
         "available": true
       },
       {
-        "price": "489.00",
+        "price": "490.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "977.00",
+        "price": "979.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -108,12 +108,12 @@
         "available": true
       },
       {
-        "price": "505.00",
+        "price": "506.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "1009.00",
+        "price": "1012.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -133,17 +133,17 @@
         "available": true
       },
       {
-        "price": "839.00",
+        "price": "840.00",
         "title": "3 Bundles",
         "available": true
       },
       {
-        "price": "1677.00",
+        "price": "1680.00",
         "title": "6 Bundles",
         "available": true
       },
       {
-        "price": "3353.00",
+        "price": "3360.00",
         "title": "12 Bundles",
         "available": true
       }
@@ -163,17 +163,17 @@
         "available": true
       },
       {
-        "price": "118.00",
+        "price": "119.00",
         "title": "3 Bottles",
         "available": true
       },
       {
-        "price": "236.00",
+        "price": "237.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "472.00",
+        "price": "473.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -188,22 +188,22 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0461/5222/0837/files/Single_Bundle.jpg?v=1743523221",
     "variants": [
       {
-        "price": "195.00",
+        "price": "196.00",
         "title": "1 Bottle Each",
         "available": true
       },
       {
-        "price": "584.00",
+        "price": "586.00",
         "title": "3 Bottles Each",
         "available": true
       },
       {
-        "price": "1168.00",
+        "price": "1171.00",
         "title": "6 Bottles Each",
         "available": true
       },
       {
-        "price": "2336.00",
+        "price": "2341.00",
         "title": "12 Bottles Each",
         "available": true
       }
@@ -233,7 +233,7 @@
         "available": true
       },
       {
-        "price": "407.00",
+        "price": "408.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -263,7 +263,7 @@
         "available": true
       },
       {
-        "price": "489.00",
+        "price": "490.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -288,12 +288,12 @@
         "available": true
       },
       {
-        "price": "277.00",
+        "price": "278.00",
         "title": "6 Bottles",
         "available": true
       },
       {
-        "price": "554.00",
+        "price": "555.00",
         "title": "12 Bottles",
         "available": true
       }
@@ -308,7 +308,7 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0461/5222/0837/files/Longevity_Starter_Mock_Up.jpg?v=1755438688",
     "variants": [
       {
-        "price": "156.00",
+        "price": "157.00",
         "title": "Starter",
         "available": true
       },
@@ -318,7 +318,7 @@
         "available": true
       },
       {
-        "price": "471.00",
+        "price": "472.00",
         "title": "Maxi",
         "available": true
       }
@@ -333,12 +333,12 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0461/5222/0837/files/Rejuvenation_Bundle_Mock_Up.jpg?v=1755437266",
     "variants": [
       {
-        "price": "338.00",
+        "price": "339.00",
         "title": "1 Bundle",
         "available": true
       },
       {
-        "price": "676.00",
+        "price": "677.00",
         "title": "2 Bundles",
         "available": true
       }
@@ -353,17 +353,17 @@
     "image_url": "https://cdn.shopify.com/s/files/1/0461/5222/0837/files/Metabolic_Mock_Up.jpg?v=1755438529",
     "variants": [
       {
-        "price": "148.00",
+        "price": "149.00",
         "title": "1 Bundle",
         "available": true
       },
       {
-        "price": "444.00",
+        "price": "445.00",
         "title": "3 Bundles",
         "available": true
       },
       {
-        "price": "887.00",
+        "price": "889.00",
         "title": "6 Bundles",
         "available": true
       }
@@ -388,12 +388,12 @@
         "available": true
       },
       {
-        "price": "687.00",
+        "price": "688.00",
         "title": "6 Bundles",
         "available": true
       },
       {
-        "price": "1373.00",
+        "price": "1376.00",
         "title": "12 Bundles",
         "available": true
       }
@@ -413,7 +413,7 @@
         "available": true
       },
       {
-        "price": "657.00",
+        "price": "658.00",
         "title": "2 Bundles",
         "available": true
       }
