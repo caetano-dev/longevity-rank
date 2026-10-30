@@ -3460,7 +3460,7 @@
       {
         "price": "8.39",
         "title": "Vanilla Chai",
-        "available": true
+        "available": false
       },
       {
         "price": "8.39",
@@ -9695,7 +9695,7 @@
       {
         "price": "16.97",
         "title": "400mg / 120 Capsules",
-        "available": true
+        "available": false
       },
       {
         "price": "10.97",
